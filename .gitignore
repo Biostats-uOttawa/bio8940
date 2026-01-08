@@ -10,3 +10,6 @@
 #*.zip
 #Untitled*
 _freeze/
+
+**/*.quarto_ipynb
+*.insyncdl
