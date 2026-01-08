@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en-ca"><head>
 <link href="..//img/logo_hex.png" rel="icon" type="image/png">
+<script src="../site_libs/cookie-consent/cookie-consent.js"></script>
+<link href="../site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../site_libs/quarto-html/tabby.min.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-c9f28ac3654e8145e3f329489cfce6b3.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.7.4">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.8.26">
 
   <meta name="author" content="Julien Martin">
-  <meta name="dcterms.date" content="2025-01-08">
+  <meta name="dcterms.date" content="2026-01-08">
   <title>Bio8940 – Introduction Bayesian statistics</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -31,17 +33,35 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-bbe7401fe57d4b791b917637bb662036.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-534cd8e3a96973385dffff3f4709048d.css">
   <link rel="stylesheet" href="assets/theme_chalk/whiteboard-blue.css">
   <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-6LLMGL3T2Q"></script>
 
-  <script type="text/javascript">
+  <script type="text/plain" cookie-consent="tracking">
 
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-6LLMGL3T2Q', { 'anonymize_ip': true});
   </script>
+  
+  <script type="text/javascript" charset="UTF-8">
+  document.addEventListener('DOMContentLoaded', function () {
+  cookieconsent.run({
+    "notice_banner_type":"simple",
+    "consent_type":"implied",
+    "palette":"light",
+    "language":"en",
+    "page_load_consent_levels":["strictly-necessary","functionality","tracking","targeting"],
+    "notice_banner_reject_button_hide":false,
+    "preferences_center_close_button_hide":false,
+    "website_name":""
+    ,
+  "language":"en-ca"
+    });
+  });
+  </script> 
+    
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -155,7 +175,7 @@ Julien Martin
     </div>
 </div>
 
-  <p class="date">2025-01-08</p>
+  <p class="date">2026-01-08</p>
 </section>
 <section id="overview" class="slide level2">
 <h2>Overview …</h2>
@@ -516,14 +536,12 @@ P[H_0^+ | \not H_0] &amp;=\frac{P[\not H_0 | H_0^+ ]  P[H_0^+ ]}{P[\not H_0]} \\
 </tr>
 </tbody>
 </table>
-<div>
 <ul>
 <li class="fragment">True positive: <strong>P[ Covid | test + ] = 0.139</strong></li>
 <li class="fragment">True negative: <strong>P[ Healthy | test - ] = 0.998</strong></li>
 <li class="fragment">False positive: P[ Healthy | test + ] = 0.861</li>
 <li class="fragment">False negative: P[ Covid | test - ] = 0.002</li>
 </ul>
-</div>
 <aside class="notes">
 <p>Talk about changing prior implications</p>
 <style type="text/css">
@@ -601,14 +619,12 @@ P[H_0^+ | \not H_0] &amp;=\frac{P[\not H_0 | H_0^+ ]  P[H_0^+ ]}{P[\not H_0]} \\
 </div>
 <div class="fragment">
 <p><strong>True Story</strong> <img data-src="assets/img_l7/s_clark.jpg" class="absolute" style="top: 0px; right: 50px; width: 250px; height: 400px; "></p>
-<div>
 <ul>
 <li class="fragment">After the sudden death of two baby sons, Sally Clark was sentenced to life in prison in 1999</li>
 <li class="fragment">Expert witness Prof Roy Meadow had interpreted the small probability of two cot deaths as a small probability of Clark’s innocence</li>
 <li class="fragment">After a long campaign, including refutation of Meadow’s statistics (among other errors), Clark was cleared in 2003</li>
 <li class="fragment">After being freed, she developed alcoholism and died in 2007</li>
 </ul>
-</div>
 </div>
 </section>
 <section id="meeting-mosquitoes" class="slide level2">
@@ -747,7 +763,6 @@ P[H_0^+ | \not H_0] &amp;=\frac{P[\not H_0 | H_0^+ ]  P[H_0^+ ]}{P[\not H_0]} \\
 <img data-src="assets/img_l7/shoot_13.jpg" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="here-it-is-in-practice" class="slide level2">
 <h2>Here it is in practice</h2>
-<div>
 <ul>
 <li class="fragment">Air France Flight 447 crashed in the ocean On June 1, 2009.</li>
 </ul>
@@ -766,7 +781,6 @@ P[H_0^+ | \not H_0] &amp;=\frac{P[\not H_0 | H_0^+ ]  P[H_0^+ ]}{P[\not H_0]} \\
 <ul>
 <li class="fragment">Eventually, the black box was found in the red area</li>
 </ul>
-</div>
 </section></section>
 <section>
 <section id="bayesian-inference-1" class="title-slide slide level1 center">
@@ -810,19 +824,19 @@ P_{post}(β|Y) &amp;∝ f(Y|β) × P_{prior}(β)\\
 <section id="updating-knowledge-1" class="slide level2">
 <h2>Updating knowledge</h2>
 
-<img data-src="lec-08_intro_bayes_files/figure-revealjs/unnamed-chunk-4-1.png" class="quarto-figure quarto-figure-center r-stretch" width="3600"></section>
+<img data-src="lec-08_intro_bayes_files/figure-revealjs/unnamed-chunk-3-1.png" class="quarto-figure quarto-figure-center r-stretch" width="3600"></section>
 <section id="updating-knowledge-2" class="slide level2">
 <h2>Updating knowledge</h2>
 
-<img data-src="lec-08_intro_bayes_files/figure-revealjs/unnamed-chunk-5-1.png" class="quarto-figure quarto-figure-center r-stretch" width="3600"></section>
+<img data-src="lec-08_intro_bayes_files/figure-revealjs/unnamed-chunk-4-1.png" class="quarto-figure quarto-figure-center r-stretch" width="3600"></section>
 <section id="updating-knowledge-3" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Updating knowledge</h2>
 
-<img data-src="lec-08_intro_bayes_files/figure-revealjs/unnamed-chunk-6-1.png" class="quarto-figure quarto-figure-center r-stretch" width="3600"></section>
+<img data-src="lec-08_intro_bayes_files/figure-revealjs/unnamed-chunk-5-1.png" class="quarto-figure quarto-figure-center r-stretch" width="3600"></section>
 <section id="updating-knowledge-4" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Updating knowledge</h2>
 
-<img data-src="lec-08_intro_bayes_files/figure-revealjs/unnamed-chunk-7-1.png" class="quarto-figure quarto-figure-center r-stretch" width="3600"><blockquote>
+<img data-src="lec-08_intro_bayes_files/figure-revealjs/unnamed-chunk-6-1.png" class="quarto-figure quarto-figure-center r-stretch" width="3600"><blockquote>
 <p>A Bayesian is one who, vaguely <strong>expecting a horse</strong>, and catching a <strong>glimpse of a donkey</strong>, strongly <strong>believes he has seen a mule</strong></p>
 </blockquote>
 </section>
@@ -885,13 +899,13 @@ P_{post}(β|Y) &amp;∝ f(Y|β) × P_{prior}(β)\\
 <h2>Very informative data</h2>
 <p>When the data provide a lot more information than the prior</p>
 
-<img data-src="lec-08_intro_bayes_files/figure-revealjs/unnamed-chunk-8-1.png" class="quarto-figure quarto-figure-center r-stretch" width="3600"><p>Priors here are dominated by the likelihood, and they give very similar posteriors – i.e.&nbsp;everyone agrees. (Phew!)</p>
+<img data-src="lec-08_intro_bayes_files/figure-revealjs/unnamed-chunk-7-1.png" class="quarto-figure quarto-figure-center r-stretch" width="3600"><p>Priors here are dominated by the likelihood, and they give very similar posteriors – i.e.&nbsp;everyone agrees. (Phew!)</p>
 </section>
 <section id="flat-priors" class="slide level2">
 <h2>Flat priors</h2>
 <p>Using very flat priors to represent ignorance</p>
 
-<img data-src="lec-08_intro_bayes_files/figure-revealjs/unnamed-chunk-9-1.png" class="quarto-figure quarto-figure-center r-stretch" width="3600"><p>Flat priors do <span class="emph">NOT</span> actually represent ignorance!</p>
+<img data-src="lec-08_intro_bayes_files/figure-revealjs/unnamed-chunk-8-1.png" class="quarto-figure quarto-figure-center r-stretch" width="3600"><p>Flat priors do <span class="emph">NOT</span> actually represent ignorance!</p>
 <aside class="notes">
 <p>Most of their support is for very extreme parameter values</p>
 <style type="text/css">
@@ -909,7 +923,7 @@ P_{post}(β|Y) &amp;∝ f(Y|β) × P_{prior}(β)\\
 <section id="bayesian-approx-frequentist" class="slide level2">
 <h2>Bayesian <span class="math inline">\(\approx\)</span> frequentist</h2>
 
-<img data-src="lec-08_intro_bayes_files/figure-revealjs/unnamed-chunk-10-1.png" class="quarto-figure quarto-figure-center r-stretch" width="3600"><p>Likelihood gives the classic 95% confidence interval can be good approx of Bayesian 95% Highest Posterior Density interval</p>
+<img data-src="lec-08_intro_bayes_files/figure-revealjs/unnamed-chunk-9-1.png" class="quarto-figure quarto-figure-center r-stretch" width="3600"><p>Likelihood gives the classic 95% confidence interval can be good approx of Bayesian 95% Highest Posterior Density interval</p>
 </section>
 <section id="bayesian-approx-frequentist-1" class="slide level2">
 <h2>Bayesian <span class="math inline">\(\approx\)</span> frequentist</h2>
@@ -923,7 +937,7 @@ P_{post}(β|Y) &amp;∝ f(Y|β) × P_{prior}(β)\\
 <h2>Frequentist <span class="emoji" data-emoji="smiley">😃</span> &amp; Bayesian <span class="emoji" data-emoji="confused">😕</span></h2>
 <p>Prior strongly supporting small effects, and with data from an imprecise study</p>
 
-<img data-src="lec-08_intro_bayes_files/figure-revealjs/unnamed-chunk-11-1.png" class="quarto-figure quarto-figure-center r-stretch" width="3600"><aside class="notes">
+<img data-src="lec-08_intro_bayes_files/figure-revealjs/unnamed-chunk-10-1.png" class="quarto-figure quarto-figure-center r-stretch" width="3600"><aside class="notes">
 <p>Frequentist ‘Textbook’ analysis says ‘reject’ (p &lt; 0.05, woohoo, Nature her we go)</p>
 <p>Bayesian Posterior is ‘shrunk’ toward zero. We’re sure true β is very small (&amp; hard to replicate) &amp; we’re unsure of its sign. Wait a second, about that front page</p>
 <style type="text/css">
@@ -1160,7 +1174,7 @@ P_{post}(β|Y) &amp;∝ f(Y|β) × P_{prior}(β)\\
         margin: 0.1,
 
         math: {
-          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js',
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
           config: 'TeX-AMS_HTML-full',
           tex2jax: {
             inlineMath: [['\\(','\\)']],
@@ -1225,190 +1239,173 @@ P_{post}(β|Y) &amp;∝ f(Y|β) × P_{prior}(β)\\
     </script>
 
     <script id="quarto-html-after-body" type="application/javascript">
-    window.document.addEventListener("DOMContentLoaded", function (event) {
-      const toggleBodyColorMode = (bsSheetEl) => {
-        const mode = bsSheetEl.getAttribute("data-mode");
-        const bodyEl = window.document.querySelector("body");
-        if (mode === "dark") {
-          bodyEl.classList.add("quarto-dark");
-          bodyEl.classList.remove("quarto-light");
-        } else {
-          bodyEl.classList.add("quarto-light");
-          bodyEl.classList.remove("quarto-dark");
-        }
-      }
-      const toggleBodyColorPrimary = () => {
-        const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
-        if (bsSheetEl) {
-          toggleBodyColorMode(bsSheetEl);
-        }
-      }
-      toggleBodyColorPrimary();  
-      const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
-      tabsets.forEach(function(tabset) {
-        const tabby = new Tabby('#' + tabset.id);
-      });
-      const isCodeAnnotation = (el) => {
-        for (const clz of el.classList) {
-          if (clz.startsWith('code-annotation-')) {                     
-            return true;
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
           }
+          return false;
         }
-        return false;
-      }
-      const onCopySuccess = function(e) {
-        // button target
-        const button = e.trigger;
-        // don't keep focus
-        button.blur();
-        // flash "checked"
-        button.classList.add('code-copy-button-checked');
-        var currentTitle = button.getAttribute("title");
-        button.setAttribute("title", "Copied!");
-        let tooltip;
-        if (window.bootstrap) {
-          button.setAttribute("data-bs-toggle", "tooltip");
-          button.setAttribute("data-bs-placement", "left");
-          button.setAttribute("data-bs-title", "Copied!");
-          tooltip = new bootstrap.Tooltip(button, 
-            { trigger: "manual", 
-              customClass: "code-copy-button-tooltip",
-              offset: [0, -8]});
-          tooltip.show();    
-        }
-        setTimeout(function() {
-          if (tooltip) {
-            tooltip.hide();
-            button.removeAttribute("data-bs-title");
-            button.removeAttribute("data-bs-toggle");
-            button.removeAttribute("data-bs-placement");
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
           }
-          button.setAttribute("title", currentTitle);
-          button.classList.remove('code-copy-button-checked');
-        }, 1000);
-        // clear code selection
-        e.clearSelection();
-      }
-      const getTextToCopy = function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
           for (const childEl of codeEl.children) {
             if (isCodeAnnotation(childEl)) {
               childEl.remove();
             }
           }
           return codeEl.innerText;
-      }
-      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-        text: getTextToCopy
-      });
-      clipboard.on('success', onCopySuccess);
-      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-          text: getTextToCopy,
-          container: window.document.getElementById('quarto-embedded-source-code-modal')
-        });
-        clipboardModal.on('success', onCopySuccess);
-      }
-        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-        var mailtoRegex = new RegExp(/^mailto:/);
-          var filterRegex = new RegExp('/' + window.location.host + '/');
-        var isInternal = (href) => {
-            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
         }
-        // Inspect non-navigation links and adorn them if external
-     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-        for (var i=0; i<links.length; i++) {
-          const link = links[i];
-          if (!isInternal(link.href)) {
-            // undo the damage that might have been done by quarto-nav.js in the case of
-            // links that we want to consider external
-            if (link.dataset.originalHref !== undefined) {
-              link.href = link.dataset.originalHref;
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp("https:\/\/Biostats-uOttawa\.github\.io\/bio8940\/");
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
             }
           }
-        }
-      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-        const config = {
-          allowHTML: true,
-          maxWidth: 500,
-          delay: 100,
-          arrow: false,
-          appendTo: function(el) {
-              return el.closest('section.slide') || el.parentElement;
-          },
-          interactive: true,
-          interactiveBorder: 10,
-          theme: 'light-border',
-          placement: 'bottom-start',
-        };
-        if (contentFn) {
-          config.content = contentFn;
-        }
-        if (onTriggerFn) {
-          config.onTrigger = onTriggerFn;
-        }
-        if (onUntriggerFn) {
-          config.onUntrigger = onUntriggerFn;
-        }
-          config['offset'] = [0,0];
-          config['maxWidth'] = 700;
-        window.tippy(el, config); 
-      }
-      const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-      for (var i=0; i<noterefs.length; i++) {
-        const ref = noterefs[i];
-        tippyHover(ref, function() {
-          // use id or data attribute instead here
-          let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-          try { href = new URL(href).hash; } catch {}
-          const id = href.replace(/^#\/?/, "");
-          const note = window.document.getElementById(id);
-          if (note) {
-            return note.innerHTML;
-          } else {
-            return "";
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
           }
-        });
-      }
-      const findCites = (el) => {
-        const parentEl = el.parentElement;
-        if (parentEl) {
-          const cites = parentEl.dataset.cites;
-          if (cites) {
-            return {
-              el,
-              cites: cites.split(' ')
-            };
-          } else {
-            return findCites(el.parentElement)
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
           }
-        } else {
-          return undefined;
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
         }
-      };
-      var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-      for (var i=0; i<bibliorefs.length; i++) {
-        const ref = bibliorefs[i];
-        const citeInfo = findCites(ref);
-        if (citeInfo) {
-          tippyHover(citeInfo.el, function() {
-            var popup = window.document.createElement('div');
-            citeInfo.cites.forEach(function(cite) {
-              var citeDiv = window.document.createElement('div');
-              citeDiv.classList.add('hanging-indent');
-              citeDiv.classList.add('csl-entry');
-              var biblioDiv = window.document.getElementById('ref-' + cite);
-              if (biblioDiv) {
-                citeDiv.innerHTML = biblioDiv.innerHTML;
-              }
-              popup.appendChild(citeDiv);
-            });
-            return popup.innerHTML;
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
           });
         }
-      }
-    });
-    </script>
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
     
 
 </body></html>
