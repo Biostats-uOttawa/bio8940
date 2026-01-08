@@ -459,21 +459,21 @@
     "href": "slides/lec-06_quarto.slides.html#section-3",
     "title": "Writing dynamic and reproducible documents",
     "section": "",
-    "text": "qmd/Rmd\n\n\n\n\n\n\n\nYAML frontmatter\n\n\n\n\n\n\n\nMarkdown content\n\n\n\n\n\n\n\nCode chunks"
+    "text": "qmd\n\n\n\n\n\n\n\nYAML frontmatter\n\n\n\n\n\n\n\nMarkdown content\n\n\n\n\n\n\n\nCode chunks"
   },
   {
-    "objectID": "slides/lec-06_quarto.slides.html#rmdqmd-document",
-    "href": "slides/lec-06_quarto.slides.html#rmdqmd-document",
+    "objectID": "slides/lec-06_quarto.slides.html#qmd-document",
+    "href": "slides/lec-06_quarto.slides.html#qmd-document",
     "title": "Writing dynamic and reproducible documents",
-    "section": "Rmd/qmd document",
-    "text": "Rmd/qmd document"
+    "section": "qmd document",
+    "text": "qmd document"
   },
   {
-    "objectID": "slides/lec-06_quarto.slides.html#rmdqmd-document-1",
-    "href": "slides/lec-06_quarto.slides.html#rmdqmd-document-1",
+    "objectID": "slides/lec-06_quarto.slides.html#qmd-document-1",
+    "href": "slides/lec-06_quarto.slides.html#qmd-document-1",
     "title": "Writing dynamic and reproducible documents",
-    "section": "Rmd/qmd document",
-    "text": "Rmd/qmd document"
+    "section": "qmd document",
+    "text": "qmd document"
   },
   {
     "objectID": "slides/lec-06_quarto.slides.html#what-is-markdown",
@@ -546,11 +546,11 @@
     "text": "Tables\n| header A | header B  | header C |\n|:---------:|:--------:|---------:|\n| left      | center   | right    |\n\nTable: This is a title\n\nThis is a title\n\n\nheader A\nheader B\nheader C\n\n\n\n\nleft\ncenter\nright\n\n\n\n\nA bit of a hassle…\nUse a generator of Tables for Markdown\nWait for next section to learn how to generate tables from R"
   },
   {
-    "objectID": "slides/lec-06_quarto.slides.html#r-markdown-reference-guide",
-    "href": "slides/lec-06_quarto.slides.html#r-markdown-reference-guide",
+    "objectID": "slides/lec-06_quarto.slides.html#quarto-reference-guide",
+    "href": "slides/lec-06_quarto.slides.html#quarto-reference-guide",
     "title": "Writing dynamic and reproducible documents",
-    "section": "R Markdown Reference Guide",
-    "text": "R Markdown Reference Guide\nhttps://rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf"
+    "section": "Quarto Reference Guide",
+    "text": "Quarto Reference Guide\nhttps://rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf"
   },
   {
     "objectID": "slides/lec-06_quarto.slides.html#embed-code",
@@ -616,8 +616,8 @@
     "text": "Including tables\n\n# cars is a built-in-to-R data set of cars and their stopping distances\ncars %&gt;%\n  head(4) %&gt;%\n  knitr::kable(format = \"html\", caption = \"A kable table\")\n\n\nA kable table\n\n\nspeed\ndist\n\n\n\n\n4\n2\n\n\n4\n10\n\n\n7\n4\n\n\n7\n22\n\n\n\n\n\n\nThe kable package is often used with the kableExtra package\nA number of other packages are available for making pretty tables, by far my favourite is gt using similar approach to table that ggplot has to figures"
   },
   {
-    "objectID": "slides/lec-06_quarto.slides.html#r-markdown-reference-guide-1",
-    "href": "slides/lec-06_quarto.slides.html#r-markdown-reference-guide-1",
+    "objectID": "slides/lec-06_quarto.slides.html#r-markdown-reference-guide",
+    "href": "slides/lec-06_quarto.slides.html#r-markdown-reference-guide",
     "title": "Writing dynamic and reproducible documents",
     "section": "R Markdown Reference Guide",
     "text": "R Markdown Reference Guide\nhttps://rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf"
@@ -669,14 +669,14 @@
     "href": "slides/lec-06_quarto.slides.html#citations",
     "title": "Writing dynamic and reproducible documents",
     "section": "Citations",
-    "text": "Citations\n\nIn your text, citations go inside brackets and separated by semicolons\n\n\n\nThis…\nBlah blah (Shea2014?, Lottridge2012?).\n\nturns into this…\nBlah blah (Shea et al. 2014; Lottridge et al. 2012)."
+    "text": "Citations\n\nIn your text, citations go inside brackets and separated by semicolons\n\n\n\nThis…\nBlah blah [@Shea2014; @xie2015].\n\nturns into this…\nBlah blah (Shea and Boldt 2014, Xie 2015)."
   },
   {
     "objectID": "slides/lec-06_quarto.slides.html#citations-1",
     "href": "slides/lec-06_quarto.slides.html#citations-1",
     "title": "Writing dynamic and reproducible documents",
     "section": "Citations",
-    "text": "Citations\n\nIn your text, citations go inside brackets and separated by semicolons\n\n\n\nThis…\nBlah blah (Shea2014?, Lottridge2012?).\n(Shea2014?) says blah.\nBlah blah (see Shea2014?, also Wu2016?, ch. 1).\n\nturns into this…\nBlah blah (Shea et al. 2014; Lottridge et al. 2012).\nShea et al. (2014) says blah.\nBlah blah (see Shea et al. 2014, 33–35; also Wu 2016, ch. 1)."
+    "text": "Citations\n\nIn your text, citations go inside brackets and separated by semicolons\n\n\n\nThis…\nBlah blah @Shea2014; @xie2015.\n@Shea2014 says blah.\nBlah blah [see @Shea2014, pp. 33-35; also @xie2015, ch. 1].\n\nturns into this…\nBlah blah (Shea and Boldt 2014, Xie 2015).\nShea and Boldt (2014) says blah.\nBlah blah (see Shea and Boldt 2014 pp. 33–35, also Xie 2015, ch. 1)."
   },
   {
     "objectID": "slides/lec-06_quarto.slides.html#citations-2",
@@ -707,8 +707,8 @@
     "text": "Console"
   },
   {
-    "objectID": "slides/lec-06_quarto.slides.html#r-markdown-reference-guide-2",
-    "href": "slides/lec-06_quarto.slides.html#r-markdown-reference-guide-2",
+    "objectID": "slides/lec-06_quarto.slides.html#r-markdown-reference-guide-1",
+    "href": "slides/lec-06_quarto.slides.html#r-markdown-reference-guide-1",
     "title": "Writing dynamic and reproducible documents",
     "section": "R Markdown Reference Guide",
     "text": "R Markdown Reference Guide\nhttps://rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf"
@@ -788,21 +788,21 @@
     "href": "slides/lec-06_quarto.notes.html#section-3",
     "title": "Writing dynamic and reproducible documents",
     "section": "\n2.1 ",
-    "text": "2.1 \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nqmd/Rmd\n\n\n\n\n\n\nYAML frontmatter\n\n\n\n\n\n\nMarkdown content\n\n\n\n\n\n\nCode chunks"
+    "text": "2.1 \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nqmd\n\n\n\n\n\n\nYAML frontmatter\n\n\n\n\n\n\nMarkdown content\n\n\n\n\n\n\nCode chunks"
   },
   {
-    "objectID": "slides/lec-06_quarto.notes.html#rmdqmd-document",
-    "href": "slides/lec-06_quarto.notes.html#rmdqmd-document",
+    "objectID": "slides/lec-06_quarto.notes.html#qmd-document",
+    "href": "slides/lec-06_quarto.notes.html#qmd-document",
     "title": "Writing dynamic and reproducible documents",
-    "section": "\n2.2 Rmd/qmd document",
-    "text": "2.2 Rmd/qmd document"
+    "section": "\n2.2 qmd document",
+    "text": "2.2 qmd document"
   },
   {
-    "objectID": "slides/lec-06_quarto.notes.html#rmdqmd-document-1",
-    "href": "slides/lec-06_quarto.notes.html#rmdqmd-document-1",
+    "objectID": "slides/lec-06_quarto.notes.html#qmd-document-1",
+    "href": "slides/lec-06_quarto.notes.html#qmd-document-1",
     "title": "Writing dynamic and reproducible documents",
-    "section": "\n2.3 Rmd/qmd document",
-    "text": "2.3 Rmd/qmd document"
+    "section": "\n2.3 qmd document",
+    "text": "2.3 qmd document"
   },
   {
     "objectID": "slides/lec-06_quarto.notes.html#what-is-markdown",
@@ -875,11 +875,11 @@
     "text": "3.10 Tables\n| header A | header B  | header C |\n|:---------:|:--------:|---------:|\n| left      | center   | right    |\n\nTable: This is a title\n\nThis is a title\n\nheader A\nheader B\nheader C\n\n\nleft\ncenter\nright\n\n\n\nA bit of a hassle…\nUse a generator of Tables for Markdown\nWait for next section to learn how to generate tables from R"
   },
   {
-    "objectID": "slides/lec-06_quarto.notes.html#r-markdown-reference-guide",
-    "href": "slides/lec-06_quarto.notes.html#r-markdown-reference-guide",
+    "objectID": "slides/lec-06_quarto.notes.html#quarto-reference-guide",
+    "href": "slides/lec-06_quarto.notes.html#quarto-reference-guide",
     "title": "Writing dynamic and reproducible documents",
-    "section": "\n3.11 R Markdown Reference Guide",
-    "text": "3.11 R Markdown Reference Guide\nhttps://rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf"
+    "section": "\n3.11 Quarto Reference Guide",
+    "text": "3.11 Quarto Reference Guide\nhttps://rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf"
   },
   {
     "objectID": "slides/lec-06_quarto.notes.html#embed-code",
@@ -945,8 +945,8 @@
     "text": "4.9 Including tables\n\n# cars is a built-in-to-R data set of cars and their stopping distances\ncars %&gt;%\n  head(4) %&gt;%\n  knitr::kable(format = \"html\", caption = \"A kable table\")\n\n\nA kable table\n\nspeed\ndist\n\n\n\n4\n2\n\n\n4\n10\n\n\n7\n4\n\n\n7\n22\n\n\n\n\n\n\nThe kable package is often used with the kableExtra package\nA number of other packages are available for making pretty tables, by far my favourite is gt using similar approach to table that ggplot has to figures"
   },
   {
-    "objectID": "slides/lec-06_quarto.notes.html#r-markdown-reference-guide-1",
-    "href": "slides/lec-06_quarto.notes.html#r-markdown-reference-guide-1",
+    "objectID": "slides/lec-06_quarto.notes.html#r-markdown-reference-guide",
+    "href": "slides/lec-06_quarto.notes.html#r-markdown-reference-guide",
     "title": "Writing dynamic and reproducible documents",
     "section": "\n4.10 R Markdown Reference Guide",
     "text": "4.10 R Markdown Reference Guide\nhttps://rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf"
@@ -998,14 +998,14 @@
     "href": "slides/lec-06_quarto.notes.html#citations",
     "title": "Writing dynamic and reproducible documents",
     "section": "\n6.2 Citations",
-    "text": "6.2 Citations\n\nIn your text, citations go inside brackets and separated by semicolons\n\n\n\nThis…\nBlah blah (Shea2014?, Lottridge2012?).\n\n\nturns into this…\nBlah blah (Shea et al. 2014; Lottridge et al. 2012)."
+    "text": "6.2 Citations\n\nIn your text, citations go inside brackets and separated by semicolons\n\n\n\nThis…\nBlah blah [@Shea2014; @xie2015].\n\n\nturns into this…\nBlah blah (Shea and Boldt 2014, Xie 2015)."
   },
   {
     "objectID": "slides/lec-06_quarto.notes.html#citations-1",
     "href": "slides/lec-06_quarto.notes.html#citations-1",
     "title": "Writing dynamic and reproducible documents",
     "section": "\n6.3 Citations",
-    "text": "6.3 Citations\n\nIn your text, citations go inside brackets and separated by semicolons\n\n\n\nThis…\nBlah blah (Shea2014?, Lottridge2012?).\n(Shea2014?) says blah.\nBlah blah (see Shea2014?, also Wu2016?, ch. 1).\n\n\nturns into this…\nBlah blah (Shea et al. 2014; Lottridge et al. 2012).\nShea et al. (2014) says blah.\nBlah blah (see Shea et al. 2014, 33–35; also Wu 2016, ch. 1)."
+    "text": "6.3 Citations\n\nIn your text, citations go inside brackets and separated by semicolons\n\n\n\nThis…\nBlah blah @Shea2014; @xie2015.\n@Shea2014 says blah.\nBlah blah [see @Shea2014, pp. 33-35; also @xie2015, ch. 1].\n\n\nturns into this…\nBlah blah (Shea and Boldt 2014, Xie 2015).\nShea and Boldt (2014) says blah.\nBlah blah (see Shea and Boldt 2014 pp. 33–35, also Xie 2015, ch. 1)."
   },
   {
     "objectID": "slides/lec-06_quarto.notes.html#citations-2",
@@ -1036,8 +1036,8 @@
     "text": "7.3 Console"
   },
   {
-    "objectID": "slides/lec-06_quarto.notes.html#r-markdown-reference-guide-2",
-    "href": "slides/lec-06_quarto.notes.html#r-markdown-reference-guide-2",
+    "objectID": "slides/lec-06_quarto.notes.html#r-markdown-reference-guide-1",
+    "href": "slides/lec-06_quarto.notes.html#r-markdown-reference-guide-1",
     "title": "Writing dynamic and reproducible documents",
     "section": "\n7.4 R Markdown Reference Guide",
     "text": "7.4 R Markdown Reference Guide\nhttps://rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf"
@@ -2056,7 +2056,7 @@
     "href": "fr/index.html#où-et-quand",
     "title": "Statistiques avancées et science ouverte",
     "section": "Où et quand ",
-    "text": "Où et quand \n\nCours: Mardis, 1430-1720 in TBT-323",
+    "text": "Où et quand \n\nCours: Mardis, 1430-1720 in VNR-1050",
     "crumbs": [
       "Biostats uOttawa",
       "Info générale"
@@ -2215,7 +2215,7 @@
     "href": "en/index.html#schedule",
     "title": "Advanced statistics and Open science",
     "section": "Schedule ",
-    "text": "Schedule \n\nLecture: Tuesdays, 1430-1720 in TBT-323\n\nThere are no lectures or tutorials during reading week.",
+    "text": "Schedule \n\nLecture: Tuesdays, 1430-1720 in VNR-1050\n\nThere are no lectures or tutorials during reading week.",
     "crumbs": [
       "Biostats uOttawa",
       "Course info"
@@ -2289,7 +2289,7 @@
     "href": "en/who_when.html#schedule",
     "title": "Bio8940",
     "section": "Schedule ",
-    "text": "Schedule \n\nLecture: Tuesdays, 1430-1720 in TBT-323\n\nThere are no lectures or tutorials during reading week."
+    "text": "Schedule \n\nLecture: Tuesdays, 1430-1720 in VNR-1050\n\nThere are no lectures or tutorials during reading week."
   },
   {
     "objectID": "fr/dataset.html",
@@ -2317,7 +2317,7 @@
     "href": "fr/lectures.html",
     "title": "Cours",
     "section": "",
-    "text": "Les diapos et les notes sont uniquement en anglais\n\n\nWarning in replace(z): Reference key(s) not found:\nivimey-cook_implementing_2023\n\n\n\n\n\n\n\n\nDate\nSujet\nDiapos\nLecture\n\n\n\n\n\n\n\n13 janv.\nIntroduction\n \nSmaldino et McElreath (2016)\n\n\n20 janv.\nModèles linéaires généralisés (et révisions modèles linéaires)\n \nZuur et al. (2010)\n\n\n27 janv.\nStructure causale et construction de modèle\n \nCinelli et al. (2022), Wysocki et al. (2022)\n\n\n3 févr.\nIntroduction aux modèles mixtes\n \nHarrison et al. (2018)\n\n\n10 févr.\nModèles mixtes généralisés\n \nBolker et al. (2009)\n\n\n24 févr.\nIntroduction à Quarto\n \nAlston et Rick (2021)\n\n\nSemaine de Lecture\n\n\n3 mars\nPrésentation des propositions de projet final\n \naucune\n\n\n10 mars\nIntroduction à Github\n \nIvimey-Cook et al. (2023)\n\n\n17 mars\nIntro analyse Bayesienne\nNA\nKruschke et Liddell (2018)\n\n\n24 mars\nModèles mixtes multivariés\nNA\nVan de Pol et Wright (2009)\n\n\n31 mars\nSujet choisi par les étudiants\nNA\nWasserstein et Lazar (2016)\n\n\n7 avr.\nSujet choisi par les étudiants\nNA\nForstmeier et al. (2017)\n\n\n\n\n\n\n\n\n\n\n\nLes diapos sont en format revealjs (html). Si vous souhaitez avoir un pdf (*note: vous perdrez peut-être quelques fonctionnalités):\n\nOuvrir les diapos dans votre navigateur\nAppuyer sur e pour le mode d’exportation en PDF (?print-pdf devrait apparaître à la fin de l’adresse url)\nImprimer la page (CTRL/CMD+P).\nChanger la destination à Save as PDF.\nChanger le Format à Paysage.\nChanger les Marges à Aucune.\nAjouter le fond graphique (si vous le souhaitez)\nCliquer Sauvegarder 🎉\n\n\n\n\nLes notes sont simplement le contenu des diapos (et mes quelques notes) en format html.\nEn outre, l’outils d’annotation https://hypothes.is/ est activé sur les pages de notes. Cet outil permet d’annoter et commenter des pages internet, de sauvegarder vos commentaires, de la partager publiquement ou au sein de groupes privés. Il faut juste créer un compte gratuit.",
+    "text": "Les diapos et les notes sont uniquement en anglais\n\n\n\n\n\n\n\n\nDate\nSujet\nDiapos\nLecture\n\n\n\n\n\n\n\n7 janv.\nIntroduction\n \nSmaldino et McElreath (2016)\n\n\n14 janv.\nModèles linéaires généralisés (et révisions modèles linéaires)\n \nZuur et al. (2010)\n\n\n21 janv.\nIntroduction à Github\n \nIvimey-Cook et al. (2023)\n\n\n28 janv.\nIntroduction à Quarto\n \nAlston et Rick (2021)\n\n\n4 févr.\natelier en Allemagne, pas de cours\nNA\naucune\n\n\n11 févr.\nStructure causale et construction de modèle\n \nCinelli et al. (2022), Wysocki et al. (2022)\n\n\nSemaine de Lecture\n\n\n25 févr.\nIntroduction aux modèles mixtes\n \nHarrison et al. (2018)\n\n\n4 mars\nIntro analyse Bayesienne\n \nKruschke et Liddell (2018)\n\n\n11 mars\nModèles mixtes généralisés\n \nBolker et al. (2009)\n\n\n18 mars\nDiscussion sur les plans pour les projets écrits\nNA\nWasserstein et Lazar (2016)\n\n\n25 mars\nModèles mixtes multivariés\nNA\nVan de Pol et Wright (2009)\n\n\n1 avr.\n\nNA\nForstmeier et al. (2017)\n\n\n\n\n\n\n\n\n\n\n\nLes diapos sont en format revealjs (html). Si vous souhaitez avoir un pdf (*note: vous perdrez peut-être quelques fonctionnalités):\n\nOuvrir les diapos dans votre navigateur\nAppuyer sur e pour le mode d’exportation en PDF (?print-pdf devrait apparaître à la fin de l’adresse url)\nImprimer la page (CTRL/CMD+P).\nChanger la destination à Save as PDF.\nChanger le Format à Paysage.\nChanger les Marges à Aucune.\nAjouter le fond graphique (si vous le souhaitez)\nCliquer Sauvegarder 🎉\n\n\n\n\nLes notes sont simplement le contenu des diapos (et mes quelques notes) en format html.\nEn outre, l’outils d’annotation https://hypothes.is/ est activé sur les pages de notes. Cet outil permet d’annoter et commenter des pages internet, de sauvegarder vos commentaires, de la partager publiquement ou au sein de groupes privés. Il faut juste créer un compte gratuit.",
     "crumbs": [
       "Biostats uOttawa",
       "Diapos et notes"
@@ -2372,7 +2372,7 @@
     "href": "fr/syllabus.html#cours",
     "title": "Syllabus",
     "section": "Cours",
-    "text": "Cours\n\nDurée: 1 cours de 3h par semaine\nStyle: mélange de cours, discussion et labo\nComment: Session Zoom interactive avec tous les participants\nQuand: Mardis à 1430-1720\nOù: Salle: TBT-323 \nInfo sur le cours: https://biostats-uottawa.github.io/bio8940/\nManuel labo: https://biostats-uottawa.github.io/enfR",
+    "text": "Cours\n\nDurée: 1 cours de 3h par semaine\nStyle: mélange de cours, discussion et labo\nComment: Session Zoom interactive avec tous les participants\nQuand: Mardis à 1430-1720\nOù: Salle: VNR-1050 \nInfo sur le cours: https://biostats-uottawa.github.io/bio8940/\nManuel labo: https://biostats-uottawa.github.io/enfR",
     "crumbs": [
       "Biostats uOttawa",
       "Syllabus"

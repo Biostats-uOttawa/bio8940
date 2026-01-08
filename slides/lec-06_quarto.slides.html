@@ -9,8 +9,8 @@
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.8.26">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.8.25">
 
   <meta name="author" content="Julien Martin">
   <meta name="dcterms.date" content="2026-01-08">
@@ -98,7 +98,27 @@
     code span.va { color: #111111; } /* Variable */
     code span.vs { color: #20794d; } /* VerbatimString */
     code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
-  </style>
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+      margin-bottom: 0em;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-534cd8e3a96973385dffff3f4709048d.css">
   <link rel="stylesheet" href="assets/theme_chalk/whiteboard-blue.css">
   <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-6LLMGL3T2Q"></script>
@@ -319,8 +339,8 @@ add something about quarto what is it and how is it different
 
 <img data-src="assets/img_l2/rstudio-qmd-how-it-works.png" class="quarto-figure quarto-figure-center r-stretch"></section></section>
 <section>
-<section id="structure-of-a-rmdqmd-document" class="title-slide slide level1 center">
-<h1>Structure of a Rmd/qmd document</h1>
+<section id="structure-of-a-qmd-document" class="title-slide slide level1 center">
+<h1>Structure of a qmd document</h1>
 
 </section>
 <section id="section-3" class="slide level2">
@@ -330,9 +350,9 @@ add something about quarto what is it and how is it different
 <div>
 <p></p><figure class=""><p></p>
 <div>
-<svg aria-roledescription="flowchart-v2" role="graphics-document document" viewbox="0 0 553.40625 174" style="; display: block; margin: auto auto auto auto" class="flowchart" xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="960" id="mermaid-figure-1" height="480">
+<svg aria-roledescription="flowchart-v2" role="graphics-document document" viewbox="0 0 553.71875 174" style="; display: block; margin: auto auto auto auto" class="flowchart" xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="960" id="mermaid-figure-1" height="480">
 <style>#mermaid-figure-1{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;fill:#000000;}@keyframes edge-animation-frame{from{stroke-dashoffset:0;}}@keyframes dash{to{stroke-dashoffset:0;}}#mermaid-figure-1 .edge-animation-slow{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 50s linear infinite;stroke-linecap:round;}#mermaid-figure-1 .edge-animation-fast{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 20s linear infinite;stroke-linecap:round;}#mermaid-figure-1 .error-icon{fill:#552222;}#mermaid-figure-1 .error-text{fill:#552222;stroke:#552222;}#mermaid-figure-1 .edge-thickness-normal{stroke-width:1px;}#mermaid-figure-1 .edge-thickness-thick{stroke-width:3.5px;}#mermaid-figure-1 .edge-pattern-solid{stroke-dasharray:0;}#mermaid-figure-1 .edge-thickness-invisible{stroke-width:0;fill:none;}#mermaid-figure-1 .edge-pattern-dashed{stroke-dasharray:3;}#mermaid-figure-1 .edge-pattern-dotted{stroke-dasharray:2;}#mermaid-figure-1 .marker{fill:#000000;stroke:#000000;}#mermaid-figure-1 .marker.cross{stroke:#000000;}#mermaid-figure-1 svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;}#mermaid-figure-1 p{margin:0;}#mermaid-figure-1 .label{font-family:"trebuchet ms",verdana,arial,sans-serif;color:#000000;}#mermaid-figure-1 .cluster-label text{fill:#333;}#mermaid-figure-1 .cluster-label span{color:#333;}#mermaid-figure-1 .cluster-label span p{background-color:transparent;}#mermaid-figure-1 .label text,#mermaid-figure-1 span{fill:#000000;color:#000000;}#mermaid-figure-1 .node rect,#mermaid-figure-1 .node circle,#mermaid-figure-1 .node ellipse,#mermaid-figure-1 .node polygon,#mermaid-figure-1 .node path{fill:#cde498;stroke:#13540c;stroke-width:1px;}#mermaid-figure-1 .rough-node .label text,#mermaid-figure-1 .node .label text,#mermaid-figure-1 .image-shape .label,#mermaid-figure-1 .icon-shape .label{text-anchor:middle;}#mermaid-figure-1 .node .katex path{fill:#000;stroke:#000;stroke-width:1px;}#mermaid-figure-1 .rough-node .label,#mermaid-figure-1 .node .label,#mermaid-figure-1 .image-shape .label,#mermaid-figure-1 .icon-shape .label{text-align:center;}#mermaid-figure-1 .node.clickable{cursor:pointer;}#mermaid-figure-1 .root .anchor path{fill:#000000!important;stroke-width:0;stroke:#000000;}#mermaid-figure-1 .arrowheadPath{fill:green;}#mermaid-figure-1 .edgePath .path{stroke:#000000;stroke-width:2.0px;}#mermaid-figure-1 .flowchart-link{stroke:#000000;fill:none;}#mermaid-figure-1 .edgeLabel{background-color:#e8e8e8;text-align:center;}#mermaid-figure-1 .edgeLabel p{background-color:#e8e8e8;}#mermaid-figure-1 .edgeLabel rect{opacity:0.5;background-color:#e8e8e8;fill:#e8e8e8;}#mermaid-figure-1 .labelBkg{background-color:rgba(232, 232, 232, 0.5);}#mermaid-figure-1 .cluster rect{fill:#cdffb2;stroke:#6eaa49;stroke-width:1px;}#mermaid-figure-1 .cluster text{fill:#333;}#mermaid-figure-1 .cluster span{color:#333;}#mermaid-figure-1 div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:12px;background:hsl(78.1578947368, 58.4615384615%, 84.5098039216%);border:1px solid #6eaa49;border-radius:2px;pointer-events:none;z-index:100;}#mermaid-figure-1 .flowchartTitleText{text-anchor:middle;font-size:18px;fill:#000000;}#mermaid-figure-1 rect.text{fill:none;stroke-width:0;}#mermaid-figure-1 .icon-shape,#mermaid-figure-1 .image-shape{background-color:#e8e8e8;text-align:center;}#mermaid-figure-1 .icon-shape p,#mermaid-figure-1 .image-shape p{background-color:#e8e8e8;padding:2px;}#mermaid-figure-1 .icon-shape rect,#mermaid-figure-1 .image-shape rect{opacity:0.5;background-color:#e8e8e8;fill:#e8e8e8;}#mermaid-figure-1 :root{--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif;}</style>
-<g><marker orient="auto" markerheight="8" markerwidth="8" markerunits="userSpaceOnUse" refy="5" refx="5" viewbox="0 0 10 10" class="marker flowchart-v2" id="mermaid-1767904408089_flowchart-v2-pointEnd"><path style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 0 0 L 10 5 L 0 10 z"></path></marker><marker orient="auto" markerheight="8" markerwidth="8" markerunits="userSpaceOnUse" refy="5" refx="4.5" viewbox="0 0 10 10" class="marker flowchart-v2" id="mermaid-1767904408089_flowchart-v2-pointStart"><path style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 0 5 L 10 10 L 10 0 z"></path></marker><marker orient="auto" markerheight="11" markerwidth="11" markerunits="userSpaceOnUse" refy="5" refx="11" viewbox="0 0 10 10" class="marker flowchart-v2" id="mermaid-1767904408089_flowchart-v2-circleEnd"><circle style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" r="5" cy="5" cx="5"></circle></marker><marker orient="auto" markerheight="11" markerwidth="11" markerunits="userSpaceOnUse" refy="5" refx="-1" viewbox="0 0 10 10" class="marker flowchart-v2" id="mermaid-1767904408089_flowchart-v2-circleStart"><circle style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" r="5" cy="5" cx="5"></circle></marker><marker orient="auto" markerheight="11" markerwidth="11" markerunits="userSpaceOnUse" refy="5.2" refx="12" viewbox="0 0 11 11" class="marker cross flowchart-v2" id="mermaid-1767904408089_flowchart-v2-crossEnd"><path style="stroke-width: 2; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 1,1 l 9,9 M 10,1 l -9,9"></path></marker><marker orient="auto" markerheight="11" markerwidth="11" markerunits="userSpaceOnUse" refy="5.2" refx="-1" viewbox="0 0 11 11" class="marker cross flowchart-v2" id="mermaid-1767904408089_flowchart-v2-crossStart"><path style="stroke-width: 2; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 1,1 l 9,9 M 10,1 l -9,9"></path></marker><g class="root"><g class="clusters"></g><g class="edgePaths"><path style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_a_yaml_0" d="M244.375,47.564L217.952,54.136C191.529,60.709,138.682,73.855,112.259,84.594C85.836,95.333,85.836,103.667,85.836,107.833L85.836,112"></path><path style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_a_md_0" d="M294.883,62L294.883,66.167C294.883,70.333,294.883,78.667,294.883,87C294.883,95.333,294.883,103.667,294.883,107.833L294.883,112"></path><path style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_a_knitr_0" d="M345.391,48.76L368.784,55.134C392.177,61.507,438.964,74.253,462.357,84.793C485.75,95.333,485.75,103.667,485.75,107.833L485.75,112"></path></g><g class="edgeLabels"><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignobject height="0" width="0">
+<g><marker orient="auto" markerheight="8" markerwidth="8" markerunits="userSpaceOnUse" refy="5" refx="5" viewbox="0 0 10 10" class="marker flowchart-v2" id="mermaid-1767905586126_flowchart-v2-pointEnd"><path style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 0 0 L 10 5 L 0 10 z"></path></marker><marker orient="auto" markerheight="8" markerwidth="8" markerunits="userSpaceOnUse" refy="5" refx="4.5" viewbox="0 0 10 10" class="marker flowchart-v2" id="mermaid-1767905586126_flowchart-v2-pointStart"><path style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 0 5 L 10 10 L 10 0 z"></path></marker><marker orient="auto" markerheight="11" markerwidth="11" markerunits="userSpaceOnUse" refy="5" refx="11" viewbox="0 0 10 10" class="marker flowchart-v2" id="mermaid-1767905586126_flowchart-v2-circleEnd"><circle style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" r="5" cy="5" cx="5"></circle></marker><marker orient="auto" markerheight="11" markerwidth="11" markerunits="userSpaceOnUse" refy="5" refx="-1" viewbox="0 0 10 10" class="marker flowchart-v2" id="mermaid-1767905586126_flowchart-v2-circleStart"><circle style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" r="5" cy="5" cx="5"></circle></marker><marker orient="auto" markerheight="11" markerwidth="11" markerunits="userSpaceOnUse" refy="5.2" refx="12" viewbox="0 0 11 11" class="marker cross flowchart-v2" id="mermaid-1767905586126_flowchart-v2-crossEnd"><path style="stroke-width: 2; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 1,1 l 9,9 M 10,1 l -9,9"></path></marker><marker orient="auto" markerheight="11" markerwidth="11" markerunits="userSpaceOnUse" refy="5.2" refx="-1" viewbox="0 0 11 11" class="marker cross flowchart-v2" id="mermaid-1767905586126_flowchart-v2-crossStart"><path style="stroke-width: 2; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 1,1 l 9,9 M 10,1 l -9,9"></path></marker><g class="root"><g class="clusters"></g><g class="edgePaths"><path style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_a_yaml_0" d="M261.398,42.671L231.965,50.06C202.531,57.448,143.664,72.224,114.23,83.779C84.797,95.333,84.797,103.667,84.797,107.833L84.797,112"></path><path style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_a_md_0" d="M291.961,62L291.961,66.167C291.961,70.333,291.961,78.667,291.961,87C291.961,95.333,291.961,103.667,291.961,107.833L291.961,112"></path><path style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_a_knitr_0" d="M322.523,43.275L349.44,50.562C376.357,57.85,430.19,72.425,457.107,83.879C484.023,95.333,484.023,103.667,484.023,107.833L484.023,112"></path></g><g class="edgeLabels"><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignobject height="0" width="0">
 <div class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" data-xmlns="http://www.w3.org/1999/xhtml">
 <span class="edgeLabel"></span>
 </div>
@@ -344,15 +364,15 @@ add something about quarto what is it and how is it different
 <div class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" data-xmlns="http://www.w3.org/1999/xhtml">
 <span class="edgeLabel"></span>
 </div>
-</foreignobject></g></g></g><g class="nodes"><g transform="translate(294.8828125, 35)" id="flowchart-a-0" class="node default"><rect height="54" width="101.015625" y="-27" x="-50.5078125" ry="5" rx="5" style="" class="basic label-container"></rect><g transform="translate(-35.5078125, -12)" style="" class="label"><rect></rect><foreignobject height="24" width="71.015625">
+</foreignobject></g></g></g><g class="nodes"><g transform="translate(291.9609375, 35)" id="flowchart-a-0" class="node default"><rect height="54" width="61.125" y="-27" x="-30.5625" ry="5" rx="5" style="" class="basic label-container"></rect><g transform="translate(-15.5625, -12)" style="" class="label"><rect></rect><foreignobject height="24" width="31.125">
 <div style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" data-xmlns="http://www.w3.org/1999/xhtml">
 <span class="nodeLabel">
 <p>
-qmd/Rmd
+qmd
 </p>
 </span>
 </div>
-</foreignobject></g></g><g transform="translate(85.8359375, 139)" id="flowchart-yaml-1" class="node default"><rect height="54" width="155.671875" y="-27" x="-77.8359375" ry="5" rx="5" style="" class="basic label-container"></rect><g transform="translate(-62.8359375, -12)" style="" class="label"><rect></rect><foreignobject height="24" width="125.671875">
+</foreignobject></g></g><g transform="translate(84.796875, 139)" id="flowchart-yaml-1" class="node default"><rect height="54" width="153.59375" y="-27" x="-76.796875" ry="5" rx="5" style="" class="basic label-container"></rect><g transform="translate(-61.796875, -12)" style="" class="label"><rect></rect><foreignobject height="24" width="123.59375">
 <div style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" data-xmlns="http://www.w3.org/1999/xhtml">
 <span class="nodeLabel">
 <p>
@@ -360,7 +380,7 @@ YAML frontmatter
 </p>
 </span>
 </div>
-</foreignobject></g></g><g transform="translate(294.8828125, 139)" id="flowchart-md-2" class="node default"><rect height="54" width="162.421875" y="-27" x="-81.2109375" ry="5" rx="5" style="" class="basic label-container"></rect><g transform="translate(-66.2109375, -12)" style="" class="label"><rect></rect><foreignobject height="24" width="132.421875">
+</foreignobject></g></g><g transform="translate(291.9609375, 139)" id="flowchart-md-2" class="node default"><rect height="54" width="160.734375" y="-27" x="-80.3671875" ry="5" rx="5" style="" class="basic label-container"></rect><g transform="translate(-65.3671875, -12)" style="" class="label"><rect></rect><foreignobject height="24" width="130.734375">
 <div style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" data-xmlns="http://www.w3.org/1999/xhtml">
 <span class="nodeLabel">
 <p>
@@ -368,7 +388,7 @@ Markdown content
 </p>
 </span>
 </div>
-</foreignobject></g></g><g transform="translate(485.75, 139)" id="flowchart-knitr-3" class="node default"><rect height="54" width="119.3125" y="-27" x="-59.65625" ry="5" rx="5" style="" class="basic label-container"></rect><g transform="translate(-44.65625, -12)" style="" class="label"><rect></rect><foreignobject height="24" width="89.3125">
+</foreignobject></g></g><g transform="translate(484.0234375, 139)" id="flowchart-knitr-3" class="node default"><rect height="54" width="123.390625" y="-27" x="-61.6953125" ry="5" rx="5" style="" class="basic label-container"></rect><g transform="translate(-46.6953125, -12)" style="" class="label"><rect></rect><foreignobject height="24" width="93.390625">
 <div style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" data-xmlns="http://www.w3.org/1999/xhtml">
 <span class="nodeLabel">
 <p>
@@ -384,12 +404,12 @@ Code chunks
 </div>
 </div>
 </section>
-<section id="rmdqmd-document" class="slide level2">
-<h2>Rmd/qmd document</h2>
+<section id="qmd-document" class="slide level2">
+<h2>qmd document</h2>
 
 <img data-src="assets/img_l2/3components.png" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section id="rmdqmd-document-1" class="slide level2">
-<h2>Rmd/qmd document</h2>
+<section id="qmd-document-1" class="slide level2">
+<h2>qmd document</h2>
 
 <img data-src="assets/img_l2/3componentson.png" class="quarto-figure quarto-figure-center r-stretch"></section></section>
 <section>
@@ -400,9 +420,9 @@ Code chunks
 <div>
 <p></p><figure class=""><p></p>
 <div>
-<svg aria-roledescription="flowchart-v2" role="graphics-document document" viewbox="0 0 553.40625 174" style="; display: block; margin: auto auto auto auto" class="flowchart" xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="960" id="mermaid-figure-4" height="480">
+<svg aria-roledescription="flowchart-v2" role="graphics-document document" viewbox="0 0 553.71875 174" style="; display: block; margin: auto auto auto auto" class="flowchart" xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="960" id="mermaid-figure-4" height="480">
 <style>#mermaid-figure-4{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;fill:#000000;}@keyframes edge-animation-frame{from{stroke-dashoffset:0;}}@keyframes dash{to{stroke-dashoffset:0;}}#mermaid-figure-4 .edge-animation-slow{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 50s linear infinite;stroke-linecap:round;}#mermaid-figure-4 .edge-animation-fast{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 20s linear infinite;stroke-linecap:round;}#mermaid-figure-4 .error-icon{fill:#552222;}#mermaid-figure-4 .error-text{fill:#552222;stroke:#552222;}#mermaid-figure-4 .edge-thickness-normal{stroke-width:1px;}#mermaid-figure-4 .edge-thickness-thick{stroke-width:3.5px;}#mermaid-figure-4 .edge-pattern-solid{stroke-dasharray:0;}#mermaid-figure-4 .edge-thickness-invisible{stroke-width:0;fill:none;}#mermaid-figure-4 .edge-pattern-dashed{stroke-dasharray:3;}#mermaid-figure-4 .edge-pattern-dotted{stroke-dasharray:2;}#mermaid-figure-4 .marker{fill:#000000;stroke:#000000;}#mermaid-figure-4 .marker.cross{stroke:#000000;}#mermaid-figure-4 svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;}#mermaid-figure-4 p{margin:0;}#mermaid-figure-4 .label{font-family:"trebuchet ms",verdana,arial,sans-serif;color:#000000;}#mermaid-figure-4 .cluster-label text{fill:#333;}#mermaid-figure-4 .cluster-label span{color:#333;}#mermaid-figure-4 .cluster-label span p{background-color:transparent;}#mermaid-figure-4 .label text,#mermaid-figure-4 span{fill:#000000;color:#000000;}#mermaid-figure-4 .node rect,#mermaid-figure-4 .node circle,#mermaid-figure-4 .node ellipse,#mermaid-figure-4 .node polygon,#mermaid-figure-4 .node path{fill:#cde498;stroke:#13540c;stroke-width:1px;}#mermaid-figure-4 .rough-node .label text,#mermaid-figure-4 .node .label text,#mermaid-figure-4 .image-shape .label,#mermaid-figure-4 .icon-shape .label{text-anchor:middle;}#mermaid-figure-4 .node .katex path{fill:#000;stroke:#000;stroke-width:1px;}#mermaid-figure-4 .rough-node .label,#mermaid-figure-4 .node .label,#mermaid-figure-4 .image-shape .label,#mermaid-figure-4 .icon-shape .label{text-align:center;}#mermaid-figure-4 .node.clickable{cursor:pointer;}#mermaid-figure-4 .root .anchor path{fill:#000000!important;stroke-width:0;stroke:#000000;}#mermaid-figure-4 .arrowheadPath{fill:green;}#mermaid-figure-4 .edgePath .path{stroke:#000000;stroke-width:2.0px;}#mermaid-figure-4 .flowchart-link{stroke:#000000;fill:none;}#mermaid-figure-4 .edgeLabel{background-color:#e8e8e8;text-align:center;}#mermaid-figure-4 .edgeLabel p{background-color:#e8e8e8;}#mermaid-figure-4 .edgeLabel rect{opacity:0.5;background-color:#e8e8e8;fill:#e8e8e8;}#mermaid-figure-4 .labelBkg{background-color:rgba(232, 232, 232, 0.5);}#mermaid-figure-4 .cluster rect{fill:#cdffb2;stroke:#6eaa49;stroke-width:1px;}#mermaid-figure-4 .cluster text{fill:#333;}#mermaid-figure-4 .cluster span{color:#333;}#mermaid-figure-4 div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:12px;background:hsl(78.1578947368, 58.4615384615%, 84.5098039216%);border:1px solid #6eaa49;border-radius:2px;pointer-events:none;z-index:100;}#mermaid-figure-4 .flowchartTitleText{text-anchor:middle;font-size:18px;fill:#000000;}#mermaid-figure-4 rect.text{fill:none;stroke-width:0;}#mermaid-figure-4 .icon-shape,#mermaid-figure-4 .image-shape{background-color:#e8e8e8;text-align:center;}#mermaid-figure-4 .icon-shape p,#mermaid-figure-4 .image-shape p{background-color:#e8e8e8;padding:2px;}#mermaid-figure-4 .icon-shape rect,#mermaid-figure-4 .image-shape rect{opacity:0.5;background-color:#e8e8e8;fill:#e8e8e8;}#mermaid-figure-4 :root{--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif;}</style>
-<g><marker orient="auto" markerheight="8" markerwidth="8" markerunits="userSpaceOnUse" refy="5" refx="5" viewbox="0 0 10 10" class="marker flowchart-v2" id="mermaid-1767904409076_flowchart-v2-pointEnd"><path style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 0 0 L 10 5 L 0 10 z"></path></marker><marker orient="auto" markerheight="8" markerwidth="8" markerunits="userSpaceOnUse" refy="5" refx="4.5" viewbox="0 0 10 10" class="marker flowchart-v2" id="mermaid-1767904409076_flowchart-v2-pointStart"><path style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 0 5 L 10 10 L 10 0 z"></path></marker><marker orient="auto" markerheight="11" markerwidth="11" markerunits="userSpaceOnUse" refy="5" refx="11" viewbox="0 0 10 10" class="marker flowchart-v2" id="mermaid-1767904409076_flowchart-v2-circleEnd"><circle style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" r="5" cy="5" cx="5"></circle></marker><marker orient="auto" markerheight="11" markerwidth="11" markerunits="userSpaceOnUse" refy="5" refx="-1" viewbox="0 0 10 10" class="marker flowchart-v2" id="mermaid-1767904409076_flowchart-v2-circleStart"><circle style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" r="5" cy="5" cx="5"></circle></marker><marker orient="auto" markerheight="11" markerwidth="11" markerunits="userSpaceOnUse" refy="5.2" refx="12" viewbox="0 0 11 11" class="marker cross flowchart-v2" id="mermaid-1767904409076_flowchart-v2-crossEnd"><path style="stroke-width: 2; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 1,1 l 9,9 M 10,1 l -9,9"></path></marker><marker orient="auto" markerheight="11" markerwidth="11" markerunits="userSpaceOnUse" refy="5.2" refx="-1" viewbox="0 0 11 11" class="marker cross flowchart-v2" id="mermaid-1767904409076_flowchart-v2-crossStart"><path style="stroke-width: 2; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 1,1 l 9,9 M 10,1 l -9,9"></path></marker><g class="root"><g class="clusters"></g><g class="edgePaths"><path style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_a_yaml_0" d="M244.375,47.564L217.952,54.136C191.529,60.709,138.682,73.855,112.259,84.594C85.836,95.333,85.836,103.667,85.836,107.833L85.836,112"></path><path style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_a_md_0" d="M294.883,62L294.883,66.167C294.883,70.333,294.883,78.667,294.883,87C294.883,95.333,294.883,103.667,294.883,107.833L294.883,112"></path><path style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_a_knitr_0" d="M345.391,48.76L368.784,55.134C392.177,61.507,438.964,74.253,462.357,84.793C485.75,95.333,485.75,103.667,485.75,107.833L485.75,112"></path></g><g class="edgeLabels"><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignobject height="0" width="0">
+<g><marker orient="auto" markerheight="8" markerwidth="8" markerunits="userSpaceOnUse" refy="5" refx="5" viewbox="0 0 10 10" class="marker flowchart-v2" id="mermaid-1767905586954_flowchart-v2-pointEnd"><path style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 0 0 L 10 5 L 0 10 z"></path></marker><marker orient="auto" markerheight="8" markerwidth="8" markerunits="userSpaceOnUse" refy="5" refx="4.5" viewbox="0 0 10 10" class="marker flowchart-v2" id="mermaid-1767905586954_flowchart-v2-pointStart"><path style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 0 5 L 10 10 L 10 0 z"></path></marker><marker orient="auto" markerheight="11" markerwidth="11" markerunits="userSpaceOnUse" refy="5" refx="11" viewbox="0 0 10 10" class="marker flowchart-v2" id="mermaid-1767905586954_flowchart-v2-circleEnd"><circle style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" r="5" cy="5" cx="5"></circle></marker><marker orient="auto" markerheight="11" markerwidth="11" markerunits="userSpaceOnUse" refy="5" refx="-1" viewbox="0 0 10 10" class="marker flowchart-v2" id="mermaid-1767905586954_flowchart-v2-circleStart"><circle style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" r="5" cy="5" cx="5"></circle></marker><marker orient="auto" markerheight="11" markerwidth="11" markerunits="userSpaceOnUse" refy="5.2" refx="12" viewbox="0 0 11 11" class="marker cross flowchart-v2" id="mermaid-1767905586954_flowchart-v2-crossEnd"><path style="stroke-width: 2; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 1,1 l 9,9 M 10,1 l -9,9"></path></marker><marker orient="auto" markerheight="11" markerwidth="11" markerunits="userSpaceOnUse" refy="5.2" refx="-1" viewbox="0 0 11 11" class="marker cross flowchart-v2" id="mermaid-1767905586954_flowchart-v2-crossStart"><path style="stroke-width: 2; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 1,1 l 9,9 M 10,1 l -9,9"></path></marker><g class="root"><g class="clusters"></g><g class="edgePaths"><path style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_a_yaml_0" d="M261.398,42.671L231.965,50.06C202.531,57.448,143.664,72.224,114.23,83.779C84.797,95.333,84.797,103.667,84.797,107.833L84.797,112"></path><path style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_a_md_0" d="M291.961,62L291.961,66.167C291.961,70.333,291.961,78.667,291.961,87C291.961,95.333,291.961,103.667,291.961,107.833L291.961,112"></path><path style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_a_knitr_0" d="M322.523,43.275L349.44,50.562C376.357,57.85,430.19,72.425,457.107,83.879C484.023,95.333,484.023,103.667,484.023,107.833L484.023,112"></path></g><g class="edgeLabels"><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignobject height="0" width="0">
 <div class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" data-xmlns="http://www.w3.org/1999/xhtml">
 <span class="edgeLabel"></span>
 </div>
@@ -414,15 +434,15 @@ Code chunks
 <div class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" data-xmlns="http://www.w3.org/1999/xhtml">
 <span class="edgeLabel"></span>
 </div>
-</foreignobject></g></g></g><g class="nodes"><g transform="translate(294.8828125, 35)" id="flowchart-a-0" class="node default"><rect height="54" width="101.015625" y="-27" x="-50.5078125" ry="5" rx="5" style="" class="basic label-container"></rect><g transform="translate(-35.5078125, -12)" style="" class="label"><rect></rect><foreignobject height="24" width="71.015625">
+</foreignobject></g></g></g><g class="nodes"><g transform="translate(291.9609375, 35)" id="flowchart-a-0" class="node default"><rect height="54" width="61.125" y="-27" x="-30.5625" ry="5" rx="5" style="" class="basic label-container"></rect><g transform="translate(-15.5625, -12)" style="" class="label"><rect></rect><foreignobject height="24" width="31.125">
 <div style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" data-xmlns="http://www.w3.org/1999/xhtml">
 <span class="nodeLabel">
 <p>
-qmd/Rmd
+qmd
 </p>
 </span>
 </div>
-</foreignobject></g></g><g transform="translate(85.8359375, 139)" id="flowchart-yaml-1" class="node default"><rect height="54" width="155.671875" y="-27" x="-77.8359375" ry="5" rx="5" style="" class="basic label-container"></rect><g transform="translate(-62.8359375, -12)" style="" class="label"><rect></rect><foreignobject height="24" width="125.671875">
+</foreignobject></g></g><g transform="translate(84.796875, 139)" id="flowchart-yaml-1" class="node default"><rect height="54" width="153.59375" y="-27" x="-76.796875" ry="5" rx="5" style="" class="basic label-container"></rect><g transform="translate(-61.796875, -12)" style="" class="label"><rect></rect><foreignobject height="24" width="123.59375">
 <div style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" data-xmlns="http://www.w3.org/1999/xhtml">
 <span class="nodeLabel">
 <p>
@@ -430,7 +450,7 @@ YAML frontmatter
 </p>
 </span>
 </div>
-</foreignobject></g></g><g transform="translate(294.8828125, 139)" id="flowchart-md-2" class="node default"><rect height="54" width="162.421875" y="-27" x="-81.2109375" ry="5" rx="5" style="fill:#f9f !important;stroke:#333 !important;stroke-width:4px !important" class="basic label-container"></rect><g transform="translate(-66.2109375, -12)" style="" class="label"><rect></rect><foreignobject height="24" width="132.421875">
+</foreignobject></g></g><g transform="translate(291.9609375, 139)" id="flowchart-md-2" class="node default"><rect height="54" width="160.734375" y="-27" x="-80.3671875" ry="5" rx="5" style="fill:#f9f !important;stroke:#333 !important;stroke-width:4px !important" class="basic label-container"></rect><g transform="translate(-65.3671875, -12)" style="" class="label"><rect></rect><foreignobject height="24" width="130.734375">
 <div style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" data-xmlns="http://www.w3.org/1999/xhtml">
 <span class="nodeLabel">
 <p>
@@ -438,7 +458,7 @@ Markdown content
 </p>
 </span>
 </div>
-</foreignobject></g></g><g transform="translate(485.75, 139)" id="flowchart-knitr-3" class="node default"><rect height="54" width="119.3125" y="-27" x="-59.65625" ry="5" rx="5" style="" class="basic label-container"></rect><g transform="translate(-44.65625, -12)" style="" class="label"><rect></rect><foreignobject height="24" width="89.3125">
+</foreignobject></g></g><g transform="translate(484.0234375, 139)" id="flowchart-knitr-3" class="node default"><rect height="54" width="123.390625" y="-27" x="-61.6953125" ry="5" rx="5" style="" class="basic label-container"></rect><g transform="translate(-46.6953125, -12)" style="" class="label"><rect></rect><foreignobject height="24" width="93.390625">
 <div style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" data-xmlns="http://www.w3.org/1999/xhtml">
 <span class="nodeLabel">
 <p>
@@ -556,8 +576,8 @@ Code chunks
 <li><p>Wait for next section to learn how to generate tables from <code>R</code></p></li>
 </ul>
 </section>
-<section id="r-markdown-reference-guide" class="slide level2">
-<h2>R Markdown Reference Guide</h2>
+<section id="quarto-reference-guide" class="slide level2">
+<h2>Quarto Reference Guide</h2>
 <p><a href="https://rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf" class="uri">https://rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf</a></p>
 
 <img data-src="assets/img_l2/refguide.png" class="quarto-figure quarto-figure-center r-stretch"></section></section>
@@ -569,9 +589,9 @@ Code chunks
 <div>
 <p></p><figure class=""><p></p>
 <div>
-<svg aria-roledescription="flowchart-v2" role="graphics-document document" viewbox="0 0 553.40625 174" style="; display: block; margin: auto auto auto auto" class="flowchart" xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="960" id="mermaid-figure-3" height="480">
+<svg aria-roledescription="flowchart-v2" role="graphics-document document" viewbox="0 0 553.71875 174" style="; display: block; margin: auto auto auto auto" class="flowchart" xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="960" id="mermaid-figure-3" height="480">
 <style>#mermaid-figure-3{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;fill:#000000;}@keyframes edge-animation-frame{from{stroke-dashoffset:0;}}@keyframes dash{to{stroke-dashoffset:0;}}#mermaid-figure-3 .edge-animation-slow{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 50s linear infinite;stroke-linecap:round;}#mermaid-figure-3 .edge-animation-fast{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 20s linear infinite;stroke-linecap:round;}#mermaid-figure-3 .error-icon{fill:#552222;}#mermaid-figure-3 .error-text{fill:#552222;stroke:#552222;}#mermaid-figure-3 .edge-thickness-normal{stroke-width:1px;}#mermaid-figure-3 .edge-thickness-thick{stroke-width:3.5px;}#mermaid-figure-3 .edge-pattern-solid{stroke-dasharray:0;}#mermaid-figure-3 .edge-thickness-invisible{stroke-width:0;fill:none;}#mermaid-figure-3 .edge-pattern-dashed{stroke-dasharray:3;}#mermaid-figure-3 .edge-pattern-dotted{stroke-dasharray:2;}#mermaid-figure-3 .marker{fill:#000000;stroke:#000000;}#mermaid-figure-3 .marker.cross{stroke:#000000;}#mermaid-figure-3 svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;}#mermaid-figure-3 p{margin:0;}#mermaid-figure-3 .label{font-family:"trebuchet ms",verdana,arial,sans-serif;color:#000000;}#mermaid-figure-3 .cluster-label text{fill:#333;}#mermaid-figure-3 .cluster-label span{color:#333;}#mermaid-figure-3 .cluster-label span p{background-color:transparent;}#mermaid-figure-3 .label text,#mermaid-figure-3 span{fill:#000000;color:#000000;}#mermaid-figure-3 .node rect,#mermaid-figure-3 .node circle,#mermaid-figure-3 .node ellipse,#mermaid-figure-3 .node polygon,#mermaid-figure-3 .node path{fill:#cde498;stroke:#13540c;stroke-width:1px;}#mermaid-figure-3 .rough-node .label text,#mermaid-figure-3 .node .label text,#mermaid-figure-3 .image-shape .label,#mermaid-figure-3 .icon-shape .label{text-anchor:middle;}#mermaid-figure-3 .node .katex path{fill:#000;stroke:#000;stroke-width:1px;}#mermaid-figure-3 .rough-node .label,#mermaid-figure-3 .node .label,#mermaid-figure-3 .image-shape .label,#mermaid-figure-3 .icon-shape .label{text-align:center;}#mermaid-figure-3 .node.clickable{cursor:pointer;}#mermaid-figure-3 .root .anchor path{fill:#000000!important;stroke-width:0;stroke:#000000;}#mermaid-figure-3 .arrowheadPath{fill:green;}#mermaid-figure-3 .edgePath .path{stroke:#000000;stroke-width:2.0px;}#mermaid-figure-3 .flowchart-link{stroke:#000000;fill:none;}#mermaid-figure-3 .edgeLabel{background-color:#e8e8e8;text-align:center;}#mermaid-figure-3 .edgeLabel p{background-color:#e8e8e8;}#mermaid-figure-3 .edgeLabel rect{opacity:0.5;background-color:#e8e8e8;fill:#e8e8e8;}#mermaid-figure-3 .labelBkg{background-color:rgba(232, 232, 232, 0.5);}#mermaid-figure-3 .cluster rect{fill:#cdffb2;stroke:#6eaa49;stroke-width:1px;}#mermaid-figure-3 .cluster text{fill:#333;}#mermaid-figure-3 .cluster span{color:#333;}#mermaid-figure-3 div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:12px;background:hsl(78.1578947368, 58.4615384615%, 84.5098039216%);border:1px solid #6eaa49;border-radius:2px;pointer-events:none;z-index:100;}#mermaid-figure-3 .flowchartTitleText{text-anchor:middle;font-size:18px;fill:#000000;}#mermaid-figure-3 rect.text{fill:none;stroke-width:0;}#mermaid-figure-3 .icon-shape,#mermaid-figure-3 .image-shape{background-color:#e8e8e8;text-align:center;}#mermaid-figure-3 .icon-shape p,#mermaid-figure-3 .image-shape p{background-color:#e8e8e8;padding:2px;}#mermaid-figure-3 .icon-shape rect,#mermaid-figure-3 .image-shape rect{opacity:0.5;background-color:#e8e8e8;fill:#e8e8e8;}#mermaid-figure-3 :root{--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif;}</style>
-<g><marker orient="auto" markerheight="8" markerwidth="8" markerunits="userSpaceOnUse" refy="5" refx="5" viewbox="0 0 10 10" class="marker flowchart-v2" id="mermaid-1767904408797_flowchart-v2-pointEnd"><path style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 0 0 L 10 5 L 0 10 z"></path></marker><marker orient="auto" markerheight="8" markerwidth="8" markerunits="userSpaceOnUse" refy="5" refx="4.5" viewbox="0 0 10 10" class="marker flowchart-v2" id="mermaid-1767904408797_flowchart-v2-pointStart"><path style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 0 5 L 10 10 L 10 0 z"></path></marker><marker orient="auto" markerheight="11" markerwidth="11" markerunits="userSpaceOnUse" refy="5" refx="11" viewbox="0 0 10 10" class="marker flowchart-v2" id="mermaid-1767904408797_flowchart-v2-circleEnd"><circle style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" r="5" cy="5" cx="5"></circle></marker><marker orient="auto" markerheight="11" markerwidth="11" markerunits="userSpaceOnUse" refy="5" refx="-1" viewbox="0 0 10 10" class="marker flowchart-v2" id="mermaid-1767904408797_flowchart-v2-circleStart"><circle style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" r="5" cy="5" cx="5"></circle></marker><marker orient="auto" markerheight="11" markerwidth="11" markerunits="userSpaceOnUse" refy="5.2" refx="12" viewbox="0 0 11 11" class="marker cross flowchart-v2" id="mermaid-1767904408797_flowchart-v2-crossEnd"><path style="stroke-width: 2; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 1,1 l 9,9 M 10,1 l -9,9"></path></marker><marker orient="auto" markerheight="11" markerwidth="11" markerunits="userSpaceOnUse" refy="5.2" refx="-1" viewbox="0 0 11 11" class="marker cross flowchart-v2" id="mermaid-1767904408797_flowchart-v2-crossStart"><path style="stroke-width: 2; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 1,1 l 9,9 M 10,1 l -9,9"></path></marker><g class="root"><g class="clusters"></g><g class="edgePaths"><path style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_a_yaml_0" d="M244.375,47.564L217.952,54.136C191.529,60.709,138.682,73.855,112.259,84.594C85.836,95.333,85.836,103.667,85.836,107.833L85.836,112"></path><path style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_a_md_0" d="M294.883,62L294.883,66.167C294.883,70.333,294.883,78.667,294.883,87C294.883,95.333,294.883,103.667,294.883,107.833L294.883,112"></path><path style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_a_knitr_0" d="M345.391,48.76L368.784,55.134C392.177,61.507,438.964,74.253,462.357,84.793C485.75,95.333,485.75,103.667,485.75,107.833L485.75,112"></path></g><g class="edgeLabels"><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignobject height="0" width="0">
+<g><marker orient="auto" markerheight="8" markerwidth="8" markerunits="userSpaceOnUse" refy="5" refx="5" viewbox="0 0 10 10" class="marker flowchart-v2" id="mermaid-1767905586704_flowchart-v2-pointEnd"><path style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 0 0 L 10 5 L 0 10 z"></path></marker><marker orient="auto" markerheight="8" markerwidth="8" markerunits="userSpaceOnUse" refy="5" refx="4.5" viewbox="0 0 10 10" class="marker flowchart-v2" id="mermaid-1767905586704_flowchart-v2-pointStart"><path style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 0 5 L 10 10 L 10 0 z"></path></marker><marker orient="auto" markerheight="11" markerwidth="11" markerunits="userSpaceOnUse" refy="5" refx="11" viewbox="0 0 10 10" class="marker flowchart-v2" id="mermaid-1767905586704_flowchart-v2-circleEnd"><circle style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" r="5" cy="5" cx="5"></circle></marker><marker orient="auto" markerheight="11" markerwidth="11" markerunits="userSpaceOnUse" refy="5" refx="-1" viewbox="0 0 10 10" class="marker flowchart-v2" id="mermaid-1767905586704_flowchart-v2-circleStart"><circle style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" r="5" cy="5" cx="5"></circle></marker><marker orient="auto" markerheight="11" markerwidth="11" markerunits="userSpaceOnUse" refy="5.2" refx="12" viewbox="0 0 11 11" class="marker cross flowchart-v2" id="mermaid-1767905586704_flowchart-v2-crossEnd"><path style="stroke-width: 2; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 1,1 l 9,9 M 10,1 l -9,9"></path></marker><marker orient="auto" markerheight="11" markerwidth="11" markerunits="userSpaceOnUse" refy="5.2" refx="-1" viewbox="0 0 11 11" class="marker cross flowchart-v2" id="mermaid-1767905586704_flowchart-v2-crossStart"><path style="stroke-width: 2; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 1,1 l 9,9 M 10,1 l -9,9"></path></marker><g class="root"><g class="clusters"></g><g class="edgePaths"><path style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_a_yaml_0" d="M261.398,42.671L231.965,50.06C202.531,57.448,143.664,72.224,114.23,83.779C84.797,95.333,84.797,103.667,84.797,107.833L84.797,112"></path><path style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_a_md_0" d="M291.961,62L291.961,66.167C291.961,70.333,291.961,78.667,291.961,87C291.961,95.333,291.961,103.667,291.961,107.833L291.961,112"></path><path style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_a_knitr_0" d="M322.523,43.275L349.44,50.562C376.357,57.85,430.19,72.425,457.107,83.879C484.023,95.333,484.023,103.667,484.023,107.833L484.023,112"></path></g><g class="edgeLabels"><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignobject height="0" width="0">
 <div class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" data-xmlns="http://www.w3.org/1999/xhtml">
 <span class="edgeLabel"></span>
 </div>
@@ -583,15 +603,15 @@ Code chunks
 <div class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" data-xmlns="http://www.w3.org/1999/xhtml">
 <span class="edgeLabel"></span>
 </div>
-</foreignobject></g></g></g><g class="nodes"><g transform="translate(294.8828125, 35)" id="flowchart-a-0" class="node default"><rect height="54" width="101.015625" y="-27" x="-50.5078125" ry="5" rx="5" style="" class="basic label-container"></rect><g transform="translate(-35.5078125, -12)" style="" class="label"><rect></rect><foreignobject height="24" width="71.015625">
+</foreignobject></g></g></g><g class="nodes"><g transform="translate(291.9609375, 35)" id="flowchart-a-0" class="node default"><rect height="54" width="61.125" y="-27" x="-30.5625" ry="5" rx="5" style="" class="basic label-container"></rect><g transform="translate(-15.5625, -12)" style="" class="label"><rect></rect><foreignobject height="24" width="31.125">
 <div style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" data-xmlns="http://www.w3.org/1999/xhtml">
 <span class="nodeLabel">
 <p>
-qmd/Rmd
+qmd
 </p>
 </span>
 </div>
-</foreignobject></g></g><g transform="translate(85.8359375, 139)" id="flowchart-yaml-1" class="node default"><rect height="54" width="155.671875" y="-27" x="-77.8359375" ry="5" rx="5" style="" class="basic label-container"></rect><g transform="translate(-62.8359375, -12)" style="" class="label"><rect></rect><foreignobject height="24" width="125.671875">
+</foreignobject></g></g><g transform="translate(84.796875, 139)" id="flowchart-yaml-1" class="node default"><rect height="54" width="153.59375" y="-27" x="-76.796875" ry="5" rx="5" style="" class="basic label-container"></rect><g transform="translate(-61.796875, -12)" style="" class="label"><rect></rect><foreignobject height="24" width="123.59375">
 <div style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" data-xmlns="http://www.w3.org/1999/xhtml">
 <span class="nodeLabel">
 <p>
@@ -599,7 +619,7 @@ YAML frontmatter
 </p>
 </span>
 </div>
-</foreignobject></g></g><g transform="translate(294.8828125, 139)" id="flowchart-md-2" class="node default"><rect height="54" width="162.421875" y="-27" x="-81.2109375" ry="5" rx="5" style="" class="basic label-container"></rect><g transform="translate(-66.2109375, -12)" style="" class="label"><rect></rect><foreignobject height="24" width="132.421875">
+</foreignobject></g></g><g transform="translate(291.9609375, 139)" id="flowchart-md-2" class="node default"><rect height="54" width="160.734375" y="-27" x="-80.3671875" ry="5" rx="5" style="" class="basic label-container"></rect><g transform="translate(-65.3671875, -12)" style="" class="label"><rect></rect><foreignobject height="24" width="130.734375">
 <div style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" data-xmlns="http://www.w3.org/1999/xhtml">
 <span class="nodeLabel">
 <p>
@@ -607,7 +627,7 @@ Markdown content
 </p>
 </span>
 </div>
-</foreignobject></g></g><g transform="translate(485.75, 139)" id="flowchart-knitr-3" class="node default"><rect height="54" width="119.3125" y="-27" x="-59.65625" ry="5" rx="5" style="fill:#f9f !important;stroke:#333 !important;stroke-width:4px !important" class="basic label-container"></rect><g transform="translate(-44.65625, -12)" style="" class="label"><rect></rect><foreignobject height="24" width="89.3125">
+</foreignobject></g></g><g transform="translate(484.0234375, 139)" id="flowchart-knitr-3" class="node default"><rect height="54" width="123.390625" y="-27" x="-61.6953125" ry="5" rx="5" style="fill:#f9f !important;stroke:#333 !important;stroke-width:4px !important" class="basic label-container"></rect><g transform="translate(-46.6953125, -12)" style="" class="label"><rect></rect><foreignobject height="24" width="93.390625">
 <div style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" data-xmlns="http://www.w3.org/1999/xhtml">
 <span class="nodeLabel">
 <p>
@@ -745,7 +765,7 @@ Code chunks
 <li>A number of other packages are available for making pretty tables, by far my favourite is <a href="https://gt.rstudio.com/"><code>gt</code></a> using similar approach to table that <code>ggplot</code> has to figures</li>
 </ul>
 </section>
-<section id="r-markdown-reference-guide-1" class="slide level2">
+<section id="r-markdown-reference-guide" class="slide level2">
 <h2>R Markdown Reference Guide</h2>
 <p><a href="https://rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf" class="uri">https://rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf</a></p>
 
@@ -758,9 +778,9 @@ Code chunks
 <div>
 <p></p><figure class=""><p></p>
 <div>
-<svg aria-roledescription="flowchart-v2" role="graphics-document document" viewbox="0 0 553.40625 174" style="; display: block; margin: auto auto auto auto" class="flowchart" xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="960" id="mermaid-figure-2" height="480">
+<svg aria-roledescription="flowchart-v2" role="graphics-document document" viewbox="0 0 553.71875 174" style="; display: block; margin: auto auto auto auto" class="flowchart" xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="960" id="mermaid-figure-2" height="480">
 <style>#mermaid-figure-2{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;fill:#000000;}@keyframes edge-animation-frame{from{stroke-dashoffset:0;}}@keyframes dash{to{stroke-dashoffset:0;}}#mermaid-figure-2 .edge-animation-slow{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 50s linear infinite;stroke-linecap:round;}#mermaid-figure-2 .edge-animation-fast{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 20s linear infinite;stroke-linecap:round;}#mermaid-figure-2 .error-icon{fill:#552222;}#mermaid-figure-2 .error-text{fill:#552222;stroke:#552222;}#mermaid-figure-2 .edge-thickness-normal{stroke-width:1px;}#mermaid-figure-2 .edge-thickness-thick{stroke-width:3.5px;}#mermaid-figure-2 .edge-pattern-solid{stroke-dasharray:0;}#mermaid-figure-2 .edge-thickness-invisible{stroke-width:0;fill:none;}#mermaid-figure-2 .edge-pattern-dashed{stroke-dasharray:3;}#mermaid-figure-2 .edge-pattern-dotted{stroke-dasharray:2;}#mermaid-figure-2 .marker{fill:#000000;stroke:#000000;}#mermaid-figure-2 .marker.cross{stroke:#000000;}#mermaid-figure-2 svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;}#mermaid-figure-2 p{margin:0;}#mermaid-figure-2 .label{font-family:"trebuchet ms",verdana,arial,sans-serif;color:#000000;}#mermaid-figure-2 .cluster-label text{fill:#333;}#mermaid-figure-2 .cluster-label span{color:#333;}#mermaid-figure-2 .cluster-label span p{background-color:transparent;}#mermaid-figure-2 .label text,#mermaid-figure-2 span{fill:#000000;color:#000000;}#mermaid-figure-2 .node rect,#mermaid-figure-2 .node circle,#mermaid-figure-2 .node ellipse,#mermaid-figure-2 .node polygon,#mermaid-figure-2 .node path{fill:#cde498;stroke:#13540c;stroke-width:1px;}#mermaid-figure-2 .rough-node .label text,#mermaid-figure-2 .node .label text,#mermaid-figure-2 .image-shape .label,#mermaid-figure-2 .icon-shape .label{text-anchor:middle;}#mermaid-figure-2 .node .katex path{fill:#000;stroke:#000;stroke-width:1px;}#mermaid-figure-2 .rough-node .label,#mermaid-figure-2 .node .label,#mermaid-figure-2 .image-shape .label,#mermaid-figure-2 .icon-shape .label{text-align:center;}#mermaid-figure-2 .node.clickable{cursor:pointer;}#mermaid-figure-2 .root .anchor path{fill:#000000!important;stroke-width:0;stroke:#000000;}#mermaid-figure-2 .arrowheadPath{fill:green;}#mermaid-figure-2 .edgePath .path{stroke:#000000;stroke-width:2.0px;}#mermaid-figure-2 .flowchart-link{stroke:#000000;fill:none;}#mermaid-figure-2 .edgeLabel{background-color:#e8e8e8;text-align:center;}#mermaid-figure-2 .edgeLabel p{background-color:#e8e8e8;}#mermaid-figure-2 .edgeLabel rect{opacity:0.5;background-color:#e8e8e8;fill:#e8e8e8;}#mermaid-figure-2 .labelBkg{background-color:rgba(232, 232, 232, 0.5);}#mermaid-figure-2 .cluster rect{fill:#cdffb2;stroke:#6eaa49;stroke-width:1px;}#mermaid-figure-2 .cluster text{fill:#333;}#mermaid-figure-2 .cluster span{color:#333;}#mermaid-figure-2 div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:12px;background:hsl(78.1578947368, 58.4615384615%, 84.5098039216%);border:1px solid #6eaa49;border-radius:2px;pointer-events:none;z-index:100;}#mermaid-figure-2 .flowchartTitleText{text-anchor:middle;font-size:18px;fill:#000000;}#mermaid-figure-2 rect.text{fill:none;stroke-width:0;}#mermaid-figure-2 .icon-shape,#mermaid-figure-2 .image-shape{background-color:#e8e8e8;text-align:center;}#mermaid-figure-2 .icon-shape p,#mermaid-figure-2 .image-shape p{background-color:#e8e8e8;padding:2px;}#mermaid-figure-2 .icon-shape rect,#mermaid-figure-2 .image-shape rect{opacity:0.5;background-color:#e8e8e8;fill:#e8e8e8;}#mermaid-figure-2 :root{--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif;}</style>
-<g><marker orient="auto" markerheight="8" markerwidth="8" markerunits="userSpaceOnUse" refy="5" refx="5" viewbox="0 0 10 10" class="marker flowchart-v2" id="mermaid-1767904408516_flowchart-v2-pointEnd"><path style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 0 0 L 10 5 L 0 10 z"></path></marker><marker orient="auto" markerheight="8" markerwidth="8" markerunits="userSpaceOnUse" refy="5" refx="4.5" viewbox="0 0 10 10" class="marker flowchart-v2" id="mermaid-1767904408516_flowchart-v2-pointStart"><path style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 0 5 L 10 10 L 10 0 z"></path></marker><marker orient="auto" markerheight="11" markerwidth="11" markerunits="userSpaceOnUse" refy="5" refx="11" viewbox="0 0 10 10" class="marker flowchart-v2" id="mermaid-1767904408516_flowchart-v2-circleEnd"><circle style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" r="5" cy="5" cx="5"></circle></marker><marker orient="auto" markerheight="11" markerwidth="11" markerunits="userSpaceOnUse" refy="5" refx="-1" viewbox="0 0 10 10" class="marker flowchart-v2" id="mermaid-1767904408516_flowchart-v2-circleStart"><circle style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" r="5" cy="5" cx="5"></circle></marker><marker orient="auto" markerheight="11" markerwidth="11" markerunits="userSpaceOnUse" refy="5.2" refx="12" viewbox="0 0 11 11" class="marker cross flowchart-v2" id="mermaid-1767904408516_flowchart-v2-crossEnd"><path style="stroke-width: 2; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 1,1 l 9,9 M 10,1 l -9,9"></path></marker><marker orient="auto" markerheight="11" markerwidth="11" markerunits="userSpaceOnUse" refy="5.2" refx="-1" viewbox="0 0 11 11" class="marker cross flowchart-v2" id="mermaid-1767904408516_flowchart-v2-crossStart"><path style="stroke-width: 2; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 1,1 l 9,9 M 10,1 l -9,9"></path></marker><g class="root"><g class="clusters"></g><g class="edgePaths"><path style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_a_yaml_0" d="M244.375,47.564L217.952,54.136C191.529,60.709,138.682,73.855,112.259,84.594C85.836,95.333,85.836,103.667,85.836,107.833L85.836,112"></path><path style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_a_md_0" d="M294.883,62L294.883,66.167C294.883,70.333,294.883,78.667,294.883,87C294.883,95.333,294.883,103.667,294.883,107.833L294.883,112"></path><path style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_a_knitr_0" d="M345.391,48.76L368.784,55.134C392.177,61.507,438.964,74.253,462.357,84.793C485.75,95.333,485.75,103.667,485.75,107.833L485.75,112"></path></g><g class="edgeLabels"><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignobject height="0" width="0">
+<g><marker orient="auto" markerheight="8" markerwidth="8" markerunits="userSpaceOnUse" refy="5" refx="5" viewbox="0 0 10 10" class="marker flowchart-v2" id="mermaid-1767905586449_flowchart-v2-pointEnd"><path style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 0 0 L 10 5 L 0 10 z"></path></marker><marker orient="auto" markerheight="8" markerwidth="8" markerunits="userSpaceOnUse" refy="5" refx="4.5" viewbox="0 0 10 10" class="marker flowchart-v2" id="mermaid-1767905586449_flowchart-v2-pointStart"><path style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 0 5 L 10 10 L 10 0 z"></path></marker><marker orient="auto" markerheight="11" markerwidth="11" markerunits="userSpaceOnUse" refy="5" refx="11" viewbox="0 0 10 10" class="marker flowchart-v2" id="mermaid-1767905586449_flowchart-v2-circleEnd"><circle style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" r="5" cy="5" cx="5"></circle></marker><marker orient="auto" markerheight="11" markerwidth="11" markerunits="userSpaceOnUse" refy="5" refx="-1" viewbox="0 0 10 10" class="marker flowchart-v2" id="mermaid-1767905586449_flowchart-v2-circleStart"><circle style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" r="5" cy="5" cx="5"></circle></marker><marker orient="auto" markerheight="11" markerwidth="11" markerunits="userSpaceOnUse" refy="5.2" refx="12" viewbox="0 0 11 11" class="marker cross flowchart-v2" id="mermaid-1767905586449_flowchart-v2-crossEnd"><path style="stroke-width: 2; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 1,1 l 9,9 M 10,1 l -9,9"></path></marker><marker orient="auto" markerheight="11" markerwidth="11" markerunits="userSpaceOnUse" refy="5.2" refx="-1" viewbox="0 0 11 11" class="marker cross flowchart-v2" id="mermaid-1767905586449_flowchart-v2-crossStart"><path style="stroke-width: 2; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 1,1 l 9,9 M 10,1 l -9,9"></path></marker><g class="root"><g class="clusters"></g><g class="edgePaths"><path style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_a_yaml_0" d="M261.398,42.671L231.965,50.06C202.531,57.448,143.664,72.224,114.23,83.779C84.797,95.333,84.797,103.667,84.797,107.833L84.797,112"></path><path style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_a_md_0" d="M291.961,62L291.961,66.167C291.961,70.333,291.961,78.667,291.961,87C291.961,95.333,291.961,103.667,291.961,107.833L291.961,112"></path><path style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_a_knitr_0" d="M322.523,43.275L349.44,50.562C376.357,57.85,430.19,72.425,457.107,83.879C484.023,95.333,484.023,103.667,484.023,107.833L484.023,112"></path></g><g class="edgeLabels"><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignobject height="0" width="0">
 <div class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" data-xmlns="http://www.w3.org/1999/xhtml">
 <span class="edgeLabel"></span>
 </div>
@@ -772,15 +792,15 @@ Code chunks
 <div class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" data-xmlns="http://www.w3.org/1999/xhtml">
 <span class="edgeLabel"></span>
 </div>
-</foreignobject></g></g></g><g class="nodes"><g transform="translate(294.8828125, 35)" id="flowchart-a-0" class="node default"><rect height="54" width="101.015625" y="-27" x="-50.5078125" ry="5" rx="5" style="" class="basic label-container"></rect><g transform="translate(-35.5078125, -12)" style="" class="label"><rect></rect><foreignobject height="24" width="71.015625">
+</foreignobject></g></g></g><g class="nodes"><g transform="translate(291.9609375, 35)" id="flowchart-a-0" class="node default"><rect height="54" width="61.125" y="-27" x="-30.5625" ry="5" rx="5" style="" class="basic label-container"></rect><g transform="translate(-15.5625, -12)" style="" class="label"><rect></rect><foreignobject height="24" width="31.125">
 <div style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" data-xmlns="http://www.w3.org/1999/xhtml">
 <span class="nodeLabel">
 <p>
-qmd/Rmd
+qmd
 </p>
 </span>
 </div>
-</foreignobject></g></g><g transform="translate(85.8359375, 139)" id="flowchart-yaml-1" class="node default"><rect height="54" width="155.671875" y="-27" x="-77.8359375" ry="5" rx="5" style="fill:#f9f !important;stroke:#333 !important;stroke-width:4px !important" class="basic label-container"></rect><g transform="translate(-62.8359375, -12)" style="" class="label"><rect></rect><foreignobject height="24" width="125.671875">
+</foreignobject></g></g><g transform="translate(84.796875, 139)" id="flowchart-yaml-1" class="node default"><rect height="54" width="153.59375" y="-27" x="-76.796875" ry="5" rx="5" style="fill:#f9f !important;stroke:#333 !important;stroke-width:4px !important" class="basic label-container"></rect><g transform="translate(-61.796875, -12)" style="" class="label"><rect></rect><foreignobject height="24" width="123.59375">
 <div style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" data-xmlns="http://www.w3.org/1999/xhtml">
 <span class="nodeLabel">
 <p>
@@ -788,7 +808,7 @@ YAML frontmatter
 </p>
 </span>
 </div>
-</foreignobject></g></g><g transform="translate(294.8828125, 139)" id="flowchart-md-2" class="node default"><rect height="54" width="162.421875" y="-27" x="-81.2109375" ry="5" rx="5" style="" class="basic label-container"></rect><g transform="translate(-66.2109375, -12)" style="" class="label"><rect></rect><foreignobject height="24" width="132.421875">
+</foreignobject></g></g><g transform="translate(291.9609375, 139)" id="flowchart-md-2" class="node default"><rect height="54" width="160.734375" y="-27" x="-80.3671875" ry="5" rx="5" style="" class="basic label-container"></rect><g transform="translate(-65.3671875, -12)" style="" class="label"><rect></rect><foreignobject height="24" width="130.734375">
 <div style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" data-xmlns="http://www.w3.org/1999/xhtml">
 <span class="nodeLabel">
 <p>
@@ -796,7 +816,7 @@ Markdown content
 </p>
 </span>
 </div>
-</foreignobject></g></g><g transform="translate(485.75, 139)" id="flowchart-knitr-3" class="node default"><rect height="54" width="119.3125" y="-27" x="-59.65625" ry="5" rx="5" style="" class="basic label-container"></rect><g transform="translate(-44.65625, -12)" style="" class="label"><rect></rect><foreignobject height="24" width="89.3125">
+</foreignobject></g></g><g transform="translate(484.0234375, 139)" id="flowchart-knitr-3" class="node default"><rect height="54" width="123.390625" y="-27" x="-61.6953125" ry="5" rx="5" style="" class="basic label-container"></rect><g transform="translate(-46.6953125, -12)" style="" class="label"><rect></rect><foreignobject height="24" width="93.390625">
 <div style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" data-xmlns="http://www.w3.org/1999/xhtml">
 <span class="nodeLabel">
 <p>
@@ -883,10 +903,10 @@ Code chunks
 <div class="columns">
 <div class="column">
 <h3 id="this">This…</h3>
-<p>Blah blah <span class="citation" data-cites="Shea2014 Lottridge2012">(<a href="" role="doc-biblioref" onclick="return false;"><strong>Shea2014?</strong></a>, <a href="" role="doc-biblioref" onclick="return false;"><strong>Lottridge2012?</strong></a>)</span>.</p>
+<p>Blah blah [@Shea2014; @xie2015].</p>
 </div><div class="column">
 <h3 id="turns-into-this">turns into this…</h3>
-<p>Blah blah (Shea et al.&nbsp;2014; Lottridge et al.&nbsp;2012).</p>
+<p>Blah blah <span class="citation" data-cites="Shea2014 xie2015">(<a href="#/happy-coding" role="doc-biblioref" onclick="">Shea and Boldt 2014</a>, <a href="#/happy-coding" role="doc-biblioref" onclick="">Xie 2015</a>)</span>.</p>
 </div></div>
 </section>
 <section id="citations-1" class="slide level2">
@@ -897,14 +917,14 @@ Code chunks
 <div class="columns">
 <div class="column">
 <h3 id="this-1">This…</h3>
-<p>Blah blah <span class="citation" data-cites="Shea2014 Lottridge2012">(<a href="" role="doc-biblioref" onclick="return false;"><strong>Shea2014?</strong></a>, <a href="" role="doc-biblioref" onclick="return false;"><strong>Lottridge2012?</strong></a>)</span>.</p>
-<p><span class="citation" data-cites="Shea2014">(<a href="" role="doc-biblioref" onclick="return false;"><strong>Shea2014?</strong></a>)</span> says blah.</p>
-<p>Blah blah <span class="citation" data-cites="Shea2014 Wu2016">(see <a href="" role="doc-biblioref" onclick="return false;"><strong>Shea2014?</strong></a>, also <a href="" role="doc-biblioref" onclick="return false;"><strong>Wu2016?</strong></a>, ch.&nbsp;1)</span>.</p>
+<p>Blah blah @Shea2014; @xie2015.</p>
+<p>@Shea2014 says blah.</p>
+<p>Blah blah [see @Shea2014, pp.&nbsp;33-35; also @xie2015, ch.&nbsp;1].</p>
 </div><div class="column">
 <h3 id="turns-into-this-1">turns into this…</h3>
-<p>Blah blah (Shea et al.&nbsp;2014; Lottridge et al.&nbsp;2012).</p>
-<p>Shea et al.&nbsp;(2014) says blah.</p>
-<p>Blah blah (see Shea et al.&nbsp;2014, 33–35; also Wu 2016, ch.&nbsp;1).</p>
+<p>Blah blah <span class="citation" data-cites="Shea2014 xie2015">(<a href="#/happy-coding" role="doc-biblioref" onclick="">Shea and Boldt 2014</a>, <a href="#/happy-coding" role="doc-biblioref" onclick="">Xie 2015</a>)</span>.</p>
+<p><span class="citation" data-cites="Shea2014">Shea and Boldt (<a href="#/happy-coding" role="doc-biblioref" onclick="">2014</a>)</span> says blah.</p>
+<p>Blah blah <span class="citation" data-cites="Shea2014 xie2015">(see <a href="#/happy-coding" role="doc-biblioref" onclick="">Shea and Boldt 2014 pp. 33–35</a>, also <a href="#/happy-coding" role="doc-biblioref" onclick="">Xie 2015</a>, ch.&nbsp;1)</span>.</p>
 </div></div>
 </section>
 <section id="citations-2" class="slide level2">
@@ -938,7 +958,7 @@ Code chunks
 <h2>Console</h2>
 
 <img data-src="assets/img_l2/console.png" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section id="r-markdown-reference-guide-2" class="slide level2">
+<section id="r-markdown-reference-guide-1" class="slide level2">
 <h2>R Markdown Reference Guide</h2>
 <p><a href="https://rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf" class="uri">https://rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf</a></p>
 
@@ -963,7 +983,7 @@ Code chunks
 </p>
 <h3 id="quarto-website"><a href="https://quarto.org/">Quarto website</a></h3>
 </section></section>
-<section id="happy-coding" class="title-slide slide level1 center">
+<section id="happy-coding" class="title-slide slide level1 smaller scrollable">
 <h1>Happy coding</h1>
 <div class="quarto-figure quarto-figure-center">
 <figure>
@@ -973,6 +993,14 @@ Code chunks
 
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-Shea2014" class="csl-entry" role="listitem">
+Shea, N., and A. Boldt. 2014. <a href="https://doi.org/10.1016/j.tics.2014.01.006"><span class="nocase">Supra-personal cognitive control</span></a>. Trends in Cognitive Sciences 18:186–193.
+</div>
+<div id="ref-xie2015" class="csl-entry" role="listitem">
+Xie, Y. 2015. <a href="http://yihui.name/knitr/">Dynamic documents with <span>R</span> and knitr</a>. 2nd edition. Chapman; Hall/CRC, Boca Raton, Florida.
+</div>
+</div>
 <aside><div>
 <p>I borrowed slides from <a href="https://rstudio.com/speakers/garrett-grolemund/">Garrett Grolemund</a>, <a href="https://ulriklyngs.com/">Ulrik Lyngs</a>, <a href="https://oliviergimenez.github.io">Olivier Gimenez</a> . I also used the beautiful illustrations shared by <a href="https://github.com/allisonhorst/stats-illustrations">Allison Horst</a></p>
 </div></aside></section>
