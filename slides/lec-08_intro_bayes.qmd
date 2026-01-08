@@ -2,7 +2,7 @@
 title: "Introduction Bayesian statistics"
 subtitle: Why make it simple when you could go Bayesian
 author: Julien Martin
-institute:  BIO 8940
+institute: "BIO 8940"
 date: today
 from: markdown+emoji
 format:

@@ -1,4 +1,4 @@
-## Presentations
+## Group presentations
 
 {{< include ../_links.qmd >}}
 

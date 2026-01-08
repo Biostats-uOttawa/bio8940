@@ -46,75 +46,18 @@ The course aims to:
 See the [course website](lectures.qmd) for details of the schedule
 
 # Assessment
-Based on interactions in classes and on a data analysis project using `R` and documented with with `Rmarkdown`, `workflowr` and `github`.
+Based on interactions in classes and on a data analysis project using `R` and documented with with `Quarto`.
 
-* 50% in class assessment:
+* 60% in class assessment:
   * 15 min presentation in small groups on a paper and questions (30%)
-  * discussion in class (10% questions prep, 10% discussions)
-* 50% written statistical report using analysis more complex than linear models written using Rmarkdown, published on github in 2 different formats
+  * in class participation (20%)
+  * in class short presentation of about final project (question, data structure, and potential analysis) (10%)
+* 40% final oral examination
 
 {{< include presentation.qmd >}}
 
 {{< include report.qmd >}}
 
-<!--
-### Presentation – 30%
-
-#### Content – 60%
-
-- Introduction: Background of the general ‘big picture’ and specific problem, study system, and specific hypotheses or predictions.
-- Methods: Brief outline of data collection  and explanation of statistical methods used to address the hypotheses/predictions outlined in the introduction, including key assumptions.
-- Results: Visualizations clearly summarizing your results, using parallel structure to methods
-- Discussion: Summary of major results, alternative explanations for the observed results, conclusions/implications, future directions
-
-#### Style – 30%
-
-- Organization 
-- Clarity 
-- Delivery: Timing, pace, tone, articulation
-- Originality: (5 marks) Creativity, critical thinking
-
-#### Answers and understanding – 10%
-
-### Written report – 50%
-
-#### Content – 70%
-
-- Introduction: (10 marks) Background of the general ‘big picture’ and specific problem, study system, and specific hypotheses or predictions.
-- Methods: (20 marks) Brief outline of data collection  and explanation of statistical methods used to address the hypotheses/predictions outlined in the introduction, including key assumptions.
-- Results: (25 marks) Visualizations clearly summarizing your results, using parallel structure to methods
-- Discussion: (15 marks) Summary of major results, alternative explanations for the observed results, conclusions/implications, future directions
-
-#### Style – 30%
-
-- Clarity and reproducibility of code (10 marks)
-- Organization (5 marks)
-- Clarity of text (10 marks)
-- Typos and grammar (5 marks)
--->
-
-<!--
-## Schedule
-
-This is a tentative schedule.
-
-| Week | Subject |
-|------|---------|
-|  1 | Intro and discussion on Stats and science |
-|  2 | Rmarkdown and importance of reproducibility |
-|  3 | Recap on linear models |
-|  4 | Generalized linear models |
-|  5 | Linear mixed models (including random slopes) |
-|  6 | Generalized linear mixed models (and intro to gamms) |
-|  7 | Reading week |
-|  8 | Intro to Bayesian stats |
-|  9 | Complex mixed models (spatial, temporal autocorrelation, non-independence random effects) |
-| 10 | PCA and ordinance analysis |
-| 11 | Multivariate mixed models |
-| 12 | Path analysis and causality |
-| 13 | Wrap-up |
-
--->
 
 # Marking disputes
 If you feel an error has been made in the grading of an assignment or exam, you have 10 working days from the date the item was returned to request a regrading. Beyond 10 working days the mark is considered final. If the issue concerns a lab assignment, please consult the TA that marked it; if it concerns and exam, please see the course instructor.

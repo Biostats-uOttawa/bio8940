@@ -2,7 +2,7 @@
 title: "How do we build a model?"
 subtitle: Variable selection and causality
 author: Julien Martin
-institute: BIO 8940
+institute: "BIO 8940"
 date: today
 format:
   revealjs: 

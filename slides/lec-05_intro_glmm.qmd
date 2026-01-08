@@ -2,7 +2,7 @@
 title: "Introduction to Generalized linear mixed models?"
 subtitle: Harnessing non linearity random effects
 author: Julien Martin
-institute:  BIO 8940
+institute: "BIO 8940"
 date: today
 from: markdown+emoji
 format:

@@ -2,7 +2,7 @@
 title: "Advanced stats and Open Science"
 subtitle: "BIO8940"
 author: Julien Martin
-institute:  BIO 8940
+institute: "BIO 8940"
 date: today
 from: markdown+emoji
 format:

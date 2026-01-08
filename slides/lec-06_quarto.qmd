@@ -1,8 +1,8 @@
 ---
 title: "Writing dynamic and reproducible documents"
-subtitle: "An introduction to R Markdown / Quarto"
+subtitle: "An introduction to Quarto"
 author: Julien Martin
-institute:  BIO 8940
+institute: "BIO 8940"
 date: today
 from: markdown+emoji
 format:

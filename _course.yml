@@ -1,82 +1,69 @@
-date_start: "2025-01-07"
-date_read: "2025-02-16"
+date_start: "2025-01-13"
+date_read: "2025-02-15"
 
 schedule:
   - week: 1
     topic: "Introduction"
     topic_fr: "Introduction"
     reading: "@smaldino_natural_2016"
-  - week: 4
+  - week: 6
     topic: "Introduction to Quarto"
     topic_fr: "Introduction  à Quarto"
     reading: "@alston2021"
-    link: "https://doi.org/10.1002/bes2.1801"
-  - week: 3
+    slides_qmd: intro_bio8940.qmd
+  - week: 8
     topic: "Introduction to Github"
     topic_fr: "Introduction à Github"
-#    tools: " "
-#    assessment: "Assessment 2 **due Fri 6 Oct 11:55 PM**"
     reading: "@ivimey-cook_implementing_2023"
   - week: 2
     topic: "Generalized linear models (and revision of linear models)"
     topic_fr: "Modèles linéaires généralisés (et révisions modèles linéaires)"
     reading: "@zuur_protocol_2010"
-  - week: 5
-    topic: workshop in Germany, no classes
-    topic_fr: atelier en Allemagne, pas de cours
-  - week: 6
+  - week: 7
+    topic: Presentation final project proposals
+    topic_fr: Présentation des propositions de projet final
+  - week: 3
     topic: Causal structure and model building
     topic_fr: Structure causale et construction de modèle
     reading: "@cinelli_crash_2022, \n @wysocki_statistical_2022"
-  - week: 7
+  - week: 4
     topic: Introduction to mixed-models
     topic_fr: Introduction aux modèles mixtes
     reading: "@harrison_brief_2018"
-  - week: 8
+  - week: 9
     topic: Introduction to Bayesian analysis
     topic_fr: Intro analyse Bayesienne
     reading: "@kruschke_bayesian_2018"
-  - week: 9
+  - week: 5
     topic: Generalised linear mixed models
     topic_fr: Modèles mixtes généralisés
     reading: "@bolker_generalized_2009"
-  - week: 10
-    topic: Discussion on data and plans for written reports 
-    topic_fr: Discussion sur les plans pour les projets écrits 
-    reading: "@wasserstein_asa_2016"
   - week: 11
+    topic: "Topic chosen by students"
+    topic_fr: "Sujet choisi par les étudiants"
+    reading: "@wasserstein_asa_2016"
+  - week: 10
     topic: Multivariate mixed models
     topic_fr: Modèles mixtes multivariés
     reading: "@vandepol2009"
-# - week: 12
-#   reading: "@schielzeth2009"
-#    lecturer: Kate
-#    topic: Guest lecture
-#    tools: " "
-#    readings: " "
   - week: 12
-    topic: " "
+    topic: "Topic chosen by students"
+    topic_fr: "Sujet choisi par les étudiants"
     reading: "@forstmeier2017"
-    assessment: "Final report due **April 19th by Midnight**"
+    assessment: "Final report due **April 24th by Midnight**"
 
 team:
   - name: Julien Martin
     role: lecturer
     consult: Wednesday 1100-1200 (in-person & online)
     consult_fr: Mercredi 1100-1200 (au bureau et en ligne)
-#  - name: Cynthia Huang
-#    role: TA
-#    consult:
-#      - Fri 5.00-5.45pm (in-person)
-#  - name: Janith Wanniarachchi
-#    role: TA
-#    consult: Thu 6.00-6.45pm (in-person)
+
 
 timetable:
   - class: Lecture
     day: Tuesdays
     when: 1430-1720
-    where: VNR-1050
+    where: TBT-323
 #  - class: "Practical"
 #    when: Tuesdays 1430-1720
 #    where: CRX-C323
@@ -85,4 +72,4 @@ timetable_fr:
   - class: Cours
     day: Mardis
     when: 1430-1720
-    where: VNR-1050
+    where: TBT-323

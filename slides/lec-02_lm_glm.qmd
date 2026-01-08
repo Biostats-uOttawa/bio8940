@@ -2,7 +2,7 @@
 title: "Linear models and generalized linear models"
 subtitle: "in R"
 author: "Julien Martin"
-institute: BIO 8940
+institute: "BIO 8940"
 date: today
 format:
   revealjs: 

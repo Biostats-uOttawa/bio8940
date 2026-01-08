@@ -1,86 +1,87 @@
-## Written Report
+## Final project
 
 {{< include ../_links.qmd >}}
 
 ### General info
 
-The written report counts for 50% of the final grade
+Overall your work on the final projectl project counts for 50% of the
+final grade
 
 Using your own dataset (or one provided by me):
 
-1. develop a question of interest
-2. choose the statistical analysis appropriate to answer the question
-3. analyse the data
-4. write a short report using Quarto/Rmarkdown explaining in details:
-    - the analysis done
-    - the results
-    - model assumptions and associated checks
-    - the limitation of the model or data to answer the question
-5. submit your work via Brightspace before teh deadline
+1.  develop a question of interest
+2.  choose the statistical analysis appropriate to answer the question
+3.  **give a short presentation during the class about your analysis plan**
+4.  analyse the data using R
+5.  **Prepare a short report using Quarto** including code and outputs for:
+    -   exploratory plots
+    -   analysis
+    -   model assumptions checks
+    -   result illustrations (plots)
+6.  Prepare a **15min presentation** as a statisticial report
+7.  submit your work via Brightspace before the deadline
 
-
-You need to submit a reproducible document.
 Your submission on Brightspace needs to include:
 
-1. rendered pdf (could be a rendered docx saved as pdf)
-1. .\[Rq\]md file
-1. data file(s)
-1. extra files needed to reproduce the document
-    - .bib files
-    - .csl files
-    - ...
+1.  slides for your final presentation (in your preferred format)
+2.  rendered html of your short report
+3.  .qmd file (used to generate the html)
+4.  data file(s) used
+5.  extra files needed to reproduce the document
+    -   .bib files
+    -   .csl files
+    -   ...
 
 Missing files would incur a 10% penalty on the report grade
 
 ### Rubric
 
-#### Content – 70 marks
+#### Analysis plan presentation (10%)
 
-##### Introduction (10 marks)
+5-10 minutes presentation of your analysis plan including:
 
-- Background of the general ‘big picture’ and specific problem,
-- study system
-- specific hypotheses to be tested
-- predictions
+-   research question/hypothesis
+-   data structure
+-   potential analysis
 
-##### Methods (20 marks)
 
-- Brief outline of data collection
-- clear explanation of statistical methods used to address the hypotheses/predictions outlined in the introduction, including key assumptions.
+#### Final report (10%)
 
-##### Results (25 marks) 
+Document contains all analysis done, is reproducible, clear, well organized and commented (5%)
 
-Text and visualizations clearly summarizing your results, using parallel structure to methods. Should include :
+#### Final oral examination (30%)
 
-- clear graphics representing the data and the model outputs,
-- tables reporting statistics
-- text describing results
-- evaluation of model assumption and model fit 
+Oral examination will be one-on-one during the exam period. It will last 30 minutes including a 12-15 minutes presentation of your work intertwined with questions from the examiner. 
 
-##### Discussion (15 marks)
+##### Presentation structure
+###### Introduction
 
-- Summary of major results
-- conclusions/implications
-- Limitations of analysis (power, complexity of model, data structure, ...)
+-   Background of the general ‘big picture’ and specific problem,
+-   study system
+-   specific hypotheses to be tested
+-   predictions
 
-#### Style – 30 marks
+###### Methods
 
-##### Clarity and reproducibility of code (10 marks)
+-   Brief outline of data collection
+-   clear explanation of statistical methods used to address the
+    hypotheses/predictions outlined in the introduction, including key
+    assumptions.
 
-- code well written and understandable
-- document written in Quarto/Rmarkdown, reproducible with .\[qR\]md and data
-- only necessary code included
-- all necessary code included
+###### Results
 
-##### Organization and formatting (10 marks)
+Text and visualizations clearly summarizing your results, using parallel
+structure to methods. Should include :
 
-- clear and logical
-- correct formatting of the document
+-   clear graphics representing the data and the model outputs,
+-   tables reporting statistics
+-   text describing results
+-   evaluation of model assumption and model fit
 
-##### Clarity of text (10 marks)
+##### Discussion
 
-- clear and understandable
-
-##### Typos and grammar (5 marks)
-
-- it is all in the section title
+-   Summary of major results
+-   conclusions/implications
+-   Limitations of analysis (power, complexity of model, data structure,
+    ...)
+-   future directions
