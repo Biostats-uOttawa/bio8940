@@ -5,6 +5,7 @@ author: Julien Martin
 institute: "BIO 8940"
 date: today
 from: markdown+emoji
+bibliography: slides.bib
 format:
   revealjs: 
     width: 1600
@@ -121,23 +122,23 @@ Credit: [Ignasi Bartomeus, PhD](https://bartomeuslab.com/)
 
 ![](assets/img_l2/rstudio-qmd-how-it-works.png){fig-align="center"}
 
-# Structure of a Rmd/qmd document
+# Structure of a qmd document
 
 ##
 ```{mermaid}
 flowchart TB
-  a(qmd/Rmd)
+  a(qmd)
   yaml(YAML frontmatter)
   md(Markdown content)
   knitr(Code chunks)
   a --- yaml & md & knitr
 ```
 
-## Rmd/qmd document
+## qmd document
 
 ![](assets/img_l2/3components.png){fig-align="center"}
 
-## Rmd/qmd document
+## qmd document
 
 ![](assets/img_l2/3componentson.png){fig-align="center"}
 
@@ -146,7 +147,7 @@ flowchart TB
 
 ```{mermaid}
 flowchart TB
-  a(qmd/Rmd)
+  a(qmd)
   yaml(YAML frontmatter)
   md(Markdown content)
   knitr(Code chunks)
@@ -242,7 +243,7 @@ Table: This is a title
 
 - Wait for next section to learn how to generate tables from `R`
 
-## R Markdown Reference Guide
+## Quarto Reference Guide
 
 <https://rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf>
 
@@ -253,7 +254,7 @@ Table: This is a title
 
 ```{mermaid}
 flowchart TB
-  a(qmd/Rmd)
+  a(qmd)
   yaml(YAML frontmatter)
   md(Markdown content)
   knitr(Code chunks)
@@ -378,7 +379,7 @@ cars %>%
 
 ```{mermaid}
 flowchart TB
-  a(qmd/Rmd)
+  a(qmd)
   yaml(YAML frontmatter)
   md(Markdown content)
   knitr(Code chunks)
@@ -461,13 +462,13 @@ csl: my-style.csl
 
 ::: {.column}
 ### This...
-Blah blah [@Shea2014; @Lottridge2012].
+Blah blah [\@Shea2014; \@xie2015].
 :::
 
 ::: {.column}
 ### turns into this...
 
-Blah blah (Shea et al. 2014; Lottridge et al. 2012).
+Blah blah [@Shea2014; @xie2015].
 :::
 
 ::::
@@ -481,21 +482,21 @@ Blah blah (Shea et al. 2014; Lottridge et al. 2012).
 
 ::: {.column}
 ### This...
-Blah blah [@Shea2014; @Lottridge2012].
+Blah blah \@Shea2014; \@xie2015.
 
-@Shea2014 says blah.
+\@Shea2014 says blah.
 
-Blah blah [see @Shea2014, pp. 33-35; also @Wu2016, ch. 1].
+Blah blah [see \@Shea2014, pp. 33-35; also \@xie2015, ch. 1].
 :::
 
 ::: {.column}
 ### turns into this...
 
-Blah blah (Shea et al. 2014; Lottridge et al. 2012).
+Blah blah [@Shea2014; @xie2015].
 
-Shea et al. (2014) says blah.
+@Shea2014 says blah.
 
-Blah blah (see Shea et al. 2014, 33–35; also Wu 2016, ch. 1).
+Blah blah [see @Shea2014, pp. 33-35; also @xie2015, ch. 1].
 :::
 
 ::::
