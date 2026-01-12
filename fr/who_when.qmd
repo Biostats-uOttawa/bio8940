@@ -1,0 +1,62 @@
+{{< include ../_links.qmd >}}
+
+```{r}
+#| echo: false
+#| include: false
+knitr::opts_chunk$set(echo = FALSE)
+library(yaml)
+library(gt)
+library(lubridate)
+library(glue)
+source("../_yaml_extract.R")
+dat <- read_yaml("../_course.yml")
+extract_course(dat)
+
+```
+
+### Prof {{< fa person-chalkboard >}}
+
+```{r}
+#| label: lecturers
+#| results: "asis"
+team_df %>%
+  filter(role == "lecturer") %>%
+  pull(name) %>%
+  ui_list()
+```
+
+<!-- ## Teaching assitant`r ifelse(ntutor > 1, 's', '')`-->
+```{r tutors, results="asis"}
+team_df %>%
+  filter(role == "tutor") %>%
+  pull(name) %>%
+  ui_list()
+```
+
+
+### Heures de bureau {{< fa clock >}}
+
+Meetings en personne à mon bureau ou via zoom.
+
+
+```{r}
+#| label: consult
+#| results: "asis"
+team_df %>%
+  mutate(consult_print = glue::glue("**{name}**: {consult_fr}")) %>%
+  pull(consult_print) %>%
+  ui_list()
+```
+
+## Où et quand {{< fa calendar-days >}}
+
+```{r}
+#| label: timetable
+#| results: "asis"
+timetable_fr_df %>%
+  mutate(timetable = glue::glue("**{class}**: {day}, {when} in {where}")) %>%
+  pull(timetable) %>%
+  ui_list()
+```
+
+

@@ -1,0 +1,88 @@
+## Projet final
+
+{{< include ../_links.qmd >}}
+
+### Informations générales
+
+L'ensemble de votre travail sur le projet final compte pour 50% de la
+note finale
+
+Utilisation de votre propre jeu de données (ou d'un jeu de données fourni par moi) :
+
+1. développer une question d'intérêt
+2. choisir l'analyse statistique appropriée pour répondre à la question
+3.  **présenter brièvement en classe votre plan d'analyse**
+4. analyser les données à l'aide de R
+5.  **Préparez un court rapport à l'aide de Quarto** en incluant le code et les sorties pour :
+    - graphiques exploratoires
+    - l'analyse
+    - vérification des hypothèses du modèle
+    - illustrations des résultats (tracés)
+6.  Préparez une **présentation de 15 minutes** sous la forme d'un rapport statistique.
+7. soumettre votre travail via Brightspace avant la date limite
+8. **Examen oral de 30 min** (présentation et question)
+
+Votre soumission sur Brightspace doit inclure :
+
+1. les diapositives de votre présentation finale (dans le format de votre choix)
+2. le rendu html de votre rapport court
+3. le fichier .qmd (utilisé pour générer le html)
+4. le(s) fichier(s) de données utilisé(s)
+5. fichiers supplémentaires nécessaires pour reproduire le document
+    - fichiers .bib
+    - fichiers .csl
+    - ...
+
+Les fichiers manquants pour généré le rapport final entraînent une pénalité de 10 % sur la note du rapport.
+
+### Rubrique
+
+#### Présentation du plan d'analyse (10%)
+
+Présentation de 5 à 10 minutes de votre plan d'analyse comprenant :
+
+- question de recherche/hypothèse
+- structure des données
+- analyse potentielle
+
+
+#### Rapport final (10%)
+
+Le document contient toutes les analyses effectuées, est reproductible, clair, bien organisé et commenté (5%)
+
+#### Examen oral final (30%)
+
+L'examen oral se déroulera en tête-à-tête pendant la période d'examen. Il durera 30 minutes et comprendra une présentation de 12 à 15 minutes de votre travail, entrecoupée de questions de l'examinateur.
+
+##### Structure de la présentation
+###### Introduction
+
+- Contexte général et problème spécifique,
+- système d'étude
+- hypothèses spécifiques à tester
+- Prédictions
+
+###### Méthodes
+
+- Bref aperçu de la collecte des données
+- Explication claire des méthodes statistiques utilisées pour
+    hypothèses/prédictions énoncées dans l'introduction, y compris les principales
+    hypothèses clés.
+
+###### Résultats
+
+Texte et visualisations résumant clairement vos résultats, en utilisant une structure parallèle aux méthodes.
+parallèle aux méthodes. Doivent inclure :
+
+- des graphiques clairs représentant les données et les résultats du modèle,
+- des tableaux présentant des statistiques
+- un texte décrivant les résultats
+- l'évaluation de l'hypothèse et de l'adéquation du modèle
+
+##### Discussion
+
+- Résumé des principaux résultats
+- conclusions/implications
+- Limites de l'analyse (puissance, complexité du modèle, structure des données,
+    ...)
+- orientations futures

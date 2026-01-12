@@ -4,15 +4,8 @@ title: Syllabus
 
 {{< include ../_links.qmd >}}
 
-```{r}
-#| label: timetable
-#| include: false
-source("../_yaml_extract.R")
-dat <- read_yaml("../_course.yml")
-extract_course(dat)
-```
 
-## Description et objectifs
+# Description et objectifs
 
 Les analyses statistiques sont fondamentales à un processus scientifique rigoureux. Par conséquent, il est primordiale de comprendre les statistiques et de reporter correctement les analyses pour améliorer la transparence et la qualité de la science.
 Les objectifs du cours sont:
@@ -23,7 +16,7 @@ Les objectifs du cours sont:
 4. Présenter les principes de science ouverte (se basant sur OSF, Open Science Framework)
 
 
-## Contenu
+# Contenu
 
 * Statistiques (contenu flexible à définir en fonction de l'intérêt des participants)
   * Modèles linéaires généralisés
@@ -41,88 +34,50 @@ Les objectifs du cours sont:
   * git: `github` et autre alternative
   * Open Science framework avec `OSF`
 
-## Cours
+# Cours
 
 * Durée: 1 cours de 3h par semaine
 * Style: mélange de  cours, discussion et labo
-* Comment: Session Zoom interactive avec tous les participants
-* Quand: `r timetable_fr_df$day[1]` à `r timetable_fr_df$when`
-* Où: Salle: `r timetable_fr_df$where[1]`
+* Comment: En personne
 <!--   * Gather: https://gather.town/app/MCa0j7kcdaCNSCvS/AdvStatOpenSci
   * Zoom: https://uottawa-ca.zoom.us/j/93306840602?pwd=bWNsR3AzQ25VQXJOWCszNmh6RWI1UT09 -->
 * Info sur le cours: <https://biostats-uottawa.github.io/bio8940/>
 * Manuel labo: <https://biostats-uottawa.github.io/enfR>
 
+{{< include who_when.qmd >}}
 
+Voir [le site du cours](lectures.qmd) pour plus de détails sur l'horaire.
 
-## Évaluation
+# Évaluation
 
-L'évaluation sera basée sur la participation et sur la réalisation d'un projet qui analysera des données en utilisant `R` et documentera l'analyse avec `Rmarkdown`, `workflowr` et `github`.
+L'évaluation sera basée sur la participation et sur la réalisation d'un projet qui analysera des données en utilisant `R` et documentera l'analyse avec `Quarto`.
 
 * 50% évaluation en classe:
-  * 15 min présentation en petit groupes sur un article choisi par les étudiants
+  * 15 min présentation en petit groupes sur un article choisi par les étudiants (30%)
   * discussion en classe (10% questions, 10% discussions)
-* 50% travail de session présentant une analyse statistique vu en cours (ou plus complexes), rédigé avec Rmardown et publiées sur github
+* 50% travail de session présentant une analyse statistique vu en cours (ou plus complexes), analysé avec R et rédigé avec Quarto
+  * courte présentation sur la proposition de projet final (10%)
+  * final oral examination (40%)
 
-### Présentation – 30%
+{{< include presentation.qmd >}}
 
-#### Contenu – 60%
+{{< include report.qmd >}}
 
-- Introduction: Contexte général, hypothèses et prédictions spécifiques à l'étude.
-- Méthodes: Brève description de la collecte des données. Explication des analyses statistiques à la lumière des hypothèses et ou prédictions
-- Results: Représentation des clair des résultats
-- Discussion: Explications des résultats, limite de l'étude? critique des analyses par rapport aux données et aux hypothèses
+# Contestations de notation
+Si vous estimez qu'une erreur a été commise dans la notation d'un devoir ou d'un examen, vous disposez d'un délai de 10 jours ouvrables à compter de la date de retour de l'examen pour demander une nouvelle notation. Au-delà de ces 10 jours ouvrables, la note est considérée comme définitive. Si le problème concerne un travail de laboratoire, veuillez consulter l'enseignant-chercheur qui l'a corrigé ; s'il s'agit d'un examen, veuillez vous adresser à l'enseignant du cours.
 
-#### Style – 30%
+Lors d'un reclassement, la nouvelle note sera maintenue, qu'elle soit supérieure ou inférieure, il n'y a donc aucune garantie que votre note augmente. De simples erreurs d'addition se produisent malheureusement parfois, étant donné le volume de devoirs et d'examens que nous devons corriger, et ces cas sont faciles à corriger. Toutefois, les litiges concernant des notes partielles sur des réponses partiellement correctes ne seront pas toujours en votre faveur et devraient être réservés aux situations dans lesquelles vous estimez avoir des arguments solides. Lorsque vous demandez un reclassement, vous devez fournir une explication de ce que vous pensez être le problème (c'est-à-dire pourquoi vous pensez que vous méritez une meilleure note). Plus vous serez précis, plus vous aurez de chances d'obtenir gain de cause.
 
-- Organisation 
-- Clarté 
-- Style: Temps, vitesse, rhytme, ton de la voix, interactions avec audience
-<!-- - Originality: (5 marks) Creativity, critical thinking -->
-
-#### Réponse et compréhension – 10%
-
-### Travail de session – 50%
-
-#### Content – 70%
-
-- Introduction: (10 marks) Contexte général, hypothèses et prédictions spécifiques à l'étude.
-- Methods: (20 marks) Brève description de la collecte des données. Explication des analyses statistiques à la lumière des hypothèses et ou prédictions
-- Results: (20 marks) Représentation des clair (incluants graphiques) des résultats
-- Discussion: (10 marks) Explications des résultats, limite de l'étude? critique des analyses par rapport aux données et aux hypothèses
-
-#### Style – 30%
-
-- Clarté et reproducibilité du code (10 marks)
-- Organisation (5 marks)
-- Clarté du texte (10 marks)
-- Orthographe et grammaire (5 marks)
-<!-- - Delivery: (5 marks) Timing, pace, tone, articulation -->
-<!-- - Originality: (5 marks) Creativity, critical thinking -->
+Je ne prends pas en considération les arguments en faveur de notes supplémentaires simplement parce que vous êtes proche de la note supérieure.
 
 
-## Calendrier
+# Plagiat
+Le plagiat est l'acte de faire passer les mots ou les idées de quelqu'un d'autre pour les siens. Le plagiat est une infraction académique majeure (voir le règlement de l'Université d'Ottawa sur la fraude académique : Fraude académique) et est également illégal. Nous respectons la loi. Il est essentiel que vous compreniez ce qu'est le plagiat et comment vous pouvez l'éviter. Pour plus d'informations, consultez le document suivant du Service de la réussite scolaire des étudiants.
 
+# Présence
+Conformément à la politique de l'Université d'Ottawa, les étudiants ont la responsabilité de participer aux diverses activités d'apprentissage et d'évaluation de ce cours afin de s'assurer qu'ils réussissent dans tous les cours de leur programme d'études. La présence aux cours magistraux et au laboratoire n'est pas formellement requise pour ce cours, mais elle est FORTEMENT recommandée. Les diapositives fournies ne comprennent pas tout le contenu présenté et discuté en classe, et les assistants d'enseignement et le professeur sont disponibles pendant les laboratoires pour aider avec les exercices et les devoirs. Les heures de bureau des assistants d'enseignement et du professeur sont destinées à vous permettre de poser des questions relatives au matériel du cours et ne peuvent pas remplacer un cours ou un laboratoire manqué.
 
-| Semaine | Subject |
-|------|---------|
-|  1 | Intro and discussion on Stats and science |
-|  2 | Rmarkdown and importance of reproducibility |
-|  3 | Intro to Github |
-|  4 | Generalized linear models |
-|  5 | Linear mixed models (including random slopes) |
-|  6 | Generalized linear mixed models (and intro to gamms) |
-|  7 | Reading week |
-|  8 | Intro to Bayesian stats |
-|  9 | Complex mixed models (spatial, temporal autocorrelation, non-independence random effects) |
-| 10 | PCA and ordinance analysis |
-| 11 | Multivariate mixed models |
-| 12 | Path analysis and causality |
-| 13 | Wrap-up |
+# Bilinguisme
+Veuillez noter que la classe est bilingue. Cela signifie que toutes les questions peuvent être posées ou répondues en français ou en anglais et que le professeur traduira les réponses si nécessaire. La majorité du contenu du cours (diapositives, manuel de laboratoire) est fournie en anglais uniquement, mais des explications peuvent être fournies dans les deux langues.
 
-
-## Note sur le bilinguisme
-
-Le cours est un cours bilingue. Cela signifie que l'ensemble des interactions orales peuvent avoir lieu en français ou en anglais, le prof pouvant fournir les traductions nécessaires pour que l'ensemble des étudiants comprennent la matière. Le contenu du cours (diapo et manuel de laboratoire) seront présenté de manière unilingue en anglais avec possibilité de fournir des explanations en français si besoin.
-
-
+De plus, conformément à la politique de l'Université d'Ottawa, tous les étudiants ont le droit de produire leurs travaux écrits et de répondre aux questions d'examen dans la langue officielle de leur choix, quelle que soit la langue d'enseignement du cours.

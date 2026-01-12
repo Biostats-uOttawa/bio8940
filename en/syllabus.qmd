@@ -48,11 +48,13 @@ See the [course website](lectures.qmd) for details of the schedule
 # Assessment
 Based on interactions in classes and on a data analysis project using `R` and documented with with `Quarto`.
 
-* 60% in class assessment:
+* 50% in class assessment:
   * 15 min presentation in small groups on a paper and questions (30%)
   * in class participation (20%)
   * in class short presentation of about final project (question, data structure, and potential analysis) (10%)
-* 40% final oral examination
+* 50% final project
+  * 10% short presentation on project proposal
+  * 40% oral examination
 
 {{< include presentation.qmd >}}
 

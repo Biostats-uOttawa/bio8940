@@ -14,7 +14,7 @@ schedule:
   - week: 8
     topic: "Introduction to Github"
     topic_fr: "Introduction à Github"
-    reading: "@ivimey-cook_implementing_2023"
+    reading: "@ivimey_cook_implementing_2023"
   - week: 2
     topic: "Generalized linear models (and revision of linear models)"
     topic_fr: "Modèles linéaires généralisés (et révisions modèles linéaires)"

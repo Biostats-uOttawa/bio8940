@@ -23,64 +23,7 @@ La soumission des travaux de cours se fait via [brighspace](https://uottawa.brig
 
 Le cours est un cours bilingue. Cela signifie que l'ensemble des interactions orales peuvent avoir lieu en français ou en anglais, le prof pouvant fournir les traductions nécessaires pour que l'ensemble des étudiants comprennent la matière. Le contenu du cours (diapo et manuel de laboratoire) seront présenté de manière unilingue en anglais avec possibilité de fournir des explanations en français si besoin.
 
-
-```{r}
-#| echo: false
-#| include: false
-knitr::opts_chunk$set(echo = FALSE)
-library(gt)
-library(lubridate)
-source("../_yaml_extract.R")
-dat <- read_yaml("../_course.yml")
-extract_course(dat)
-```
-
-
-### Prof {{< fa person-chalkboard >}}
-
-```{r}
-#| label: lecturers
-#| results: "asis"
-team_df %>%
-  filter(role == "lecturer") %>%
-  pull(name) %>%
-  ui_list()
-```
-
-<!-- ## Teaching assitant`r ifelse(ntutor > 1, 's', '')`-->
-```{r tutors, results="asis"}
-team_df %>%
-  filter(role == "tutor") %>%
-  pull(name) %>%
-  ui_list()
-```
-
-### Heures de bureau {{< fa clock >}}
-
-Meetings en personne à mon bureau ou via zoom.
-
-
-```{r}
-#| label: consult
-#| results: "asis"
-team_df %>%
-  mutate(consult_print = glue::glue("**{name}**: {consult_fr}")) %>%
-  pull(consult_print) %>%
-  ui_list()
-```
-
-
-## Où et quand {{< fa calendar-days >}}
-
-```{r}
-#| label: timetable
-#| results: "asis"
-timetable_fr_df %>%
-  mutate(timetable = glue::glue("**{class}**: {day}, {when} in {where}")) %>%
-  pull(timetable) %>%
-  ui_list()
-```
-
+{{< include who_when.qmd >}}
 
 # Ressources scientifiques ouvertes
 

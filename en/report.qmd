@@ -20,6 +20,7 @@ Using your own dataset (or one provided by me):
     -   result illustrations (plots)
 6.  Prepare a **15min presentation** as a statisticial report
 7.  submit your work via Brightspace before the deadline
+8. **30min oral exam** (presentation and questions)
 
 Your submission on Brightspace needs to include:
 
@@ -32,7 +33,7 @@ Your submission on Brightspace needs to include:
     -   .csl files
     -   ...
 
-Missing files would incur a 10% penalty on the report grade
+Missing files needed to render the final short report would incur a 10% penalty on the report grade
 
 ### Rubric
 

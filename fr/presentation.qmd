@@ -1,0 +1,56 @@
+## Group presentations
+
+{{< include ../_links.qmd >}}
+
+::: callout-important
+# Register team, article and date
+
+ Please register for your presentations [here](https://uottawa-my.sharepoint.com/personal/jmartin8_uottawa_ca/_layouts/15/guestaccess.aspx?share=EbAUafs8KSdEhoP6xs0XqiwBG4lI6raInEKrssUN6nbm7w&e=RzBfDv).
+
+ You need to log into your uottawa account to have access
+:::
+
+### General info
+
+The presentation counts for 30% of the final grade
+
+The presentation should be based on one of the suggested paper or paper selected by the students (with my approval)
+
+Presentation should be between 8-10 minutes long and are followed by 3-5 minutes of questions.
+They should provide a big picture of the study and the main hypothesis, a quick presentation of the data, detailed explanation of analysis and results, and finally a discussion on the
+clarity and adequacy of the statistical analysis.
+If the paper is more methodological, the presentation should present a summary version of the paper and discuss what what harder to understand or not understood.
+
+### Rubric
+#### Content – 60 marks
+
+- Introduction: Background of the general ‘big picture’ and specific problem, study system, and specific hypotheses or predictions.
+- Methods: Brief outline of data collection  and explanation of statistical methods used to address the hypotheses/predictions outlined in the introduction, including key assumptions.
+- Results: Visualizations clearly summarizing your results, using parallel structure to methods
+- Discussion: Summary of major results, alternative explanations for the observed results, conclusions/implications, future directions
+
+#### Style – 30 marks
+
+- Organization 
+- Clarity 
+- Delivery: Timing, pace, tone, articulation
+- Originality: Creativity, critical thinking
+
+#### Answers and understanding – 10 marks
+
+<!-- Content – 60%
+Introduction: (10 marks) Background of the general ‘big picture’ and specific problem, study system,
+and specific hypotheses or predictions.
+Methods: (20 marks) Brief outline of data collection and explanation of statistical methods used to
+address the hypotheses/predictions outlined in the introduction, including key assumptions.
+Results: (20 marks) Visualizations of results and explanation in line witht the analysis
+Discussion: (10 marks) discuss if analysis is/are appropriate and inline with hypotheses, what is
+strange or badly explain, what can have been done differently
+Open science info. Include a section (either in methods or discussion) on data and code availability. Also
+indicate if the methods are described clearly enough and with enough details to allow you to redo exactly
+the same analysis.
+Style – 40%
+Organization (10 marks)
+Clarity (10 marks)
+Delivery: (10 marks) Timing, pace, tone, articulation
+-->
