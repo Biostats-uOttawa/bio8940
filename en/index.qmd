@@ -5,6 +5,8 @@ format:
   html:
     toc: true
     css: ../css/header.css
+execute: 
+  freeze: false
 ---
 
 {{< include ../_links.qmd >}}
