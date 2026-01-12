@@ -556,13 +556,17 @@ cookieconsent.run({
 <h1>Assessment</h1>
 <p>Based on interactions in classes and on a data analysis project using <code>R</code> and documented with with <code>Quarto</code>.</p>
 <ul>
-<li>60% in class assessment:
+<li>50% in class assessment:
 <ul>
 <li>15 min presentation in small groups on a paper and questions (30%)</li>
 <li>in class participation (20%)</li>
 <li>in class short presentation of about final project (question, data structure, and potential analysis) (10%)</li>
 </ul></li>
-<li>40% final oral examination</li>
+<li>50% final project
+<ul>
+<li>10% short presentation on project proposal</li>
+<li>40% oral examination</li>
+</ul></li>
 </ul>
 <section id="group-presentations" class="level2">
 <h2 class="anchored" data-anchor-id="group-presentations">Group presentations</h2>
@@ -649,6 +653,7 @@ Delivery: (10 marks) Timing, pace, tone, articulation
 </ul></li>
 <li>Prepare a <strong>15min presentation</strong> as a statisticial report</li>
 <li>submit your work via Brightspace before the deadline</li>
+<li><strong>30min oral exam</strong> (presentation and questions)</li>
 </ol>
 <p>Your submission on Brightspace needs to include:</p>
 <ol type="1">
@@ -663,7 +668,7 @@ Delivery: (10 marks) Timing, pace, tone, articulation
 <li>…</li>
 </ul></li>
 </ol>
-<p>Missing files would incur a 10% penalty on the report grade</p>
+<p>Missing files needed to render the final short report would incur a 10% penalty on the report grade</p>
 </section>
 <section id="rubric-1" class="level3">
 <h3 class="anchored" data-anchor-id="rubric-1">Rubric</h3>
@@ -834,7 +839,7 @@ Delivery: (10 marks) Timing, pace, tone, articulation
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/Biostats-uOttawa\.github\.io\/bio8940\/");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

@@ -2030,44 +2030,283 @@
     "text": "Français / English"
   },
   {
-    "objectID": "fr/people.html",
-    "href": "fr/people.html",
+    "objectID": "fr/syllabus.html",
+    "href": "fr/syllabus.html",
+    "title": "Syllabus",
+    "section": "",
+    "text": "Les analyses statistiques sont fondamentales à un processus scientifique rigoureux. Par conséquent, il est primordiale de comprendre les statistiques et de reporter correctement les analyses pour améliorer la transparence et la qualité de la science. Les objectifs du cours sont:\n\nAméliorer la compréhension des modèles statistique avancés (incluant les modèles mixtes généralisés)\nDévelopper de bonnes habitudes pour coder (utilisation de R et Rmarkdown)\nAméliorer la gestion des données et du code statistique (manipulation de données et github)\nPrésenter les principes de science ouverte (se basant sur OSF, Open Science Framework)",
+    "crumbs": [
+      "Biostats uOttawa",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "fr/syllabus.html#où-et-quand",
+    "href": "fr/syllabus.html#où-et-quand",
+    "title": "Syllabus",
+    "section": "Où et quand ",
+    "text": "Où et quand \n\nCours: Mardis, 1430-1720 in TBT-323\n\nVoir le site du cours pour plus de détails sur l’horaire.",
+    "crumbs": [
+      "Biostats uOttawa",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "fr/syllabus.html#group-presentations",
+    "href": "fr/syllabus.html#group-presentations",
+    "title": "Syllabus",
+    "section": "Group presentations",
+    "text": "Group presentations\n\n\n\n\n\n\n\nImportantRegister team, article and date\n\n\n\nPlease register for your presentations here.\nYou need to log into your uottawa account to have access\n\n\n\nGeneral info\nThe presentation counts for 30% of the final grade\nThe presentation should be based on one of the suggested paper or paper selected by the students (with my approval)\nPresentation should be between 8-10 minutes long and are followed by 3-5 minutes of questions. They should provide a big picture of the study and the main hypothesis, a quick presentation of the data, detailed explanation of analysis and results, and finally a discussion on the clarity and adequacy of the statistical analysis. If the paper is more methodological, the presentation should present a summary version of the paper and discuss what what harder to understand or not understood.\n\n\nRubric\n\nContent – 60 marks\n\nIntroduction: Background of the general ‘big picture’ and specific problem, study system, and specific hypotheses or predictions.\nMethods: Brief outline of data collection and explanation of statistical methods used to address the hypotheses/predictions outlined in the introduction, including key assumptions.\nResults: Visualizations clearly summarizing your results, using parallel structure to methods\nDiscussion: Summary of major results, alternative explanations for the observed results, conclusions/implications, future directions\n\n\n\nStyle – 30 marks\n\nOrganization\nClarity\nDelivery: Timing, pace, tone, articulation\nOriginality: Creativity, critical thinking\n\n\n\nAnswers and understanding – 10 marks",
+    "crumbs": [
+      "Biostats uOttawa",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "fr/syllabus.html#projet-final",
+    "href": "fr/syllabus.html#projet-final",
+    "title": "Syllabus",
+    "section": "Projet final",
+    "text": "Projet final\n\n\nInformations générales\nL’ensemble de votre travail sur le projet final compte pour 50% de la note finale\nUtilisation de votre propre jeu de données (ou d’un jeu de données fourni par moi) :\n\ndévelopper une question d’intérêt\nchoisir l’analyse statistique appropriée pour répondre à la question\nprésenter brièvement en classe votre plan d’analyse\nanalyser les données à l’aide de R\nPréparez un court rapport à l’aide de Quarto en incluant le code et les sorties pour :\n\ngraphiques exploratoires\nl’analyse\nvérification des hypothèses du modèle\nillustrations des résultats (tracés)\n\nPréparez une présentation de 15 minutes sous la forme d’un rapport statistique.\nsoumettre votre travail via Brightspace avant la date limite\nExamen oral de 30 min (présentation et question)\n\nVotre soumission sur Brightspace doit inclure :\n\nles diapositives de votre présentation finale (dans le format de votre choix)\nle rendu html de votre rapport court\nle fichier .qmd (utilisé pour générer le html)\nle(s) fichier(s) de données utilisé(s)\nfichiers supplémentaires nécessaires pour reproduire le document\n\nfichiers .bib\nfichiers .csl\n…\n\n\nLes fichiers manquants pour généré le rapport final entraînent une pénalité de 10 % sur la note du rapport.\n\n\nRubrique\n\nPrésentation du plan d’analyse (10%)\nPrésentation de 5 à 10 minutes de votre plan d’analyse comprenant :\n\nquestion de recherche/hypothèse\nstructure des données\nanalyse potentielle\n\n\n\nRapport final (10%)\nLe document contient toutes les analyses effectuées, est reproductible, clair, bien organisé et commenté (5%)\n\n\nExamen oral final (30%)\nL’examen oral se déroulera en tête-à-tête pendant la période d’examen. Il durera 30 minutes et comprendra une présentation de 12 à 15 minutes de votre travail, entrecoupée de questions de l’examinateur.\n\nStructure de la présentation\n\nIntroduction\n\nContexte général et problème spécifique,\nsystème d’étude\nhypothèses spécifiques à tester\nPrédictions\n\n\n\nMéthodes\n\nBref aperçu de la collecte des données\nExplication claire des méthodes statistiques utilisées pour hypothèses/prédictions énoncées dans l’introduction, y compris les principales hypothèses clés.\n\n\n\nRésultats\nTexte et visualisations résumant clairement vos résultats, en utilisant une structure parallèle aux méthodes. parallèle aux méthodes. Doivent inclure :\n\ndes graphiques clairs représentant les données et les résultats du modèle,\ndes tableaux présentant des statistiques\nun texte décrivant les résultats\nl’évaluation de l’hypothèse et de l’adéquation du modèle\n\n\n\n\nDiscussion\n\nRésumé des principaux résultats\nconclusions/implications\nLimites de l’analyse (puissance, complexité du modèle, structure des données, …)\norientations futures",
+    "crumbs": [
+      "Biostats uOttawa",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "fr/presentation.html",
+    "href": "fr/presentation.html",
+    "title": "Bio8940",
+    "section": "",
+    "text": "ImportantRegister team, article and date\n\n\n\nPlease register for your presentations here.\nYou need to log into your uottawa account to have access\n\n\n\n\nThe presentation counts for 30% of the final grade\nThe presentation should be based on one of the suggested paper or paper selected by the students (with my approval)\nPresentation should be between 8-10 minutes long and are followed by 3-5 minutes of questions. They should provide a big picture of the study and the main hypothesis, a quick presentation of the data, detailed explanation of analysis and results, and finally a discussion on the clarity and adequacy of the statistical analysis. If the paper is more methodological, the presentation should present a summary version of the paper and discuss what what harder to understand or not understood.\n\n\n\n\n\n\nIntroduction: Background of the general ‘big picture’ and specific problem, study system, and specific hypotheses or predictions.\nMethods: Brief outline of data collection and explanation of statistical methods used to address the hypotheses/predictions outlined in the introduction, including key assumptions.\nResults: Visualizations clearly summarizing your results, using parallel structure to methods\nDiscussion: Summary of major results, alternative explanations for the observed results, conclusions/implications, future directions\n\n\n\n\n\nOrganization\nClarity\nDelivery: Timing, pace, tone, articulation\nOriginality: Creativity, critical thinking"
+  },
+  {
+    "objectID": "fr/presentation.html#group-presentations",
+    "href": "fr/presentation.html#group-presentations",
+    "title": "Bio8940",
+    "section": "",
+    "text": "ImportantRegister team, article and date\n\n\n\nPlease register for your presentations here.\nYou need to log into your uottawa account to have access\n\n\n\n\nThe presentation counts for 30% of the final grade\nThe presentation should be based on one of the suggested paper or paper selected by the students (with my approval)\nPresentation should be between 8-10 minutes long and are followed by 3-5 minutes of questions. They should provide a big picture of the study and the main hypothesis, a quick presentation of the data, detailed explanation of analysis and results, and finally a discussion on the clarity and adequacy of the statistical analysis. If the paper is more methodological, the presentation should present a summary version of the paper and discuss what what harder to understand or not understood.\n\n\n\n\n\n\nIntroduction: Background of the general ‘big picture’ and specific problem, study system, and specific hypotheses or predictions.\nMethods: Brief outline of data collection and explanation of statistical methods used to address the hypotheses/predictions outlined in the introduction, including key assumptions.\nResults: Visualizations clearly summarizing your results, using parallel structure to methods\nDiscussion: Summary of major results, alternative explanations for the observed results, conclusions/implications, future directions\n\n\n\n\n\nOrganization\nClarity\nDelivery: Timing, pace, tone, articulation\nOriginality: Creativity, critical thinking"
+  },
+  {
+    "objectID": "fr/lectures.html",
+    "href": "fr/lectures.html",
+    "title": "Cours",
+    "section": "",
+    "text": "Les diapos et les notes sont uniquement en anglais\n\n\n\n\n\n\n\n\nDate\nSujet\nDiapos\nLecture\n\n\n\n\n\n\n\n13 janv.\nIntroduction\n \nSmaldino et McElreath (2016)\n\n\n20 janv.\nModèles linéaires généralisés (et révisions modèles linéaires)\n \nZuur et al. (2010)\n\n\n27 janv.\nStructure causale et construction de modèle\n \nCinelli et al. (2022), Wysocki et al. (2022)\n\n\n3 févr.\nIntroduction aux modèles mixtes\n \nHarrison et al. (2018)\n\n\n10 févr.\nModèles mixtes généralisés\n \nBolker et al. (2009)\n\n\n24 févr.\nIntroduction à Quarto\n \nAlston et Rick (2021)\n\n\nSemaine de Lecture\n\n\n3 mars\nPrésentation des propositions de projet final\n \naucune\n\n\n10 mars\nIntroduction à Github\n \nIvimey-Cook et al. (2023)\n\n\n17 mars\nIntro analyse Bayesienne\nNA\nKruschke et Liddell (2018)\n\n\n24 mars\nModèles mixtes multivariés\nNA\nVan de Pol et Wright (2009)\n\n\n31 mars\nSujet choisi par les étudiants\nNA\nWasserstein et Lazar (2016)\n\n\n7 avr.\nSujet choisi par les étudiants\nNA\nForstmeier et al. (2017)\n\n\n\n\n\n\n\n\n\n\n\nLes diapos sont en format revealjs (html). Si vous souhaitez avoir un pdf (*note: vous perdrez peut-être quelques fonctionnalités):\n\nOuvrir les diapos dans votre navigateur\nAppuyer sur e pour le mode d’exportation en PDF (?print-pdf devrait apparaître à la fin de l’adresse url)\nImprimer la page (CTRL/CMD+P).\nChanger la destination à Save as PDF.\nChanger le Format à Paysage.\nChanger les Marges à Aucune.\nAjouter le fond graphique (si vous le souhaitez)\nCliquer Sauvegarder 🎉\n\n\n\n\nLes notes sont simplement le contenu des diapos (et mes quelques notes) en format html.\nEn outre, l’outils d’annotation https://hypothes.is/ est activé sur les pages de notes. Cet outil permet d’annoter et commenter des pages internet, de sauvegarder vos commentaires, de la partager publiquement ou au sein de groupes privés. Il faut juste créer un compte gratuit.",
+    "crumbs": [
+      "Biostats uOttawa",
+      "Diapos et notes"
+    ]
+  },
+  {
+    "objectID": "fr/lectures.html#à-propos-des-diapos-et-des-notes",
+    "href": "fr/lectures.html#à-propos-des-diapos-et-des-notes",
+    "title": "Cours",
+    "section": "",
+    "text": "Les diapos sont en format revealjs (html). Si vous souhaitez avoir un pdf (*note: vous perdrez peut-être quelques fonctionnalités):\n\nOuvrir les diapos dans votre navigateur\nAppuyer sur e pour le mode d’exportation en PDF (?print-pdf devrait apparaître à la fin de l’adresse url)\nImprimer la page (CTRL/CMD+P).\nChanger la destination à Save as PDF.\nChanger le Format à Paysage.\nChanger les Marges à Aucune.\nAjouter le fond graphique (si vous le souhaitez)\nCliquer Sauvegarder 🎉\n\n\n\n\nLes notes sont simplement le contenu des diapos (et mes quelques notes) en format html.\nEn outre, l’outils d’annotation https://hypothes.is/ est activé sur les pages de notes. Cet outil permet d’annoter et commenter des pages internet, de sauvegarder vos commentaires, de la partager publiquement ou au sein de groupes privés. Il faut juste créer un compte gratuit.",
+    "crumbs": [
+      "Biostats uOttawa",
+      "Diapos et notes"
+    ]
+  },
+  {
+    "objectID": "fr/dataset.html",
+    "href": "fr/dataset.html",
+    "title": "Code et données",
+    "section": "",
+    "text": "Code et fichiers de données utilisés dans les diapos ensemble dans un fichier zip zip file"
+  },
+  {
+    "objectID": "fr/dataset.html#données-pour-les-labos",
+    "href": "fr/dataset.html#données-pour-les-labos",
+    "title": "Code et données",
+    "section": "Données pour les labos",
+    "text": "Données pour les labos\n\nBanta_TotalFruits.csv\ndragons.csv\ngala.csv\nlm_example.csv\nmouflon.csv\nRIKZ.txt\nunicorns_aggression.csv"
+  },
+  {
+    "objectID": "fr/dataset.html#code-r-utilisés-dans-les-diapos",
+    "href": "fr/dataset.html#code-r-utilisés-dans-les-diapos",
+    "title": "Code et données",
+    "section": "Code R utilisés dans les diapos",
+    "text": "Code R utilisés dans les diapos\n\nextra_funs.R\nlec-01_intro.R\nlec-02_rmarkdown.R\nlec-03_github.R\nlec-04_lm_glm.R\nlec-05_model_structure.R\nlec-06_intro_lmm.R\nlec-07_intro_bayes.R\nlec-08_intro_glmm.R"
+  },
+  {
+    "objectID": "en/who_when.html",
+    "href": "en/who_when.html",
+    "title": "Bio8940",
+    "section": "",
+    "text": "Julien Martin"
+  },
+  {
+    "objectID": "en/who_when.html#schedule",
+    "href": "en/who_when.html#schedule",
+    "title": "Bio8940",
+    "section": "Schedule ",
+    "text": "Schedule \n\nLecture: Tuesdays, 1430-1720 in VNR-1050\n\nThere are no lectures or tutorials during reading week."
+  },
+  {
+    "objectID": "en/report.html",
+    "href": "en/report.html",
+    "title": "Bio8940",
+    "section": "",
+    "text": "Overall your work on the final projectl project counts for 50% of the final grade\nUsing your own dataset (or one provided by me):\n\ndevelop a question of interest\nchoose the statistical analysis appropriate to answer the question\ngive a short presentation during the class about your analysis plan\nanalyse the data using R\nPrepare a short report using Quarto including code and outputs for:\n\nexploratory plots\nanalysis\nmodel assumptions checks\nresult illustrations (plots)\n\nPrepare a 15min presentation as a statisticial report\nsubmit your work via Brightspace before the deadline\n30min oral exam (presentation and questions)\n\nYour submission on Brightspace needs to include:\n\nslides for your final presentation (in your preferred format)\nrendered html of your short report\n.qmd file (used to generate the html)\ndata file(s) used\nextra files needed to reproduce the document\n\n.bib files\n.csl files\n…\n\n\nMissing files needed to render the final short report would incur a 10% penalty on the report grade\n\n\n\n\n\n5-10 minutes presentation of your analysis plan including:\n\nresearch question/hypothesis\ndata structure\npotential analysis\n\n\n\n\nDocument contains all analysis done, is reproducible, clear, well organized and commented (5%)\n\n\n\nOral examination will be one-on-one during the exam period. It will last 30 minutes including a 12-15 minutes presentation of your work intertwined with questions from the examiner.\n\n\n\n\n\nBackground of the general ‘big picture’ and specific problem,\nstudy system\nspecific hypotheses to be tested\npredictions\n\n\n\n\n\nBrief outline of data collection\nclear explanation of statistical methods used to address the hypotheses/predictions outlined in the introduction, including key assumptions.\n\n\n\n\nText and visualizations clearly summarizing your results, using parallel structure to methods. Should include :\n\nclear graphics representing the data and the model outputs,\ntables reporting statistics\ntext describing results\nevaluation of model assumption and model fit\n\n\n\n\n\n\nSummary of major results\nconclusions/implications\nLimitations of analysis (power, complexity of model, data structure, …)\nfuture directions",
+    "crumbs": [
+      "Biostats uOttawa",
+      "Assessment",
+      "Final project"
+    ]
+  },
+  {
+    "objectID": "en/report.html#final-project",
+    "href": "en/report.html#final-project",
+    "title": "Bio8940",
+    "section": "",
+    "text": "Overall your work on the final projectl project counts for 50% of the final grade\nUsing your own dataset (or one provided by me):\n\ndevelop a question of interest\nchoose the statistical analysis appropriate to answer the question\ngive a short presentation during the class about your analysis plan\nanalyse the data using R\nPrepare a short report using Quarto including code and outputs for:\n\nexploratory plots\nanalysis\nmodel assumptions checks\nresult illustrations (plots)\n\nPrepare a 15min presentation as a statisticial report\nsubmit your work via Brightspace before the deadline\n30min oral exam (presentation and questions)\n\nYour submission on Brightspace needs to include:\n\nslides for your final presentation (in your preferred format)\nrendered html of your short report\n.qmd file (used to generate the html)\ndata file(s) used\nextra files needed to reproduce the document\n\n.bib files\n.csl files\n…\n\n\nMissing files needed to render the final short report would incur a 10% penalty on the report grade\n\n\n\n\n\n5-10 minutes presentation of your analysis plan including:\n\nresearch question/hypothesis\ndata structure\npotential analysis\n\n\n\n\nDocument contains all analysis done, is reproducible, clear, well organized and commented (5%)\n\n\n\nOral examination will be one-on-one during the exam period. It will last 30 minutes including a 12-15 minutes presentation of your work intertwined with questions from the examiner.\n\n\n\n\n\nBackground of the general ‘big picture’ and specific problem,\nstudy system\nspecific hypotheses to be tested\npredictions\n\n\n\n\n\nBrief outline of data collection\nclear explanation of statistical methods used to address the hypotheses/predictions outlined in the introduction, including key assumptions.\n\n\n\n\nText and visualizations clearly summarizing your results, using parallel structure to methods. Should include :\n\nclear graphics representing the data and the model outputs,\ntables reporting statistics\ntext describing results\nevaluation of model assumption and model fit\n\n\n\n\n\n\nSummary of major results\nconclusions/implications\nLimitations of analysis (power, complexity of model, data structure, …)\nfuture directions",
+    "crumbs": [
+      "Biostats uOttawa",
+      "Assessment",
+      "Final project"
+    ]
+  },
+  {
+    "objectID": "en/practical_extra.html",
+    "href": "en/practical_extra.html",
+    "title": "Extra information for praticals",
+    "section": "",
+    "text": "Here you will find links for the praticals as well as their solutions"
+  },
+  {
+    "objectID": "en/practical_extra.html#rmarkdown",
+    "href": "en/practical_extra.html#rmarkdown",
+    "title": "Extra information for praticals",
+    "section": "Introduction Rmarkdown",
+    "text": "Introduction Rmarkdown\n\nrmarkdown cheatsheet\nTroubleshoot PDF in Rmarkdown"
+  },
+  {
+    "objectID": "en/practical_extra.html#introduction-to-github",
+    "href": "en/practical_extra.html#introduction-to-github",
+    "title": "Extra information for praticals",
+    "section": "Introduction to github",
+    "text": "Introduction to github\n\nManaging git credentials\nHappy git with R great book about git and R"
+  },
+  {
+    "objectID": "en/people.html",
+    "href": "en/people.html",
     "title": "Julien Martin",
     "section": "",
-    "text": "Julien est Professeur agrégé à l’Université d’Ottawa en biologie évolutive et quantitative et il enseigne R (et l’apprend) depuis plus de 15 ans.\nJ’ai créé le site internet en utilisant Quarto, R, revealjs, mermaid.js et graphViz. J’ai developpé le thème de mes présentations à partir de du theme “blackboard” pour xaringan.",
+    "text": "Julien is an Associate Professor at the University of Ottawa and has been teaching (and learning) R for the last 15 years.\nI created the websites using Quarto, R, revealjs, mermaid.js and graphViz. I developed the theme for the slides based on the xaringan blackboard theme.",
     "crumbs": [
       "Biostats uOttawa",
       "Contact"
     ]
   },
   {
-    "objectID": "fr/index.html",
-    "href": "fr/index.html",
-    "title": "Statistiques avancées et science ouverte",
+    "objectID": "en/index.html",
+    "href": "en/index.html",
+    "title": "Advanced statistics and Open science",
     "section": "",
-    "text": "Bienvenue sur le site du cours Bio8940 de l’Université d’Ottawa. Vous y trouverez toutes les informations sur le cours, y compris l’horaire du cours, les diapositives, les notes de cours, les informations et les exercices pratiques, la description des évaluations ainsi que le syllabus (officiel) du cours.\nLa soumission des travaux de cours se fait via brighspace.\nLe cours est un cours bilingue. Cela signifie que l’ensemble des interactions orales peuvent avoir lieu en français ou en anglais, le prof pouvant fournir les traductions nécessaires pour que l’ensemble des étudiants comprennent la matière. Le contenu du cours (diapo et manuel de laboratoire) seront présenté de manière unilingue en anglais avec possibilité de fournir des explanations en français si besoin.",
+    "text": "This is the site for the graduate level course Bio8940 at the University of Ottawa. You will find all the course information including the course schedule, slides, course notes, practicals info and exercises, description of assessments as well as the (official) for the course.\nSubmission of course work is done via brighspace.\nPlease note that the class is bilingual. This means that any questions during the class can be asked or answered in either french or english and the prof will translate the answers if needs be. The majority of the course content (slides and course notes) are provided in english only, but explanation can be provided in either languages.",
     "crumbs": [
       "Biostats uOttawa",
-      "Info générale"
+      "Course info"
     ]
   },
   {
-    "objectID": "fr/index.html#où-et-quand",
-    "href": "fr/index.html#où-et-quand",
-    "title": "Statistiques avancées et science ouverte",
-    "section": "Où et quand ",
-    "text": "Où et quand \n\nCours: Mardis, 1430-1720 in VNR-1050",
+    "objectID": "en/index.html#schedule",
+    "href": "en/index.html#schedule",
+    "title": "Advanced statistics and Open science",
+    "section": "Schedule ",
+    "text": "Schedule \n\nLecture: Tuesdays, 1430-1720 in TBT-323\n\nThere are no lectures or tutorials during reading week.",
     "crumbs": [
       "Biostats uOttawa",
-      "Info générale"
+      "Course info"
     ]
   },
   {
-    "objectID": "fr/404.html",
-    "href": "fr/404.html",
+    "objectID": "en/404.html",
+    "href": "en/404.html",
     "title": "Page Not Found",
     "section": "",
     "text": "It seems you R lost (bad pun intended)\nThe page you requested cannot be found (perhaps it was moved or it is still in development)."
+  },
+  {
+    "objectID": "en/dataset.html",
+    "href": "en/dataset.html",
+    "title": "Data and code",
+    "section": "",
+    "text": "All data and code files in a nice zip file",
+    "crumbs": [
+      "Biostats uOttawa",
+      "Data and code"
+    ]
+  },
+  {
+    "objectID": "en/dataset.html#data-for-praticals",
+    "href": "en/dataset.html#data-for-praticals",
+    "title": "Data and code",
+    "section": "Data for praticals",
+    "text": "Data for praticals\n\nBanta_TotalFruits.csv\ndragons.csv\ngala.csv\nlm_example.csv\nmouflon.csv\nRIKZ.txt\nunicorns_aggression.csv",
+    "crumbs": [
+      "Biostats uOttawa",
+      "Data and code"
+    ]
+  },
+  {
+    "objectID": "en/dataset.html#r-code-and-functions-used-in-slides",
+    "href": "en/dataset.html#r-code-and-functions-used-in-slides",
+    "title": "Data and code",
+    "section": "R code and functions used in slides",
+    "text": "R code and functions used in slides\n\nextra_funs.R\nlec-01_intro.R\nlec-02_rmarkdown.R\nlec-03_github.R\nlec-04_lm_glm.R\nlec-05_model_structure.R\nlec-06_intro_lmm.R\nlec-07_intro_bayes.R\nlec-08_intro_glmm.R",
+    "crumbs": [
+      "Biostats uOttawa",
+      "Data and code"
+    ]
+  },
+  {
+    "objectID": "en/lectures.html",
+    "href": "en/lectures.html",
+    "title": "Lectures",
+    "section": "",
+    "text": "Date\nTopic\nSlides\nReading\n\n\n\n\n\n\n\nJan 13\nIntroduction\n \nSmaldino and McElreath (2016)\n\n\nJan 20\nGeneralized linear models (and revision of linear models)\n \nZuur et al. (2010)\n\n\nJan 27\nCausal structure and model building\n \nCinelli et al. (2022), Wysocki et al. (2022)\n\n\nFeb 3\nIntroduction to mixed-models\n \nHarrison et al. (2018)\n\n\nFeb 10\nGeneralised linear mixed models\n \nBolker et al. (2009)\n\n\nReading week\n\n\nFeb 24\nIntroduction to Quarto\n \nAlston and Rick (2021)\n\n\nMar 3\nPresentation final project proposals\n \nnone\n\n\nMar 10\nIntroduction to Github\n \nIvimey-Cook et al. (2023)\n\n\nMar 17\nIntroduction to Bayesian analysis\nNA\nKruschke and Liddell (2018)\n\n\nMar 24\nMultivariate mixed models\nNA\nVan de Pol and Wright (2009)\n\n\nMar 31\nTopic chosen by students\nNA\nWasserstein and Lazar (2016)\n\n\nApr 7\nTopic chosen by students\nNA\nForstmeier et al. (2017)\n\n\n\n\n\n\n\n\n\n\n\nSlides in revealjs format (html). If you want then as a pdf (note you might loose some functionality or contents due to tabs and scroll sections):\n\nOpen the slides in your browser from a link on this page\nPress e to get into the PDF export mode (?print-pdf should appear near the end of the url and white borders should appear)\nOpen the in-browser print dialog (CTRL/CMD+P).\nChange the Destination setting to Save as PDF.\nChange the Layout to Landscape.\nChange the Margins to None.\nEnable the Background graphics option (if you want it)\nClick Save 🎉\n\n\n\n\nContent of the slides in html format as a self-contained downloadable file and including tabs and scroll sections.\nMore importantly, notes have the commenting and annotateing tools activated via https://hypothes.is/. If you create a free account , you can annotate and comment slides as well as share your annotations/comments with the public or via private or public groups.",
+    "crumbs": [
+      "Biostats uOttawa",
+      "Slides and notes"
+    ]
+  },
+  {
+    "objectID": "en/lectures.html#about-slides-and-notes",
+    "href": "en/lectures.html#about-slides-and-notes",
+    "title": "Lectures",
+    "section": "",
+    "text": "Slides in revealjs format (html). If you want then as a pdf (note you might loose some functionality or contents due to tabs and scroll sections):\n\nOpen the slides in your browser from a link on this page\nPress e to get into the PDF export mode (?print-pdf should appear near the end of the url and white borders should appear)\nOpen the in-browser print dialog (CTRL/CMD+P).\nChange the Destination setting to Save as PDF.\nChange the Layout to Landscape.\nChange the Margins to None.\nEnable the Background graphics option (if you want it)\nClick Save 🎉\n\n\n\n\nContent of the slides in html format as a self-contained downloadable file and including tabs and scroll sections.\nMore importantly, notes have the commenting and annotateing tools activated via https://hypothes.is/. If you create a free account , you can annotate and comment slides as well as share your annotations/comments with the public or via private or public groups.",
+    "crumbs": [
+      "Biostats uOttawa",
+      "Slides and notes"
+    ]
+  },
+  {
+    "objectID": "en/presentation.html",
+    "href": "en/presentation.html",
+    "title": "Bio8940",
+    "section": "",
+    "text": "ImportantRegister team, article and date\n\n\n\nPlease register for your presentations here.\nYou need to log into your uottawa account to have access\n\n\n\n\nThe presentation counts for 30% of the final grade\nThe presentation should be based on one of the suggested paper or paper selected by the students (with my approval)\nPresentation should be between 8-10 minutes long and are followed by 3-5 minutes of questions. They should provide a big picture of the study and the main hypothesis, a quick presentation of the data, detailed explanation of analysis and results, and finally a discussion on the clarity and adequacy of the statistical analysis. If the paper is more methodological, the presentation should present a summary version of the paper and discuss what what harder to understand or not understood.\n\n\n\n\n\n\nIntroduction: Background of the general ‘big picture’ and specific problem, study system, and specific hypotheses or predictions.\nMethods: Brief outline of data collection and explanation of statistical methods used to address the hypotheses/predictions outlined in the introduction, including key assumptions.\nResults: Visualizations clearly summarizing your results, using parallel structure to methods\nDiscussion: Summary of major results, alternative explanations for the observed results, conclusions/implications, future directions\n\n\n\n\n\nOrganization\nClarity\nDelivery: Timing, pace, tone, articulation\nOriginality: Creativity, critical thinking",
+    "crumbs": [
+      "Biostats uOttawa",
+      "Assessment",
+      "Group presentations"
+    ]
+  },
+  {
+    "objectID": "en/presentation.html#group-presentations",
+    "href": "en/presentation.html#group-presentations",
+    "title": "Bio8940",
+    "section": "",
+    "text": "ImportantRegister team, article and date\n\n\n\nPlease register for your presentations here.\nYou need to log into your uottawa account to have access\n\n\n\n\nThe presentation counts for 30% of the final grade\nThe presentation should be based on one of the suggested paper or paper selected by the students (with my approval)\nPresentation should be between 8-10 minutes long and are followed by 3-5 minutes of questions. They should provide a big picture of the study and the main hypothesis, a quick presentation of the data, detailed explanation of analysis and results, and finally a discussion on the clarity and adequacy of the statistical analysis. If the paper is more methodological, the presentation should present a summary version of the paper and discuss what what harder to understand or not understood.\n\n\n\n\n\n\nIntroduction: Background of the general ‘big picture’ and specific problem, study system, and specific hypotheses or predictions.\nMethods: Brief outline of data collection and explanation of statistical methods used to address the hypotheses/predictions outlined in the introduction, including key assumptions.\nResults: Visualizations clearly summarizing your results, using parallel structure to methods\nDiscussion: Summary of major results, alternative explanations for the observed results, conclusions/implications, future directions\n\n\n\n\n\nOrganization\nClarity\nDelivery: Timing, pace, tone, articulation\nOriginality: Creativity, critical thinking",
+    "crumbs": [
+      "Biostats uOttawa",
+      "Assessment",
+      "Group presentations"
+    ]
   },
   {
     "objectID": "en/syllabus.html",
@@ -2107,309 +2346,79 @@
     "href": "en/syllabus.html#final-project",
     "title": "Syllabus",
     "section": "Final project",
-    "text": "Final project\n\n\nGeneral info\nOverall your work on the final projectl project counts for 50% of the final grade\nUsing your own dataset (or one provided by me):\n\ndevelop a question of interest\nchoose the statistical analysis appropriate to answer the question\ngive a short presentation during the class about your analysis plan\nanalyse the data using R\nPrepare a short report using Quarto including code and outputs for:\n\nexploratory plots\nanalysis\nmodel assumptions checks\nresult illustrations (plots)\n\nPrepare a 15min presentation as a statisticial report\nsubmit your work via Brightspace before the deadline\n\nYour submission on Brightspace needs to include:\n\nslides for your final presentation (in your preferred format)\nrendered html of your short report\n.qmd file (used to generate the html)\ndata file(s) used\nextra files needed to reproduce the document\n\n.bib files\n.csl files\n…\n\n\nMissing files would incur a 10% penalty on the report grade\n\n\nRubric\n\nAnalysis plan presentation (10%)\n5-10 minutes presentation of your analysis plan including:\n\nresearch question/hypothesis\ndata structure\npotential analysis\n\n\n\nFinal report (10%)\nDocument contains all analysis done, is reproducible, clear, well organized and commented (5%)\n\n\nFinal oral examination (30%)\nOral examination will be one-on-one during the exam period. It will last 30 minutes including a 12-15 minutes presentation of your work intertwined with questions from the examiner.\n\nPresentation structure\n\nIntroduction\n\nBackground of the general ‘big picture’ and specific problem,\nstudy system\nspecific hypotheses to be tested\npredictions\n\n\n\nMethods\n\nBrief outline of data collection\nclear explanation of statistical methods used to address the hypotheses/predictions outlined in the introduction, including key assumptions.\n\n\n\nResults\nText and visualizations clearly summarizing your results, using parallel structure to methods. Should include :\n\nclear graphics representing the data and the model outputs,\ntables reporting statistics\ntext describing results\nevaluation of model assumption and model fit\n\n\n\n\nDiscussion\n\nSummary of major results\nconclusions/implications\nLimitations of analysis (power, complexity of model, data structure, …)\nfuture directions",
+    "text": "Final project\n\n\nGeneral info\nOverall your work on the final projectl project counts for 50% of the final grade\nUsing your own dataset (or one provided by me):\n\ndevelop a question of interest\nchoose the statistical analysis appropriate to answer the question\ngive a short presentation during the class about your analysis plan\nanalyse the data using R\nPrepare a short report using Quarto including code and outputs for:\n\nexploratory plots\nanalysis\nmodel assumptions checks\nresult illustrations (plots)\n\nPrepare a 15min presentation as a statisticial report\nsubmit your work via Brightspace before the deadline\n30min oral exam (presentation and questions)\n\nYour submission on Brightspace needs to include:\n\nslides for your final presentation (in your preferred format)\nrendered html of your short report\n.qmd file (used to generate the html)\ndata file(s) used\nextra files needed to reproduce the document\n\n.bib files\n.csl files\n…\n\n\nMissing files needed to render the final short report would incur a 10% penalty on the report grade\n\n\nRubric\n\nAnalysis plan presentation (10%)\n5-10 minutes presentation of your analysis plan including:\n\nresearch question/hypothesis\ndata structure\npotential analysis\n\n\n\nFinal report (10%)\nDocument contains all analysis done, is reproducible, clear, well organized and commented (5%)\n\n\nFinal oral examination (30%)\nOral examination will be one-on-one during the exam period. It will last 30 minutes including a 12-15 minutes presentation of your work intertwined with questions from the examiner.\n\nPresentation structure\n\nIntroduction\n\nBackground of the general ‘big picture’ and specific problem,\nstudy system\nspecific hypotheses to be tested\npredictions\n\n\n\nMethods\n\nBrief outline of data collection\nclear explanation of statistical methods used to address the hypotheses/predictions outlined in the introduction, including key assumptions.\n\n\n\nResults\nText and visualizations clearly summarizing your results, using parallel structure to methods. Should include :\n\nclear graphics representing the data and the model outputs,\ntables reporting statistics\ntext describing results\nevaluation of model assumption and model fit\n\n\n\n\nDiscussion\n\nSummary of major results\nconclusions/implications\nLimitations of analysis (power, complexity of model, data structure, …)\nfuture directions",
     "crumbs": [
       "Biostats uOttawa",
       "Syllabus"
     ]
   },
   {
-    "objectID": "en/presentation.html",
-    "href": "en/presentation.html",
-    "title": "Bio8940",
-    "section": "",
-    "text": "ImportantRegister team, article and date\n\n\n\nPlease register for your presentations here.\nYou need to log into your uottawa account to have access\n\n\n\n\nThe presentation counts for 30% of the final grade\nThe presentation should be based on one of the suggested paper or paper selected by the students (with my approval)\nPresentation should be between 8-10 minutes long and are followed by 3-5 minutes of questions. They should provide a big picture of the study and the main hypothesis, a quick presentation of the data, detailed explanation of analysis and results, and finally a discussion on the clarity and adequacy of the statistical analysis. If the paper is more methodological, the presentation should present a summary version of the paper and discuss what what harder to understand or not understood.\n\n\n\n\n\n\nIntroduction: Background of the general ‘big picture’ and specific problem, study system, and specific hypotheses or predictions.\nMethods: Brief outline of data collection and explanation of statistical methods used to address the hypotheses/predictions outlined in the introduction, including key assumptions.\nResults: Visualizations clearly summarizing your results, using parallel structure to methods\nDiscussion: Summary of major results, alternative explanations for the observed results, conclusions/implications, future directions\n\n\n\n\n\nOrganization\nClarity\nDelivery: Timing, pace, tone, articulation\nOriginality: Creativity, critical thinking",
-    "crumbs": [
-      "Biostats uOttawa",
-      "Assessment",
-      "Group presentations"
-    ]
-  },
-  {
-    "objectID": "en/presentation.html#group-presentations",
-    "href": "en/presentation.html#group-presentations",
-    "title": "Bio8940",
-    "section": "",
-    "text": "ImportantRegister team, article and date\n\n\n\nPlease register for your presentations here.\nYou need to log into your uottawa account to have access\n\n\n\n\nThe presentation counts for 30% of the final grade\nThe presentation should be based on one of the suggested paper or paper selected by the students (with my approval)\nPresentation should be between 8-10 minutes long and are followed by 3-5 minutes of questions. They should provide a big picture of the study and the main hypothesis, a quick presentation of the data, detailed explanation of analysis and results, and finally a discussion on the clarity and adequacy of the statistical analysis. If the paper is more methodological, the presentation should present a summary version of the paper and discuss what what harder to understand or not understood.\n\n\n\n\n\n\nIntroduction: Background of the general ‘big picture’ and specific problem, study system, and specific hypotheses or predictions.\nMethods: Brief outline of data collection and explanation of statistical methods used to address the hypotheses/predictions outlined in the introduction, including key assumptions.\nResults: Visualizations clearly summarizing your results, using parallel structure to methods\nDiscussion: Summary of major results, alternative explanations for the observed results, conclusions/implications, future directions\n\n\n\n\n\nOrganization\nClarity\nDelivery: Timing, pace, tone, articulation\nOriginality: Creativity, critical thinking",
-    "crumbs": [
-      "Biostats uOttawa",
-      "Assessment",
-      "Group presentations"
-    ]
-  },
-  {
-    "objectID": "en/lectures.html",
-    "href": "en/lectures.html",
-    "title": "Lectures",
-    "section": "",
-    "text": "Warning in replace(z): Reference key(s) not found:\nivimey-cook_implementing_2023\n\n\n\n\n\n\n\n\nDate\nTopic\nSlides\nReading\n\n\n\n\n\n\n\nJan 13\nIntroduction\n \nSmaldino and McElreath (2016)\n\n\nJan 20\nGeneralized linear models (and revision of linear models)\n \nZuur et al. (2010)\n\n\nJan 27\nCausal structure and model building\n \nCinelli et al. (2022), Wysocki et al. (2022)\n\n\nFeb 3\nIntroduction to mixed-models\n \nHarrison et al. (2018)\n\n\nFeb 10\nGeneralised linear mixed models\n \nBolker et al. (2009)\n\n\nReading week\n\n\nFeb 24\nIntroduction to Quarto\n \nAlston and Rick (2021)\n\n\nMar 3\nPresentation final project proposals\n \nnone\n\n\nMar 10\nIntroduction to Github\n \nIvimey-Cook et al. (2023)\n\n\nMar 17\nIntroduction to Bayesian analysis\nNA\nKruschke and Liddell (2018)\n\n\nMar 24\nMultivariate mixed models\nNA\nVan de Pol and Wright (2009)\n\n\nMar 31\nTopic chosen by students\nNA\nWasserstein and Lazar (2016)\n\n\nApr 7\nTopic chosen by students\nNA\nForstmeier et al. (2017)\n\n\n\n\n\n\n\n\n\n\n\nSlides in revealjs format (html). If you want then as a pdf (note you might loose some functionality or contents due to tabs and scroll sections):\n\nOpen the slides in your browser from a link on this page\nPress e to get into the PDF export mode (?print-pdf should appear near the end of the url and white borders should appear)\nOpen the in-browser print dialog (CTRL/CMD+P).\nChange the Destination setting to Save as PDF.\nChange the Layout to Landscape.\nChange the Margins to None.\nEnable the Background graphics option (if you want it)\nClick Save 🎉\n\n\n\n\nContent of the slides in html format as a self-contained downloadable file and including tabs and scroll sections.\nMore importantly, notes have the commenting and annotateing tools activated via https://hypothes.is/. If you create a free account , you can annotate and comment slides as well as share your annotations/comments with the public or via private or public groups.",
-    "crumbs": [
-      "Biostats uOttawa",
-      "Slides and notes"
-    ]
-  },
-  {
-    "objectID": "en/lectures.html#about-slides-and-notes",
-    "href": "en/lectures.html#about-slides-and-notes",
-    "title": "Lectures",
-    "section": "",
-    "text": "Slides in revealjs format (html). If you want then as a pdf (note you might loose some functionality or contents due to tabs and scroll sections):\n\nOpen the slides in your browser from a link on this page\nPress e to get into the PDF export mode (?print-pdf should appear near the end of the url and white borders should appear)\nOpen the in-browser print dialog (CTRL/CMD+P).\nChange the Destination setting to Save as PDF.\nChange the Layout to Landscape.\nChange the Margins to None.\nEnable the Background graphics option (if you want it)\nClick Save 🎉\n\n\n\n\nContent of the slides in html format as a self-contained downloadable file and including tabs and scroll sections.\nMore importantly, notes have the commenting and annotateing tools activated via https://hypothes.is/. If you create a free account , you can annotate and comment slides as well as share your annotations/comments with the public or via private or public groups.",
-    "crumbs": [
-      "Biostats uOttawa",
-      "Slides and notes"
-    ]
-  },
-  {
-    "objectID": "en/dataset.html",
-    "href": "en/dataset.html",
-    "title": "Data and code",
-    "section": "",
-    "text": "All data and code files in a nice zip file",
-    "crumbs": [
-      "Biostats uOttawa",
-      "Data and code"
-    ]
-  },
-  {
-    "objectID": "en/dataset.html#data-for-praticals",
-    "href": "en/dataset.html#data-for-praticals",
-    "title": "Data and code",
-    "section": "Data for praticals",
-    "text": "Data for praticals\n\nBanta_TotalFruits.csv\ndragons.csv\ngala.csv\nlm_example.csv\nmouflon.csv\nRIKZ.txt\nunicorns_aggression.csv",
-    "crumbs": [
-      "Biostats uOttawa",
-      "Data and code"
-    ]
-  },
-  {
-    "objectID": "en/dataset.html#r-code-and-functions-used-in-slides",
-    "href": "en/dataset.html#r-code-and-functions-used-in-slides",
-    "title": "Data and code",
-    "section": "R code and functions used in slides",
-    "text": "R code and functions used in slides\n\nextra_funs.R\nlec-01_intro.R\nlec-02_rmarkdown.R\nlec-03_github.R\nlec-04_lm_glm.R\nlec-05_model_structure.R\nlec-06_intro_lmm.R\nlec-07_intro_bayes.R\nlec-08_intro_glmm.R",
-    "crumbs": [
-      "Biostats uOttawa",
-      "Data and code"
-    ]
-  },
-  {
-    "objectID": "en/404.html",
-    "href": "en/404.html",
+    "objectID": "fr/404.html",
+    "href": "fr/404.html",
     "title": "Page Not Found",
     "section": "",
     "text": "It seems you R lost (bad pun intended)\nThe page you requested cannot be found (perhaps it was moved or it is still in development)."
   },
   {
-    "objectID": "en/index.html",
-    "href": "en/index.html",
-    "title": "Advanced statistics and Open science",
+    "objectID": "fr/index.html",
+    "href": "fr/index.html",
+    "title": "Statistiques avancées et science ouverte",
     "section": "",
-    "text": "This is the site for the graduate level course Bio8940 at the University of Ottawa. You will find all the course information including the course schedule, slides, course notes, practicals info and exercises, description of assessments as well as the (official) for the course.\nSubmission of course work is done via brighspace.\nPlease note that the class is bilingual. This means that any questions during the class can be asked or answered in either french or english and the prof will translate the answers if needs be. The majority of the course content (slides and course notes) are provided in english only, but explanation can be provided in either languages.",
+    "text": "Bienvenue sur le site du cours Bio8940 de l’Université d’Ottawa. Vous y trouverez toutes les informations sur le cours, y compris l’horaire du cours, les diapositives, les notes de cours, les informations et les exercices pratiques, la description des évaluations ainsi que le syllabus (officiel) du cours.\nLa soumission des travaux de cours se fait via brighspace.\nLe cours est un cours bilingue. Cela signifie que l’ensemble des interactions orales peuvent avoir lieu en français ou en anglais, le prof pouvant fournir les traductions nécessaires pour que l’ensemble des étudiants comprennent la matière. Le contenu du cours (diapo et manuel de laboratoire) seront présenté de manière unilingue en anglais avec possibilité de fournir des explanations en français si besoin.",
     "crumbs": [
       "Biostats uOttawa",
-      "Course info"
+      "Info générale"
     ]
   },
   {
-    "objectID": "en/index.html#schedule",
-    "href": "en/index.html#schedule",
-    "title": "Advanced statistics and Open science",
-    "section": "Schedule ",
-    "text": "Schedule \n\nLecture: Tuesdays, 1430-1720 in VNR-1050\n\nThere are no lectures or tutorials during reading week.",
+    "objectID": "fr/index.html#où-et-quand",
+    "href": "fr/index.html#où-et-quand",
+    "title": "Statistiques avancées et science ouverte",
+    "section": "Où et quand ",
+    "text": "Où et quand \n\nCours: Mardis, 1430-1720 in TBT-323",
     "crumbs": [
       "Biostats uOttawa",
-      "Course info"
+      "Info générale"
     ]
   },
   {
-    "objectID": "en/people.html",
-    "href": "en/people.html",
+    "objectID": "fr/people.html",
+    "href": "fr/people.html",
     "title": "Julien Martin",
     "section": "",
-    "text": "Julien is an Associate Professor at the University of Ottawa and has been teaching (and learning) R for the last 15 years.\nI created the websites using Quarto, R, revealjs, mermaid.js and graphViz. I developed the theme for the slides based on the xaringan blackboard theme.",
+    "text": "Julien est Professeur agrégé à l’Université d’Ottawa en biologie évolutive et quantitative et il enseigne R (et l’apprend) depuis plus de 15 ans.\nJ’ai créé le site internet en utilisant Quarto, R, revealjs, mermaid.js et graphViz. J’ai developpé le thème de mes présentations à partir de du theme “blackboard” pour xaringan.",
     "crumbs": [
       "Biostats uOttawa",
       "Contact"
     ]
   },
   {
-    "objectID": "en/practical_extra.html",
-    "href": "en/practical_extra.html",
-    "title": "Extra information for praticals",
-    "section": "",
-    "text": "Here you will find links for the praticals as well as their solutions"
-  },
-  {
-    "objectID": "en/practical_extra.html#rmarkdown",
-    "href": "en/practical_extra.html#rmarkdown",
-    "title": "Extra information for praticals",
-    "section": "Introduction Rmarkdown",
-    "text": "Introduction Rmarkdown\n\nrmarkdown cheatsheet\nTroubleshoot PDF in Rmarkdown"
-  },
-  {
-    "objectID": "en/practical_extra.html#introduction-to-github",
-    "href": "en/practical_extra.html#introduction-to-github",
-    "title": "Extra information for praticals",
-    "section": "Introduction to github",
-    "text": "Introduction to github\n\nManaging git credentials\nHappy git with R great book about git and R"
-  },
-  {
-    "objectID": "en/report.html",
-    "href": "en/report.html",
+    "objectID": "fr/report.html",
+    "href": "fr/report.html",
     "title": "Bio8940",
     "section": "",
-    "text": "Overall your work on the final projectl project counts for 50% of the final grade\nUsing your own dataset (or one provided by me):\n\ndevelop a question of interest\nchoose the statistical analysis appropriate to answer the question\ngive a short presentation during the class about your analysis plan\nanalyse the data using R\nPrepare a short report using Quarto including code and outputs for:\n\nexploratory plots\nanalysis\nmodel assumptions checks\nresult illustrations (plots)\n\nPrepare a 15min presentation as a statisticial report\nsubmit your work via Brightspace before the deadline\n\nYour submission on Brightspace needs to include:\n\nslides for your final presentation (in your preferred format)\nrendered html of your short report\n.qmd file (used to generate the html)\ndata file(s) used\nextra files needed to reproduce the document\n\n.bib files\n.csl files\n…\n\n\nMissing files would incur a 10% penalty on the report grade\n\n\n\n\n\n5-10 minutes presentation of your analysis plan including:\n\nresearch question/hypothesis\ndata structure\npotential analysis\n\n\n\n\nDocument contains all analysis done, is reproducible, clear, well organized and commented (5%)\n\n\n\nOral examination will be one-on-one during the exam period. It will last 30 minutes including a 12-15 minutes presentation of your work intertwined with questions from the examiner.\n\n\n\n\n\nBackground of the general ‘big picture’ and specific problem,\nstudy system\nspecific hypotheses to be tested\npredictions\n\n\n\n\n\nBrief outline of data collection\nclear explanation of statistical methods used to address the hypotheses/predictions outlined in the introduction, including key assumptions.\n\n\n\n\nText and visualizations clearly summarizing your results, using parallel structure to methods. Should include :\n\nclear graphics representing the data and the model outputs,\ntables reporting statistics\ntext describing results\nevaluation of model assumption and model fit\n\n\n\n\n\n\nSummary of major results\nconclusions/implications\nLimitations of analysis (power, complexity of model, data structure, …)\nfuture directions",
-    "crumbs": [
-      "Biostats uOttawa",
-      "Assessment",
-      "Final project"
-    ]
+    "text": "L’ensemble de votre travail sur le projet final compte pour 50% de la note finale\nUtilisation de votre propre jeu de données (ou d’un jeu de données fourni par moi) :\n\ndévelopper une question d’intérêt\nchoisir l’analyse statistique appropriée pour répondre à la question\nprésenter brièvement en classe votre plan d’analyse\nanalyser les données à l’aide de R\nPréparez un court rapport à l’aide de Quarto en incluant le code et les sorties pour :\n\ngraphiques exploratoires\nl’analyse\nvérification des hypothèses du modèle\nillustrations des résultats (tracés)\n\nPréparez une présentation de 15 minutes sous la forme d’un rapport statistique.\nsoumettre votre travail via Brightspace avant la date limite\nExamen oral de 30 min (présentation et question)\n\nVotre soumission sur Brightspace doit inclure :\n\nles diapositives de votre présentation finale (dans le format de votre choix)\nle rendu html de votre rapport court\nle fichier .qmd (utilisé pour générer le html)\nle(s) fichier(s) de données utilisé(s)\nfichiers supplémentaires nécessaires pour reproduire le document\n\nfichiers .bib\nfichiers .csl\n…\n\n\nLes fichiers manquants pour généré le rapport final entraînent une pénalité de 10 % sur la note du rapport.\n\n\n\n\n\nPrésentation de 5 à 10 minutes de votre plan d’analyse comprenant :\n\nquestion de recherche/hypothèse\nstructure des données\nanalyse potentielle\n\n\n\n\nLe document contient toutes les analyses effectuées, est reproductible, clair, bien organisé et commenté (5%)\n\n\n\nL’examen oral se déroulera en tête-à-tête pendant la période d’examen. Il durera 30 minutes et comprendra une présentation de 12 à 15 minutes de votre travail, entrecoupée de questions de l’examinateur.\n\n\n\n\n\nContexte général et problème spécifique,\nsystème d’étude\nhypothèses spécifiques à tester\nPrédictions\n\n\n\n\n\nBref aperçu de la collecte des données\nExplication claire des méthodes statistiques utilisées pour hypothèses/prédictions énoncées dans l’introduction, y compris les principales hypothèses clés.\n\n\n\n\nTexte et visualisations résumant clairement vos résultats, en utilisant une structure parallèle aux méthodes. parallèle aux méthodes. Doivent inclure :\n\ndes graphiques clairs représentant les données et les résultats du modèle,\ndes tableaux présentant des statistiques\nun texte décrivant les résultats\nl’évaluation de l’hypothèse et de l’adéquation du modèle\n\n\n\n\n\n\nRésumé des principaux résultats\nconclusions/implications\nLimites de l’analyse (puissance, complexité du modèle, structure des données, …)\norientations futures"
   },
   {
-    "objectID": "en/report.html#final-project",
-    "href": "en/report.html#final-project",
+    "objectID": "fr/report.html#projet-final",
+    "href": "fr/report.html#projet-final",
     "title": "Bio8940",
     "section": "",
-    "text": "Overall your work on the final projectl project counts for 50% of the final grade\nUsing your own dataset (or one provided by me):\n\ndevelop a question of interest\nchoose the statistical analysis appropriate to answer the question\ngive a short presentation during the class about your analysis plan\nanalyse the data using R\nPrepare a short report using Quarto including code and outputs for:\n\nexploratory plots\nanalysis\nmodel assumptions checks\nresult illustrations (plots)\n\nPrepare a 15min presentation as a statisticial report\nsubmit your work via Brightspace before the deadline\n\nYour submission on Brightspace needs to include:\n\nslides for your final presentation (in your preferred format)\nrendered html of your short report\n.qmd file (used to generate the html)\ndata file(s) used\nextra files needed to reproduce the document\n\n.bib files\n.csl files\n…\n\n\nMissing files would incur a 10% penalty on the report grade\n\n\n\n\n\n5-10 minutes presentation of your analysis plan including:\n\nresearch question/hypothesis\ndata structure\npotential analysis\n\n\n\n\nDocument contains all analysis done, is reproducible, clear, well organized and commented (5%)\n\n\n\nOral examination will be one-on-one during the exam period. It will last 30 minutes including a 12-15 minutes presentation of your work intertwined with questions from the examiner.\n\n\n\n\n\nBackground of the general ‘big picture’ and specific problem,\nstudy system\nspecific hypotheses to be tested\npredictions\n\n\n\n\n\nBrief outline of data collection\nclear explanation of statistical methods used to address the hypotheses/predictions outlined in the introduction, including key assumptions.\n\n\n\n\nText and visualizations clearly summarizing your results, using parallel structure to methods. Should include :\n\nclear graphics representing the data and the model outputs,\ntables reporting statistics\ntext describing results\nevaluation of model assumption and model fit\n\n\n\n\n\n\nSummary of major results\nconclusions/implications\nLimitations of analysis (power, complexity of model, data structure, …)\nfuture directions",
-    "crumbs": [
-      "Biostats uOttawa",
-      "Assessment",
-      "Final project"
-    ]
+    "text": "L’ensemble de votre travail sur le projet final compte pour 50% de la note finale\nUtilisation de votre propre jeu de données (ou d’un jeu de données fourni par moi) :\n\ndévelopper une question d’intérêt\nchoisir l’analyse statistique appropriée pour répondre à la question\nprésenter brièvement en classe votre plan d’analyse\nanalyser les données à l’aide de R\nPréparez un court rapport à l’aide de Quarto en incluant le code et les sorties pour :\n\ngraphiques exploratoires\nl’analyse\nvérification des hypothèses du modèle\nillustrations des résultats (tracés)\n\nPréparez une présentation de 15 minutes sous la forme d’un rapport statistique.\nsoumettre votre travail via Brightspace avant la date limite\nExamen oral de 30 min (présentation et question)\n\nVotre soumission sur Brightspace doit inclure :\n\nles diapositives de votre présentation finale (dans le format de votre choix)\nle rendu html de votre rapport court\nle fichier .qmd (utilisé pour générer le html)\nle(s) fichier(s) de données utilisé(s)\nfichiers supplémentaires nécessaires pour reproduire le document\n\nfichiers .bib\nfichiers .csl\n…\n\n\nLes fichiers manquants pour généré le rapport final entraînent une pénalité de 10 % sur la note du rapport.\n\n\n\n\n\nPrésentation de 5 à 10 minutes de votre plan d’analyse comprenant :\n\nquestion de recherche/hypothèse\nstructure des données\nanalyse potentielle\n\n\n\n\nLe document contient toutes les analyses effectuées, est reproductible, clair, bien organisé et commenté (5%)\n\n\n\nL’examen oral se déroulera en tête-à-tête pendant la période d’examen. Il durera 30 minutes et comprendra une présentation de 12 à 15 minutes de votre travail, entrecoupée de questions de l’examinateur.\n\n\n\n\n\nContexte général et problème spécifique,\nsystème d’étude\nhypothèses spécifiques à tester\nPrédictions\n\n\n\n\n\nBref aperçu de la collecte des données\nExplication claire des méthodes statistiques utilisées pour hypothèses/prédictions énoncées dans l’introduction, y compris les principales hypothèses clés.\n\n\n\n\nTexte et visualisations résumant clairement vos résultats, en utilisant une structure parallèle aux méthodes. parallèle aux méthodes. Doivent inclure :\n\ndes graphiques clairs représentant les données et les résultats du modèle,\ndes tableaux présentant des statistiques\nun texte décrivant les résultats\nl’évaluation de l’hypothèse et de l’adéquation du modèle\n\n\n\n\n\n\nRésumé des principaux résultats\nconclusions/implications\nLimites de l’analyse (puissance, complexité du modèle, structure des données, …)\norientations futures"
   },
   {
-    "objectID": "en/who_when.html",
-    "href": "en/who_when.html",
+    "objectID": "fr/who_when.html",
+    "href": "fr/who_when.html",
     "title": "Bio8940",
     "section": "",
     "text": "Julien Martin"
   },
   {
-    "objectID": "en/who_when.html#schedule",
-    "href": "en/who_when.html#schedule",
+    "objectID": "fr/who_when.html#où-et-quand",
+    "href": "fr/who_when.html#où-et-quand",
     "title": "Bio8940",
-    "section": "Schedule ",
-    "text": "Schedule \n\nLecture: Tuesdays, 1430-1720 in VNR-1050\n\nThere are no lectures or tutorials during reading week."
-  },
-  {
-    "objectID": "fr/dataset.html",
-    "href": "fr/dataset.html",
-    "title": "Code et données",
-    "section": "",
-    "text": "Code et fichiers de données utilisés dans les diapos ensemble dans un fichier zip zip file"
-  },
-  {
-    "objectID": "fr/dataset.html#données-pour-les-labos",
-    "href": "fr/dataset.html#données-pour-les-labos",
-    "title": "Code et données",
-    "section": "Données pour les labos",
-    "text": "Données pour les labos\n\nBanta_TotalFruits.csv\ndragons.csv\ngala.csv\nlm_example.csv\nmouflon.csv\nRIKZ.txt\nunicorns_aggression.csv"
-  },
-  {
-    "objectID": "fr/dataset.html#code-r-utilisés-dans-les-diapos",
-    "href": "fr/dataset.html#code-r-utilisés-dans-les-diapos",
-    "title": "Code et données",
-    "section": "Code R utilisés dans les diapos",
-    "text": "Code R utilisés dans les diapos\n\nextra_funs.R\nlec-01_intro.R\nlec-02_rmarkdown.R\nlec-03_github.R\nlec-04_lm_glm.R\nlec-05_model_structure.R\nlec-06_intro_lmm.R\nlec-07_intro_bayes.R\nlec-08_intro_glmm.R"
-  },
-  {
-    "objectID": "fr/lectures.html",
-    "href": "fr/lectures.html",
-    "title": "Cours",
-    "section": "",
-    "text": "Les diapos et les notes sont uniquement en anglais\n\n\n\n\n\n\n\n\nDate\nSujet\nDiapos\nLecture\n\n\n\n\n\n\n\n7 janv.\nIntroduction\n \nSmaldino et McElreath (2016)\n\n\n14 janv.\nModèles linéaires généralisés (et révisions modèles linéaires)\n \nZuur et al. (2010)\n\n\n21 janv.\nIntroduction à Github\n \nIvimey-Cook et al. (2023)\n\n\n28 janv.\nIntroduction à Quarto\n \nAlston et Rick (2021)\n\n\n4 févr.\natelier en Allemagne, pas de cours\nNA\naucune\n\n\n11 févr.\nStructure causale et construction de modèle\n \nCinelli et al. (2022), Wysocki et al. (2022)\n\n\nSemaine de Lecture\n\n\n25 févr.\nIntroduction aux modèles mixtes\n \nHarrison et al. (2018)\n\n\n4 mars\nIntro analyse Bayesienne\n \nKruschke et Liddell (2018)\n\n\n11 mars\nModèles mixtes généralisés\n \nBolker et al. (2009)\n\n\n18 mars\nDiscussion sur les plans pour les projets écrits\nNA\nWasserstein et Lazar (2016)\n\n\n25 mars\nModèles mixtes multivariés\nNA\nVan de Pol et Wright (2009)\n\n\n1 avr.\n\nNA\nForstmeier et al. (2017)\n\n\n\n\n\n\n\n\n\n\n\nLes diapos sont en format revealjs (html). Si vous souhaitez avoir un pdf (*note: vous perdrez peut-être quelques fonctionnalités):\n\nOuvrir les diapos dans votre navigateur\nAppuyer sur e pour le mode d’exportation en PDF (?print-pdf devrait apparaître à la fin de l’adresse url)\nImprimer la page (CTRL/CMD+P).\nChanger la destination à Save as PDF.\nChanger le Format à Paysage.\nChanger les Marges à Aucune.\nAjouter le fond graphique (si vous le souhaitez)\nCliquer Sauvegarder 🎉\n\n\n\n\nLes notes sont simplement le contenu des diapos (et mes quelques notes) en format html.\nEn outre, l’outils d’annotation https://hypothes.is/ est activé sur les pages de notes. Cet outil permet d’annoter et commenter des pages internet, de sauvegarder vos commentaires, de la partager publiquement ou au sein de groupes privés. Il faut juste créer un compte gratuit.",
-    "crumbs": [
-      "Biostats uOttawa",
-      "Diapos et notes"
-    ]
-  },
-  {
-    "objectID": "fr/lectures.html#à-propos-des-diapos-et-des-notes",
-    "href": "fr/lectures.html#à-propos-des-diapos-et-des-notes",
-    "title": "Cours",
-    "section": "",
-    "text": "Les diapos sont en format revealjs (html). Si vous souhaitez avoir un pdf (*note: vous perdrez peut-être quelques fonctionnalités):\n\nOuvrir les diapos dans votre navigateur\nAppuyer sur e pour le mode d’exportation en PDF (?print-pdf devrait apparaître à la fin de l’adresse url)\nImprimer la page (CTRL/CMD+P).\nChanger la destination à Save as PDF.\nChanger le Format à Paysage.\nChanger les Marges à Aucune.\nAjouter le fond graphique (si vous le souhaitez)\nCliquer Sauvegarder 🎉\n\n\n\n\nLes notes sont simplement le contenu des diapos (et mes quelques notes) en format html.\nEn outre, l’outils d’annotation https://hypothes.is/ est activé sur les pages de notes. Cet outil permet d’annoter et commenter des pages internet, de sauvegarder vos commentaires, de la partager publiquement ou au sein de groupes privés. Il faut juste créer un compte gratuit.",
-    "crumbs": [
-      "Biostats uOttawa",
-      "Diapos et notes"
-    ]
-  },
-  {
-    "objectID": "fr/syllabus.html",
-    "href": "fr/syllabus.html",
-    "title": "Syllabus",
-    "section": "",
-    "text": "Les analyses statistiques sont fondamentales à un processus scientifique rigoureux. Par conséquent, il est primordiale de comprendre les statistiques et de reporter correctement les analyses pour améliorer la transparence et la qualité de la science. Les objectifs du cours sont:\n\nAméliorer la compréhension des modèles statistique avancés (incluant les modèles mixtes généralisés)\nDévelopper de bonnes habitudes pour coder (utilisation de R et Rmarkdown)\nAméliorer la gestion des données et du code statistique (manipulation de données et github)\nPrésenter les principes de science ouverte (se basant sur OSF, Open Science Framework)",
-    "crumbs": [
-      "Biostats uOttawa",
-      "Syllabus"
-    ]
-  },
-  {
-    "objectID": "fr/syllabus.html#description-et-objectifs",
-    "href": "fr/syllabus.html#description-et-objectifs",
-    "title": "Syllabus",
-    "section": "",
-    "text": "Les analyses statistiques sont fondamentales à un processus scientifique rigoureux. Par conséquent, il est primordiale de comprendre les statistiques et de reporter correctement les analyses pour améliorer la transparence et la qualité de la science. Les objectifs du cours sont:\n\nAméliorer la compréhension des modèles statistique avancés (incluant les modèles mixtes généralisés)\nDévelopper de bonnes habitudes pour coder (utilisation de R et Rmarkdown)\nAméliorer la gestion des données et du code statistique (manipulation de données et github)\nPrésenter les principes de science ouverte (se basant sur OSF, Open Science Framework)",
-    "crumbs": [
-      "Biostats uOttawa",
-      "Syllabus"
-    ]
-  },
-  {
-    "objectID": "fr/syllabus.html#contenu",
-    "href": "fr/syllabus.html#contenu",
-    "title": "Syllabus",
-    "section": "Contenu",
-    "text": "Contenu\n\nStatistiques (contenu flexible à définir en fonction de l’intérêt des participants)\n\nModèles linéaires généralisés\nModèles linéaires mixtes (généralisés et multivariés)\nsujets flexibles:\n\nIntroduction aux stats Bayesienne\nAnalyse de piste\nanalyse spatiale\nanalyse multivariée\nanalyse en composante principale\nGAM et GAMMs\n…\n\n\nScience ouverte répétable\n\nR: Rmarkdown, tidyverse, et workflowr\ngit: github et autre alternative\nOpen Science framework avec OSF",
-    "crumbs": [
-      "Biostats uOttawa",
-      "Syllabus"
-    ]
-  },
-  {
-    "objectID": "fr/syllabus.html#cours",
-    "href": "fr/syllabus.html#cours",
-    "title": "Syllabus",
-    "section": "Cours",
-    "text": "Cours\n\nDurée: 1 cours de 3h par semaine\nStyle: mélange de cours, discussion et labo\nComment: Session Zoom interactive avec tous les participants\nQuand: Mardis à 1430-1720\nOù: Salle: VNR-1050 \nInfo sur le cours: https://biostats-uottawa.github.io/bio8940/\nManuel labo: https://biostats-uottawa.github.io/enfR",
-    "crumbs": [
-      "Biostats uOttawa",
-      "Syllabus"
-    ]
-  },
-  {
-    "objectID": "fr/syllabus.html#évaluation",
-    "href": "fr/syllabus.html#évaluation",
-    "title": "Syllabus",
-    "section": "Évaluation",
-    "text": "Évaluation\nL’évaluation sera basée sur la participation et sur la réalisation d’un projet qui analysera des données en utilisant R et documentera l’analyse avec Rmarkdown, workflowr et github.\n\n50% évaluation en classe:\n\n15 min présentation en petit groupes sur un article choisi par les étudiants\ndiscussion en classe (10% questions, 10% discussions)\n\n50% travail de session présentant une analyse statistique vu en cours (ou plus complexes), rédigé avec Rmardown et publiées sur github\n\n\nPrésentation – 30%\n\nContenu – 60%\n\nIntroduction: Contexte général, hypothèses et prédictions spécifiques à l’étude.\nMéthodes: Brève description de la collecte des données. Explication des analyses statistiques à la lumière des hypothèses et ou prédictions\nResults: Représentation des clair des résultats\nDiscussion: Explications des résultats, limite de l’étude? critique des analyses par rapport aux données et aux hypothèses\n\n\n\nStyle – 30%\n\nOrganisation\nClarté\nStyle: Temps, vitesse, rhytme, ton de la voix, interactions avec audience \n\n\n\nRéponse et compréhension – 10%\n\n\n\nTravail de session – 50%\n\nContent – 70%\n\nIntroduction: (10 marks) Contexte général, hypothèses et prédictions spécifiques à l’étude.\nMethods: (20 marks) Brève description de la collecte des données. Explication des analyses statistiques à la lumière des hypothèses et ou prédictions\nResults: (20 marks) Représentation des clair (incluants graphiques) des résultats\nDiscussion: (10 marks) Explications des résultats, limite de l’étude? critique des analyses par rapport aux données et aux hypothèses\n\n\n\nStyle – 30%\n\nClarté et reproducibilité du code (10 marks)\nOrganisation (5 marks)\nClarté du texte (10 marks)\nOrthographe et grammaire (5 marks)",
-    "crumbs": [
-      "Biostats uOttawa",
-      "Syllabus"
-    ]
-  },
-  {
-    "objectID": "fr/syllabus.html#calendrier",
-    "href": "fr/syllabus.html#calendrier",
-    "title": "Syllabus",
-    "section": "Calendrier",
-    "text": "Calendrier\n\n\n\n\n\n\n\nSemaine\nSubject\n\n\n\n\n1\nIntro and discussion on Stats and science\n\n\n2\nRmarkdown and importance of reproducibility\n\n\n3\nIntro to Github\n\n\n4\nGeneralized linear models\n\n\n5\nLinear mixed models (including random slopes)\n\n\n6\nGeneralized linear mixed models (and intro to gamms)\n\n\n7\nReading week\n\n\n8\nIntro to Bayesian stats\n\n\n9\nComplex mixed models (spatial, temporal autocorrelation, non-independence random effects)\n\n\n10\nPCA and ordinance analysis\n\n\n11\nMultivariate mixed models\n\n\n12\nPath analysis and causality\n\n\n13\nWrap-up",
-    "crumbs": [
-      "Biostats uOttawa",
-      "Syllabus"
-    ]
-  },
-  {
-    "objectID": "fr/syllabus.html#note-sur-le-bilinguisme",
-    "href": "fr/syllabus.html#note-sur-le-bilinguisme",
-    "title": "Syllabus",
-    "section": "Note sur le bilinguisme",
-    "text": "Note sur le bilinguisme\nLe cours est un cours bilingue. Cela signifie que l’ensemble des interactions orales peuvent avoir lieu en français ou en anglais, le prof pouvant fournir les traductions nécessaires pour que l’ensemble des étudiants comprennent la matière. Le contenu du cours (diapo et manuel de laboratoire) seront présenté de manière unilingue en anglais avec possibilité de fournir des explanations en français si besoin.",
-    "crumbs": [
-      "Biostats uOttawa",
-      "Syllabus"
-    ]
+    "section": "Où et quand ",
+    "text": "Où et quand \n\nCours: Mardis, 1430-1720 in TBT-323"
   },
   {
     "objectID": "slides/lec-01_intro.notes.html",

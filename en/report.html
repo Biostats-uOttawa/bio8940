@@ -467,6 +467,7 @@ cookieconsent.run({
 </ul></li>
 <li>Prepare a <strong>15min presentation</strong> as a statisticial report</li>
 <li>submit your work via Brightspace before the deadline</li>
+<li><strong>30min oral exam</strong> (presentation and questions)</li>
 </ol>
 <p>Your submission on Brightspace needs to include:</p>
 <ol type="1">
@@ -481,7 +482,7 @@ cookieconsent.run({
 <li>…</li>
 </ul></li>
 </ol>
-<p>Missing files would incur a 10% penalty on the report grade</p>
+<p>Missing files needed to render the final short report would incur a 10% penalty on the report grade</p>
 </section>
 <section id="rubric" class="level3">
 <h3 class="anchored" data-anchor-id="rubric">Rubric</h3>
@@ -632,7 +633,7 @@ cookieconsent.run({
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/Biostats-uOttawa\.github\.io\/bio8940\/");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

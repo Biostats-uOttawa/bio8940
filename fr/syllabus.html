@@ -48,6 +48,8 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/bootstrap/bootstrap-96b02a967f26b1a85c235697bccfdb4a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/bootstrap/bootstrap-dark-f52301b4c68b5d831e16a816a8deccf1.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <link href="../site_libs/bootstrap/bootstrap-96b02a967f26b1a85c235697bccfdb4a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -398,14 +400,29 @@ cookieconsent.run({
   <ul>
   <li><a href="#description-et-objectifs" id="toc-description-et-objectifs" class="nav-link active" data-scroll-target="#description-et-objectifs">Description et objectifs</a></li>
   <li><a href="#contenu" id="toc-contenu" class="nav-link" data-scroll-target="#contenu">Contenu</a></li>
-  <li><a href="#cours" id="toc-cours" class="nav-link" data-scroll-target="#cours">Cours</a></li>
+  <li><a href="#cours" id="toc-cours" class="nav-link" data-scroll-target="#cours">Cours</a>
+  <ul class="collapse">
+  <li><a href="#prof" id="toc-prof" class="nav-link" data-scroll-target="#prof">Prof <i class="fa-solid fa-person-chalkboard" aria-label="person-chalkboard"></i></a></li>
+  <li><a href="#heures-de-bureau" id="toc-heures-de-bureau" class="nav-link" data-scroll-target="#heures-de-bureau">Heures de bureau <i class="fa-solid fa-clock" aria-label="clock"></i></a></li>
+  <li><a href="#où-et-quand" id="toc-où-et-quand" class="nav-link" data-scroll-target="#où-et-quand">Où et quand <i class="fa-solid fa-calendar-days" aria-label="calendar-days"></i></a></li>
+  </ul></li>
   <li><a href="#évaluation" id="toc-évaluation" class="nav-link" data-scroll-target="#évaluation">Évaluation</a>
   <ul class="collapse">
-  <li><a href="#présentation-30" id="toc-présentation-30" class="nav-link" data-scroll-target="#présentation-30">Présentation – 30%</a></li>
-  <li><a href="#travail-de-session-50" id="toc-travail-de-session-50" class="nav-link" data-scroll-target="#travail-de-session-50">Travail de session – 50%</a></li>
+  <li><a href="#group-presentations" id="toc-group-presentations" class="nav-link" data-scroll-target="#group-presentations">Group presentations</a>
+  <ul class="collapse">
+  <li><a href="#general-info" id="toc-general-info" class="nav-link" data-scroll-target="#general-info">General info</a></li>
+  <li><a href="#rubric" id="toc-rubric" class="nav-link" data-scroll-target="#rubric">Rubric</a></li>
   </ul></li>
-  <li><a href="#calendrier" id="toc-calendrier" class="nav-link" data-scroll-target="#calendrier">Calendrier</a></li>
-  <li><a href="#note-sur-le-bilinguisme" id="toc-note-sur-le-bilinguisme" class="nav-link" data-scroll-target="#note-sur-le-bilinguisme">Note sur le bilinguisme</a></li>
+  <li><a href="#projet-final" id="toc-projet-final" class="nav-link" data-scroll-target="#projet-final">Projet final</a>
+  <ul class="collapse">
+  <li><a href="#informations-générales" id="toc-informations-générales" class="nav-link" data-scroll-target="#informations-générales">Informations générales</a></li>
+  <li><a href="#rubrique" id="toc-rubrique" class="nav-link" data-scroll-target="#rubrique">Rubrique</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#contestations-de-notation" id="toc-contestations-de-notation" class="nav-link" data-scroll-target="#contestations-de-notation">Contestations de notation</a></li>
+  <li><a href="#plagiat" id="toc-plagiat" class="nav-link" data-scroll-target="#plagiat">Plagiat</a></li>
+  <li><a href="#présence" id="toc-présence" class="nav-link" data-scroll-target="#présence">Présence</a></li>
+  <li><a href="#bilinguisme" id="toc-bilinguisme" class="nav-link" data-scroll-target="#bilinguisme">Bilinguisme</a></li>
   </ul>
 </nav>
     </div>
@@ -433,8 +450,8 @@ cookieconsent.run({
 
 
 <!-- extra -->
-<section id="description-et-objectifs" class="level2">
-<h2 class="anchored" data-anchor-id="description-et-objectifs">Description et objectifs</h2>
+<section id="description-et-objectifs" class="level1">
+<h1>Description et objectifs</h1>
 <p>Les analyses statistiques sont fondamentales à un processus scientifique rigoureux. Par conséquent, il est primordiale de comprendre les statistiques et de reporter correctement les analyses pour améliorer la transparence et la qualité de la science. Les objectifs du cours sont:</p>
 <ol type="1">
 <li>Améliorer la compréhension des modèles statistique avancés (incluant les modèles mixtes généralisés)</li>
@@ -443,8 +460,8 @@ cookieconsent.run({
 <li>Présenter les principes de science ouverte (se basant sur OSF, Open Science Framework)</li>
 </ol>
 </section>
-<section id="contenu" class="level2">
-<h2 class="anchored" data-anchor-id="contenu">Contenu</h2>
+<section id="contenu" class="level1">
+<h1>Contenu</h1>
 <ul>
 <li>Statistiques (contenu flexible à définir en fonction de l’intérêt des participants)
 <ul>
@@ -469,147 +486,234 @@ cookieconsent.run({
 </ul></li>
 </ul>
 </section>
-<section id="cours" class="level2">
-<h2 class="anchored" data-anchor-id="cours">Cours</h2>
+<section id="cours" class="level1">
+<h1>Cours</h1>
 <ul>
 <li>Durée: 1 cours de 3h par semaine</li>
 <li>Style: mélange de cours, discussion et labo</li>
-<li>Comment: Session Zoom interactive avec tous les participants</li>
-<li>Quand: Mardis à 1430-1720</li>
-<li>Où: Salle: VNR-1050 <!--   * Gather: https://gather.town/app/MCa0j7kcdaCNSCvS/AdvStatOpenSci
+<li>Comment: En personne <!--   * Gather: https://gather.town/app/MCa0j7kcdaCNSCvS/AdvStatOpenSci
   * Zoom: https://uottawa-ca.zoom.us/j/93306840602?pwd=bWNsR3AzQ25VQXJOWCszNmh6RWI1UT09 --></li>
 <li>Info sur le cours: <a href="https://biostats-uottawa.github.io/bio8940/" class="uri">https://biostats-uottawa.github.io/bio8940/</a></li>
 <li>Manuel labo: <a href="https://biostats-uottawa.github.io/enfR" class="uri">https://biostats-uottawa.github.io/enfR</a></li>
 </ul>
+<!-- extra -->
+<section id="prof" class="level3">
+<h3 class="anchored" data-anchor-id="prof">Prof <i class="fa-solid fa-person-chalkboard" aria-label="person-chalkboard"></i></h3>
+<ul>
+<li>Julien Martin</li>
+</ul>
+<!-- ## Teaching assitant-->
 </section>
-<section id="évaluation" class="level2">
-<h2 class="anchored" data-anchor-id="évaluation">Évaluation</h2>
-<p>L’évaluation sera basée sur la participation et sur la réalisation d’un projet qui analysera des données en utilisant <code>R</code> et documentera l’analyse avec <code>Rmarkdown</code>, <code>workflowr</code> et <code>github</code>.</p>
+<section id="heures-de-bureau" class="level3">
+<h3 class="anchored" data-anchor-id="heures-de-bureau">Heures de bureau <i class="fa-solid fa-clock" aria-label="clock"></i></h3>
+<p>Meetings en personne à mon bureau ou via zoom.</p>
+<ul>
+<li><strong>Julien Martin</strong>: Mercredi 1100-1200 (au bureau et en ligne)</li>
+</ul>
+</section>
+<section id="où-et-quand" class="level2">
+<h2 class="anchored" data-anchor-id="où-et-quand">Où et quand <i class="fa-solid fa-calendar-days" aria-label="calendar-days"></i></h2>
+<ul>
+<li><strong>Cours</strong>: Mardis, 1430-1720 in TBT-323</li>
+</ul>
+<p>Voir <a href="../fr/lectures.html">le site du cours</a> pour plus de détails sur l’horaire.</p>
+</section>
+</section>
+<section id="évaluation" class="level1">
+<h1>Évaluation</h1>
+<p>L’évaluation sera basée sur la participation et sur la réalisation d’un projet qui analysera des données en utilisant <code>R</code> et documentera l’analyse avec <code>Quarto</code>.</p>
 <ul>
 <li>50% évaluation en classe:
 <ul>
-<li>15 min présentation en petit groupes sur un article choisi par les étudiants</li>
+<li>15 min présentation en petit groupes sur un article choisi par les étudiants (30%)</li>
 <li>discussion en classe (10% questions, 10% discussions)</li>
 </ul></li>
-<li>50% travail de session présentant une analyse statistique vu en cours (ou plus complexes), rédigé avec Rmardown et publiées sur github</li>
-</ul>
-<section id="présentation-30" class="level3">
-<h3 class="anchored" data-anchor-id="présentation-30">Présentation – 30%</h3>
-<section id="contenu-60" class="level4">
-<h4 class="anchored" data-anchor-id="contenu-60">Contenu – 60%</h4>
+<li>50% travail de session présentant une analyse statistique vu en cours (ou plus complexes), analysé avec R et rédigé avec Quarto
 <ul>
-<li>Introduction: Contexte général, hypothèses et prédictions spécifiques à l’étude.</li>
-<li>Méthodes: Brève description de la collecte des données. Explication des analyses statistiques à la lumière des hypothèses et ou prédictions</li>
-<li>Results: Représentation des clair des résultats</li>
-<li>Discussion: Explications des résultats, limite de l’étude? critique des analyses par rapport aux données et aux hypothèses</li>
+<li>courte présentation sur la proposition de projet final (10%)</li>
+<li>final oral examination (40%)</li>
+</ul></li>
 </ul>
+<section id="group-presentations" class="level2">
+<h2 class="anchored" data-anchor-id="group-presentations">Group presentations</h2>
+<!-- extra -->
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Register team, article and date
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Please register for your presentations <a href="https://uottawa-my.sharepoint.com/personal/jmartin8_uottawa_ca/_layouts/15/guestaccess.aspx?share=EbAUafs8KSdEhoP6xs0XqiwBG4lI6raInEKrssUN6nbm7w&amp;e=RzBfDv">here</a>.</p>
+<p>You need to log into your uottawa account to have access</p>
+</div>
+</div>
+<section id="general-info" class="level3">
+<h3 class="anchored" data-anchor-id="general-info">General info</h3>
+<p>The presentation counts for 30% of the final grade</p>
+<p>The presentation should be based on one of the suggested paper or paper selected by the students (with my approval)</p>
+<p>Presentation should be between 8-10 minutes long and are followed by 3-5 minutes of questions. They should provide a big picture of the study and the main hypothesis, a quick presentation of the data, detailed explanation of analysis and results, and finally a discussion on the clarity and adequacy of the statistical analysis. If the paper is more methodological, the presentation should present a summary version of the paper and discuss what what harder to understand or not understood.</p>
 </section>
-<section id="style-30" class="level4">
-<h4 class="anchored" data-anchor-id="style-30">Style – 30%</h4>
+<section id="rubric" class="level3">
+<h3 class="anchored" data-anchor-id="rubric">Rubric</h3>
+<section id="content-60-marks" class="level4">
+<h4 class="anchored" data-anchor-id="content-60-marks">Content – 60 marks</h4>
 <ul>
-<li>Organisation</li>
-<li>Clarté</li>
-<li>Style: Temps, vitesse, rhytme, ton de la voix, interactions avec audience <!-- - Originality: (5 marks) Creativity, critical thinking --></li>
+<li>Introduction: Background of the general ‘big picture’ and specific problem, study system, and specific hypotheses or predictions.</li>
+<li>Methods: Brief outline of data collection and explanation of statistical methods used to address the hypotheses/predictions outlined in the introduction, including key assumptions.</li>
+<li>Results: Visualizations clearly summarizing your results, using parallel structure to methods</li>
+<li>Discussion: Summary of major results, alternative explanations for the observed results, conclusions/implications, future directions</li>
 </ul>
 </section>
-<section id="réponse-et-compréhension-10" class="level4">
-<h4 class="anchored" data-anchor-id="réponse-et-compréhension-10">Réponse et compréhension – 10%</h4>
-</section>
-</section>
-<section id="travail-de-session-50" class="level3">
-<h3 class="anchored" data-anchor-id="travail-de-session-50">Travail de session – 50%</h3>
-<section id="content-70" class="level4">
-<h4 class="anchored" data-anchor-id="content-70">Content – 70%</h4>
+<section id="style-30-marks" class="level4">
+<h4 class="anchored" data-anchor-id="style-30-marks">Style – 30 marks</h4>
 <ul>
-<li>Introduction: (10 marks) Contexte général, hypothèses et prédictions spécifiques à l’étude.</li>
-<li>Methods: (20 marks) Brève description de la collecte des données. Explication des analyses statistiques à la lumière des hypothèses et ou prédictions</li>
-<li>Results: (20 marks) Représentation des clair (incluants graphiques) des résultats</li>
-<li>Discussion: (10 marks) Explications des résultats, limite de l’étude? critique des analyses par rapport aux données et aux hypothèses</li>
+<li>Organization</li>
+<li>Clarity</li>
+<li>Delivery: Timing, pace, tone, articulation</li>
+<li>Originality: Creativity, critical thinking</li>
 </ul>
 </section>
-<section id="style-30-1" class="level4">
-<h4 class="anchored" data-anchor-id="style-30-1">Style – 30%</h4>
+<section id="answers-and-understanding-10-marks" class="level4">
+<h4 class="anchored" data-anchor-id="answers-and-understanding-10-marks">Answers and understanding – 10 marks</h4>
+<!-- Content – 60%
+Introduction: (10 marks) Background of the general ‘big picture’ and specific problem, study system,
+and specific hypotheses or predictions.
+Methods: (20 marks) Brief outline of data collection and explanation of statistical methods used to
+address the hypotheses/predictions outlined in the introduction, including key assumptions.
+Results: (20 marks) Visualizations of results and explanation in line witht the analysis
+Discussion: (10 marks) discuss if analysis is/are appropriate and inline with hypotheses, what is
+strange or badly explain, what can have been done differently
+Open science info. Include a section (either in methods or discussion) on data and code availability. Also
+indicate if the methods are described clearly enough and with enough details to allow you to redo exactly
+the same analysis.
+Style – 40%
+Organization (10 marks)
+Clarity (10 marks)
+Delivery: (10 marks) Timing, pace, tone, articulation
+-->
+</section>
+</section>
+</section>
+<section id="projet-final" class="level2">
+<h2 class="anchored" data-anchor-id="projet-final">Projet final</h2>
+<!-- extra -->
+<section id="informations-générales" class="level3">
+<h3 class="anchored" data-anchor-id="informations-générales">Informations générales</h3>
+<p>L’ensemble de votre travail sur le projet final compte pour 50% de la note finale</p>
+<p>Utilisation de votre propre jeu de données (ou d’un jeu de données fourni par moi) :</p>
+<ol type="1">
+<li>développer une question d’intérêt</li>
+<li>choisir l’analyse statistique appropriée pour répondre à la question</li>
+<li><strong>présenter brièvement en classe votre plan d’analyse</strong></li>
+<li>analyser les données à l’aide de R</li>
+<li><strong>Préparez un court rapport à l’aide de Quarto</strong> en incluant le code et les sorties pour :
 <ul>
-<li>Clarté et reproducibilité du code (10 marks)</li>
-<li>Organisation (5 marks)</li>
-<li>Clarté du texte (10 marks)</li>
-<li>Orthographe et grammaire (5 marks) <!-- - Delivery: (5 marks) Timing, pace, tone, articulation --> <!-- - Originality: (5 marks) Creativity, critical thinking --></li>
+<li>graphiques exploratoires</li>
+<li>l’analyse</li>
+<li>vérification des hypothèses du modèle</li>
+<li>illustrations des résultats (tracés)</li>
+</ul></li>
+<li>Préparez une <strong>présentation de 15 minutes</strong> sous la forme d’un rapport statistique.</li>
+<li>soumettre votre travail via Brightspace avant la date limite</li>
+<li><strong>Examen oral de 30 min</strong> (présentation et question)</li>
+</ol>
+<p>Votre soumission sur Brightspace doit inclure :</p>
+<ol type="1">
+<li>les diapositives de votre présentation finale (dans le format de votre choix)</li>
+<li>le rendu html de votre rapport court</li>
+<li>le fichier .qmd (utilisé pour générer le html)</li>
+<li>le(s) fichier(s) de données utilisé(s)</li>
+<li>fichiers supplémentaires nécessaires pour reproduire le document
+<ul>
+<li>fichiers .bib</li>
+<li>fichiers .csl</li>
+<li>…</li>
+</ul></li>
+</ol>
+<p>Les fichiers manquants pour généré le rapport final entraînent une pénalité de 10 % sur la note du rapport.</p>
+</section>
+<section id="rubrique" class="level3">
+<h3 class="anchored" data-anchor-id="rubrique">Rubrique</h3>
+<section id="présentation-du-plan-danalyse-10" class="level4">
+<h4 class="anchored" data-anchor-id="présentation-du-plan-danalyse-10">Présentation du plan d’analyse (10%)</h4>
+<p>Présentation de 5 à 10 minutes de votre plan d’analyse comprenant :</p>
+<ul>
+<li>question de recherche/hypothèse</li>
+<li>structure des données</li>
+<li>analyse potentielle</li>
+</ul>
+</section>
+<section id="rapport-final-10" class="level4">
+<h4 class="anchored" data-anchor-id="rapport-final-10">Rapport final (10%)</h4>
+<p>Le document contient toutes les analyses effectuées, est reproductible, clair, bien organisé et commenté (5%)</p>
+</section>
+<section id="examen-oral-final-30" class="level4">
+<h4 class="anchored" data-anchor-id="examen-oral-final-30">Examen oral final (30%)</h4>
+<p>L’examen oral se déroulera en tête-à-tête pendant la période d’examen. Il durera 30 minutes et comprendra une présentation de 12 à 15 minutes de votre travail, entrecoupée de questions de l’examinateur.</p>
+<section id="structure-de-la-présentation" class="level5">
+<h5 class="anchored" data-anchor-id="structure-de-la-présentation">Structure de la présentation</h5>
+<section id="introduction" class="level6">
+<h6 class="anchored" data-anchor-id="introduction">Introduction</h6>
+<ul>
+<li>Contexte général et problème spécifique,</li>
+<li>système d’étude</li>
+<li>hypothèses spécifiques à tester</li>
+<li>Prédictions</li>
+</ul>
+</section>
+<section id="méthodes" class="level6">
+<h6 class="anchored" data-anchor-id="méthodes">Méthodes</h6>
+<ul>
+<li>Bref aperçu de la collecte des données</li>
+<li>Explication claire des méthodes statistiques utilisées pour hypothèses/prédictions énoncées dans l’introduction, y compris les principales hypothèses clés.</li>
+</ul>
+</section>
+<section id="résultats" class="level6">
+<h6 class="anchored" data-anchor-id="résultats">Résultats</h6>
+<p>Texte et visualisations résumant clairement vos résultats, en utilisant une structure parallèle aux méthodes. parallèle aux méthodes. Doivent inclure :</p>
+<ul>
+<li>des graphiques clairs représentant les données et les résultats du modèle,</li>
+<li>des tableaux présentant des statistiques</li>
+<li>un texte décrivant les résultats</li>
+<li>l’évaluation de l’hypothèse et de l’adéquation du modèle</li>
+</ul>
+</section>
+</section>
+<section id="discussion" class="level5">
+<h5 class="anchored" data-anchor-id="discussion">Discussion</h5>
+<ul>
+<li>Résumé des principaux résultats</li>
+<li>conclusions/implications</li>
+<li>Limites de l’analyse (puissance, complexité du modèle, structure des données, …)</li>
+<li>orientations futures</li>
 </ul>
 </section>
 </section>
 </section>
-<section id="calendrier" class="level2">
-<h2 class="anchored" data-anchor-id="calendrier">Calendrier</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 40%">
-<col style="width: 60%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Semaine</th>
-<th>Subject</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>1</td>
-<td>Intro and discussion on Stats and science</td>
-</tr>
-<tr class="even">
-<td>2</td>
-<td>Rmarkdown and importance of reproducibility</td>
-</tr>
-<tr class="odd">
-<td>3</td>
-<td>Intro to Github</td>
-</tr>
-<tr class="even">
-<td>4</td>
-<td>Generalized linear models</td>
-</tr>
-<tr class="odd">
-<td>5</td>
-<td>Linear mixed models (including random slopes)</td>
-</tr>
-<tr class="even">
-<td>6</td>
-<td>Generalized linear mixed models (and intro to gamms)</td>
-</tr>
-<tr class="odd">
-<td>7</td>
-<td>Reading week</td>
-</tr>
-<tr class="even">
-<td>8</td>
-<td>Intro to Bayesian stats</td>
-</tr>
-<tr class="odd">
-<td>9</td>
-<td>Complex mixed models (spatial, temporal autocorrelation, non-independence random effects)</td>
-</tr>
-<tr class="even">
-<td>10</td>
-<td>PCA and ordinance analysis</td>
-</tr>
-<tr class="odd">
-<td>11</td>
-<td>Multivariate mixed models</td>
-</tr>
-<tr class="even">
-<td>12</td>
-<td>Path analysis and causality</td>
-</tr>
-<tr class="odd">
-<td>13</td>
-<td>Wrap-up</td>
-</tr>
-</tbody>
-</table>
 </section>
-<section id="note-sur-le-bilinguisme" class="level2">
-<h2 class="anchored" data-anchor-id="note-sur-le-bilinguisme">Note sur le bilinguisme</h2>
-<p>Le cours est un cours bilingue. Cela signifie que l’ensemble des interactions orales peuvent avoir lieu en français ou en anglais, le prof pouvant fournir les traductions nécessaires pour que l’ensemble des étudiants comprennent la matière. Le contenu du cours (diapo et manuel de laboratoire) seront présenté de manière unilingue en anglais avec possibilité de fournir des explanations en français si besoin.</p>
+</section>
+<section id="contestations-de-notation" class="level1">
+<h1>Contestations de notation</h1>
+<p>Si vous estimez qu’une erreur a été commise dans la notation d’un devoir ou d’un examen, vous disposez d’un délai de 10 jours ouvrables à compter de la date de retour de l’examen pour demander une nouvelle notation. Au-delà de ces 10 jours ouvrables, la note est considérée comme définitive. Si le problème concerne un travail de laboratoire, veuillez consulter l’enseignant-chercheur qui l’a corrigé ; s’il s’agit d’un examen, veuillez vous adresser à l’enseignant du cours.</p>
+<p>Lors d’un reclassement, la nouvelle note sera maintenue, qu’elle soit supérieure ou inférieure, il n’y a donc aucune garantie que votre note augmente. De simples erreurs d’addition se produisent malheureusement parfois, étant donné le volume de devoirs et d’examens que nous devons corriger, et ces cas sont faciles à corriger. Toutefois, les litiges concernant des notes partielles sur des réponses partiellement correctes ne seront pas toujours en votre faveur et devraient être réservés aux situations dans lesquelles vous estimez avoir des arguments solides. Lorsque vous demandez un reclassement, vous devez fournir une explication de ce que vous pensez être le problème (c’est-à-dire pourquoi vous pensez que vous méritez une meilleure note). Plus vous serez précis, plus vous aurez de chances d’obtenir gain de cause.</p>
+<p>Je ne prends pas en considération les arguments en faveur de notes supplémentaires simplement parce que vous êtes proche de la note supérieure.</p>
+</section>
+<section id="plagiat" class="level1">
+<h1>Plagiat</h1>
+<p>Le plagiat est l’acte de faire passer les mots ou les idées de quelqu’un d’autre pour les siens. Le plagiat est une infraction académique majeure (voir le règlement de l’Université d’Ottawa sur la fraude académique : Fraude académique) et est également illégal. Nous respectons la loi. Il est essentiel que vous compreniez ce qu’est le plagiat et comment vous pouvez l’éviter. Pour plus d’informations, consultez le document suivant du Service de la réussite scolaire des étudiants.</p>
+</section>
+<section id="présence" class="level1">
+<h1>Présence</h1>
+<p>Conformément à la politique de l’Université d’Ottawa, les étudiants ont la responsabilité de participer aux diverses activités d’apprentissage et d’évaluation de ce cours afin de s’assurer qu’ils réussissent dans tous les cours de leur programme d’études. La présence aux cours magistraux et au laboratoire n’est pas formellement requise pour ce cours, mais elle est FORTEMENT recommandée. Les diapositives fournies ne comprennent pas tout le contenu présenté et discuté en classe, et les assistants d’enseignement et le professeur sont disponibles pendant les laboratoires pour aider avec les exercices et les devoirs. Les heures de bureau des assistants d’enseignement et du professeur sont destinées à vous permettre de poser des questions relatives au matériel du cours et ne peuvent pas remplacer un cours ou un laboratoire manqué.</p>
+</section>
+<section id="bilinguisme" class="level1">
+<h1>Bilinguisme</h1>
+<p>Veuillez noter que la classe est bilingue. Cela signifie que toutes les questions peuvent être posées ou répondues en français ou en anglais et que le professeur traduira les réponses si nécessaire. La majorité du contenu du cours (diapositives, manuel de laboratoire) est fournie en anglais uniquement, mais des explications peuvent être fournies dans les deux langues.</p>
+<p>De plus, conformément à la politique de l’Université d’Ottawa, tous les étudiants ont le droit de produire leurs travaux écrits et de répondre aux questions d’examen dans la langue officielle de leur choix, quelle que soit la langue d’enseignement du cours.</p>
 
 
 </section>
@@ -701,7 +805,7 @@ cookieconsent.run({
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/Biostats-uOttawa\.github\.io\/bio8940\/");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

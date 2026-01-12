@@ -434,6 +434,7 @@ cookieconsent.run({
 <p>Bienvenue sur le site du cours Bio8940 de l’Université d’Ottawa. Vous y trouverez toutes les informations sur le cours, y compris l’horaire du cours, les diapositives, les notes de cours, les informations et les exercices pratiques, la description des évaluations ainsi que le syllabus (officiel) du cours.</p>
 <p>La soumission des travaux de cours se fait via <a href="https://uottawa.brightspace.com/d2l/home">brighspace</a>.</p>
 <p>Le cours est un cours bilingue. Cela signifie que l’ensemble des interactions orales peuvent avoir lieu en français ou en anglais, le prof pouvant fournir les traductions nécessaires pour que l’ensemble des étudiants comprennent la matière. Le contenu du cours (diapo et manuel de laboratoire) seront présenté de manière unilingue en anglais avec possibilité de fournir des explanations en français si besoin.</p>
+<!-- extra -->
 <section id="prof" class="level3">
 <h3 class="anchored" data-anchor-id="prof">Prof <i class="fa-solid fa-person-chalkboard" aria-label="person-chalkboard"></i></h3>
 <ul>
@@ -451,7 +452,7 @@ cookieconsent.run({
 <section id="où-et-quand" class="level2">
 <h2 class="anchored" data-anchor-id="où-et-quand">Où et quand <i class="fa-solid fa-calendar-days" aria-label="calendar-days"></i></h2>
 <ul>
-<li><strong>Cours</strong>: Mardis, 1430-1720 in VNR-1050</li>
+<li><strong>Cours</strong>: Mardis, 1430-1720 in TBT-323</li>
 </ul>
 </section>
 <section id="ressources-scientifiques-ouvertes" class="level1">
@@ -568,7 +569,7 @@ cookieconsent.run({
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/Biostats-uOttawa\.github\.io\/bio8940\/");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

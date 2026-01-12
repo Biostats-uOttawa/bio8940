@@ -13,7 +13,7 @@
   <meta name="generator" content="quarto-1.8.25">
 
   <meta name="author" content="Julien Martin">
-  <meta name="dcterms.date" content="2026-01-08">
+  <meta name="dcterms.date" content="2026-01-12">
   <title>Bio8940 – Introduction to linear mixed models?</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -241,7 +241,7 @@ Julien Martin
     </div>
 </div>
 
-  <p class="date">2026-01-08</p>
+  <p class="date">2026-01-12</p>
 </section>
 <section>
 <section id="when-you-are-lacking-independence" class="title-slide slide level1 center">
@@ -1135,7 +1135,7 @@ Richness_{ij} = \underbrace{a + b_1{NAP_{ij}} + b_2{Exposure_j}}_\text{fixed} + 
         }
           var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
           var mailtoRegex = new RegExp(/^mailto:/);
-            var filterRegex = new RegExp("https:\/\/Biostats-uOttawa\.github\.io\/bio8940\/");
+            var filterRegex = new RegExp('/' + window.location.host + '/');
           var isInternal = (href) => {
               return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
           }
