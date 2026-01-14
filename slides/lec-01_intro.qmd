@@ -100,7 +100,7 @@ theme_set(theme_whiteboard())
 - Session = mixed of lecture, discussion and exercises
 
 ## Schedule
-
+<!--
 ::: {contenteditable="true"}
 | Week | Theme |
 |:----:|:-----:|
@@ -117,6 +117,9 @@ theme_set(theme_whiteboard())
 | 11 | decided |
 | 12 | together |
 :::
+-->
+
+[See course website](https://biostats-uottawa.github.io/bio8940/en/lectures.html){preview-link="true"}
 
 # Assessment
 
@@ -128,8 +131,9 @@ theme_set(theme_whiteboard())
 ## Project (50%)
 
 - analysis of data using techniques from courses or beyond
-- Report written using Rmarkdown
-- posted on Github classroom
+- Report written using Quarto
+- Oral examination
+
 
 # Software and accounts
 
@@ -138,7 +142,7 @@ theme_set(theme_whiteboard())
 - R (version 4.0 or higher)
 - Text editor: Rstudio or VSCode
 - R packages (up to date)
-  - open science: rmarkdown, tinytex
+  - open science: quarto
   - mixed models: lme4, gremlin, glmmTMB, MCMCglmm
   - latex: full version or tinytex
 
