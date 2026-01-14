@@ -1,427 +1,427 @@
 [
   {
-    "objectID": "slides/lec-08_intro_bayes.slides.html#overview",
-    "href": "slides/lec-08_intro_bayes.slides.html#overview",
+    "objectID": "slides/lec-09_intro_bayes.slides.html#overview",
+    "href": "slides/lec-09_intro_bayes.slides.html#overview",
     "title": "Introduction Bayesian statistics",
     "section": "Overview …",
     "text": "Overview …\n\nFor many years – until recently – Bayesian ideas in statistics were widely dismissed, often without much thought\nAdvocates of Bayes had to fight hard to be heard, leading to an ‘us against the world’ mentality – & predictable backlash\nToday, debates tend be less acrimonious, and more tolerant"
   },
   {
-    "objectID": "slides/lec-08_intro_bayes.slides.html#formal",
-    "href": "slides/lec-08_intro_bayes.slides.html#formal",
+    "objectID": "slides/lec-09_intro_bayes.slides.html#formal",
+    "href": "slides/lec-09_intro_bayes.slides.html#formal",
     "title": "Introduction Bayesian statistics",
     "section": "Formal",
     "text": "Formal\nBayes’ theorem is the results in a conditional probability of two events:\n\\[\nP[A|B] = \\frac{P[A\\ \\&\\ B]}{P[B]} = \\frac{P[B|A]  P[A]}{P[B]}\n\\]\n\nThe conditional probability of A given B is the conditional probability ob B given A scaled by the relative probability of A compared to B.\n\\[\n\\underbrace{P[A|B]}_\\text{posterior probability} = \\frac{\\overbrace{P[B|A]}^\\text{likelihood} \\cdot \\overbrace{P[A]}^\\text{prior probability}}{\\underbrace{P[B]}_\\text{marginal probability}}\n\\]"
   },
   {
-    "objectID": "slides/lec-08_intro_bayes.slides.html#reframed-for-hypothesis",
-    "href": "slides/lec-08_intro_bayes.slides.html#reframed-for-hypothesis",
+    "objectID": "slides/lec-09_intro_bayes.slides.html#reframed-for-hypothesis",
+    "href": "slides/lec-09_intro_bayes.slides.html#reframed-for-hypothesis",
     "title": "Introduction Bayesian statistics",
     "section": "Reframed for hypothesis",
     "text": "Reframed for hypothesis\nBayes’ theorem can be seen as the conditonal probability of a hypothesis given the data: \\[\nP[H_0 | \\text{data}] = \\frac{\\overbrace{P[\\text{data}|H_0]}^\\text{likelihood} \\cdot  \\overbrace{P[H_0]}^\\text{prior}}{P[data]}\n\\]\n\nOr it can be seen as \\[\n\\underbrace{P[H_0 | \\text{data}]}_{\\text{what we want to know}} = \\frac{\\overbrace{P[\\text{data}|H_0]}^\\text{what frequentist do} \\cdot \\overbrace{P[H_0]}^\\text{what we have a hard time understanding}}{\\underbrace{P[data]}_\\text{what we happily ignore}}\n\\]"
   },
   {
-    "objectID": "slides/lec-08_intro_bayes.slides.html#error-type-and-false-positivenegative",
-    "href": "slides/lec-08_intro_bayes.slides.html#error-type-and-false-positivenegative",
+    "objectID": "slides/lec-09_intro_bayes.slides.html#error-type-and-false-positivenegative",
+    "href": "slides/lec-09_intro_bayes.slides.html#error-type-and-false-positivenegative",
     "title": "Introduction Bayesian statistics",
     "section": "Error type and false positive/negative",
     "text": "Error type and false positive/negative\nHere we are counting number of observations in each case\n\n\n\nReality\nReject H0\nAccept H0\nTotal\n\n\n\n\nH0 is true\na (Type I error)\nb\na + b\n\n\nH0 is false\nc\nd (type II error)\nc + d\n\n\nTotal\na+c\nb+d\nN (number of obs)\n\n\n\n\nFalse positive \\(P[H_0 \\text{ true} | \\text{Reject }H_0] = \\frac{a}{a+c}\\)\n\n\nFalse negative: \\(P[H_0\\ false | Accept\\ H_0] = \\frac{d}{b+d}\\)"
   },
   {
-    "objectID": "slides/lec-08_intro_bayes.slides.html#error-type-and-false-positivenegative-1",
-    "href": "slides/lec-08_intro_bayes.slides.html#error-type-and-false-positivenegative-1",
+    "objectID": "slides/lec-09_intro_bayes.slides.html#error-type-and-false-positivenegative-1",
+    "href": "slides/lec-09_intro_bayes.slides.html#error-type-and-false-positivenegative-1",
     "title": "Introduction Bayesian statistics",
     "section": "Error type and false positive/negative",
     "text": "Error type and false positive/negative\nSame thing but with probabilities instead of number of observations\n\n\n\n\n\n\n\n\n\nReality\nReject H0 \\([\\not H_0]\\)\nAccept H0 \\([H_0]\\)\nTotal\n\n\n\n\nH0 true [H0+]\n\\(P[H_0^+| \\not H_0] P[H_0^+]\\)\n\\(P[H_0^+| H_0] P[H_0^+]\\)\n\\(P[H_0^+]\\)\n\n\nH0 false [H0-]\n\\(P[H_0^-| \\not H_0] P[H_0^-]\\)\n\\(P[H_0^-| H_0] P[H_0^-]\\)\n\\(P[H_0^-]\\)\n\n\nTotal\n\\(P[\\not H_0]\\)\n\\(P[H_0]\\)\n1\n\n\n\n\nFalse positive \\(P[H_0 \\text{ true} | \\text{Reject }H_0]\\) \\[\n\\begin{align}\nP[H_0^+ | \\not H_0] &=\\frac{P[\\not H_0 | H_0^+ ]  P[H_0^+ ]}{P[\\not H_0]} \\\\\n&= \\frac{P[\\not H_0 | H_0^+ ]  P[H_0^+]}\n  {P[\\not H_0 | H_0^+]  P[H_0^+ ] + P[ \\not H_0 | H_0^- ]  P[H_0^-]}\n\\end{align}\n\\]"
   },
   {
-    "objectID": "slides/lec-08_intro_bayes.slides.html#applied-to-covid",
-    "href": "slides/lec-08_intro_bayes.slides.html#applied-to-covid",
+    "objectID": "slides/lec-09_intro_bayes.slides.html#applied-to-covid",
+    "href": "slides/lec-09_intro_bayes.slides.html#applied-to-covid",
     "title": "Introduction Bayesian statistics",
     "section": "Applied to Covid",
     "text": "Applied to Covid\nWhy does it matter? If 1% of a population have covid, for a screening test with 80% sensitivity (1- Type II) and 95% specificity (1-Type I).\nAssuming N test = 100,\n\n\n\nReality\nTest +ve\nTest -ve\nTotal\n\n\n\n\nHealthy\n\n\n\n\n\nHas COVID\n\n\n\n\n\nTotal\n\n\n100"
   },
   {
-    "objectID": "slides/lec-08_intro_bayes.slides.html#applied-to-covid-1",
-    "href": "slides/lec-08_intro_bayes.slides.html#applied-to-covid-1",
+    "objectID": "slides/lec-09_intro_bayes.slides.html#applied-to-covid-1",
+    "href": "slides/lec-09_intro_bayes.slides.html#applied-to-covid-1",
     "title": "Introduction Bayesian statistics",
     "section": "Applied to Covid",
     "text": "Applied to Covid\nWhy does it matter? If 1% of a population have covid, for a screening test with 80% sensitivity (1- Type II) and 95% specificity (1-Type I).\nAssuming N test = 100\n\n\n\nReality\nTest +ve\nTest -ve\nTotal\n\n\n\n\nHealthy\n\n\n99\n\n\nHas COVID\n\n\n1\n\n\nTotal\n\n\n100\n\n\n\n\nAdding the prior"
   },
   {
-    "objectID": "slides/lec-08_intro_bayes.slides.html#applied-to-covid-2",
-    "href": "slides/lec-08_intro_bayes.slides.html#applied-to-covid-2",
+    "objectID": "slides/lec-09_intro_bayes.slides.html#applied-to-covid-2",
+    "href": "slides/lec-09_intro_bayes.slides.html#applied-to-covid-2",
     "title": "Introduction Bayesian statistics",
     "section": "Applied to Covid",
     "text": "Applied to Covid\nWhy does it matter? If 1% of a population have covid, for a screening test with 80% sensitivity (1- Type II) and 95% specificity (1-Type I).\nAssuming N test = 100\n\n\n\nReality\nTest +ve\nTest -ve\nTotal\n\n\n\n\nHealthy\n\n\n99\n\n\nHas COVID\n0.8\n0.2\n1\n\n\nTotal\n\n\n100\n\n\n\n\nAdding the prior\nAdding the Type II error"
   },
   {
-    "objectID": "slides/lec-08_intro_bayes.slides.html#applied-to-covid-3",
-    "href": "slides/lec-08_intro_bayes.slides.html#applied-to-covid-3",
+    "objectID": "slides/lec-09_intro_bayes.slides.html#applied-to-covid-3",
+    "href": "slides/lec-09_intro_bayes.slides.html#applied-to-covid-3",
     "title": "Introduction Bayesian statistics",
     "section": "Applied to Covid",
     "text": "Applied to Covid\nWhy does it matter? If 1% of a population have covid, for a screening test with 80% sensitivity (1- Type II) and 95% specificity (1-Type I).\nAssuming N test = 100\n\n\n\nReality\nTest +ve\nTest -ve\nTotal\n\n\n\n\nHealthy\n4.95\n94.05\n99\n\n\nHas COVID\n0.8\n0.2\n1\n\n\nTotal\n\n\n100\n\n\n\n\nAdding the prior\nAdding the Type II error\nAdding the Type I error"
   },
   {
-    "objectID": "slides/lec-08_intro_bayes.slides.html#applied-to-covid-4",
-    "href": "slides/lec-08_intro_bayes.slides.html#applied-to-covid-4",
+    "objectID": "slides/lec-09_intro_bayes.slides.html#applied-to-covid-4",
+    "href": "slides/lec-09_intro_bayes.slides.html#applied-to-covid-4",
     "title": "Introduction Bayesian statistics",
     "section": "Applied to Covid",
     "text": "Applied to Covid\nWhy does it matter? If 1% of a population have covid, for a screening test with 80% sensitivity (1- Type II) and 95% specificity (1-Type I).\nAssuming N test = 100\n\n\n\nReality\nTest +ve\nTest -ve\nTotal\n\n\n\n\nHealthy\n4.95\n94.05\n99\n\n\nHas COVID\n0.8\n0.2\n1\n\n\nTotal\n5.75\n94.25\n100\n\n\n\n\nAdding the prior\nAdding the Type II error\nAdding the Type I error\nAdding colum sums"
   },
   {
-    "objectID": "slides/lec-08_intro_bayes.slides.html#applied-to-covid-5",
-    "href": "slides/lec-08_intro_bayes.slides.html#applied-to-covid-5",
+    "objectID": "slides/lec-09_intro_bayes.slides.html#applied-to-covid-5",
+    "href": "slides/lec-09_intro_bayes.slides.html#applied-to-covid-5",
     "title": "Introduction Bayesian statistics",
     "section": "Applied to Covid",
     "text": "Applied to Covid\nWhy does it matter? If 1% of a population have covid, for a screening test with 80% sensitivity (1- Type II) and 95% specificity (1-Type I).\n\n\n\n\n\nReality\nTest +ve\nTest -ve\nTotal\n\n\n\n\nHealthy\n4.95\n94.05\n99\n\n\nHas COVID\n0.8\n0.2\n1\n\n\nTotal\n5.75\n94.25\n100\n\n\n\n\nTrue positive: P[ Covid | test + ] = 0.139\nTrue negative: P[ Healthy | test - ] = 0.998\nFalse positive: P[ Healthy | test + ] = 0.861\nFalse negative: P[ Covid | test - ] = 0.002\n\n\nTalk about changing prior implications"
   },
   {
-    "objectID": "slides/lec-08_intro_bayes.slides.html#what-if-covid-changes",
-    "href": "slides/lec-08_intro_bayes.slides.html#what-if-covid-changes",
+    "objectID": "slides/lec-09_intro_bayes.slides.html#what-if-covid-changes",
+    "href": "slides/lec-09_intro_bayes.slides.html#what-if-covid-changes",
     "title": "Introduction Bayesian statistics",
     "section": "What if COVID % changes?",
     "text": "What if COVID % changes?\nWhy does it matter? If 20% of a population have covid instead of 1%?\n\n\n\n\n\nReality\nTest +ve\nTest -ve\nTotal\n\n\n\n\nHealthy\n4\n76\n80\n\n\nHas COVID\n16\n4\n20\n\n\nTotal\n20\n80\n100\n\n\n\n\nTrue positive: P[ Covid | test + ] = 0.8\nTrue negative: P[ Healthy | test - ] = 0.95\nFalse positive: P[ Healthy | test + ] = 0.2\nFalse negative: P[ Covid | test - ] = 0.05\n\n\nExplain impact of changing prior on test results reliability"
   },
   {
-    "objectID": "slides/lec-08_intro_bayes.slides.html#prosecutors-fallacy",
-    "href": "slides/lec-08_intro_bayes.slides.html#prosecutors-fallacy",
+    "objectID": "slides/lec-09_intro_bayes.slides.html#prosecutors-fallacy",
+    "href": "slides/lec-09_intro_bayes.slides.html#prosecutors-fallacy",
     "title": "Introduction Bayesian statistics",
     "section": "Prosecutor’s fallacy",
     "text": "Prosecutor’s fallacy\nMixing up P[ A | B ] with P[ B | A ] is the Prosecutor’s Fallacy\n\nsmall P evidence given innocence \\(\\neq\\) small P of innocence given evidence\n\n\nTrue Story \n\nAfter the sudden death of two baby sons, Sally Clark was sentenced to life in prison in 1999\nExpert witness Prof Roy Meadow had interpreted the small probability of two cot deaths as a small probability of Clark’s innocence\nAfter a long campaign, including refutation of Meadow’s statistics (among other errors), Clark was cleared in 2003\nAfter being freed, she developed alcoholism and died in 2007"
   },
   {
-    "objectID": "slides/lec-08_intro_bayes.slides.html#meeting-mosquitoes",
-    "href": "slides/lec-08_intro_bayes.slides.html#meeting-mosquitoes",
+    "objectID": "slides/lec-09_intro_bayes.slides.html#meeting-mosquitoes",
+    "href": "slides/lec-09_intro_bayes.slides.html#meeting-mosquitoes",
     "title": "Introduction Bayesian statistics",
     "section": "Meeting mosquitoes",
     "text": "Meeting mosquitoes"
   },
   {
-    "objectID": "slides/lec-08_intro_bayes.slides.html#bayes-theorem-1",
-    "href": "slides/lec-08_intro_bayes.slides.html#bayes-theorem-1",
+    "objectID": "slides/lec-09_intro_bayes.slides.html#bayes-theorem-1",
+    "href": "slides/lec-09_intro_bayes.slides.html#bayes-theorem-1",
     "title": "Introduction Bayesian statistics",
     "section": "Bayes’ Theorem",
     "text": "Bayes’ Theorem\nBayes’ Theorem is a rule about the ‘language’ of probabilities, that can be used in any analysis describing random variables, i.e. any data analysis.\nQ. So why all the fuss?\nA. Bayesian inference uses more than just Bayes’ Theorem\nBayesian inference uses the ‘language’ of probability to describe what is known about parameters.\n\n\n\n\n\n\n\n\nWarning\n\n\nFrequentist inference, e.g. using p-values & confidence intervals, does not quantify what is known about parameters. many people initially think it does; an important job for instructors of intro Stat/Biostat courses is convincing those people that they are wrong"
   },
   {
-    "objectID": "slides/lec-08_intro_bayes.slides.html#of-what",
-    "href": "slides/lec-08_intro_bayes.slides.html#of-what",
+    "objectID": "slides/lec-09_intro_bayes.slides.html#of-what",
+    "href": "slides/lec-09_intro_bayes.slides.html#of-what",
     "title": "Introduction Bayesian statistics",
     "section": "95% of what?",
     "text": "95% of what?\n\nWe ‘trap’ the truth with 95% confidence.\n95% of what?\nThe interval traps the truth in 95% of experiments.\n\n\nTo define anything frequentist, you have to imagine repeated experiments.\n\nLet’s do some more ‘target practice’, for frequentist testing"
   },
   {
-    "objectID": "slides/lec-08_intro_bayes.slides.html#frequentist-testing",
-    "href": "slides/lec-08_intro_bayes.slides.html#frequentist-testing",
+    "objectID": "slides/lec-09_intro_bayes.slides.html#frequentist-testing",
+    "href": "slides/lec-09_intro_bayes.slides.html#frequentist-testing",
     "title": "Introduction Bayesian statistics",
     "section": "Frequentist testing",
     "text": "Frequentist testing\n\nimagine running your experiment again and again, so\n\nOn day 1 you collect data and construct a [valid] 95% confidence interval for a parameter \\(\\theta_1\\).\nOn day 2 you collect new data and construct a 95% confidence interval for an unrelated parameter \\(\\theta_2\\).\nOn day 3 … [the same]. and so on constructing confidence intervals each time\n\n… 95% of your intervals will trap the true parameter value\n\n\n\n… it does not says anything about whether your data is in the 95% or the 5%\n… it requires you to think about many other datasets, not just the one you have to analyze\n\n\n\nHow does Bayesian inference differ? Let’s take aim…"
   },
   {
-    "objectID": "slides/lec-08_intro_bayes.slides.html#here-it-is-in-practice",
-    "href": "slides/lec-08_intro_bayes.slides.html#here-it-is-in-practice",
+    "objectID": "slides/lec-09_intro_bayes.slides.html#here-it-is-in-practice",
+    "href": "slides/lec-09_intro_bayes.slides.html#here-it-is-in-practice",
     "title": "Introduction Bayesian statistics",
     "section": "Here it is in practice",
     "text": "Here it is in practice\n\nAir France Flight 447 crashed in the ocean On June 1, 2009.\n\n\n\n\nMajor wreckage recovered within 5 days. No blackbox \n\n\n\n\nProbability of blackbox location described via Bayesian inference \n\n\n\n\nEventually, the black box was found in the red area"
   },
   {
-    "objectID": "slides/lec-08_intro_bayes.slides.html#updating-knowledge",
-    "href": "slides/lec-08_intro_bayes.slides.html#updating-knowledge",
+    "objectID": "slides/lec-09_intro_bayes.slides.html#updating-knowledge",
+    "href": "slides/lec-09_intro_bayes.slides.html#updating-knowledge",
     "title": "Introduction Bayesian statistics",
     "section": "Updating knowledge",
     "text": "Updating knowledge\nWe use:\n\nPrior distribution: what you know about parameter β, excluding the information in the data – denoted \\(P_{prior}(β)\\)\nLikelihood: based on modeling assumptions, how [relatively] likely the data Y are if the truth is β - denoted \\(f(Y|β)\\)\n\nTo get a posterior distribution, denoted \\(P_{post}(β|Y)\\): stating what we know about β combining the prior with the data – ?\nBayes Theorem used for inference tells us:\n\\[\n\\begin{align}\nP_{post}(β|Y) &∝ f(Y|β) × P_{prior}(β)\\\\\n\\text{Posterior} &∝ \\text{Likelihood} × \\text{Prior}\n\\end{align}\n\\]\n… and that’s it! (essentially!)\n\n\nNo replications – e.g. no replicate plane searches\nGiven modeling assumptions & prior, process is automatic\nKeep adding data, and updating knowledge, as data becomes available… knowledge will concentrate around true β"
   },
   {
-    "objectID": "slides/lec-08_intro_bayes.slides.html#updating-knowledge-1",
-    "href": "slides/lec-08_intro_bayes.slides.html#updating-knowledge-1",
+    "objectID": "slides/lec-09_intro_bayes.slides.html#updating-knowledge-1",
+    "href": "slides/lec-09_intro_bayes.slides.html#updating-knowledge-1",
     "title": "Introduction Bayesian statistics",
     "section": "Updating knowledge",
     "text": "Updating knowledge"
   },
   {
-    "objectID": "slides/lec-08_intro_bayes.slides.html#updating-knowledge-2",
-    "href": "slides/lec-08_intro_bayes.slides.html#updating-knowledge-2",
+    "objectID": "slides/lec-09_intro_bayes.slides.html#updating-knowledge-2",
+    "href": "slides/lec-09_intro_bayes.slides.html#updating-knowledge-2",
     "title": "Introduction Bayesian statistics",
     "section": "Updating knowledge",
     "text": "Updating knowledge"
   },
   {
-    "objectID": "slides/lec-08_intro_bayes.slides.html#updating-knowledge-3",
-    "href": "slides/lec-08_intro_bayes.slides.html#updating-knowledge-3",
+    "objectID": "slides/lec-09_intro_bayes.slides.html#updating-knowledge-3",
+    "href": "slides/lec-09_intro_bayes.slides.html#updating-knowledge-3",
     "title": "Introduction Bayesian statistics",
     "section": "Updating knowledge",
     "text": "Updating knowledge"
   },
   {
-    "objectID": "slides/lec-08_intro_bayes.slides.html#updating-knowledge-4",
-    "href": "slides/lec-08_intro_bayes.slides.html#updating-knowledge-4",
+    "objectID": "slides/lec-09_intro_bayes.slides.html#updating-knowledge-4",
+    "href": "slides/lec-09_intro_bayes.slides.html#updating-knowledge-4",
     "title": "Introduction Bayesian statistics",
     "section": "Updating knowledge",
     "text": "Updating knowledge\n\n\nA Bayesian is one who, vaguely expecting a horse, and catching a glimpse of a donkey, strongly believes he has seen a mule"
   },
   {
-    "objectID": "slides/lec-08_intro_bayes.slides.html#where-do-priors-come-from",
-    "href": "slides/lec-08_intro_bayes.slides.html#where-do-priors-come-from",
+    "objectID": "slides/lec-09_intro_bayes.slides.html#where-do-priors-come-from",
+    "href": "slides/lec-09_intro_bayes.slides.html#where-do-priors-come-from",
     "title": "Introduction Bayesian statistics",
     "section": "Where do priors come from",
     "text": "Where do priors come from\nPriors come from all data external to the current study (i.e. everything else) ‘Boiling down’ what subject-matter experts know/think is known as eliciting a prior. It’s not easy but here are some simple tips\n\nDiscuss parameters experts understand – e.g. code variables so intercept is mean outcome in people with average covariates, not with age = height = … = 0\nAvoid leading questions (just as in survey design)\nThe ‘language’ of probability is unfamiliar, help users express their uncertainty"
   },
   {
-    "objectID": "slides/lec-08_intro_bayes.slides.html#where-do-priors-come-from-1",
-    "href": "slides/lec-08_intro_bayes.slides.html#where-do-priors-come-from-1",
+    "objectID": "slides/lec-09_intro_bayes.slides.html#where-do-priors-come-from-1",
+    "href": "slides/lec-09_intro_bayes.slides.html#where-do-priors-come-from-1",
     "title": "Introduction Bayesian statistics",
     "section": "Where do priors come from",
     "text": "Where do priors come from\n\nUse stickers or a survey in the hallway\n\n\n\n\nUse stickers (Johnson et al 2010, J Clin Epi) for survival when taking warfarin\n\n\nNormalize marks (Latthe et al 2005, J Obs Gync) for pain effect of LUNA vs placebo\n\n\n\nIdeas to help experts ‘translate’ to the language of probability\nTypically these ‘coarse’ priors are smoothed. Providing the basic shape remains, exactly how much you smooth is unlikely to be critical in practice.\nElicitation is also very useful for non-Bayesian analyses – it’s similar to study design & analysis planning"
   },
   {
-    "objectID": "slides/lec-08_intro_bayes.slides.html#where-do-priors-come-from-2",
-    "href": "slides/lec-08_intro_bayes.slides.html#where-do-priors-come-from-2",
+    "objectID": "slides/lec-09_intro_bayes.slides.html#where-do-priors-come-from-2",
+    "href": "slides/lec-09_intro_bayes.slides.html#where-do-priors-come-from-2",
     "title": "Introduction Bayesian statistics",
     "section": "Where do priors come from",
     "text": "Where do priors come from\nIf the experts disagree? Try it both ways\n\n\nIf the posteriors differ, what you believe based on the data depends on your prior knowledge\n\n\nTo convince other people, expect to have to convince skeptics – and note that convincing [rational] skeptics is what science is all about"
   },
   {
-    "objectID": "slides/lec-08_intro_bayes.slides.html#very-informative-data",
-    "href": "slides/lec-08_intro_bayes.slides.html#very-informative-data",
+    "objectID": "slides/lec-09_intro_bayes.slides.html#very-informative-data",
+    "href": "slides/lec-09_intro_bayes.slides.html#very-informative-data",
     "title": "Introduction Bayesian statistics",
     "section": "Very informative data",
     "text": "Very informative data\nWhen the data provide a lot more information than the prior\n\nPriors here are dominated by the likelihood, and they give very similar posteriors – i.e. everyone agrees. (Phew!)"
   },
   {
-    "objectID": "slides/lec-08_intro_bayes.slides.html#flat-priors",
-    "href": "slides/lec-08_intro_bayes.slides.html#flat-priors",
+    "objectID": "slides/lec-09_intro_bayes.slides.html#flat-priors",
+    "href": "slides/lec-09_intro_bayes.slides.html#flat-priors",
     "title": "Introduction Bayesian statistics",
     "section": "Flat priors",
     "text": "Flat priors\nUsing very flat priors to represent ignorance\n\nFlat priors do NOT actually represent ignorance!\n\nMost of their support is for very extreme parameter values"
   },
   {
-    "objectID": "slides/lec-08_intro_bayes.slides.html#bayesian-approx-frequentist",
-    "href": "slides/lec-08_intro_bayes.slides.html#bayesian-approx-frequentist",
+    "objectID": "slides/lec-09_intro_bayes.slides.html#bayesian-approx-frequentist",
+    "href": "slides/lec-09_intro_bayes.slides.html#bayesian-approx-frequentist",
     "title": "Introduction Bayesian statistics",
     "section": "Bayesian \\(\\approx\\) frequentist",
     "text": "Bayesian \\(\\approx\\) frequentist\n\nLikelihood gives the classic 95% confidence interval can be good approx of Bayesian 95% Highest Posterior Density interval"
   },
   {
-    "objectID": "slides/lec-08_intro_bayes.slides.html#bayesian-approx-frequentist-1",
-    "href": "slides/lec-08_intro_bayes.slides.html#bayesian-approx-frequentist-1",
+    "objectID": "slides/lec-09_intro_bayes.slides.html#bayesian-approx-frequentist-1",
+    "href": "slides/lec-09_intro_bayes.slides.html#bayesian-approx-frequentist-1",
     "title": "Introduction Bayesian statistics",
     "section": "Bayesian \\(\\approx\\) frequentist",
     "text": "Bayesian \\(\\approx\\) frequentist\nWith large samples (and some regularity conditions)\n\n(sane) frequentist confidence intervals and (sane) Bayesian credible intervals are essentially identical\nit’s actually okay to give Bayesian interpretations to 95% CIs, i.e. to say we have \\(\\neq\\) 95% posterior belief that the true β lies within that range"
   },
   {
-    "objectID": "slides/lec-08_intro_bayes.slides.html#frequentist-bayesian",
-    "href": "slides/lec-08_intro_bayes.slides.html#frequentist-bayesian",
+    "objectID": "slides/lec-09_intro_bayes.slides.html#frequentist-bayesian",
+    "href": "slides/lec-09_intro_bayes.slides.html#frequentist-bayesian",
     "title": "Introduction Bayesian statistics",
     "section": "Frequentist 😃 & Bayesian 😕",
     "text": "Frequentist 😃 & Bayesian 😕\nPrior strongly supporting small effects, and with data from an imprecise study\n\n\nFrequentist ‘Textbook’ analysis says ‘reject’ (p &lt; 0.05, woohoo, Nature her we go)\nBayesian Posterior is ‘shrunk’ toward zero. We’re sure true β is very small (& hard to replicate) & we’re unsure of its sign. Wait a second, about that front page"
   },
   {
-    "objectID": "slides/lec-08_intro_bayes.slides.html#where-is-bayesian-approach-used",
-    "href": "slides/lec-08_intro_bayes.slides.html#where-is-bayesian-approach-used",
+    "objectID": "slides/lec-09_intro_bayes.slides.html#where-is-bayesian-approach-used",
+    "href": "slides/lec-09_intro_bayes.slides.html#where-is-bayesian-approach-used",
     "title": "Introduction Bayesian statistics",
     "section": "Where is Bayesian approach used",
     "text": "Where is Bayesian approach used\n\nAlmost any analysis\nBayesian arguments are often seen in\n\nHierarchical modeling (Some expert calls the classic frequentist version a “statistical no-man’s land”)\nComplex models: for messy data, measurement error, multiple sources of data fitting them is possible under Bayesian approaches, but perhaps still not easy"
   },
   {
-    "objectID": "slides/lec-08_intro_bayes.slides.html#bayesian-statistics",
-    "href": "slides/lec-08_intro_bayes.slides.html#bayesian-statistics",
+    "objectID": "slides/lec-09_intro_bayes.slides.html#bayesian-statistics",
+    "href": "slides/lec-09_intro_bayes.slides.html#bayesian-statistics",
     "title": "Introduction Bayesian statistics",
     "section": "Bayesian statistics:",
     "text": "Bayesian statistics:\n\nI barely scratched the surface\nIs useful in many settings, and you should know about it\nIs often not very different in practice from frequentist statistics. It is often helpful to think about analyses from both Bayesian and non-Bayesian points of view\nIs not reserved for hard-core mathematicians, or computer scientists, or philosophers. If you find it helpful, use it."
   },
   {
-    "objectID": "slides/lec-08_intro_bayes.notes.html",
-    "href": "slides/lec-08_intro_bayes.notes.html",
+    "objectID": "slides/lec-09_intro_bayes.notes.html",
+    "href": "slides/lec-09_intro_bayes.notes.html",
     "title": "Introduction Bayesian statistics",
     "section": "",
     "text": "For many years – until recently – Bayesian ideas in statistics were widely dismissed, often without much thought\nAdvocates of Bayes had to fight hard to be heard, leading to an ‘us against the world’ mentality – & predictable backlash\nToday, debates tend be less acrimonious, and more tolerant"
   },
   {
-    "objectID": "slides/lec-08_intro_bayes.notes.html#overview",
-    "href": "slides/lec-08_intro_bayes.notes.html#overview",
+    "objectID": "slides/lec-09_intro_bayes.notes.html#overview",
+    "href": "slides/lec-09_intro_bayes.notes.html#overview",
     "title": "Introduction Bayesian statistics",
     "section": "",
     "text": "For many years – until recently – Bayesian ideas in statistics were widely dismissed, often without much thought\nAdvocates of Bayes had to fight hard to be heard, leading to an ‘us against the world’ mentality – & predictable backlash\nToday, debates tend be less acrimonious, and more tolerant"
   },
   {
-    "objectID": "slides/lec-08_intro_bayes.notes.html#formal",
-    "href": "slides/lec-08_intro_bayes.notes.html#formal",
+    "objectID": "slides/lec-09_intro_bayes.notes.html#formal",
+    "href": "slides/lec-09_intro_bayes.notes.html#formal",
     "title": "Introduction Bayesian statistics",
     "section": "\n1.1 Formal",
     "text": "1.1 Formal\nBayes’ theorem is the results in a conditional probability of two events:\nThe conditional probability of A given B is the conditional probability ob B given A scaled by the relative probability of A compared to B.\n\\[\n\\underbrace{P[A|B]}_\\text{posterior probability} = \\frac{\\overbrace{P[B|A]}^\\text{likelihood} \\cdot \\overbrace{P[A]}^\\text{prior probability}}{\\underbrace{P[B]}_\\text{marginal probability}}\n\\]"
   },
   {
-    "objectID": "slides/lec-08_intro_bayes.notes.html#reframed-for-hypothesis",
-    "href": "slides/lec-08_intro_bayes.notes.html#reframed-for-hypothesis",
+    "objectID": "slides/lec-09_intro_bayes.notes.html#reframed-for-hypothesis",
+    "href": "slides/lec-09_intro_bayes.notes.html#reframed-for-hypothesis",
     "title": "Introduction Bayesian statistics",
     "section": "\n1.2 Reframed for hypothesis",
     "text": "1.2 Reframed for hypothesis\nBayes’ theorem can be seen as the conditonal probability of a hypothesis given the data: \\[\nP[H_0 | \\text{data}] = \\frac{\\overbrace{P[\\text{data}|H_0]}^\\text{likelihood} \\cdot  \\overbrace{P[H_0]}^\\text{prior}}{P[data]}\n\\]\nOr it can be seen as \\[\n\\underbrace{P[H_0 | \\text{data}]}_{\\text{what we want to know}} = \\frac{\\overbrace{P[\\text{data}|H_0]}^\\text{what frequentist do} \\cdot \\overbrace{P[H_0]}^\\text{what we have a hard time understanding}}{\\underbrace{P[data]}_\\text{what we happily ignore}}\n\\]"
   },
   {
-    "objectID": "slides/lec-08_intro_bayes.notes.html#error-type-and-false-positivenegative",
-    "href": "slides/lec-08_intro_bayes.notes.html#error-type-and-false-positivenegative",
+    "objectID": "slides/lec-09_intro_bayes.notes.html#error-type-and-false-positivenegative",
+    "href": "slides/lec-09_intro_bayes.notes.html#error-type-and-false-positivenegative",
     "title": "Introduction Bayesian statistics",
     "section": "\n2.1 Error type and false positive/negative",
     "text": "2.1 Error type and false positive/negative\nHere we are counting number of observations in each case\n\n\nReality\nReject H0\n\nAccept H0\n\nTotal\n\n\n\nH0 is true\na (Type I error)\nb\na + b\n\n\nH0 is false\nc\nd (type II error)\nc + d\n\n\nTotal\na+c\nb+d\nN (number of obs)\n\n\n\nFalse positive \\(P[H_0 \\text{ true} | \\text{Reject }H_0] = \\frac{a}{a+c}\\)\nFalse negative: \\(P[H_0\\ false | Accept\\ H_0] = \\frac{d}{b+d}\\)"
   },
   {
-    "objectID": "slides/lec-08_intro_bayes.notes.html#error-type-and-false-positivenegative-1",
-    "href": "slides/lec-08_intro_bayes.notes.html#error-type-and-false-positivenegative-1",
+    "objectID": "slides/lec-09_intro_bayes.notes.html#error-type-and-false-positivenegative-1",
+    "href": "slides/lec-09_intro_bayes.notes.html#error-type-and-false-positivenegative-1",
     "title": "Introduction Bayesian statistics",
     "section": "\n2.2 Error type and false positive/negative",
     "text": "2.2 Error type and false positive/negative\nSame thing but with probabilities instead of number of observations\n\n\n\n\n\n\n\n\nReality\nReject H0\\([\\not H_0]\\)\n\nAccept H0\\([H_0]\\)\n\nTotal\n\n\n\nH0 true [H0+]\n\\(P[H_0^+| \\not H_0] P[H_0^+]\\)\n\\(P[H_0^+| H_0] P[H_0^+]\\)\n\\(P[H_0^+]\\)\n\n\nH0 false [H0-]\n\\(P[H_0^-| \\not H_0] P[H_0^-]\\)\n\\(P[H_0^-| H_0] P[H_0^-]\\)\n\\(P[H_0^-]\\)\n\n\nTotal\n\\(P[\\not H_0]\\)\n\\(P[H_0]\\)\n1\n\n\n\nFalse positive \\(P[H_0 \\text{ true} | \\text{Reject }H_0]\\) \\[\n\\begin{align}\nP[H_0^+ | \\not H_0] &=\\frac{P[\\not H_0 | H_0^+ ]  P[H_0^+ ]}{P[\\not H_0]} \\\\\n&= \\frac{P[\\not H_0 | H_0^+ ]  P[H_0^+]}\n  {P[\\not H_0 | H_0^+]  P[H_0^+ ] + P[ \\not H_0 | H_0^- ]  P[H_0^-]}\n\\end{align}\n\\]"
   },
   {
-    "objectID": "slides/lec-08_intro_bayes.notes.html#applied-to-covid-4",
-    "href": "slides/lec-08_intro_bayes.notes.html#applied-to-covid-4",
+    "objectID": "slides/lec-09_intro_bayes.notes.html#applied-to-covid-4",
+    "href": "slides/lec-09_intro_bayes.notes.html#applied-to-covid-4",
     "title": "Introduction Bayesian statistics",
     "section": "\n2.3 Applied to Covid",
     "text": "2.3 Applied to Covid\nWhy does it matter? If 1% of a population have covid, for a screening test with 80% sensitivity (1- Type II) and 95% specificity (1-Type I).\nAssuming N test = 100\n\n\nReality\nTest +ve\nTest -ve\nTotal\n\n\n\nHealthy\n4.95\n94.05\n99\n\n\nHas COVID\n0.8\n0.2\n1\n\n\nTotal\n5.75\n94.25\n100\n\n\n\n\nAdding the prior\nAdding the Type II error\nAdding the Type I error\nAdding colum sums"
   },
   {
-    "objectID": "slides/lec-08_intro_bayes.notes.html#applied-to-covid-5",
-    "href": "slides/lec-08_intro_bayes.notes.html#applied-to-covid-5",
+    "objectID": "slides/lec-09_intro_bayes.notes.html#applied-to-covid-5",
+    "href": "slides/lec-09_intro_bayes.notes.html#applied-to-covid-5",
     "title": "Introduction Bayesian statistics",
     "section": "\n2.4 Applied to Covid",
     "text": "2.4 Applied to Covid\nWhy does it matter? If 1% of a population have covid, for a screening test with 80% sensitivity (1- Type II) and 95% specificity (1-Type I).\n\n\n\nReality\nTest +ve\nTest -ve\nTotal\n\n\n\nHealthy\n4.95\n94.05\n99\n\n\nHas COVID\n0.8\n0.2\n1\n\n\nTotal\n5.75\n94.25\n100\n\n\n\n\n\nTrue positive: P[ Covid | test + ] = 0.139\n\nTrue negative: P[ Healthy | test - ] = 0.998\n\nFalse positive: P[ Healthy | test + ] = 0.861\nFalse negative: P[ Covid | test - ] = 0.002\n\n\n\nTalk about changing prior implications"
   },
   {
-    "objectID": "slides/lec-08_intro_bayes.notes.html#what-if-covid-changes",
-    "href": "slides/lec-08_intro_bayes.notes.html#what-if-covid-changes",
+    "objectID": "slides/lec-09_intro_bayes.notes.html#what-if-covid-changes",
+    "href": "slides/lec-09_intro_bayes.notes.html#what-if-covid-changes",
     "title": "Introduction Bayesian statistics",
     "section": "\n2.5 What if COVID % changes?",
     "text": "2.5 What if COVID % changes?\nWhy does it matter? If 20% of a population have covid instead of 1%?\n\n\n\nReality\nTest +ve\nTest -ve\nTotal\n\n\n\nHealthy\n4\n76\n80\n\n\nHas COVID\n16\n4\n20\n\n\nTotal\n20\n80\n100\n\n\n\n\nTrue positive: P[ Covid | test + ] = 0.8\nTrue negative: P[ Healthy | test - ] = 0.95\nFalse positive: P[ Healthy | test + ] = 0.2\nFalse negative: P[ Covid | test - ] = 0.05\n\n\nExplain impact of changing prior on test results reliability"
   },
   {
-    "objectID": "slides/lec-08_intro_bayes.notes.html#prosecutors-fallacy",
-    "href": "slides/lec-08_intro_bayes.notes.html#prosecutors-fallacy",
+    "objectID": "slides/lec-09_intro_bayes.notes.html#prosecutors-fallacy",
+    "href": "slides/lec-09_intro_bayes.notes.html#prosecutors-fallacy",
     "title": "Introduction Bayesian statistics",
     "section": "\n2.6 Prosecutor’s fallacy",
     "text": "2.6 Prosecutor’s fallacy\nMixing up P[ A | B ] with P[ B | A ] is the Prosecutor’s Fallacy\n\nsmall P evidence given innocence \\(\\neq\\) small P of innocence given evidence\n\nTrue Story \n\n\nAfter the sudden death of two baby sons, Sally Clark was sentenced to life in prison in 1999\nExpert witness Prof Roy Meadow had interpreted the small probability of two cot deaths as a small probability of Clark’s innocence\nAfter a long campaign, including refutation of Meadow’s statistics (among other errors), Clark was cleared in 2003\nAfter being freed, she developed alcoholism and died in 2007"
   },
   {
-    "objectID": "slides/lec-08_intro_bayes.notes.html#meeting-mosquitoes",
-    "href": "slides/lec-08_intro_bayes.notes.html#meeting-mosquitoes",
+    "objectID": "slides/lec-09_intro_bayes.notes.html#meeting-mosquitoes",
+    "href": "slides/lec-09_intro_bayes.notes.html#meeting-mosquitoes",
     "title": "Introduction Bayesian statistics",
     "section": "\n2.7 Meeting mosquitoes",
     "text": "2.7 Meeting mosquitoes"
   },
   {
-    "objectID": "slides/lec-08_intro_bayes.notes.html#bayes-theorem-1",
-    "href": "slides/lec-08_intro_bayes.notes.html#bayes-theorem-1",
+    "objectID": "slides/lec-09_intro_bayes.notes.html#bayes-theorem-1",
+    "href": "slides/lec-09_intro_bayes.notes.html#bayes-theorem-1",
     "title": "Introduction Bayesian statistics",
     "section": "\n2.8 Bayes’ Theorem",
     "text": "2.8 Bayes’ Theorem\nBayes’ Theorem is a rule about the ‘language’ of probabilities, that can be used in any analysis describing random variables, i.e. any data analysis.\nQ. So why all the fuss?\nA. Bayesian inference uses more than just Bayes’ Theorem\nBayesian inference uses the ‘language’ of probability to describe what is known about parameters.\n\n\n\n\n\n\nWarning\n\n\n\nFrequentist inference, e.g. using p-values & confidence intervals, does not quantify what is known about parameters. many people initially think it does; an important job for instructors of intro Stat/Biostat courses is convincing those people that they are wrong"
   },
   {
-    "objectID": "slides/lec-08_intro_bayes.notes.html#of-what",
-    "href": "slides/lec-08_intro_bayes.notes.html#of-what",
+    "objectID": "slides/lec-09_intro_bayes.notes.html#of-what",
+    "href": "slides/lec-09_intro_bayes.notes.html#of-what",
     "title": "Introduction Bayesian statistics",
     "section": "\n3.1 95% of what?",
     "text": "3.1 95% of what?\n\nWe ‘trap’ the truth with 95% confidence.\n95% of what?\nThe interval traps the truth in 95% of experiments.\n\n\nTo define anything frequentist, you have to imagine repeated experiments.\n\nLet’s do some more ‘target practice’, for frequentist testing"
   },
   {
-    "objectID": "slides/lec-08_intro_bayes.notes.html#frequentist-testing",
-    "href": "slides/lec-08_intro_bayes.notes.html#frequentist-testing",
+    "objectID": "slides/lec-09_intro_bayes.notes.html#frequentist-testing",
+    "href": "slides/lec-09_intro_bayes.notes.html#frequentist-testing",
     "title": "Introduction Bayesian statistics",
     "section": "\n3.2 Frequentist testing",
     "text": "3.2 Frequentist testing\n\nimagine running your experiment again and again, so\n\nOn day 1 you collect data and construct a [valid] 95% confidence interval for a parameter \\(\\theta_1\\).\nOn day 2 you collect new data and construct a 95% confidence interval for an unrelated parameter \\(\\theta_2\\).\nOn day 3 … [the same]. and so on constructing confidence intervals each time\n\n\n… 95% of your intervals will trap the true parameter value\n\n\n… it does not says anything about whether your data is in the 95% or the 5%\n… it requires you to think about many other datasets, not just the one you have to analyze\n\nHow does Bayesian inference differ? Let’s take aim…"
   },
   {
-    "objectID": "slides/lec-08_intro_bayes.notes.html#here-it-is-in-practice",
-    "href": "slides/lec-08_intro_bayes.notes.html#here-it-is-in-practice",
+    "objectID": "slides/lec-09_intro_bayes.notes.html#here-it-is-in-practice",
+    "href": "slides/lec-09_intro_bayes.notes.html#here-it-is-in-practice",
     "title": "Introduction Bayesian statistics",
     "section": "\n3.3 Here it is in practice",
     "text": "3.3 Here it is in practice\n\n\nAir France Flight 447 crashed in the ocean On June 1, 2009.\n\n\n\nMajor wreckage recovered within 5 days. No blackbox \n\n\n\n\nProbability of blackbox location described via Bayesian inference \n\n\n\n\nEventually, the black box was found in the red area"
   },
   {
-    "objectID": "slides/lec-08_intro_bayes.notes.html#updating-knowledge",
-    "href": "slides/lec-08_intro_bayes.notes.html#updating-knowledge",
+    "objectID": "slides/lec-09_intro_bayes.notes.html#updating-knowledge",
+    "href": "slides/lec-09_intro_bayes.notes.html#updating-knowledge",
     "title": "Introduction Bayesian statistics",
     "section": "\n4.1 Updating knowledge",
     "text": "4.1 Updating knowledge\nWe use:\n\n\nPrior distribution: what you know about parameter β, excluding the information in the data – denoted \\(P_{prior}(β)\\)\n\n\nLikelihood: based on modeling assumptions, how [relatively] likely the data Y are if the truth is β - denoted \\(f(Y|β)\\)\n\n\nTo get a posterior distribution, denoted \\(P_{post}(β|Y)\\): stating what we know about β combining the prior with the data – ?\nBayes Theorem used for inference tells us:\n\\[\n\\begin{align}\nP_{post}(β|Y) &∝ f(Y|β) × P_{prior}(β)\\\\\n\\text{Posterior} &∝ \\text{Likelihood} × \\text{Prior}\n\\end{align}\n\\]\n… and that’s it! (essentially!)\n\n\nNo replications – e.g. no replicate plane searches\nGiven modeling assumptions & prior, process is automatic\nKeep adding data, and updating knowledge, as data becomes available… knowledge will concentrate around true β"
   },
   {
-    "objectID": "slides/lec-08_intro_bayes.notes.html#updating-knowledge-3",
-    "href": "slides/lec-08_intro_bayes.notes.html#updating-knowledge-3",
+    "objectID": "slides/lec-09_intro_bayes.notes.html#updating-knowledge-3",
+    "href": "slides/lec-09_intro_bayes.notes.html#updating-knowledge-3",
     "title": "Introduction Bayesian statistics",
     "section": "\n4.2 Updating knowledge",
     "text": "4.2 Updating knowledge"
   },
   {
-    "objectID": "slides/lec-08_intro_bayes.notes.html#updating-knowledge-4",
-    "href": "slides/lec-08_intro_bayes.notes.html#updating-knowledge-4",
+    "objectID": "slides/lec-09_intro_bayes.notes.html#updating-knowledge-4",
+    "href": "slides/lec-09_intro_bayes.notes.html#updating-knowledge-4",
     "title": "Introduction Bayesian statistics",
     "section": "\n4.3 Updating knowledge",
     "text": "4.3 Updating knowledge\n\n\n\n\n\n\n\n\n\nA Bayesian is one who, vaguely expecting a horse, and catching a glimpse of a donkey, strongly believes he has seen a mule"
   },
   {
-    "objectID": "slides/lec-08_intro_bayes.notes.html#where-do-priors-come-from",
-    "href": "slides/lec-08_intro_bayes.notes.html#where-do-priors-come-from",
+    "objectID": "slides/lec-09_intro_bayes.notes.html#where-do-priors-come-from",
+    "href": "slides/lec-09_intro_bayes.notes.html#where-do-priors-come-from",
     "title": "Introduction Bayesian statistics",
     "section": "\n4.4 Where do priors come from",
     "text": "4.4 Where do priors come from\nPriors come from all data external to the current study (i.e. everything else) ‘Boiling down’ what subject-matter experts know/think is known as eliciting a prior. It’s not easy but here are some simple tips\n\nDiscuss parameters experts understand – e.g. code variables so intercept is mean outcome in people with average covariates, not with age = height = … = 0\nAvoid leading questions (just as in survey design)\nThe ‘language’ of probability is unfamiliar, help users express their uncertainty"
   },
   {
-    "objectID": "slides/lec-08_intro_bayes.notes.html#where-do-priors-come-from-1",
-    "href": "slides/lec-08_intro_bayes.notes.html#where-do-priors-come-from-1",
+    "objectID": "slides/lec-09_intro_bayes.notes.html#where-do-priors-come-from-1",
+    "href": "slides/lec-09_intro_bayes.notes.html#where-do-priors-come-from-1",
     "title": "Introduction Bayesian statistics",
     "section": "\n4.5 Where do priors come from",
     "text": "4.5 Where do priors come from\n\nUse stickers or a survey in the hallway\n\n\n\n\nUse stickers (Johnson et al 2010, J Clin Epi) for survival when taking warfarin\n\n\nNormalize marks (Latthe et al 2005, J Obs Gync) for pain effect of LUNA vs placebo\n\n\n\n\nIdeas to help experts ‘translate’ to the language of probability\nTypically these ‘coarse’ priors are smoothed. Providing the basic shape remains, exactly how much you smooth is unlikely to be critical in practice.\nElicitation is also very useful for non-Bayesian analyses – it’s similar to study design & analysis planning"
   },
   {
-    "objectID": "slides/lec-08_intro_bayes.notes.html#where-do-priors-come-from-2",
-    "href": "slides/lec-08_intro_bayes.notes.html#where-do-priors-come-from-2",
+    "objectID": "slides/lec-09_intro_bayes.notes.html#where-do-priors-come-from-2",
+    "href": "slides/lec-09_intro_bayes.notes.html#where-do-priors-come-from-2",
     "title": "Introduction Bayesian statistics",
     "section": "\n4.6 Where do priors come from",
     "text": "4.6 Where do priors come from\nIf the experts disagree? Try it both ways\n\nIf the posteriors differ, what you believe based on the data depends on your prior knowledge\n\nTo convince other people, expect to have to convince skeptics – and note that convincing [rational] skeptics is what science is all about"
   },
   {
-    "objectID": "slides/lec-08_intro_bayes.notes.html#very-informative-data",
-    "href": "slides/lec-08_intro_bayes.notes.html#very-informative-data",
+    "objectID": "slides/lec-09_intro_bayes.notes.html#very-informative-data",
+    "href": "slides/lec-09_intro_bayes.notes.html#very-informative-data",
     "title": "Introduction Bayesian statistics",
     "section": "\n5.1 Very informative data",
     "text": "5.1 Very informative data\nWhen the data provide a lot more information than the prior\n\n\n\n\n\n\n\n\nPriors here are dominated by the likelihood, and they give very similar posteriors – i.e. everyone agrees. (Phew!)"
   },
   {
-    "objectID": "slides/lec-08_intro_bayes.notes.html#flat-priors",
-    "href": "slides/lec-08_intro_bayes.notes.html#flat-priors",
+    "objectID": "slides/lec-09_intro_bayes.notes.html#flat-priors",
+    "href": "slides/lec-09_intro_bayes.notes.html#flat-priors",
     "title": "Introduction Bayesian statistics",
     "section": "\n5.2 Flat priors",
     "text": "5.2 Flat priors\nUsing very flat priors to represent ignorance\n\n\n\n\n\n\n\n\nFlat priors do NOT actually represent ignorance!\n\nMost of their support is for very extreme parameter values"
   },
   {
-    "objectID": "slides/lec-08_intro_bayes.notes.html#bayesian-approx-frequentist",
-    "href": "slides/lec-08_intro_bayes.notes.html#bayesian-approx-frequentist",
+    "objectID": "slides/lec-09_intro_bayes.notes.html#bayesian-approx-frequentist",
+    "href": "slides/lec-09_intro_bayes.notes.html#bayesian-approx-frequentist",
     "title": "Introduction Bayesian statistics",
     "section": "\n5.3 Bayesian \\(\\approx\\) frequentist",
     "text": "5.3 Bayesian \\(\\approx\\) frequentist\n\n\n\n\n\n\n\n\nLikelihood gives the classic 95% confidence interval can be good approx of Bayesian 95% Highest Posterior Density interval"
   },
   {
-    "objectID": "slides/lec-08_intro_bayes.notes.html#bayesian-approx-frequentist-1",
-    "href": "slides/lec-08_intro_bayes.notes.html#bayesian-approx-frequentist-1",
+    "objectID": "slides/lec-09_intro_bayes.notes.html#bayesian-approx-frequentist-1",
+    "href": "slides/lec-09_intro_bayes.notes.html#bayesian-approx-frequentist-1",
     "title": "Introduction Bayesian statistics",
     "section": "\n5.4 Bayesian \\(\\approx\\) frequentist",
     "text": "5.4 Bayesian \\(\\approx\\) frequentist\nWith large samples (and some regularity conditions)\n\n(sane) frequentist confidence intervals and (sane) Bayesian credible intervals are essentially identical\nit’s actually okay to give Bayesian interpretations to 95% CIs, i.e. to say we have \\(\\neq\\) 95% posterior belief that the true β lies within that range"
   },
   {
-    "objectID": "slides/lec-08_intro_bayes.notes.html#frequentist-bayesian",
-    "href": "slides/lec-08_intro_bayes.notes.html#frequentist-bayesian",
+    "objectID": "slides/lec-09_intro_bayes.notes.html#frequentist-bayesian",
+    "href": "slides/lec-09_intro_bayes.notes.html#frequentist-bayesian",
     "title": "Introduction Bayesian statistics",
     "section": "\n5.5 Frequentist 😃 & Bayesian 😕\n",
     "text": "5.5 Frequentist 😃 & Bayesian 😕\n\nPrior strongly supporting small effects, and with data from an imprecise study\n\n\n\n\n\n\n\n\n\nFrequentist ‘Textbook’ analysis says ‘reject’ (p &lt; 0.05, woohoo, Nature her we go)\nBayesian Posterior is ‘shrunk’ toward zero. We’re sure true β is very small (& hard to replicate) & we’re unsure of its sign. Wait a second, about that front page"
   },
   {
-    "objectID": "slides/lec-08_intro_bayes.notes.html#where-is-bayesian-approach-used",
-    "href": "slides/lec-08_intro_bayes.notes.html#where-is-bayesian-approach-used",
+    "objectID": "slides/lec-09_intro_bayes.notes.html#where-is-bayesian-approach-used",
+    "href": "slides/lec-09_intro_bayes.notes.html#where-is-bayesian-approach-used",
     "title": "Introduction Bayesian statistics",
     "section": "\n5.6 Where is Bayesian approach used",
     "text": "5.6 Where is Bayesian approach used\n\nAlmost any analysis\n\nBayesian arguments are often seen in\n\nHierarchical modeling (Some expert calls the classic frequentist version a “statistical no-man’s land”)\nComplex models: for messy data, measurement error, multiple sources of data fitting them is possible under Bayesian approaches, but perhaps still not easy"
   },
   {
-    "objectID": "slides/lec-08_intro_bayes.notes.html#bayesian-statistics",
-    "href": "slides/lec-08_intro_bayes.notes.html#bayesian-statistics",
+    "objectID": "slides/lec-09_intro_bayes.notes.html#bayesian-statistics",
+    "href": "slides/lec-09_intro_bayes.notes.html#bayesian-statistics",
     "title": "Introduction Bayesian statistics",
     "section": "\n6.1 Bayesian statistics:",
     "text": "6.1 Bayesian statistics:\n\nI barely scratched the surface\nIs useful in many settings, and you should know about it\nIs often not very different in practice from frequentist statistics. It is often helpful to think about analyses from both Bayesian and non-Bayesian points of view\nIs not reserved for hard-core mathematicians, or computer scientists, or philosophers. If you find it helpful, use it."
@@ -2092,7 +2092,7 @@
     "href": "fr/lectures.html",
     "title": "Cours",
     "section": "",
-    "text": "Les diapos et les notes sont uniquement en anglais\n\n\n\n\n\n\n\n\nDate\nSujet\nDiapos\nLecture\n\n\n\n\n\n\n\n13 janv.\nIntroduction\n \nSmaldino et McElreath (2016)\n\n\n20 janv.\nModèles linéaires généralisés (et révisions modèles linéaires)\n \nZuur et al. (2010)\n\n\n27 janv.\nStructure causale et construction de modèle\n \nCinelli et al. (2022), Wysocki et al. (2022)\n\n\n3 févr.\nIntroduction aux modèles mixtes\n \nHarrison et al. (2018)\n\n\n10 févr.\nModèles mixtes généralisés\n \nBolker et al. (2009)\n\n\n24 févr.\nIntroduction à Quarto\n \nAlston et Rick (2021)\n\n\nSemaine de Lecture\n\n\n3 mars\nPrésentation des propositions de projet final\n \naucune\n\n\n10 mars\nIntroduction à Github\n \nIvimey-Cook et al. (2023)\n\n\n17 mars\nIntro analyse Bayesienne\nNA\nKruschke et Liddell (2018)\n\n\n24 mars\nModèles mixtes multivariés\nNA\nVan de Pol et Wright (2009)\n\n\n31 mars\nSujet choisi par les étudiants\nNA\nWasserstein et Lazar (2016)\n\n\n7 avr.\nSujet choisi par les étudiants\nNA\nForstmeier et al. (2017)\n\n\n\n\n\n\n\n\n\n\n\nLes diapos sont en format revealjs (html). Si vous souhaitez avoir un pdf (*note: vous perdrez peut-être quelques fonctionnalités):\n\nOuvrir les diapos dans votre navigateur\nAppuyer sur e pour le mode d’exportation en PDF (?print-pdf devrait apparaître à la fin de l’adresse url)\nImprimer la page (CTRL/CMD+P).\nChanger la destination à Save as PDF.\nChanger le Format à Paysage.\nChanger les Marges à Aucune.\nAjouter le fond graphique (si vous le souhaitez)\nCliquer Sauvegarder 🎉\n\n\n\n\nLes notes sont simplement le contenu des diapos (et mes quelques notes) en format html.\nEn outre, l’outils d’annotation https://hypothes.is/ est activé sur les pages de notes. Cet outil permet d’annoter et commenter des pages internet, de sauvegarder vos commentaires, de la partager publiquement ou au sein de groupes privés. Il faut juste créer un compte gratuit.",
+    "text": "Les diapos et les notes sont uniquement en anglais\n\n\n\n\n\n\n\n\nDate\nSujet\nDiapos\nLecture\n\n\n\n\n\n\n\n13 janv.\nIntroduction\n \nSmaldino et McElreath (2016)\n\n\n20 janv.\nModèles linéaires généralisés (et révisions modèles linéaires)\n \nZuur et al. (2010)\n\n\n27 janv.\nStructure causale et construction de modèle\n \nCinelli et al. (2022), Wysocki et al. (2022)\n\n\n3 févr.\nIntroduction aux modèles mixtes\n \nHarrison et al. (2018)\n\n\n10 févr.\nModèles mixtes généralisés\n \nBolker et al. (2009)\n\n\n24 févr.\nIntroduction à Quarto\n \nAlston et Rick (2021)\n\n\nSemaine de Lecture\n\n\n3 mars\nPrésentation des propositions de projet final\nNA\naucune\n\n\n10 mars\nIntroduction à Github\n \nIvimey-Cook et al. (2023)\n\n\n17 mars\nIntro analyse Bayesienne\n \nKruschke et Liddell (2018)\n\n\n24 mars\nModèles mixtes multivariés\nNA\nVan de Pol et Wright (2009)\n\n\n31 mars\nSujet choisi par les étudiants\nNA\nWasserstein et Lazar (2016)\n\n\n7 avr.\nSujet choisi par les étudiants\nNA\nForstmeier et al. (2017)\n\n\n\n\n\n\n\n\n\n\n\nLes diapos sont en format revealjs (html). Si vous souhaitez avoir un pdf (*note: vous perdrez peut-être quelques fonctionnalités):\n\nOuvrir les diapos dans votre navigateur\nAppuyer sur e pour le mode d’exportation en PDF (?print-pdf devrait apparaître à la fin de l’adresse url)\nImprimer la page (CTRL/CMD+P).\nChanger la destination à Save as PDF.\nChanger le Format à Paysage.\nChanger les Marges à Aucune.\nAjouter le fond graphique (si vous le souhaitez)\nCliquer Sauvegarder 🎉\n\n\n\n\nLes notes sont simplement le contenu des diapos (et mes quelques notes) en format html.\nEn outre, l’outils d’annotation https://hypothes.is/ est activé sur les pages de notes. Cet outil permet d’annoter et commenter des pages internet, de sauvegarder vos commentaires, de la partager publiquement ou au sein de groupes privés. Il faut juste créer un compte gratuit.",
     "crumbs": [
       "Biostats uOttawa",
       "Diapos et notes"
@@ -2267,7 +2267,7 @@
     "href": "en/lectures.html",
     "title": "Lectures",
     "section": "",
-    "text": "Date\nTopic\nSlides\nReading\n\n\n\n\n\n\n\nJan 13\nIntroduction\n \nSmaldino and McElreath (2016)\n\n\nJan 20\nGeneralized linear models (and revision of linear models)\n \nZuur et al. (2010)\n\n\nJan 27\nCausal structure and model building\n \nCinelli et al. (2022), Wysocki et al. (2022)\n\n\nFeb 3\nIntroduction to mixed-models\n \nHarrison et al. (2018)\n\n\nFeb 10\nGeneralised linear mixed models\n \nBolker et al. (2009)\n\n\nReading week\n\n\nFeb 24\nIntroduction to Quarto\n \nAlston and Rick (2021)\n\n\nMar 3\nPresentation final project proposals\n \nnone\n\n\nMar 10\nIntroduction to Github\n \nIvimey-Cook et al. (2023)\n\n\nMar 17\nIntroduction to Bayesian analysis\nNA\nKruschke and Liddell (2018)\n\n\nMar 24\nMultivariate mixed models\nNA\nVan de Pol and Wright (2009)\n\n\nMar 31\nTopic chosen by students\nNA\nWasserstein and Lazar (2016)\n\n\nApr 7\nTopic chosen by students\nNA\nForstmeier et al. (2017)\n\n\n\n\n\n\n\n\n\n\n\nSlides in revealjs format (html). If you want then as a pdf (note you might loose some functionality or contents due to tabs and scroll sections):\n\nOpen the slides in your browser from a link on this page\nPress e to get into the PDF export mode (?print-pdf should appear near the end of the url and white borders should appear)\nOpen the in-browser print dialog (CTRL/CMD+P).\nChange the Destination setting to Save as PDF.\nChange the Layout to Landscape.\nChange the Margins to None.\nEnable the Background graphics option (if you want it)\nClick Save 🎉\n\n\n\n\nContent of the slides in html format as a self-contained downloadable file and including tabs and scroll sections.\nMore importantly, notes have the commenting and annotateing tools activated via https://hypothes.is/. If you create a free account , you can annotate and comment slides as well as share your annotations/comments with the public or via private or public groups.",
+    "text": "Date\nTopic\nSlides\nReading\n\n\n\n\n\n\n\nJan 13\nIntroduction\n \nSmaldino and McElreath (2016)\n\n\nJan 20\nGeneralized linear models (and revision of linear models)\n \nZuur et al. (2010)\n\n\nJan 27\nCausal structure and model building\n \nCinelli et al. (2022), Wysocki et al. (2022)\n\n\nFeb 3\nIntroduction to mixed-models\n \nHarrison et al. (2018)\n\n\nFeb 10\nGeneralised linear mixed models\n \nBolker et al. (2009)\n\n\nReading week\n\n\nFeb 24\nIntroduction to Quarto\n \nAlston and Rick (2021)\n\n\nMar 3\nPresentation final project proposals\nNA\nnone\n\n\nMar 10\nIntroduction to Github\n \nIvimey-Cook et al. (2023)\n\n\nMar 17\nIntroduction to Bayesian analysis\n \nKruschke and Liddell (2018)\n\n\nMar 24\nMultivariate mixed models\nNA\nVan de Pol and Wright (2009)\n\n\nMar 31\nTopic chosen by students\nNA\nWasserstein and Lazar (2016)\n\n\nApr 7\nTopic chosen by students\nNA\nForstmeier et al. (2017)\n\n\n\n\n\n\n\n\n\n\n\nSlides in revealjs format (html). If you want then as a pdf (note you might loose some functionality or contents due to tabs and scroll sections):\n\nOpen the slides in your browser from a link on this page\nPress e to get into the PDF export mode (?print-pdf should appear near the end of the url and white borders should appear)\nOpen the in-browser print dialog (CTRL/CMD+P).\nChange the Destination setting to Save as PDF.\nChange the Layout to Landscape.\nChange the Margins to None.\nEnable the Background graphics option (if you want it)\nClick Save 🎉\n\n\n\n\nContent of the slides in html format as a self-contained downloadable file and including tabs and scroll sections.\nMore importantly, notes have the commenting and annotateing tools activated via https://hypothes.is/. If you create a free account , you can annotate and comment slides as well as share your annotations/comments with the public or via private or public groups.",
     "crumbs": [
       "Biostats uOttawa",
       "Slides and notes"
@@ -2460,7 +2460,7 @@
     "href": "slides/lec-01_intro.notes.html#schedule",
     "title": "Advanced stats and Open Science",
     "section": "\n2.3 Schedule",
-    "text": "2.3 Schedule\n\n\n\nWeek\nTheme\n\n\n\n1\nIntro\n\n\n2\nGithub\n\n\n3\nMarkdown / Quarto\n\n\n4\nLm & glm\n\n\n5\nCausal structure\n\n\n6\nLmm\n\n\n7\nBayesian approach\n\n\n8\nGlmm\n\n\n9\nto\n\n\n10\nbe\n\n\n11\ndecided\n\n\n12\ntogether"
+    "text": "2.3 Schedule\n\nSee course website"
   },
   {
     "objectID": "slides/lec-01_intro.notes.html#in-class-50",
@@ -2474,14 +2474,14 @@
     "href": "slides/lec-01_intro.notes.html#project-50",
     "title": "Advanced stats and Open Science",
     "section": "\n3.2 Project (50%)",
-    "text": "3.2 Project (50%)\n\nanalysis of data using techniques from courses or beyond\nReport written using Rmarkdown\nposted on Github classroom"
+    "text": "3.2 Project (50%)\n\nanalysis of data using techniques from courses or beyond\nReport written using Quarto\nOral examination"
   },
   {
     "objectID": "slides/lec-01_intro.notes.html#softwares",
     "href": "slides/lec-01_intro.notes.html#softwares",
     "title": "Advanced stats and Open Science",
     "section": "\n4.1 Softwares",
-    "text": "4.1 Softwares\n\nR (version 4.0 or higher)\nText editor: Rstudio or VSCode\nR packages (up to date)\n\nopen science: rmarkdown, tinytex\nmixed models: lme4, gremlin, glmmTMB, MCMCglmm\nlatex: full version or tinytex"
+    "text": "4.1 Softwares\n\nR (version 4.0 or higher)\nText editor: Rstudio or VSCode\nR packages (up to date)\n\nopen science: quarto\nmixed models: lme4, gremlin, glmmTMB, MCMCglmm\nlatex: full version or tinytex"
   },
   {
     "objectID": "slides/lec-01_intro.notes.html#accounts",
@@ -2530,7 +2530,7 @@
     "href": "slides/lec-01_intro.slides.html#schedule",
     "title": "Advanced stats and Open Science",
     "section": "Schedule",
-    "text": "Schedule\n\n\n\n\nWeek\nTheme\n\n\n\n\n1\nIntro\n\n\n2\nGithub\n\n\n3\nMarkdown / Quarto\n\n\n4\nLm & glm\n\n\n5\nCausal structure\n\n\n6\nLmm\n\n\n7\nBayesian approach\n\n\n8\nGlmm\n\n\n9\nto\n\n\n10\nbe\n\n\n11\ndecided\n\n\n12\ntogether"
+    "text": "Schedule\n\nSee course website"
   },
   {
     "objectID": "slides/lec-01_intro.slides.html#in-class-50",
@@ -2544,14 +2544,14 @@
     "href": "slides/lec-01_intro.slides.html#project-50",
     "title": "Advanced stats and Open Science",
     "section": "Project (50%)",
-    "text": "Project (50%)\n\nanalysis of data using techniques from courses or beyond\nReport written using Rmarkdown\nposted on Github classroom"
+    "text": "Project (50%)\n\nanalysis of data using techniques from courses or beyond\nReport written using Quarto\nOral examination"
   },
   {
     "objectID": "slides/lec-01_intro.slides.html#softwares",
     "href": "slides/lec-01_intro.slides.html#softwares",
     "title": "Advanced stats and Open Science",
     "section": "Softwares",
-    "text": "Softwares\n\nR (version 4.0 or higher)\nText editor: Rstudio or VSCode\nR packages (up to date)\n\nopen science: rmarkdown, tinytex\nmixed models: lme4, gremlin, glmmTMB, MCMCglmm\nlatex: full version or tinytex"
+    "text": "Softwares\n\nR (version 4.0 or higher)\nText editor: Rstudio or VSCode\nR packages (up to date)\n\nopen science: quarto\nmixed models: lme4, gremlin, glmmTMB, MCMCglmm\nlatex: full version or tinytex"
   },
   {
     "objectID": "slides/lec-01_intro.slides.html#accounts",
@@ -2925,386 +2925,386 @@
     "text": "Practical\nWalkthrough Example box 1"
   },
   {
-    "objectID": "slides/lec-07_github.notes.html",
-    "href": "slides/lec-07_github.notes.html",
+    "objectID": "slides/lec-08_github.notes.html",
+    "href": "slides/lec-08_github.notes.html",
     "title": "Introduction to Git and GitHub",
     "section": "",
     "text": "This won’t even touch the surface of git… But! Hopefully, you:\n\nRecognize the power of using version control\nKnow the basic tools to get started using git\nWhere to go for help\n\n\n\nCredit: I borrowed slides from Olivier Gimenez"
   },
   {
-    "objectID": "slides/lec-07_github.notes.html#learning-expectations",
-    "href": "slides/lec-07_github.notes.html#learning-expectations",
+    "objectID": "slides/lec-08_github.notes.html#learning-expectations",
+    "href": "slides/lec-08_github.notes.html#learning-expectations",
     "title": "Introduction to Git and GitHub",
     "section": "",
     "text": "This won’t even touch the surface of git… But! Hopefully, you:\n\nRecognize the power of using version control\nKnow the basic tools to get started using git\nWhere to go for help\n\n\n\nCredit: I borrowed slides from Olivier Gimenez"
   },
   {
-    "objectID": "slides/lec-07_github.notes.html#getting-started",
-    "href": "slides/lec-07_github.notes.html#getting-started",
+    "objectID": "slides/lec-08_github.notes.html#getting-started",
+    "href": "slides/lec-08_github.notes.html#getting-started",
     "title": "Introduction to Git and GitHub",
     "section": "\n0.2 Getting started",
     "text": "0.2 Getting started\nYou need:\n\nRStudio or VS Code\nR\na github account\ngit software\n\nR packages:\n\nusethis\ngitcreds"
   },
   {
-    "objectID": "slides/lec-07_github.notes.html#rings-a-bell",
-    "href": "slides/lec-07_github.notes.html#rings-a-bell",
+    "objectID": "slides/lec-08_github.notes.html#rings-a-bell",
+    "href": "slides/lec-08_github.notes.html#rings-a-bell",
     "title": "Introduction to Git and GitHub",
     "section": "\n1.1 Rings a bell?",
     "text": "1.1 Rings a bell?"
   },
   {
-    "objectID": "slides/lec-07_github.notes.html#is-your-workflow",
-    "href": "slides/lec-07_github.notes.html#is-your-workflow",
+    "objectID": "slides/lec-08_github.notes.html#is-your-workflow",
+    "href": "slides/lec-08_github.notes.html#is-your-workflow",
     "title": "Introduction to Git and GitHub",
     "section": "\n1.2 Is your workflow…",
     "text": "1.2 Is your workflow…"
   },
   {
-    "objectID": "slides/lec-07_github.notes.html#why-reproducible-science",
-    "href": "slides/lec-07_github.notes.html#why-reproducible-science",
+    "objectID": "slides/lec-08_github.notes.html#why-reproducible-science",
+    "href": "slides/lec-08_github.notes.html#why-reproducible-science",
     "title": "Introduction to Git and GitHub",
     "section": "\n1.3 Why reproducible science?",
     "text": "1.3 Why reproducible science?"
   },
   {
-    "objectID": "slides/lec-07_github.notes.html#rstudio-projects",
-    "href": "slides/lec-07_github.notes.html#rstudio-projects",
+    "objectID": "slides/lec-08_github.notes.html#rstudio-projects",
+    "href": "slides/lec-08_github.notes.html#rstudio-projects",
     "title": "Introduction to Git and GitHub",
     "section": "\n1.4 RStudio Projects",
     "text": "1.4 RStudio Projects\nUse RStudio projects to keep materials associated with a particular analysis together\n\n\n\nSelf contained and portable\nWorking directory set to root of project on launch\nFresh session everytime the project is launched\n\nSee Jenny Bryan’s post on project oriented workflows for more details\n\nFile &gt; New Project &gt; New Directory"
   },
   {
-    "objectID": "slides/lec-07_github.notes.html#alternatives-to-rstudio-projects",
-    "href": "slides/lec-07_github.notes.html#alternatives-to-rstudio-projects",
+    "objectID": "slides/lec-08_github.notes.html#alternatives-to-rstudio-projects",
+    "href": "slides/lec-08_github.notes.html#alternatives-to-rstudio-projects",
     "title": "Introduction to Git and GitHub",
     "section": "\n1.5 Alternatives to RStudio Projects",
     "text": "1.5 Alternatives to RStudio Projects\nSo You don’t like RStudio 💔\n\n\nEssentially a Rstudio Project:\n\norganise all the files within a given project folder\nset project folder as working directory\nensure a fresh, clean session\n\n\nsimply, do the same without using RStudio 🤩"
   },
   {
-    "objectID": "slides/lec-07_github.notes.html#what-is-it",
-    "href": "slides/lec-07_github.notes.html#what-is-it",
+    "objectID": "slides/lec-08_github.notes.html#what-is-it",
+    "href": "slides/lec-08_github.notes.html#what-is-it",
     "title": "Introduction to Git and GitHub",
     "section": "\n2.1 What is it? 🤔",
     "text": "2.1 What is it? 🤔\nThe management of changes to documents, computer programs, large web sites and other collections of information.\nGit \n\nOpen source (free to use) Version control software.\nGitHub \n\nA website that allows you to store your Git repositories online and makes it easy to collaborate with others."
   },
   {
-    "objectID": "slides/lec-07_github.notes.html#getting-started-with-git-and-github",
-    "href": "slides/lec-07_github.notes.html#getting-started-with-git-and-github",
+    "objectID": "slides/lec-08_github.notes.html#getting-started-with-git-and-github",
+    "href": "slides/lec-08_github.notes.html#getting-started-with-git-and-github",
     "title": "Introduction to Git and GitHub",
     "section": "\n2.2 Getting started with Git and GitHub",
     "text": "2.2 Getting started with Git and GitHub\n\nCreate an account on GitHub\n\n\nYou set your username, email and password here\n\n\ninstall git on your computer\n\n\nWindows: https://gitforwindows.org/\n\nMacOS: need Xcode tools. so shell/terminal: xcode-select --install\n\nLinux:\n\ndebian-based: sudo apt install git\n\nFedora, RedHat: dnf install git\n\n\n\n\n\nYou might need to restart you computer\n\nFor more details got to https://git-scm.com/downloads"
   },
   {
-    "objectID": "slides/lec-07_github.notes.html#git-github-ide",
-    "href": "slides/lec-07_github.notes.html#git-github-ide",
+    "objectID": "slides/lec-08_github.notes.html#git-github-ide",
+    "href": "slides/lec-08_github.notes.html#git-github-ide",
     "title": "Introduction to Git and GitHub",
     "section": "\n2.3 Git, Github & IDE",
     "text": "2.3 Git, Github & IDE\nBefore git only through the terminal 😢\nNow git can be used via multiple user-friendly interfaces\nRStudio + usethis 📦 + gitcreds 📦 == ❤️ Git & GitHub 🤩\nBut When using VS Code"
   },
   {
-    "objectID": "slides/lec-07_github.notes.html#configure-git",
-    "href": "slides/lec-07_github.notes.html#configure-git",
+    "objectID": "slides/lec-08_github.notes.html#configure-git",
+    "href": "slides/lec-08_github.notes.html#configure-git",
     "title": "Introduction to Git and GitHub",
     "section": "\n3.1 Configure git",
     "text": "3.1 Configure git\nTo check your configuration\n\nusethis::git_sitrep()\n\nSet your configuration\nUse your github username and and the email you used to sign-up on GitHub\n\nusethis::use_git_config(\n   user.name = \"JulienGAMartin\",\n   user.email = \"julien.martin@uottawa.ca\")"
   },
   {
-    "objectID": "slides/lec-07_github.notes.html#configure-github-authentication",
-    "href": "slides/lec-07_github.notes.html#configure-github-authentication",
+    "objectID": "slides/lec-08_github.notes.html#configure-github-authentication",
+    "href": "slides/lec-08_github.notes.html#configure-github-authentication",
     "title": "Introduction to Git and GitHub",
     "section": "\n3.2 Configure GitHub authentication",
     "text": "3.2 Configure GitHub authentication\nGet GITHUB Personal Authorisation Token\n\nusethis::create_github_token()\n\nNeed scopes repo, users, workflows at least"
   },
   {
-    "objectID": "slides/lec-07_github.notes.html#configure-github-authentication-1",
-    "href": "slides/lec-07_github.notes.html#configure-github-authentication-1",
+    "objectID": "slides/lec-08_github.notes.html#configure-github-authentication-1",
+    "href": "slides/lec-08_github.notes.html#configure-github-authentication-1",
     "title": "Introduction to Git and GitHub",
     "section": "\n3.3 Configure GitHub authentication",
     "text": "3.3 Configure GitHub authentication\nStore your git token with credentials\n\ngitcreds::gitcreds_set()\n\nProvide your github PAT token in the window\n\n\n\n\nRestart RStudio and R\nGit and github access should be configured now"
   },
   {
-    "objectID": "slides/lec-07_github.notes.html#first-or-new-project-with-rstudio",
-    "href": "slides/lec-07_github.notes.html#first-or-new-project-with-rstudio",
+    "objectID": "slides/lec-08_github.notes.html#first-or-new-project-with-rstudio",
+    "href": "slides/lec-08_github.notes.html#first-or-new-project-with-rstudio",
     "title": "Introduction to Git and GitHub",
     "section": "\n3.4 First (or new) project with Rstudio",
     "text": "3.4 First (or new) project with Rstudio\nMight be problematic the first time you do it\n\ncreate R project\ninitialise it for git\n\n\nusethis::use_git()\n\n\nAccept the commit and restart R\nIn R, to create github repo and link it\n\n\nusethis::use_github()\nusethis::git_vaccinate()\n\n\nCheck on github that the repos is there\n\net voila"
   },
   {
-    "objectID": "slides/lec-07_github.notes.html#new-project-and-not-rstudio",
-    "href": "slides/lec-07_github.notes.html#new-project-and-not-rstudio",
+    "objectID": "slides/lec-08_github.notes.html#new-project-and-not-rstudio",
+    "href": "slides/lec-08_github.notes.html#new-project-and-not-rstudio",
     "title": "Introduction to Git and GitHub",
     "section": "\n3.5 New project and NOT Rstudio",
     "text": "3.5 New project and NOT Rstudio\nOption 1\n\ncreate new empty folder for your project(no space, no accent)\nadd at least one file in it (suggest README.md)\nusing terminal/shell\n\n\ngit init\ngit add .\ngit commit -a -m \"first commit\"\n\n\nIn R, to create github repo and link it\n\n\nusethis::use_github()\nusethis::git_vaccinate()\n\n\nCheck on github that the repos is there\n\net voila"
   },
   {
-    "objectID": "slides/lec-07_github.notes.html#new-project-using-github-and-not-rstudio",
-    "href": "slides/lec-07_github.notes.html#new-project-using-github-and-not-rstudio",
+    "objectID": "slides/lec-08_github.notes.html#new-project-using-github-and-not-rstudio",
+    "href": "slides/lec-08_github.notes.html#new-project-using-github-and-not-rstudio",
     "title": "Introduction to Git and GitHub",
     "section": "\n3.6 New project using GitHub and NOT Rstudio",
     "text": "3.6 New project using GitHub and NOT Rstudio\nOption 2\n\nCreate new repository on github\nSet R working directory where you want to save your project\nTo clone (and link) github repo to your computer\n\n\nusethis::create_from_github(\n  \"https://github.com/your_github/your_repo.git\",\n  destdir=\".\")\n\n\nCheck that your folder has been created where you want it\n\net voila"
   },
   {
-    "objectID": "slides/lec-07_github.notes.html#integrated-graphical-user-interface",
-    "href": "slides/lec-07_github.notes.html#integrated-graphical-user-interface",
+    "objectID": "slides/lec-08_github.notes.html#integrated-graphical-user-interface",
+    "href": "slides/lec-08_github.notes.html#integrated-graphical-user-interface",
     "title": "Introduction to Git and GitHub",
     "section": "\n3.7 Integrated graphical user interface",
     "text": "3.7 Integrated graphical user interface"
   },
   {
-    "objectID": "slides/lec-07_github.notes.html#git-terms",
-    "href": "slides/lec-07_github.notes.html#git-terms",
+    "objectID": "slides/lec-08_github.notes.html#git-terms",
+    "href": "slides/lec-08_github.notes.html#git-terms",
     "title": "Introduction to Git and GitHub",
     "section": "\n3.8 Git terms",
     "text": "3.8 Git terms\n\nrepository your project folder\ncommit a snapshot of your repo\npush send commits to a remote\npull get commits from a remote\n\n\nclone get the repository from the remote for the first time\nbranch a movable label that points to a commit\nmerge combining two branches\nremote a computer or server with the repository on it"
   },
   {
-    "objectID": "slides/lec-07_github.notes.html#git-rstudio-workflow",
-    "href": "slides/lec-07_github.notes.html#git-rstudio-workflow",
+    "objectID": "slides/lec-08_github.notes.html#git-rstudio-workflow",
+    "href": "slides/lec-08_github.notes.html#git-rstudio-workflow",
     "title": "Introduction to Git and GitHub",
     "section": "\n3.9 Git RStudio workflow",
     "text": "3.9 Git RStudio workflow\n\n\n1.view file status \n2.stage files \n\n3.commit changes"
   },
   {
-    "objectID": "slides/lec-07_github.notes.html#share-on-github",
-    "href": "slides/lec-07_github.notes.html#share-on-github",
+    "objectID": "slides/lec-08_github.notes.html#share-on-github",
+    "href": "slides/lec-08_github.notes.html#share-on-github",
     "title": "Introduction to Git and GitHub",
     "section": "\n3.10 Share on GitHub",
     "text": "3.10 Share on GitHub\n1. Create repo\n\nusethis::use_github(protocol = \"https\")"
   },
   {
-    "objectID": "slides/lec-07_github.notes.html#share-on-github-1",
-    "href": "slides/lec-07_github.notes.html#share-on-github-1",
+    "objectID": "slides/lec-08_github.notes.html#share-on-github-1",
+    "href": "slides/lec-08_github.notes.html#share-on-github-1",
     "title": "Introduction to Git and GitHub",
     "section": "\n3.11 Share on GitHub",
     "text": "3.11 Share on GitHub\n2. Push further changes"
   },
   {
-    "objectID": "slides/lec-07_github.notes.html#anatomy-of-a-github-repo",
-    "href": "slides/lec-07_github.notes.html#anatomy-of-a-github-repo",
+    "objectID": "slides/lec-08_github.notes.html#anatomy-of-a-github-repo",
+    "href": "slides/lec-08_github.notes.html#anatomy-of-a-github-repo",
     "title": "Introduction to Git and GitHub",
     "section": "\n3.12 Anatomy of a GitHub repo",
     "text": "3.12 Anatomy of a GitHub repo\n\n\nREADME. Explain what your project is, and how to use it.\n\nusethis::use_readme_md()\nusethis::use_readme_rmd()\n\n\n\n\n\nLICENSE. Without a licence, the contents of the repository are technically closed.\n\nExamples licence CC-by: usethis::use_ccby_license(name = \"Julien Martin\")\n\n\n?licenses: details of functions available to generate licenses\n\nhttps://choosealicense.com/ help on choosing a licence.\n\n\n\n\n\nCONTRIBUTING.md - guidelines for contributors.\n\n\nusethis::use_tidy_contributing() provides a realtively strict but instructive template\n\n\n\n\n\nCODE_OF_CONDUCT.md set the tone for discourse between contributors.\n\nuse_code_of_conduct()"
   },
   {
-    "objectID": "slides/lec-07_github.notes.html#github-issues",
-    "href": "slides/lec-07_github.notes.html#github-issues",
+    "objectID": "slides/lec-08_github.notes.html#github-issues",
+    "href": "slides/lec-08_github.notes.html#github-issues",
     "title": "Introduction to Git and GitHub",
     "section": "\n3.13 GitHub issues",
     "text": "3.13 GitHub issues\nuse GitHub issues to plan, record and discuss tasks."
   },
   {
-    "objectID": "slides/lec-07_github.notes.html#why-using-a-remote-like-github",
-    "href": "slides/lec-07_github.notes.html#why-using-a-remote-like-github",
+    "objectID": "slides/lec-08_github.notes.html#why-using-a-remote-like-github",
+    "href": "slides/lec-08_github.notes.html#why-using-a-remote-like-github",
     "title": "Introduction to Git and GitHub",
     "section": "\n3.14 Why using a remote like GitHub ?",
     "text": "3.14 Why using a remote like GitHub ?\n\nA backup of your repository (Dropbox is NOT a backup)\nWork with others (not covered)\nIncrease your visibility\nIncrease interactions with users\nEasy distribution of R packages (without CRAN submissions)\n\n\none more time just in case Dropbox is NOT a backup"
   },
   {
-    "objectID": "slides/lec-07_github.notes.html#branching-and-merging",
-    "href": "slides/lec-07_github.notes.html#branching-and-merging",
+    "objectID": "slides/lec-08_github.notes.html#branching-and-merging",
+    "href": "slides/lec-08_github.notes.html#branching-and-merging",
     "title": "Introduction to Git and GitHub",
     "section": "\n3.15 Branching and merging",
     "text": "3.15 Branching and merging\nThis the true Power of git"
   },
   {
-    "objectID": "slides/lec-07_github.notes.html#branching-and-merging-1",
-    "href": "slides/lec-07_github.notes.html#branching-and-merging-1",
+    "objectID": "slides/lec-08_github.notes.html#branching-and-merging-1",
+    "href": "slides/lec-08_github.notes.html#branching-and-merging-1",
     "title": "Introduction to Git and GitHub",
     "section": "\n3.16 Branching and merging",
     "text": "3.16 Branching and merging\n\n\nBranching in Rstudio\n\n\n\n\n\n\nPull request in Github\nWhen you want to merge branches:\n\ncreate a pull request on Github\ncheck for incompatibilities\nthen merge"
   },
   {
-    "objectID": "slides/lec-07_github.notes.html#resources",
-    "href": "slides/lec-07_github.notes.html#resources",
+    "objectID": "slides/lec-08_github.notes.html#resources",
+    "href": "slides/lec-08_github.notes.html#resources",
     "title": "Introduction to Git and GitHub",
     "section": "\n3.17 Resources",
     "text": "3.17 Resources\nCheck out Happy Git and GitHub for the useR for more joy with git\n\n\nThe British Ecological Society has A Guide to Reproducible Code in Ecology and Evolution"
   },
   {
-    "objectID": "slides/lec-07_github.slides.html#learning-expectations",
-    "href": "slides/lec-07_github.slides.html#learning-expectations",
+    "objectID": "slides/lec-08_github.slides.html#learning-expectations",
+    "href": "slides/lec-08_github.slides.html#learning-expectations",
     "title": "Introduction to Git and GitHub",
     "section": "Learning expectations",
     "text": "Learning expectations\nThis won’t even touch the surface of git… But! Hopefully, you:\n\nRecognize the power of using version control\nKnow the basic tools to get started using git\nWhere to go for help\n\n\n\nCredit: I borrowed slides from Olivier Gimenez"
   },
   {
-    "objectID": "slides/lec-07_github.slides.html#getting-started",
-    "href": "slides/lec-07_github.slides.html#getting-started",
+    "objectID": "slides/lec-08_github.slides.html#getting-started",
+    "href": "slides/lec-08_github.slides.html#getting-started",
     "title": "Introduction to Git and GitHub",
     "section": "Getting started",
     "text": "Getting started\nYou need:\n\nRStudio or VS Code\nR\na github account\ngit software\nR packages:\n\nusethis\ngitcreds"
   },
   {
-    "objectID": "slides/lec-07_github.slides.html#rings-a-bell",
-    "href": "slides/lec-07_github.slides.html#rings-a-bell",
+    "objectID": "slides/lec-08_github.slides.html#rings-a-bell",
+    "href": "slides/lec-08_github.slides.html#rings-a-bell",
     "title": "Introduction to Git and GitHub",
     "section": "Rings a bell?",
     "text": "Rings a bell?"
   },
   {
-    "objectID": "slides/lec-07_github.slides.html#is-your-workflow",
-    "href": "slides/lec-07_github.slides.html#is-your-workflow",
+    "objectID": "slides/lec-08_github.slides.html#is-your-workflow",
+    "href": "slides/lec-08_github.slides.html#is-your-workflow",
     "title": "Introduction to Git and GitHub",
     "section": "Is your workflow…",
     "text": "Is your workflow…"
   },
   {
-    "objectID": "slides/lec-07_github.slides.html#why-reproducible-science",
-    "href": "slides/lec-07_github.slides.html#why-reproducible-science",
+    "objectID": "slides/lec-08_github.slides.html#why-reproducible-science",
+    "href": "slides/lec-08_github.slides.html#why-reproducible-science",
     "title": "Introduction to Git and GitHub",
     "section": "Why reproducible science?",
     "text": "Why reproducible science?"
   },
   {
-    "objectID": "slides/lec-07_github.slides.html#rstudio-projects",
-    "href": "slides/lec-07_github.slides.html#rstudio-projects",
+    "objectID": "slides/lec-08_github.slides.html#rstudio-projects",
+    "href": "slides/lec-08_github.slides.html#rstudio-projects",
     "title": "Introduction to Git and GitHub",
     "section": "RStudio Projects",
     "text": "RStudio Projects\nUse RStudio projects to keep materials associated with a particular analysis together\n\n\n\nSelf contained and portable\nWorking directory set to root of project on launch\nFresh session everytime the project is launched\n\nSee Jenny Bryan’s post on project oriented workflows for more details\n\nFile &gt; New Project &gt; New Directory"
   },
   {
-    "objectID": "slides/lec-07_github.slides.html#alternatives-to-rstudio-projects",
-    "href": "slides/lec-07_github.slides.html#alternatives-to-rstudio-projects",
+    "objectID": "slides/lec-08_github.slides.html#alternatives-to-rstudio-projects",
+    "href": "slides/lec-08_github.slides.html#alternatives-to-rstudio-projects",
     "title": "Introduction to Git and GitHub",
     "section": "Alternatives to RStudio Projects",
     "text": "Alternatives to RStudio Projects\nSo You don’t like RStudio 💔\n\n\nEssentially a Rstudio Project:\n\norganise all the files within a given project folder\nset project folder as working directory\nensure a fresh, clean session\n\n\nsimply, do the same without using RStudio 🤩"
   },
   {
-    "objectID": "slides/lec-07_github.slides.html#what-is-it",
-    "href": "slides/lec-07_github.slides.html#what-is-it",
+    "objectID": "slides/lec-08_github.slides.html#what-is-it",
+    "href": "slides/lec-08_github.slides.html#what-is-it",
     "title": "Introduction to Git and GitHub",
     "section": "What is it? 🤔",
     "text": "What is it? 🤔\nThe management of changes to documents, computer programs, large web sites and other collections of information.\nGit \nOpen source (free to use) Version control software.\nGitHub \nA website that allows you to store your Git repositories online and makes it easy to collaborate with others."
   },
   {
-    "objectID": "slides/lec-07_github.slides.html#getting-started-with-git-and-github",
-    "href": "slides/lec-07_github.slides.html#getting-started-with-git-and-github",
+    "objectID": "slides/lec-08_github.slides.html#getting-started-with-git-and-github",
+    "href": "slides/lec-08_github.slides.html#getting-started-with-git-and-github",
     "title": "Introduction to Git and GitHub",
     "section": "Getting started with Git and GitHub",
     "text": "Getting started with Git and GitHub\n\nCreate an account on GitHub\n\n\nYou set your username, email and password here\n\n\ninstall git on your computer\n\n\nWindows: https://gitforwindows.org/\nMacOS: need Xcode tools. so shell/terminal: xcode-select --install\nLinux:\n\ndebian-based: sudo apt install git\nFedora, RedHat: dnf install git\n\n\n\nYou might need to restart you computer\n\nFor more details got to https://git-scm.com/downloads"
   },
   {
-    "objectID": "slides/lec-07_github.slides.html#git-github-ide",
-    "href": "slides/lec-07_github.slides.html#git-github-ide",
+    "objectID": "slides/lec-08_github.slides.html#git-github-ide",
+    "href": "slides/lec-08_github.slides.html#git-github-ide",
     "title": "Introduction to Git and GitHub",
     "section": "Git, Github & IDE",
     "text": "Git, Github & IDE\nBefore git only through the terminal 😢\n\nNow git can be used via multiple user-friendly interfaces\nRStudio + usethis 📦 + gitcreds 📦 == ❤️ Git & GitHub 🤩\n\n\nBut When using VS Code"
   },
   {
-    "objectID": "slides/lec-07_github.slides.html#configure-git",
-    "href": "slides/lec-07_github.slides.html#configure-git",
+    "objectID": "slides/lec-08_github.slides.html#configure-git",
+    "href": "slides/lec-08_github.slides.html#configure-git",
     "title": "Introduction to Git and GitHub",
     "section": "Configure git",
     "text": "Configure git\nTo check your configuration\n\nusethis::git_sitrep()\n\nSet your configuration\nUse your github username and and the email you used to sign-up on GitHub\n\nusethis::use_git_config(\n   user.name = \"JulienGAMartin\",\n   user.email = \"julien.martin@uottawa.ca\")"
   },
   {
-    "objectID": "slides/lec-07_github.slides.html#configure-github-authentication",
-    "href": "slides/lec-07_github.slides.html#configure-github-authentication",
+    "objectID": "slides/lec-08_github.slides.html#configure-github-authentication",
+    "href": "slides/lec-08_github.slides.html#configure-github-authentication",
     "title": "Introduction to Git and GitHub",
     "section": "Configure GitHub authentication",
     "text": "Configure GitHub authentication\nGet GITHUB Personal Authorisation Token\n\nusethis::create_github_token()\n\nNeed scopes repo, users, workflows at least"
   },
   {
-    "objectID": "slides/lec-07_github.slides.html#configure-github-authentication-1",
-    "href": "slides/lec-07_github.slides.html#configure-github-authentication-1",
+    "objectID": "slides/lec-08_github.slides.html#configure-github-authentication-1",
+    "href": "slides/lec-08_github.slides.html#configure-github-authentication-1",
     "title": "Introduction to Git and GitHub",
     "section": "Configure GitHub authentication",
     "text": "Configure GitHub authentication\nStore your git token with credentials\n\ngitcreds::gitcreds_set()\n\nProvide your github PAT token in the window\n\n\nRestart RStudio and R\nGit and github access should be configured now"
   },
   {
-    "objectID": "slides/lec-07_github.slides.html#first-or-new-project-with-rstudio",
-    "href": "slides/lec-07_github.slides.html#first-or-new-project-with-rstudio",
+    "objectID": "slides/lec-08_github.slides.html#first-or-new-project-with-rstudio",
+    "href": "slides/lec-08_github.slides.html#first-or-new-project-with-rstudio",
     "title": "Introduction to Git and GitHub",
     "section": "First (or new) project with Rstudio",
     "text": "First (or new) project with Rstudio\nMight be problematic the first time you do it\n\ncreate R project\ninitialise it for git\n\n\nusethis::use_git()\n\n\nAccept the commit and restart R\nIn R, to create github repo and link it\n\n\nusethis::use_github()\nusethis::git_vaccinate()\n\n\nCheck on github that the repos is there\n\net voila"
   },
   {
-    "objectID": "slides/lec-07_github.slides.html#new-project-and-not-rstudio",
-    "href": "slides/lec-07_github.slides.html#new-project-and-not-rstudio",
+    "objectID": "slides/lec-08_github.slides.html#new-project-and-not-rstudio",
+    "href": "slides/lec-08_github.slides.html#new-project-and-not-rstudio",
     "title": "Introduction to Git and GitHub",
     "section": "New project and NOT Rstudio",
     "text": "New project and NOT Rstudio\nOption 1\n\ncreate new empty folder for your project(no space, no accent)\nadd at least one file in it (suggest README.md)\nusing terminal/shell\n\n\ngit init\ngit add .\ngit commit -a -m \"first commit\"\n\n\nIn R, to create github repo and link it\n\n\nusethis::use_github()\nusethis::git_vaccinate()\n\n\nCheck on github that the repos is there\n\net voila"
   },
   {
-    "objectID": "slides/lec-07_github.slides.html#new-project-using-github-and-not-rstudio",
-    "href": "slides/lec-07_github.slides.html#new-project-using-github-and-not-rstudio",
+    "objectID": "slides/lec-08_github.slides.html#new-project-using-github-and-not-rstudio",
+    "href": "slides/lec-08_github.slides.html#new-project-using-github-and-not-rstudio",
     "title": "Introduction to Git and GitHub",
     "section": "New project using GitHub and NOT Rstudio",
     "text": "New project using GitHub and NOT Rstudio\nOption 2\n\nCreate new repository on github\nSet R working directory where you want to save your project\nTo clone (and link) github repo to your computer\n\n\nusethis::create_from_github(\n  \"https://github.com/your_github/your_repo.git\",\n  destdir=\".\")\n\n\nCheck that your folder has been created where you want it\n\net voila"
   },
   {
-    "objectID": "slides/lec-07_github.slides.html#integrated-graphical-user-interface",
-    "href": "slides/lec-07_github.slides.html#integrated-graphical-user-interface",
+    "objectID": "slides/lec-08_github.slides.html#integrated-graphical-user-interface",
+    "href": "slides/lec-08_github.slides.html#integrated-graphical-user-interface",
     "title": "Introduction to Git and GitHub",
     "section": "Integrated graphical user interface",
     "text": "Integrated graphical user interface"
   },
   {
-    "objectID": "slides/lec-07_github.slides.html#git-terms",
-    "href": "slides/lec-07_github.slides.html#git-terms",
+    "objectID": "slides/lec-08_github.slides.html#git-terms",
+    "href": "slides/lec-08_github.slides.html#git-terms",
     "title": "Introduction to Git and GitHub",
     "section": "Git terms",
     "text": "Git terms\n\nrepository your project folder\ncommit a snapshot of your repo\npush send commits to a remote\npull get commits from a remote\n\n\n\nclone get the repository from the remote for the first time\nbranch a movable label that points to a commit\nmerge combining two branches\nremote a computer or server with the repository on it"
   },
   {
-    "objectID": "slides/lec-07_github.slides.html#git-rstudio-workflow",
-    "href": "slides/lec-07_github.slides.html#git-rstudio-workflow",
+    "objectID": "slides/lec-08_github.slides.html#git-rstudio-workflow",
+    "href": "slides/lec-08_github.slides.html#git-rstudio-workflow",
     "title": "Introduction to Git and GitHub",
     "section": "Git RStudio workflow",
     "text": "Git RStudio workflow\n\n\n1.view file status \n2.stage files \n\n3.commit changes"
   },
   {
-    "objectID": "slides/lec-07_github.slides.html#share-on-github",
-    "href": "slides/lec-07_github.slides.html#share-on-github",
+    "objectID": "slides/lec-08_github.slides.html#share-on-github",
+    "href": "slides/lec-08_github.slides.html#share-on-github",
     "title": "Introduction to Git and GitHub",
     "section": "Share on GitHub",
     "text": "Share on GitHub\n1. Create repo\n\nusethis::use_github(protocol = \"https\")"
   },
   {
-    "objectID": "slides/lec-07_github.slides.html#share-on-github-1",
-    "href": "slides/lec-07_github.slides.html#share-on-github-1",
+    "objectID": "slides/lec-08_github.slides.html#share-on-github-1",
+    "href": "slides/lec-08_github.slides.html#share-on-github-1",
     "title": "Introduction to Git and GitHub",
     "section": "Share on GitHub",
     "text": "Share on GitHub\n2. Push further changes"
   },
   {
-    "objectID": "slides/lec-07_github.slides.html#anatomy-of-a-github-repo",
-    "href": "slides/lec-07_github.slides.html#anatomy-of-a-github-repo",
+    "objectID": "slides/lec-08_github.slides.html#anatomy-of-a-github-repo",
+    "href": "slides/lec-08_github.slides.html#anatomy-of-a-github-repo",
     "title": "Introduction to Git and GitHub",
     "section": "Anatomy of a GitHub repo",
     "text": "Anatomy of a GitHub repo\n\nREADME. Explain what your project is, and how to use it.\n\nusethis::use_readme_md()\nusethis::use_readme_rmd()\n\n\n\n\nLICENSE. Without a licence, the contents of the repository are technically closed.\n\nExamples licence CC-by: usethis::use_ccby_license(name = \"Julien Martin\")\n?licenses: details of functions available to generate licenses\nhttps://choosealicense.com/ help on choosing a licence.\n\n\n\n\n\nCONTRIBUTING.md - guidelines for contributors.\n\nusethis::use_tidy_contributing() provides a realtively strict but instructive template\n\n\n\n\n\nCODE_OF_CONDUCT.md set the tone for discourse between contributors.\n\nuse_code_of_conduct()"
   },
   {
-    "objectID": "slides/lec-07_github.slides.html#github-issues",
-    "href": "slides/lec-07_github.slides.html#github-issues",
+    "objectID": "slides/lec-08_github.slides.html#github-issues",
+    "href": "slides/lec-08_github.slides.html#github-issues",
     "title": "Introduction to Git and GitHub",
     "section": "GitHub issues",
     "text": "GitHub issues\nuse GitHub issues to plan, record and discuss tasks."
   },
   {
-    "objectID": "slides/lec-07_github.slides.html#why-using-a-remote-like-github",
-    "href": "slides/lec-07_github.slides.html#why-using-a-remote-like-github",
+    "objectID": "slides/lec-08_github.slides.html#why-using-a-remote-like-github",
+    "href": "slides/lec-08_github.slides.html#why-using-a-remote-like-github",
     "title": "Introduction to Git and GitHub",
     "section": "Why using a remote like GitHub ?",
     "text": "Why using a remote like GitHub ?\n\nA backup of your repository (Dropbox is NOT a backup)\nWork with others (not covered)\nIncrease your visibility\nIncrease interactions with users\nEasy distribution of R packages (without CRAN submissions)\n\n\none more time just in case Dropbox is NOT a backup"
   },
   {
-    "objectID": "slides/lec-07_github.slides.html#branching-and-merging",
-    "href": "slides/lec-07_github.slides.html#branching-and-merging",
+    "objectID": "slides/lec-08_github.slides.html#branching-and-merging",
+    "href": "slides/lec-08_github.slides.html#branching-and-merging",
     "title": "Introduction to Git and GitHub",
     "section": "Branching and merging",
     "text": "Branching and merging\nThis the true Power of git"
   },
   {
-    "objectID": "slides/lec-07_github.slides.html#branching-and-merging-1",
-    "href": "slides/lec-07_github.slides.html#branching-and-merging-1",
+    "objectID": "slides/lec-08_github.slides.html#branching-and-merging-1",
+    "href": "slides/lec-08_github.slides.html#branching-and-merging-1",
     "title": "Introduction to Git and GitHub",
     "section": "Branching and merging",
     "text": "Branching and merging\n\n\nBranching in Rstudio\n\n\n\n\n\n\nPull request in Github\nWhen you want to merge branches:\n\ncreate a pull request on Github\ncheck for incompatibilities\nthen merge"
   },
   {
-    "objectID": "slides/lec-07_github.slides.html#resources",
-    "href": "slides/lec-07_github.slides.html#resources",
+    "objectID": "slides/lec-08_github.slides.html#resources",
+    "href": "slides/lec-08_github.slides.html#resources",
     "title": "Introduction to Git and GitHub",
     "section": "Resources",
     "text": "Resources\nCheck out Happy Git and GitHub for the useR for more joy with git\n\n\nThe British Ecological Society has A Guide to Reproducible Code in Ecology and Evolution"

@@ -13,7 +13,7 @@
   <meta name="generator" content="quarto-1.8.25">
 
   <meta name="author" content="Julien Martin">
-  <meta name="dcterms.date" content="2026-01-12">
+  <meta name="dcterms.date" content="2026-01-14">
   <title>Bio8940 – Advanced stats and Open Science</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -175,7 +175,7 @@ Julien Martin
     </div>
 </div>
 
-  <p class="date">2026-01-12</p>
+  <p class="date">2026-01-14</p>
 </section>
 <section>
 <section id="a-bit-about" class="title-slide slide level1 center">
@@ -232,66 +232,25 @@ Julien Martin
 </section>
 <section id="schedule" class="slide level2">
 <h2>Schedule</h2>
-<div contenteditable="true">
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th style="text-align: center;">Week</th>
-<th style="text-align: center;">Theme</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">Intro</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">Github</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">Markdown / Quarto</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">4</td>
-<td style="text-align: center;">Lm &amp; glm</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">5</td>
-<td style="text-align: center;">Causal structure</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">6</td>
-<td style="text-align: center;">Lmm</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">7</td>
-<td style="text-align: center;">Bayesian approach</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">8</td>
-<td style="text-align: center;">Glmm</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">9</td>
-<td style="text-align: center;">to</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">10</td>
-<td style="text-align: center;">be</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">11</td>
-<td style="text-align: center;">decided</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">12</td>
-<td style="text-align: center;">together</td>
-</tr>
-</tbody>
-</table>
-</div>
+<!--
+::: {contenteditable="true"}
+| Week | Theme |
+|:----:|:-----:|
+|  1 | Intro |
+|  2 | Github |
+|  3 | Markdown / Quarto |
+|  4 | Lm & glm |
+|  5 | Causal structure |
+|  6 | Lmm |
+|  7 | Bayesian approach |
+|  8 | Glmm |
+|  9 | to |
+| 10 | be |
+| 11 | decided |
+| 12 | together |
+:::
+-->
+<p><a href="https://biostats-uottawa.github.io/bio8940/en/lectures.html" data-preview-link="true">See course website</a></p>
 </section></section>
 <section>
 <section id="assessment" class="title-slide slide level1 center">
@@ -309,8 +268,8 @@ Julien Martin
 <h2>Project (50%)</h2>
 <ul>
 <li>analysis of data using techniques from courses or beyond</li>
-<li>Report written using Rmarkdown</li>
-<li>posted on Github classroom</li>
+<li>Report written using Quarto</li>
+<li>Oral examination</li>
 </ul>
 </section></section>
 <section>
@@ -325,7 +284,7 @@ Julien Martin
 <li>Text editor: Rstudio or VSCode</li>
 <li>R packages (up to date)
 <ul>
-<li>open science: rmarkdown, tinytex</li>
+<li>open science: quarto</li>
 <li>mixed models: lme4, gremlin, glmmTMB, MCMCglmm</li>
 <li>latex: full version or tinytex</li>
 </ul></li>
@@ -570,6 +529,44 @@ Julien Martin
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
       window.document.addEventListener("DOMContentLoaded", function (event) {
         const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
