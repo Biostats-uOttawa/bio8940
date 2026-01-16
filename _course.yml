@@ -63,7 +63,7 @@ timetable:
   - class: Lecture
     day: Tuesdays
     when: 1430-1720
-    where: TBT-323
+    where: FSS-4013
 #  - class: "Practical"
 #    when: Tuesdays 1430-1720
 #    where: CRX-C323
@@ -72,4 +72,4 @@ timetable_fr:
   - class: Cours
     day: Mardis
     when: 1430-1720
-    where: TBT-323
+    where: FSS-4013
