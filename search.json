@@ -2041,11 +2041,11 @@
     ]
   },
   {
-    "objectID": "fr/syllabus.html#où-et-quand",
-    "href": "fr/syllabus.html#où-et-quand",
+    "objectID": "fr/syllabus.html#où-et-quand-b58fc729-690b-4000-b19f-365a4093b2ff-7b7b3c2066612063616c656e6461722d64617973203e7d7d-",
+    "href": "fr/syllabus.html#où-et-quand-b58fc729-690b-4000-b19f-365a4093b2ff-7b7b3c2066612063616c656e6461722d64617973203e7d7d-",
     "title": "Syllabus",
     "section": "Où et quand ",
-    "text": "Où et quand \n\nCours: Mardis, 1430-1720 in TBT-323\n\nVoir le site du cours pour plus de détails sur l’horaire.",
+    "text": "Où et quand \n\nCours: Mardis, 1430-1720 in FSS-4013\n\nVoir le site du cours pour plus de détails sur l’horaire.",
     "crumbs": [
       "Biostats uOttawa",
       "Syllabus"
@@ -2099,8 +2099,8 @@
     ]
   },
   {
-    "objectID": "fr/lectures.html#à-propos-des-diapos-et-des-notes",
-    "href": "fr/lectures.html#à-propos-des-diapos-et-des-notes",
+    "objectID": "fr/lectures.html#à-propos-des-diapos-b58fc729-690b-4000-b19f-365a4093b2ff-7b7b3c20666120646973706c6179203e7d7d--et-des-notes-b58fc729-690b-4000-b19f-365a4093b2ff-7b7b3c206661206e6f74652d737469636b79203e7d7d-",
+    "href": "fr/lectures.html#à-propos-des-diapos-b58fc729-690b-4000-b19f-365a4093b2ff-7b7b3c20666120646973706c6179203e7d7d--et-des-notes-b58fc729-690b-4000-b19f-365a4093b2ff-7b7b3c206661206e6f74652d737469636b79203e7d7d-",
     "title": "Cours",
     "section": "",
     "text": "Les diapos sont en format revealjs (html). Si vous souhaitez avoir un pdf (*note: vous perdrez peut-être quelques fonctionnalités):\n\nOuvrir les diapos dans votre navigateur\nAppuyer sur e pour le mode d’exportation en PDF (?print-pdf devrait apparaître à la fin de l’adresse url)\nImprimer la page (CTRL/CMD+P).\nChanger la destination à Save as PDF.\nChanger le Format à Paysage.\nChanger les Marges à Aucune.\nAjouter le fond graphique (si vous le souhaitez)\nCliquer Sauvegarder 🎉\n\n\n\n\nLes notes sont simplement le contenu des diapos (et mes quelques notes) en format html.\nEn outre, l’outils d’annotation https://hypothes.is/ est activé sur les pages de notes. Cet outil permet d’annoter et commenter des pages internet, de sauvegarder vos commentaires, de la partager publiquement ou au sein de groupes privés. Il faut juste créer un compte gratuit.",
@@ -2138,11 +2138,11 @@
     "text": "Julien Martin"
   },
   {
-    "objectID": "en/who_when.html#schedule",
-    "href": "en/who_when.html#schedule",
+    "objectID": "en/who_when.html#schedule-b58fc729-690b-4000-b19f-365a4093b2ff-7b7b3c2066612063616c656e6461722d64617973203e7d7d-",
+    "href": "en/who_when.html#schedule-b58fc729-690b-4000-b19f-365a4093b2ff-7b7b3c2066612063616c656e6461722d64617973203e7d7d-",
     "title": "Bio8940",
     "section": "Schedule ",
-    "text": "Schedule \n\nLecture: Tuesdays, 1430-1720 in VNR-1050\n\nThere are no lectures or tutorials during reading week."
+    "text": "Schedule \n\nLecture: Tuesdays, 1430-1720 in CRX-C323\n\nThere are no lectures or tutorials during reading week."
   },
   {
     "objectID": "en/report.html",
@@ -2212,11 +2212,11 @@
     ]
   },
   {
-    "objectID": "en/index.html#schedule",
-    "href": "en/index.html#schedule",
+    "objectID": "en/index.html#schedule-b58fc729-690b-4000-b19f-365a4093b2ff-7b7b3c2066612063616c656e6461722d64617973203e7d7d-",
+    "href": "en/index.html#schedule-b58fc729-690b-4000-b19f-365a4093b2ff-7b7b3c2066612063616c656e6461722d64617973203e7d7d-",
     "title": "Advanced statistics and Open science",
     "section": "Schedule ",
-    "text": "Schedule \n\nLecture: Tuesdays, 1430-1720 in TBT-323\n\nThere are no lectures or tutorials during reading week.",
+    "text": "Schedule \n\nLecture: Tuesdays, 1430-1720 in FSS-4013\n\nThere are no lectures or tutorials during reading week.",
     "crumbs": [
       "Biostats uOttawa",
       "Course info"
@@ -2274,8 +2274,8 @@
     ]
   },
   {
-    "objectID": "en/lectures.html#about-slides-and-notes",
-    "href": "en/lectures.html#about-slides-and-notes",
+    "objectID": "en/lectures.html#about-slides-b58fc729-690b-4000-b19f-365a4093b2ff-7b7b3c20666120646973706c6179203e7d7d--and-notes-b58fc729-690b-4000-b19f-365a4093b2ff-7b7b3c206661206e6f74652d737469636b79203e7d7d-",
+    "href": "en/lectures.html#about-slides-b58fc729-690b-4000-b19f-365a4093b2ff-7b7b3c20666120646973706c6179203e7d7d--and-notes-b58fc729-690b-4000-b19f-365a4093b2ff-7b7b3c206661206e6f74652d737469636b79203e7d7d-",
     "title": "Lectures",
     "section": "",
     "text": "Slides in revealjs format (html). If you want then as a pdf (note you might loose some functionality or contents due to tabs and scroll sections):\n\nOpen the slides in your browser from a link on this page\nPress e to get into the PDF export mode (?print-pdf should appear near the end of the url and white borders should appear)\nOpen the in-browser print dialog (CTRL/CMD+P).\nChange the Destination setting to Save as PDF.\nChange the Layout to Landscape.\nChange the Margins to None.\nEnable the Background graphics option (if you want it)\nClick Save 🎉\n\n\n\n\nContent of the slides in html format as a self-contained downloadable file and including tabs and scroll sections.\nMore importantly, notes have the commenting and annotateing tools activated via https://hypothes.is/. If you create a free account , you can annotate and comment slides as well as share your annotations/comments with the public or via private or public groups.",
@@ -2320,11 +2320,11 @@
     ]
   },
   {
-    "objectID": "en/syllabus.html#schedule",
-    "href": "en/syllabus.html#schedule",
+    "objectID": "en/syllabus.html#schedule-b58fc729-690b-4000-b19f-365a4093b2ff-7b7b3c2066612063616c656e6461722d64617973203e7d7d-",
+    "href": "en/syllabus.html#schedule-b58fc729-690b-4000-b19f-365a4093b2ff-7b7b3c2066612063616c656e6461722d64617973203e7d7d-",
     "title": "Syllabus",
     "section": "Schedule ",
-    "text": "Schedule \n\nLecture: Tuesdays, 1430-1720 in TBT-323\n\nThere are no lectures or tutorials during reading week.\nSee the course website for details of the schedule",
+    "text": "Schedule \n\nLecture: Tuesdays, 1430-1720 in FSS-4013\n\nThere are no lectures or tutorials during reading week.\nSee the course website for details of the schedule",
     "crumbs": [
       "Biostats uOttawa",
       "Syllabus"
@@ -2371,11 +2371,11 @@
     ]
   },
   {
-    "objectID": "fr/index.html#où-et-quand",
-    "href": "fr/index.html#où-et-quand",
+    "objectID": "fr/index.html#où-et-quand-b58fc729-690b-4000-b19f-365a4093b2ff-7b7b3c2066612063616c656e6461722d64617973203e7d7d-",
+    "href": "fr/index.html#où-et-quand-b58fc729-690b-4000-b19f-365a4093b2ff-7b7b3c2066612063616c656e6461722d64617973203e7d7d-",
     "title": "Statistiques avancées et science ouverte",
     "section": "Où et quand ",
-    "text": "Où et quand \n\nCours: Mardis, 1430-1720 in TBT-323",
+    "text": "Où et quand \n\nCours: Mardis, 1430-1720 in FSS-4013",
     "crumbs": [
       "Biostats uOttawa",
       "Info générale"
@@ -2414,11 +2414,11 @@
     "text": "Julien Martin"
   },
   {
-    "objectID": "fr/who_when.html#où-et-quand",
-    "href": "fr/who_when.html#où-et-quand",
+    "objectID": "fr/who_when.html#où-et-quand-b58fc729-690b-4000-b19f-365a4093b2ff-7b7b3c2066612063616c656e6461722d64617973203e7d7d-",
+    "href": "fr/who_when.html#où-et-quand-b58fc729-690b-4000-b19f-365a4093b2ff-7b7b3c2066612063616c656e6461722d64617973203e7d7d-",
     "title": "Bio8940",
     "section": "Où et quand ",
-    "text": "Où et quand \n\nCours: Mardis, 1430-1720 in TBT-323"
+    "text": "Où et quand \n\nCours: Mardis, 1430-1720 in FSS-4013"
   },
   {
     "objectID": "slides/lec-01_intro.notes.html",
@@ -2635,42 +2635,42 @@
     "href": "slides/lec-03_model_structure.notes.html#confounder",
     "title": "How do we build a model?",
     "section": "\n3.1 Confounder",
-    "text": "3.1 Confounder\n\n\nRelation\nAdjusted"
+    "text": "3.1 Confounder\n\n\nRelation\nAdjusted\n\n\n\n\nconfounder_triangle() %&gt;%\n  ggplot(aes(x = x, y = y, xend = xend, yend = yend)) +\n  geom_dag_point() +\n  geom_dag_edges(edge_width = 2) +\n  geom_dag_text(size = 50) +\n  theme_dag()\n\n\n\n\n\n\n\n\n\n\nconfounder_triangle() %&gt;%\n  control_for(\"z\") %&gt;%\n  ggplot(aes(x = x, y = y, xend = xend, yend = yend, col = adjusted, shape = adjusted)) +\n  geom_dag_point() +\n  geom_dag_edges(aes(edge_alpha = adjusted),\n    edge_width = 2\n    # region ,\n    # start_cap = ggraph::circle(10, \"mm\"), end_cap = ggraph::circle(10, \"mm\")\n  ) +\n  geom_dag_text(size = 50, colour = \"black\") +\n  theme_dag() +\n  scale_adjusted() +\n  theme(legend.position = \"none\")"
   },
   {
     "objectID": "slides/lec-03_model_structure.notes.html#mediator",
     "href": "slides/lec-03_model_structure.notes.html#mediator",
     "title": "How do we build a model?",
     "section": "\n3.2 Mediator",
-    "text": "3.2 Mediator\n\n\nRelation\nAdjusted"
+    "text": "3.2 Mediator\n\n\nRelation\nAdjusted\n\n\n\n\n#|echo: true\nmediation_triangle() %&gt;%\n ggplot(aes(x = x, y = y, xend = xend, yend = yend)) +\n geom_dag_point() +\n geom_dag_edges(edge_width=2) +\n geom_dag_text(size = 50) +\n theme_dag()\n\n\n\n\n\n\n\n\n\n\n#|echo: true\nmediation_triangle() |&gt;\n  control_for(\"m\") %&gt;%\n  ggplot(aes(x = x, y = y, xend = xend, yend = yend, col = adjusted, shape = adjusted)) +\n  geom_dag_point() +\n  geom_dag_edges(aes(edge_alpha = adjusted), edge_width = 2) +\n  geom_dag_collider_edges(linewidth = 2) +\n  geom_dag_point() +\n  geom_dag_text(size = 50, colour = \"black\") +\n  theme_dag() +\n  scale_adjusted() +\n  theme(legend.position = \"none\")"
   },
   {
     "objectID": "slides/lec-03_model_structure.notes.html#collider",
     "href": "slides/lec-03_model_structure.notes.html#collider",
     "title": "How do we build a model?",
     "section": "\n3.3 Collider",
-    "text": "3.3 Collider\n\n\nRelation\nAdjusted"
+    "text": "3.3 Collider\n\n\nRelation\nAdjusted\n\n\n\n\ncollider_triangle() %&gt;%\n  ggplot(aes(x = x, y = y, xend = xend, yend = yend)) +\n  geom_dag_point() +\n  geom_dag_edges(edge_width = 2) +\n  geom_dag_text(size = 50) +\n  theme_dag()\n\n\n\n\n\n\n\n\n\n\ncollider_triangle() |&gt;\n  control_for(\"m\") %&gt;%\n  ggplot(aes(x = x, y = y, xend = xend, yend = yend, col = adjusted, shape = adjusted)) +\n  geom_dag_point() +\n  geom_dag_edges(aes(edge_alpha = adjusted),\n    edge_width = 2,\n    start_cap = ggraph::circle(20, \"mm\"), end_cap = ggraph::circle(20, \"mm\")\n  ) +\n  geom_dag_collider_edges(linewidth = 2) +\n  geom_dag_text(size = 50, colour = \"black\") +\n  theme_dag() +\n  scale_adjusted() +\n  theme(legend.position = \"none\")"
   },
   {
     "objectID": "slides/lec-03_model_structure.notes.html#m-bias",
     "href": "slides/lec-03_model_structure.notes.html#m-bias",
     "title": "How do we build a model?",
     "section": "\n3.4 M-bias",
-    "text": "3.4 M-bias\n\n\nRelation\nAdjusted"
+    "text": "3.4 M-bias\n\n\nRelation\nAdjusted\n\n\n\n\nm_bias() %&gt;%\n  ggplot(aes(x = x, y = y, xend = xend, yend = yend)) +\n  geom_dag_point() +\n  geom_dag_edges(edge_width = 2) +\n  geom_dag_text(size = 50) +\n  theme_dag()\n\n\n\n\n\n\n\n\n\n\nm_bias() |&gt;\n  control_for(\"m\") %&gt;%\n  ggplot(aes(x = x, y = y, xend = xend, yend = yend, col = adjusted, shape = adjusted)) +\n  geom_dag_point() +\n  geom_dag_edges(aes(edge_alpha = adjusted), edge_width = 2) +\n  geom_dag_collider_edges(linewidth = 2) +\n  geom_dag_text(size = 50, colour = \"black\") +\n  theme_dag() +\n  scale_adjusted() +\n  theme(legend.position = \"none\")"
   },
   {
     "objectID": "slides/lec-03_model_structure.notes.html#butterfly-bias",
     "href": "slides/lec-03_model_structure.notes.html#butterfly-bias",
     "title": "How do we build a model?",
     "section": "\n3.5 Butterfly bias",
-    "text": "3.5 Butterfly bias\n\n\nRelation\n{a, m}\n{b, m}\n{a, b, m}"
+    "text": "3.5 Butterfly bias\n\n\nRelation\n{a, m}\n{b, m}\n{a, b, m}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nbutterfly_bias() |&gt;\n  control_for(c(\"m\", \"a\")) %&gt;%\n  ggplot(aes(x = x, y = y, xend = xend, yend = yend, col = adjusted, shape = adjusted)) +\n  geom_dag_point() +\n  geom_dag_edges(aes(edge_alpha = adjusted), edge_width = 2) +\n  geom_dag_collider_edges(linewidth = 2) +\n  geom_dag_text(size = 50, colour = \"black\") +\n  theme_dag() +\n  scale_adjusted() +\n  theme(legend.position = \"none\")\n\n\n\n\n\n\n\n\n\n\nbutterfly_bias() |&gt;\n  control_for(c(\"m\", \"b\")) %&gt;%\n  ggplot(aes(x = x, y = y, xend = xend, yend = yend, col = adjusted, shape = adjusted)) +\n  geom_dag_point() +\n  geom_dag_edges(aes(edge_alpha = adjusted), edge_width = 2) +\n  geom_dag_collider_edges(linewidth = 2) +\n  geom_dag_text(size = 50, colour = \"black\") +\n  theme_dag() +\n  scale_adjusted() +\n  theme(legend.position = \"none\")\n\n\n\n\n\n\n\n\n\n\nbutterfly_bias() |&gt;\n  control_for(c(\"m\", \"b\", \"a\")) %&gt;%\n  ggplot(aes(x = x, y = y, xend = xend, yend = yend, col = adjusted, shape = adjusted)) +\n  geom_dag_point() +\n  geom_dag_edges(aes(edge_alpha = adjusted), edge_width = 2) +\n  geom_dag_collider_edges(linewidth = 2) +\n  geom_dag_text(size = 50, colour = \"black\") +\n  theme_dag() +\n  scale_adjusted() +\n  theme(legend.position = \"none\")"
   },
   {
     "objectID": "slides/lec-03_model_structure.notes.html#selection-bias",
     "href": "slides/lec-03_model_structure.notes.html#selection-bias",
     "title": "How do we build a model?",
     "section": "\n3.6 Selection bias",
-    "text": "3.6 Selection bias\n\n\nCase\nControlled"
+    "text": "3.6 Selection bias\n\n\nCase\nControlled\n\n\n\n\ncoords &lt;- tibble::tribble(\n  ~name, ~x, ~y,\n  \"covid\", 1, 2,\n  \"hospitalized\", 2, 3,\n  \"broken_bone\", 3, 2,\n  \"reckless\", 4, 1,\n  \"drugs\", 5, 2\n)\n\nhosp &lt;- dagify(\n  hospitalized ~ broken_bone + covid,\n  broken_bone ~ reckless,\n  drugs ~ reckless,\n  labels = c(\n    hospitalized = \"Hospitalization\",\n    broken_bone = \"Broken Bone\",\n    glioma = \"Covid19\",\n    reckless = \"Reckless \\nBehavior\",\n    drugs = \"Cocaine\"\n  ),\n  coords = coords\n)\nhosp %&gt;%\n  ggplot(aes(x = x, y = y, xend = xend, yend = yend)) +\n  #geom_dag_point() +\n  geom_dag_edges(edge_width = 2) +\n  geom_dag_label(size = 30, fill = \"white\", color = \"black\", alpha = 0.2) +\n  # geom_dag_text(size = 10, colour = \"black\") +\n  theme_dag()\n\n\n\n\n\n\n\n\n\n\nhosp %&gt;%\n  control_for(c(\"hospitalized\")) %&gt;%\n  ggplot(aes(x = x, y = y, xend = xend, yend = yend, col = adjusted, shape = adjusted)) +\n  # geom_dag_point(size = 10) +\n\n  geom_dag_edges(aes(edge_alpha = adjusted), edge_width = 2) +\n  geom_dag_collider_edges(linewidth = 2) +\n  geom_dag_label(aes(fill = adjusted), size = 30, color = \"black\", alpha = 0.2) +\n  theme_dag() +\n  scale_adjusted() +\n  theme(legend.position = \"none\")"
   },
   {
     "objectID": "slides/lec-03_model_structure.notes.html#more-complexity",
@@ -2747,42 +2747,42 @@
     "href": "slides/lec-03_model_structure.slides.html#confounder",
     "title": "How do we build a model?",
     "section": "Confounder",
-    "text": "Confounder\n\nRelationAdjusted"
+    "text": "Confounder\n\nRelationAdjusted\n\n\n\nconfounder_triangle() %&gt;%\n  ggplot(aes(x = x, y = y, xend = xend, yend = yend)) +\n  geom_dag_point() +\n  geom_dag_edges(edge_width = 2) +\n  geom_dag_text(size = 50) +\n  theme_dag()\n\n\n\n\n\n\n\n\n\n\n\nconfounder_triangle() %&gt;%\n  control_for(\"z\") %&gt;%\n  ggplot(aes(x = x, y = y, xend = xend, yend = yend, col = adjusted, shape = adjusted)) +\n  geom_dag_point() +\n  geom_dag_edges(aes(edge_alpha = adjusted),\n    edge_width = 2\n    # region ,\n    # start_cap = ggraph::circle(10, \"mm\"), end_cap = ggraph::circle(10, \"mm\")\n  ) +\n  geom_dag_text(size = 50, colour = \"black\") +\n  theme_dag() +\n  scale_adjusted() +\n  theme(legend.position = \"none\")"
   },
   {
     "objectID": "slides/lec-03_model_structure.slides.html#mediator",
     "href": "slides/lec-03_model_structure.slides.html#mediator",
     "title": "How do we build a model?",
     "section": "Mediator",
-    "text": "Mediator\n\nRelationAdjusted"
+    "text": "Mediator\n\nRelationAdjusted\n\n\n\n#|echo: true\nmediation_triangle() %&gt;%\n ggplot(aes(x = x, y = y, xend = xend, yend = yend)) +\n geom_dag_point() +\n geom_dag_edges(edge_width=2) +\n geom_dag_text(size = 50) +\n theme_dag()\n\n\n\n\n\n\n\n\n\n\n\n#|echo: true\nmediation_triangle() |&gt;\n  control_for(\"m\") %&gt;%\n  ggplot(aes(x = x, y = y, xend = xend, yend = yend, col = adjusted, shape = adjusted)) +\n  geom_dag_point() +\n  geom_dag_edges(aes(edge_alpha = adjusted), edge_width = 2) +\n  geom_dag_collider_edges(linewidth = 2) +\n  geom_dag_point() +\n  geom_dag_text(size = 50, colour = \"black\") +\n  theme_dag() +\n  scale_adjusted() +\n  theme(legend.position = \"none\")"
   },
   {
     "objectID": "slides/lec-03_model_structure.slides.html#collider",
     "href": "slides/lec-03_model_structure.slides.html#collider",
     "title": "How do we build a model?",
     "section": "Collider",
-    "text": "Collider\n\nRelationAdjusted"
+    "text": "Collider\n\nRelationAdjusted\n\n\n\ncollider_triangle() %&gt;%\n  ggplot(aes(x = x, y = y, xend = xend, yend = yend)) +\n  geom_dag_point() +\n  geom_dag_edges(edge_width = 2) +\n  geom_dag_text(size = 50) +\n  theme_dag()\n\n\n\n\n\n\n\n\n\n\n\ncollider_triangle() |&gt;\n  control_for(\"m\") %&gt;%\n  ggplot(aes(x = x, y = y, xend = xend, yend = yend, col = adjusted, shape = adjusted)) +\n  geom_dag_point() +\n  geom_dag_edges(aes(edge_alpha = adjusted),\n    edge_width = 2,\n    start_cap = ggraph::circle(20, \"mm\"), end_cap = ggraph::circle(20, \"mm\")\n  ) +\n  geom_dag_collider_edges(linewidth = 2) +\n  geom_dag_text(size = 50, colour = \"black\") +\n  theme_dag() +\n  scale_adjusted() +\n  theme(legend.position = \"none\")"
   },
   {
     "objectID": "slides/lec-03_model_structure.slides.html#m-bias",
     "href": "slides/lec-03_model_structure.slides.html#m-bias",
     "title": "How do we build a model?",
     "section": "M-bias",
-    "text": "M-bias\n\nRelationAdjusted"
+    "text": "M-bias\n\nRelationAdjusted\n\n\n\nm_bias() %&gt;%\n  ggplot(aes(x = x, y = y, xend = xend, yend = yend)) +\n  geom_dag_point() +\n  geom_dag_edges(edge_width = 2) +\n  geom_dag_text(size = 50) +\n  theme_dag()\n\n\n\n\n\n\n\n\n\n\n\nm_bias() |&gt;\n  control_for(\"m\") %&gt;%\n  ggplot(aes(x = x, y = y, xend = xend, yend = yend, col = adjusted, shape = adjusted)) +\n  geom_dag_point() +\n  geom_dag_edges(aes(edge_alpha = adjusted), edge_width = 2) +\n  geom_dag_collider_edges(linewidth = 2) +\n  geom_dag_text(size = 50, colour = \"black\") +\n  theme_dag() +\n  scale_adjusted() +\n  theme(legend.position = \"none\")"
   },
   {
     "objectID": "slides/lec-03_model_structure.slides.html#butterfly-bias",
     "href": "slides/lec-03_model_structure.slides.html#butterfly-bias",
     "title": "How do we build a model?",
     "section": "Butterfly bias",
-    "text": "Butterfly bias\n\nRelation{a, m}{b, m}{a, b, m}"
+    "text": "Butterfly bias\n\nRelation{a, m}{b, m}{a, b, m}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nbutterfly_bias() |&gt;\n  control_for(c(\"m\", \"a\")) %&gt;%\n  ggplot(aes(x = x, y = y, xend = xend, yend = yend, col = adjusted, shape = adjusted)) +\n  geom_dag_point() +\n  geom_dag_edges(aes(edge_alpha = adjusted), edge_width = 2) +\n  geom_dag_collider_edges(linewidth = 2) +\n  geom_dag_text(size = 50, colour = \"black\") +\n  theme_dag() +\n  scale_adjusted() +\n  theme(legend.position = \"none\")\n\n\n\n\n\n\n\n\n\n\n\nbutterfly_bias() |&gt;\n  control_for(c(\"m\", \"b\")) %&gt;%\n  ggplot(aes(x = x, y = y, xend = xend, yend = yend, col = adjusted, shape = adjusted)) +\n  geom_dag_point() +\n  geom_dag_edges(aes(edge_alpha = adjusted), edge_width = 2) +\n  geom_dag_collider_edges(linewidth = 2) +\n  geom_dag_text(size = 50, colour = \"black\") +\n  theme_dag() +\n  scale_adjusted() +\n  theme(legend.position = \"none\")\n\n\n\n\n\n\n\n\n\n\n\nbutterfly_bias() |&gt;\n  control_for(c(\"m\", \"b\", \"a\")) %&gt;%\n  ggplot(aes(x = x, y = y, xend = xend, yend = yend, col = adjusted, shape = adjusted)) +\n  geom_dag_point() +\n  geom_dag_edges(aes(edge_alpha = adjusted), edge_width = 2) +\n  geom_dag_collider_edges(linewidth = 2) +\n  geom_dag_text(size = 50, colour = \"black\") +\n  theme_dag() +\n  scale_adjusted() +\n  theme(legend.position = \"none\")"
   },
   {
     "objectID": "slides/lec-03_model_structure.slides.html#selection-bias",
     "href": "slides/lec-03_model_structure.slides.html#selection-bias",
     "title": "How do we build a model?",
     "section": "Selection bias",
-    "text": "Selection bias\n\nCaseControlled"
+    "text": "Selection bias\n\nCaseControlled\n\n\n\ncoords &lt;- tibble::tribble(\n  ~name, ~x, ~y,\n  \"covid\", 1, 2,\n  \"hospitalized\", 2, 3,\n  \"broken_bone\", 3, 2,\n  \"reckless\", 4, 1,\n  \"drugs\", 5, 2\n)\n\nhosp &lt;- dagify(\n  hospitalized ~ broken_bone + covid,\n  broken_bone ~ reckless,\n  drugs ~ reckless,\n  labels = c(\n    hospitalized = \"Hospitalization\",\n    broken_bone = \"Broken Bone\",\n    glioma = \"Covid19\",\n    reckless = \"Reckless \\nBehavior\",\n    drugs = \"Cocaine\"\n  ),\n  coords = coords\n)\nhosp %&gt;%\n  ggplot(aes(x = x, y = y, xend = xend, yend = yend)) +\n  #geom_dag_point() +\n  geom_dag_edges(edge_width = 2) +\n  geom_dag_label(size = 30, fill = \"white\", color = \"black\", alpha = 0.2) +\n  # geom_dag_text(size = 10, colour = \"black\") +\n  theme_dag()\n\n\n\n\n\n\n\n\n\n\n\nhosp %&gt;%\n  control_for(c(\"hospitalized\")) %&gt;%\n  ggplot(aes(x = x, y = y, xend = xend, yend = yend, col = adjusted, shape = adjusted)) +\n  # geom_dag_point(size = 10) +\n\n  geom_dag_edges(aes(edge_alpha = adjusted), edge_width = 2) +\n  geom_dag_collider_edges(linewidth = 2) +\n  geom_dag_label(aes(fill = adjusted), size = 30, color = \"black\", alpha = 0.2) +\n  theme_dag() +\n  scale_adjusted() +\n  theme(legend.position = \"none\")"
   },
   {
     "objectID": "slides/lec-03_model_structure.slides.html#more-complexity",

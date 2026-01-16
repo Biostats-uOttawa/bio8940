@@ -1,0 +1,1425 @@
+<!DOCTYPE html>
+<html lang="en-ca"><head>
+<link href="..//img/logo_hex.png" rel="icon" type="image/png">
+<script src="../site_libs/cookie-consent/cookie-consent.js"></script>
+<link href="../site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.8.25">
+
+  <meta name="author" content="Julien Martin">
+  <meta name="dcterms.date" content="2026-01-14">
+  <title>Bio8940 – Linear models and generalized linear models</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-534cd8e3a96973385dffff3f4709048d.css">
+  <link rel="stylesheet" href="assets/theme_chalk/whiteboard-blue.css">
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-6LLMGL3T2Q"></script>
+
+  <script type="text/plain" cookie-consent="tracking">
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-6LLMGL3T2Q', { 'anonymize_ip': true});
+  </script>
+  
+  <script type="text/javascript" charset="UTF-8">
+  document.addEventListener('DOMContentLoaded', function () {
+  cookieconsent.run({
+    "notice_banner_type":"simple",
+    "consent_type":"implied",
+    "palette":"light",
+    "language":"en",
+    "page_load_consent_levels":["strictly-necessary","functionality","tracking","targeting"],
+    "notice_banner_reject_button_hide":false,
+    "preferences_center_close_button_hide":false,
+    "website_name":""
+    ,
+  "language":"en-ca"
+    });
+  });
+  </script> 
+    
+  <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">Linear models and generalized linear models</h1>
+  <p class="subtitle">in R</p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Julien Martin 
+</div>
+        <p class="quarto-title-affiliation">
+            BIO 8940
+          </p>
+    </div>
+</div>
+
+  <p class="date">2026-01-14</p>
+</section>
+<section>
+<section id="linear-models" class="title-slide slide level1 center">
+<h1>Linear models</h1>
+
+</section>
+<section id="what-is-a-linear-regression" class="slide level2">
+<h2>What is a linear regression</h2>
+<h3 id="simple-linear-regression">Simple linear regression</h3>
+<p><span class="math display">\[
+Y_i = \beta_0 + \beta_1 x_i + \epsilon \\
+\epsilon \sim N(0, \sigma^2_{\epsilon})
+\]</span></p>
+<p>or in distributional notation <span class="math inline">\(Y \sim N(\beta_0 + \beta_1 x, \sigma^2_{\epsilon})\)</span></p>
+<h3 id="general-linear-model">General linear model</h3>
+<p><span class="math display">\[
+Y_i = \beta_0 + \beta_1 x_{1i} + \beta_1 x_{2i} + ... + \epsilon \\
+\epsilon \sim N(0, \sigma^2_{\epsilon})
+\]</span></p>
+<p>and <span class="math inline">\(Y \sim N(\beta_0 + \beta_1 x_{1i} + \beta_1 x_{2i} + ..., \sigma^2)\)</span></p>
+</section>
+<section id="linear-model-assumptions" class="slide level2">
+<h2>Linear model assumptions</h2>
+<p>Some are made on the residuals and others on the independent variables. None are made on the (unconditionned) dependent variable.</p>
+<p>Residuals are assumed to:</p>
+<ul>
+<li>have a mean of zero</li>
+<li>be independent</li>
+<li>be normally distributed</li>
+<li>be homoscedastic</li>
+</ul>
+<p>Independent variables are assumed to:</p>
+<ul>
+<li>have a linear relation with Y</li>
+<li>be measured without error</li>
+<li>to be independent from each other</li>
+</ul>
+</section>
+<section id="maximum-likelihood" class="slide level2">
+<h2>Maximum likelihood</h2>
+<p>Technique used for estimating the parameters of a given distribution, using some observed data</p>
+<p><br>
+</p>
+<p><u>For Example:</u></p>
+<p><br>
+</p>
+<p>Population is known to follow a “normal distribution” but “mean” and “variance” are unknown, MLE can be used to estimate them using a limited sample of the population.</p>
+</section>
+<section id="likelihood-vs-probability" class="slide level2">
+<h2>Likelihood vs probability</h2>
+<p>We maximize the likelihood and make inferences on the probability</p>
+<h3 id="likelihood">Likelihood</h3>
+<p><span class="math display">\[
+L(parameters | data)
+\]</span></p>
+<p>How likely it is to get those parameters given the data.</p>
+<h3 id="probability">Probability</h3>
+<p><span class="math display">\[
+P(data | null\ parameters)
+\]</span></p>
+<p>Probability to get the data given the null parameters. Or how probable it is to get those data according to the null model.</p>
+</section>
+<section id="maximum-likelihood-approach" class="slide level2">
+<h2>Maximum likelihood approach</h2>
+<p><span class="math display">\[
+L(parameters | data) = \prod_{i=1}^{n} f(data_i | parameters)
+\]</span></p>
+<p>where f is the probability density function of your model.</p>
+<p>Working with product is more painful than with sum, we can take the log:</p>
+<p><span class="math display">\[
+ln(L(parameters | data)) = \sum_{i=1}^{n} ln(f(data_i | parameters))
+\]</span></p>
+<p>Need to solve:</p>
+<p><span class="math display">\[
+\frac{\delta ln(L(parameters | data)}{\delta parameters} = 0
+\]</span></p>
+<p>For multiple regression, the parameters <span class="math inline">\(\beta\)</span>s are given by <span class="math inline">\(\beta = (X^T X)^{-1} X^T y\)</span></p>
+</section>
+<section id="doing-linear-models-in-r" class="slide level2">
+<h2>Doing linear models in R</h2>
+<p>Simply use <code>lm()</code> function. It works for everything anova, ancova, t-test.</p>
+<p>We will use data of sturgeon measurements at different locations in Canada.</p>
+<div class="cell" data-layout-align="center">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a>dat <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"data/lm_example.csv"</span>)</span>
+<span id="cb1-2"><a></a><span class="fu">str</span>(dat)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>'data.frame':   92 obs. of  4 variables:
+ $ year   : int  1978 1978 1978 1978 1978 1978 1978 1978 1978 1978 ...
+ $ fklngth: num  41.9 50.2 50.2 47.3 49.6 ...
+ $ locate : chr  "NELSON      " "LOFW        " "LOFW        " "NELSON      " ...
+ $ age    : int  11 24 23 20 23 20 23 19 17 14 ...</code></pre>
+</div>
+</div>
+</section>
+<section id="fitting-a-model-and-checking-assumptions" class="slide level2">
+<h2>Fitting a model and checking assumptions</h2>
+<p>First we load the needed packages for:</p>
+<ul>
+<li>data manipulation: <code>tidyverse</code></li>
+<li>fancy plots: <code>ggplot2</code></li>
+<li>type III anova: <code>car</code></li>
+<li>fancy and nicer visual assumptions checks: <code>performance</code></li>
+<li>formal assumptions tests: <code>lmtest</code></li>
+</ul>
+<div class="cell" data-layout-align="center">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3" data-code-line-numbers="4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a><span class="fu">library</span>(car)</span>
+<span id="cb3-2"><a></a><span class="fu">library</span>(performance)</span>
+<span id="cb3-3"><a></a><span class="fu">library</span>(lmtest)</span>
+<span id="cb3-4"><a></a><span class="fu">library</span>(tidyverse)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="data-exploration" class="slide level2">
+<h2>Data exploration</h2>
+<div class="panel-tabset">
+<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">R Code</a></li><li><a href="#tabset-1-2">Plot</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1">
+<div class="cell" data-layout-align="center">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a><span class="fu">ggplot</span>(<span class="at">data =</span> dat, <span class="fu">aes</span>(<span class="at">x =</span> age, <span class="at">y =</span> fklngth)) <span class="sc">+</span></span>
+<span id="cb4-2"><a></a>  <span class="fu">facet_grid</span>(. <span class="sc">~</span> locate) <span class="sc">+</span></span>
+<span id="cb4-3"><a></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb4-4"><a></a>  <span class="fu">stat_smooth</span>(<span class="at">method =</span> lm, <span class="at">se =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb4-5"><a></a>  <span class="fu">stat_smooth</span>(<span class="at">se =</span> <span class="cn">FALSE</span>, <span class="at">color =</span> <span class="st">"red"</span>) <span class="sc">+</span></span>
+<span id="cb4-6"><a></a>  <span class="fu">labs</span>(</span>
+<span id="cb4-7"><a></a>    <span class="at">y =</span> <span class="st">"Fork length"</span>,</span>
+<span id="cb4-8"><a></a>    <span class="at">x =</span> <span class="st">"Age"</span></span>
+<span id="cb4-9"><a></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div>
+<div id="tabset-1-2">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="lec-02_lm_glm_files/figure-revealjs/plot1-1.png" class="quarto-figure quarto-figure-center" width="3600"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="creating-log10-transform" class="slide level2">
+<h2>Creating log10 transform</h2>
+<div class="cell" data-layout-align="center">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a>dat <span class="ot">&lt;-</span> dat <span class="sc">%&gt;%</span></span>
+<span id="cb5-2"><a></a>  <span class="fu">mutate</span>(</span>
+<span id="cb5-3"><a></a>    <span class="at">lage =</span> <span class="fu">log10</span>(age),</span>
+<span id="cb5-4"><a></a>    <span class="at">lfkl =</span> <span class="fu">log10</span>(fklngth)</span>
+<span id="cb5-5"><a></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="data-exploration-with-log" class="slide level2">
+<h2>Data exploration: with log</h2>
+<div class="panel-tabset">
+<ul id="tabset-2" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-2-1">Code</a></li><li><a href="#tabset-2-2">Plot</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1">
+<div class="cell" data-layout-align="center">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a></a><span class="fu">ggplot</span>(<span class="at">data =</span> dat, <span class="fu">aes</span>(<span class="at">x =</span> lage, <span class="at">y =</span> lfkl)) <span class="sc">+</span></span>
+<span id="cb6-2"><a></a>  <span class="fu">facet_grid</span>(. <span class="sc">~</span> locate) <span class="sc">+</span></span>
+<span id="cb6-3"><a></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb6-4"><a></a>  <span class="fu">stat_smooth</span>(<span class="at">method =</span> lm, <span class="at">se =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb6-5"><a></a>  <span class="fu">stat_smooth</span>(<span class="at">se =</span> <span class="cn">FALSE</span>, <span class="at">color =</span> <span class="st">"red"</span>) <span class="sc">+</span></span>
+<span id="cb6-6"><a></a>  <span class="fu">labs</span>(</span>
+<span id="cb6-7"><a></a>    <span class="at">y =</span> <span class="st">"log 10 Fork length"</span>,</span>
+<span id="cb6-8"><a></a>    <span class="at">x =</span> <span class="st">"Log 10 Age"</span></span>
+<span id="cb6-9"><a></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div>
+<div id="tabset-2-2">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="lec-02_lm_glm_files/figure-revealjs/l10-1.png" class="quarto-figure quarto-figure-center" width="3600"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="fit-the-model" class="slide level2">
+<h2>Fit the model</h2>
+<div class="cell" data-layout-align="center">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a>m1 <span class="ot">&lt;-</span> <span class="fu">lm</span>(lfkl <span class="sc">~</span> lage <span class="sc">+</span> locate <span class="sc">+</span> lage<span class="sc">:</span>locate, <span class="at">data =</span> dat)</span>
+<span id="cb7-2"><a></a><span class="fu">summary</span>(m1)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = lfkl ~ lage + locate + lage:locate, data = dat)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.09375 -0.01864 -0.00253  0.02090  0.08030 
+
+Coefficients:
+                        Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept)              1.24287    0.04370  28.443  &lt; 2e-16 ***
+lage                     0.31431    0.03292   9.546 3.08e-15 ***
+locateNELSON             0.19295    0.06331   3.048  0.00304 ** 
+lage:locateNELSON       -0.14276    0.04902  -2.912  0.00455 ** 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.02823 on 88 degrees of freedom
+Multiple R-squared:  0.5664,    Adjusted R-squared:  0.5516 
+F-statistic: 38.31 on 3 and 88 DF,  p-value: 6.197e-16</code></pre>
+</div>
+</div>
+</section>
+<section id="anova-for-factors" class="slide level2">
+<h2>Anova for factors</h2>
+<div class="cell" data-layout-align="center">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a><span class="fu">Anova</span>(m1, <span class="at">type =</span> <span class="dv">3</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Anova Table (Type III tests)
+
+Response: lfkl
+             Sum Sq Df  F value    Pr(&gt;F)    
+(Intercept) 0.64467  1 809.0107 &lt; 2.2e-16 ***
+lage        0.07262  1  91.1310 3.079e-15 ***
+locate      0.00740  1   9.2901  0.003042 ** 
+lage:locate 0.00676  1   8.4815  0.004546 ** 
+Residuals   0.07012 88                       
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
+</div>
+</div>
+</section>
+<section id="assumptions-classic" class="slide level2">
+<h2>Assumptions (classic)</h2>
+<div class="cell" data-layout-align="center">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a><span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">2</span>))</span>
+<span id="cb11-2"><a></a><span class="fu">plot</span>(m1)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+
+</div>
+<img data-src="lec-02_lm_glm_files/figure-revealjs/unnamed-chunk-7-1.png" class="quarto-figure quarto-figure-center r-stretch" width="3600"></section>
+<section id="assumptions-nicer" class="slide level2">
+<h2>Assumptions (Nicer)</h2>
+<div class="cell" data-layout-align="center">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a></a><span class="fu">check_model</span>(m1)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+
+<img data-src="lec-02_lm_glm_files/figure-revealjs/unnamed-chunk-10-1.png" class="quarto-figure quarto-figure-center r-stretch" width="3600"></section>
+<section id="formal-tests" class="slide level2">
+<h2>Formal tests</h2>
+<h3 id="normality-of-residuals">Normality of residuals</h3>
+<div class="cell" data-layout-align="center">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a></a><span class="fu">shapiro.test</span>(<span class="fu">residuals</span>(m1))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Shapiro-Wilk normality test
+
+data:  residuals(m1)
+W = 0.97639, p-value = 0.09329</code></pre>
+</div>
+</div>
+</section>
+<section id="formal-tests-1" class="slide level2">
+<h2>Formal tests</h2>
+<h3 id="heteroscedasticity">Heteroscedasticity</h3>
+<div class="cell" data-layout-align="center">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a></a><span class="fu">bptest</span>(m1)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    studentized Breusch-Pagan test
+
+data:  m1
+BP = 1.8366, df = 3, p-value = 0.607</code></pre>
+</div>
+</div>
+</section>
+<section id="formal-tests-2" class="slide level2">
+<h2>Formal tests</h2>
+<h3 id="linearity">Linearity</h3>
+<div class="cell" data-layout-align="center">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a></a><span class="fu">resettest</span>(m1, <span class="at">power =</span> <span class="dv">2</span><span class="sc">:</span><span class="dv">3</span>, <span class="at">type =</span> <span class="st">"fitted"</span>, <span class="at">data =</span> dat)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    RESET test
+
+data:  m1
+RESET = 1.6953, df1 = 2, df2 = 86, p-value = 0.1896</code></pre>
+</div>
+</div>
+</section></section>
+<section>
+<section id="generalized-linear-models" class="title-slide slide level1 center">
+<h1>Generalized linear models</h1>
+
+</section>
+<section id="generalized-linear-models-1" class="slide level2">
+<h2>Generalized linear models</h2>
+<p>An extension to <strong>linear models</strong></p>
+<p>GLM expresses the transformed conditional expectation of the dependent variable <code>Y</code> as a linear combination of the regression variables <code>X</code></p>
+<p>Model has 3 components</p>
+<ul>
+<li><p>a dependent variable Y with a response distribution to model it: <strong>Gaussian</strong>, <strong>Binomial</strong>, <strong>Bernouilli</strong>, <strong>Poisson</strong>, <strong>negative binomial</strong>, <strong>zero-inflated …</strong>, <strong>zero-truncated …</strong>, …</p></li>
+<li><p>linear predictors (or independent variables) <span class="math display">\[
+\eta = \beta_0 + \beta_1 X_1 + ... + \beta_k X_k
+\]</span></p></li>
+<li><p>a link function such that <span class="math display">\[
+E(Y |X) = \mu = g^{-1} (\eta)
+\]</span></p></li>
+</ul>
+<!-- - a structural component or additive expression 
+- a link function: $g(\mu)$ -->
+</section>
+<section id="dependent-variable" class="slide level2">
+<h2>Dependent variable</h2>
+<ul>
+<li><p>when continuous and follows <em>conditional</em> normal distribution, called <strong>Linear regression</strong></p></li>
+<li><p>Binary outcomes (success/failure), follows a <em>Binomial distribution</em>, called <strong>Logistic regression</strong></p></li>
+<li><p>Count data (number of events), follows a <em>Poisson</em>, called <strong>Poisson regression</strong></p></li>
+</ul>
+</section>
+<section id="classic-link-functions" class="slide level2">
+<h2>Classic link functions</h2>
+<ul>
+<li>Identity link (form used in linear regression models)</li>
+</ul>
+<p><span class="math display">\[
+g(\eta) = \mu
+\]</span></p>
+<ul>
+<li>Log link (used when <span class="math inline">\(\mu\)</span> cannot be negative, <em>e.g.</em> Poisson data)</li>
+</ul>
+<p><span class="math display">\[
+g(\eta) = log(\mu)
+\]</span></p>
+<p>Logit link (used when is bounded between 0 and 1, <em>e.g.</em> binary data)</p>
+<p><span class="math display">\[
+g(\eta) = log\left(\frac{\mu}{1-\mu}\right)
+\]</span></p>
+</section>
+<section id="linear-regression" class="slide level2">
+<h2>Linear regression</h2>
+<ul>
+<li>Y: continuous, response distribution: Gaussian</li>
+</ul>
+<p><span class="math display">\[
+Y \sim \mathcal{N}(\mu, \sigma^2_e)
+\]</span></p>
+<ul>
+<li>linear predictor</li>
+</ul>
+<p><span class="math display">\[
+\eta = \beta_0 + \beta_1 X_1 + ... + \beta_k X_k\\
+\]</span></p>
+<ul>
+<li>Link function: identity</li>
+</ul>
+<p><span class="math display">\[
+g(\eta) = \mu \\
+\mu = \beta_0 + \beta_1 X_1 + ... + \beta_k X_k
+\]</span></p>
+</section>
+<section id="logistic-regression" class="slide level2">
+<h2>Logistic regression</h2>
+<ul>
+<li>Y: binary or proportion, Response distribution: Binomial or Bernoulli</li>
+</ul>
+<p><span class="math display">\[
+Y \sim Bernoulli(\pi)
+\]</span></p>
+<ul>
+<li>linear predictor</li>
+</ul>
+<p><span class="math display">\[
+\eta = \beta_0 + \beta_1 X_1 + ... + \beta_k X_k\\
+\]</span></p>
+<ul>
+<li>Link function: logit</li>
+</ul>
+<p><span class="math display">\[
+g(\eta) = ln\left(\frac{\pi}{1-\pi}\right) \\
+\pi = \frac{1}{1 + e^{-(\beta_0 + \beta_1 X_1 + ... + \beta_k X_k)}}
+\]</span></p>
+</section>
+<section id="poisson-regression" class="slide level2">
+<h2>Poisson regression</h2>
+<ul>
+<li>Y: discrete variable (integers), Response distribution: Poisson or Negative binomial</li>
+</ul>
+<p><span class="math display">\[
+Y \sim \mathcal{P}(\lambda)
+\]</span></p>
+<ul>
+<li>linear predictor</li>
+</ul>
+<p><span class="math display">\[
+\eta = \beta_0 + \beta_1 X_1 + ... + \beta_k X_k\\
+\]</span></p>
+<ul>
+<li>Link function: natural logarithm</li>
+</ul>
+<p><span class="math display">\[
+g(\eta) = ln(\lambda) \\
+\lambda = e^{\beta_0 + \beta_1 X_1 + ... + \beta_k X_k}
+\]</span></p>
+</section>
+<section id="model-assumptions" class="slide level2">
+<h2>Model assumptions</h2>
+<ul>
+<li><p>Easy answer none or really few</p></li>
+<li><p>More advanced answer I am not sure, it is complicated</p></li>
+<li><p>Just check residuals I as usual</p></li>
+<li><p>Technically only 3 assumption:</p>
+<ul>
+<li><p><strong>Variance is a function of the mean specific to the distribution used</strong></p></li>
+<li><p>observations are independent</p></li>
+<li><p>linear relation on the latent scale</p></li>
+</ul></li>
+</ul>
+<h3 id="glms-do-not-care-if-the-residual-errors-are-gaussian-as-long-as-the-specified-mean-variance-relationship-is-satisfied-by-the-data">GLMs do not care if the residual errors are Gaussian as long as the specified mean-variance relationship is satisfied by the data</h3>
+<ul>
+<li>what about DHaRMA ? It’s complicated</li>
+</ul>
+</section>
+<section id="choosing-a-link-function" class="slide level2">
+<h2>Choosing a link function</h2>
+<p>A link function should map the stuctural component from <span class="math inline">\((-\infty,\infty)\)</span> to the distribution interval (<em>e.g.</em> (0,1) for binomial)</p>
+<p>So number of link function possible is extremley large.</p>
+<h3 id="choice-of-link-function-heavily-influenced-by-field-tradiditon">Choice of <strong>link</strong> function heavily influenced by field tradiditon</h3>
+<p>For binomial models</p>
+<ul>
+<li><strong>logit</strong> assume modelling probability of an observation to be one</li>
+<li><strong>probit</strong> assume binary outcome from a hidden gaussian variable (<em>i.e.</em> threshold model)</li>
+<li><strong>logit</strong> &amp; <strong>probit</strong> are really similar, both are symmetric but <strong>probit</strong> tapers faster. <strong>logit</strong> coefficient easier to interpret directly</li>
+<li><strong>cologlog</strong> not-symmetrical</li>
+</ul>
+</section></section>
+<section>
+<section id="logistic-regression-1" class="title-slide slide level1 center">
+<h1>Logistic regression</h1>
+
+</section>
+<section id="data" class="slide level2">
+<h2>Data</h2>
+<p>Here is some data to play with from a study on bighorn sheep.</p>
+<p>We will look at the relation between reproduction and age</p>
+<p>Loading and tweaking the data</p>
+<div class="cell" data-layout-align="center">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a></a>mouflon0 <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"data/mouflon.csv"</span>)</span>
+<span id="cb19-2"><a></a>mouflon <span class="ot">&lt;-</span> mouflon0 <span class="sc">%&gt;%</span></span>
+<span id="cb19-3"><a></a>  <span class="fu">arrange</span>(age) <span class="sc">%&gt;%</span></span>
+<span id="cb19-4"><a></a>  <span class="fu">mutate</span>(</span>
+<span id="cb19-5"><a></a>    <span class="at">reproduction =</span> <span class="fu">case_when</span>(</span>
+<span id="cb19-6"><a></a>      age <span class="sc">&gt;=</span> <span class="dv">13</span> <span class="sc">~</span> <span class="dv">0</span>,</span>
+<span id="cb19-7"><a></a>      age <span class="sc">&lt;=</span> <span class="dv">4</span> <span class="sc">~</span> <span class="dv">1</span>,</span>
+<span id="cb19-8"><a></a>      <span class="at">.default =</span> reproduction</span>
+<span id="cb19-9"><a></a>    )</span>
+<span id="cb19-10"><a></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="first-plot" class="slide level2">
+<h2>First plot</h2>
+<div class="panel-tabset">
+<ul id="tabset-3" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-3-1">Code</a></li><li><a href="#tabset-3-2">Plot</a></li></ul>
+<div class="tab-content">
+<div id="tabset-3-1">
+<div class="cell" data-layout-align="center">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a></a>bubble <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb20-2"><a></a>  <span class="at">age =</span> <span class="fu">rep</span>(<span class="dv">2</span><span class="sc">:</span><span class="dv">16</span>, <span class="dv">2</span>),</span>
+<span id="cb20-3"><a></a>  <span class="at">reproduction =</span> <span class="fu">rep</span>(<span class="dv">0</span><span class="sc">:</span><span class="dv">1</span>, <span class="at">each =</span> <span class="dv">15</span>),</span>
+<span id="cb20-4"><a></a>  <span class="at">size =</span> <span class="fu">c</span>(<span class="fu">table</span>(mouflon<span class="sc">$</span>age, mouflon<span class="sc">$</span>reproduction))</span>
+<span id="cb20-5"><a></a>) <span class="sc">%&gt;%</span></span>
+<span id="cb20-6"><a></a>  <span class="fu">mutate</span>(<span class="at">size =</span> <span class="fu">ifelse</span>(size <span class="sc">==</span> <span class="dv">0</span>, <span class="cn">NA</span>, size))</span>
+<span id="cb20-7"><a></a><span class="fu">ggplot</span>(</span>
+<span id="cb20-8"><a></a>  bubble,</span>
+<span id="cb20-9"><a></a>  <span class="fu">aes</span>(<span class="at">x =</span> age, <span class="at">y =</span> reproduction, <span class="at">size =</span> size)</span>
+<span id="cb20-10"><a></a>) <span class="sc">+</span></span>
+<span id="cb20-11"><a></a>  <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.8</span>) <span class="sc">+</span></span>
+<span id="cb20-12"><a></a>  <span class="fu">scale_size</span>(<span class="at">range =</span> <span class="fu">c</span>(.<span class="dv">1</span>, <span class="dv">20</span>), <span class="at">name =</span> <span class="st">"Nb individuals"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div>
+<div id="tabset-3-2">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="lec-02_lm_glm_files/figure-revealjs/f_plot-1.png" class="quarto-figure quarto-figure-center" width="3600"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="fitting-the-logistic-regression" class="slide level2">
+<h2>Fitting the logistic regression</h2>
+<div class="cell" data-layout-align="center">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a></a>m1 <span class="ot">&lt;-</span> <span class="fu">glm</span>(reproduction <span class="sc">~</span> age, <span class="at">data =</span> mouflon,   <span class="at">family =</span> binomial)</span>
+<span id="cb21-2"><a></a><span class="fu">summary</span>(m1)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+glm(formula = reproduction ~ age, family = binomial, data = mouflon)
+
+Coefficients:
+            Estimate Std. Error z value Pr(&gt;|z|)    
+(Intercept)  3.19921    0.25417   12.59   &lt;2e-16 ***
+age         -0.36685    0.03287  -11.16   &lt;2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 928.86  on 715  degrees of freedom
+Residual deviance: 767.51  on 714  degrees of freedom
+  (4 observations deleted due to missingness)
+AIC: 771.51
+
+Number of Fisher Scoring iterations: 4</code></pre>
+</div>
+</div>
+</section>
+<section id="checking-assumptions" class="slide level2">
+<h2>Checking assumptions</h2>
+<div class="cell" data-layout-align="center">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a></a>simulationOutput <span class="ot">&lt;-</span> <span class="fu">simulateResiduals</span>(m1)</span>
+<span id="cb23-2"><a></a><span class="fu">plot</span>(simulationOutput)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+
+</div>
+<img data-src="lec-02_lm_glm_files/figure-revealjs/unnamed-chunk-16-1.png" class="quarto-figure quarto-figure-center r-stretch" width="3600"></section>
+<section id="plotting-predictions-latent-scale" class="slide level2">
+<h2>Plotting predictions (latent scale)</h2>
+<p>plotting the model prediction on the link (latent) scale</p>
+<div class="cell" data-layout-align="center">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a></a>mouflon<span class="sc">$</span>logit_ypred <span class="ot">&lt;-</span> <span class="fl">3.19921</span> <span class="sc">-</span> <span class="fl">0.36685</span> <span class="sc">*</span> mouflon<span class="sc">$</span>age</span>
+<span id="cb24-2"><a></a><span class="fu">plot</span>(logit_ypred <span class="sc">~</span> <span class="fu">jitter</span>(age), mouflon)</span>
+<span id="cb24-3"><a></a><span class="fu">points</span>(mouflon<span class="sc">$</span>age, mouflon<span class="sc">$</span>logit_ypred, <span class="at">col =</span> <span class="st">"red"</span>, <span class="at">type =</span> <span class="st">"l"</span>, <span class="at">lwd =</span> <span class="dv">2</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+
+</section>
+<section id="plotting-predictions-latent-scale-output" class="slide level2 output-location-slide"><h2>Plotting predictions (latent scale)</h2><div class="cell output-location-slide" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="lec-02_lm_glm_files/figure-revealjs/unnamed-chunk-17-1.png" class="quarto-figure quarto-figure-center" width="3600"></p>
+</figure>
+</div>
+</div>
+</div></section><section id="plotting-predictions-obs-scale" class="slide level2">
+<h2>Plotting predictions (obs scale)</h2>
+<p>plotting on the observed scale</p>
+<div class="cell" data-layout-align="center">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a></a>mouflon<span class="sc">$</span>ypred <span class="ot">&lt;-</span> <span class="fu">exp</span>(mouflon<span class="sc">$</span>logit_ypred) <span class="sc">/</span> (<span class="dv">1</span> <span class="sc">+</span> <span class="fu">exp</span>(mouflon<span class="sc">$</span>logit_ypred))</span>
+<span id="cb25-2"><a></a><span class="fu">ggplot</span>(mouflon, <span class="fu">aes</span>(<span class="at">x =</span> age, <span class="at">y =</span> reproduction)) <span class="sc">+</span></span>
+<span id="cb25-3"><a></a>  <span class="fu">geom_jitter</span>(<span class="at">height =</span> <span class="fl">0.01</span>) <span class="sc">+</span></span>
+<span id="cb25-4"><a></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">y=</span>ypred), <span class="at">color =</span> <span class="st">"red"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+
+</section>
+<section id="plotting-predictions-obs-scale-output" class="slide level2 output-location-slide"><h2>Plotting predictions (obs scale)</h2><div class="cell output-location-slide" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="lec-02_lm_glm_files/figure-revealjs/unnamed-chunk-18-1.png" class="quarto-figure quarto-figure-center" width="3600"></p>
+</figure>
+</div>
+</div>
+</div></section><section id="plotting-predictions-obs-scale-1" class="slide level2">
+<h2>Plotting predictions (obs scale)</h2>
+<div class="panel-tabset">
+<ul id="tabset-4" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-4-1">Code</a></li><li><a href="#tabset-4-2">Plot</a></li></ul>
+<div class="tab-content">
+<div id="tabset-4-1">
+<p>but it can be much simpler</p>
+<div class="cell" data-layout-align="center">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a></a>dat_predict <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb26-2"><a></a>  <span class="at">age =</span> <span class="fu">seq</span>(<span class="fu">min</span>(mouflon<span class="sc">$</span>age), <span class="fu">max</span>(mouflon<span class="sc">$</span>age), <span class="at">length =</span> <span class="dv">100</span>)</span>
+<span id="cb26-3"><a></a>) <span class="sc">%&gt;%</span></span>
+<span id="cb26-4"><a></a>  <span class="fu">mutate</span>(</span>
+<span id="cb26-5"><a></a>    <span class="at">reproduction =</span> <span class="fu">predict</span>(m1, <span class="at">type =</span> <span class="st">"response"</span>, <span class="at">newdata =</span> .)</span>
+<span id="cb26-6"><a></a>  )</span>
+<span id="cb26-7"><a></a></span>
+<span id="cb26-8"><a></a><span class="fu">ggplot</span>(mouflon, <span class="fu">aes</span>(<span class="at">x =</span> age, <span class="at">y =</span> reproduction)) <span class="sc">+</span></span>
+<span id="cb26-9"><a></a>  <span class="fu">geom_jitter</span>(<span class="at">height =</span> <span class="fl">0.01</span>) <span class="sc">+</span></span>
+<span id="cb26-10"><a></a>  <span class="fu">geom_line</span>(<span class="at">data =</span> dat_predict, <span class="fu">aes</span>(<span class="at">x =</span> age, <span class="at">y =</span> reproduction), <span class="at">color =</span> <span class="st">"red"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div>
+<div id="tabset-4-2">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="lec-02_lm_glm_files/figure-revealjs/pred_glm-1.png" class="quarto-figure quarto-figure-center" width="3600"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="your-turn" class="slide level2">
+<h2>Your turn</h2>
+<p>we can do the same things with more complex models</p>
+<div class="cell" data-layout-align="center">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a></a>m2 <span class="ot">&lt;-</span> <span class="fu">glm</span>(</span>
+<span id="cb27-2"><a></a>  reproduction <span class="sc">~</span> age <span class="sc">+</span> mass_sept <span class="sc">+</span> <span class="fu">as.factor</span>(sex_lamb) <span class="sc">+</span></span>
+<span id="cb27-3"><a></a>    mass_gain <span class="sc">+</span> density <span class="sc">+</span> temp,</span>
+<span id="cb27-4"><a></a>  <span class="at">data =</span> mouflon,</span>
+<span id="cb27-5"><a></a>  <span class="at">family =</span> binomial</span>
+<span id="cb27-6"><a></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="check-model" class="slide level2">
+<h2>check model</h2>
+<div class="cell" data-layout-align="center">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a></a><span class="fu">check_model</span>(m2)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+
+<img data-src="lec-02_lm_glm_files/figure-revealjs/unnamed-chunk-22-1.png" class="quarto-figure quarto-figure-center r-stretch" width="3600"></section>
+<section id="with-dharma" class="slide level2">
+<h2>with DHaRMA</h2>
+<div class="cell" data-layout-align="center">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb29"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a></a>simulationOutput <span class="ot">&lt;-</span> <span class="fu">simulateResiduals</span>(m2)</span>
+<span id="cb29-2"><a></a><span class="fu">plot</span>(simulationOutput)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+
+</div>
+<img data-src="lec-02_lm_glm_files/figure-revealjs/unnamed-chunk-23-1.png" class="quarto-figure quarto-figure-center r-stretch" width="3600"></section></section>
+<section>
+<section id="poisson-regression-1" class="title-slide slide level1 center">
+<h1>Poisson regression</h1>
+
+</section>
+<section id="data-1" class="slide level2">
+<h2>Data</h2>
+<p>data on galapagos islands species richness</p>
+<p>Fit 3 models:</p>
+<ul>
+<li>model of total number of species</li>
+<li>model of proportion of endemics to total</li>
+<li>model of species density</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<div class="cell" data-layout-align="center">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb30"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a></a>gala <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"data/gala.csv"</span>)</span>
+<span id="cb30-2"><a></a><span class="fu">plot</span>(Species <span class="sc">~</span> Area, gala)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+
+</div>
+<img data-src="lec-02_lm_glm_files/figure-revealjs/unnamed-chunk-24-1.png" class="quarto-figure quarto-figure-center r-stretch" width="3600"></section>
+<section class="slide level2">
+
+<div class="cell" data-layout-align="center">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb31"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a></a><span class="fu">plot</span>(Species <span class="sc">~</span> <span class="fu">log</span>(Area), gala)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+
+</div>
+<img data-src="lec-02_lm_glm_files/figure-revealjs/unnamed-chunk-25-1.png" class="quarto-figure quarto-figure-center r-stretch" width="3600"></section>
+<section class="slide level2">
+
+<div class="cell" data-layout-align="center">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb32"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a></a><span class="fu">hist</span>(gala<span class="sc">$</span>Species)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+
+</div>
+<img data-src="lec-02_lm_glm_files/figure-revealjs/unnamed-chunk-26-1.png" class="quarto-figure quarto-figure-center r-stretch" width="3600"></section>
+<section class="slide level2">
+
+<div class="cell" data-layout-align="center">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb33"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a></a>modpl <span class="ot">&lt;-</span> <span class="fu">glm</span>(Species <span class="sc">~</span> Area <span class="sc">+</span> Elevation <span class="sc">+</span> Nearest, <span class="at">family =</span> poisson, gala)</span>
+<span id="cb33-2"><a></a><span class="fu">summary</span>(modpl)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+glm(formula = Species ~ Area + Elevation + Nearest, family = poisson, 
+    data = gala)
+
+Coefficients:
+              Estimate Std. Error z value Pr(&gt;|z|)    
+(Intercept)  3.548e+00  3.933e-02  90.211  &lt; 2e-16 ***
+Area        -5.529e-05  1.890e-05  -2.925  0.00344 ** 
+Elevation    1.588e-03  5.040e-05  31.502  &lt; 2e-16 ***
+Nearest      5.921e-03  1.466e-03   4.039 5.38e-05 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+(Dispersion parameter for poisson family taken to be 1)
+
+    Null deviance: 3510.7  on 29  degrees of freedom
+Residual deviance: 1797.8  on 26  degrees of freedom
+AIC: 1966.7
+
+Number of Fisher Scoring iterations: 5</code></pre>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+<div class="cell" data-layout-align="center">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb35"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a></a>res <span class="ot">&lt;-</span> <span class="fu">simulateResiduals</span>(modpl)</span>
+<span id="cb35-2"><a></a><span class="fu">testDispersion</span>(res)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    DHARMa nonparametric dispersion test via sd of residuals fitted vs.
+    simulated
+
+data:  simulationOutput
+dispersion = 110.32, p-value &lt; 2.2e-16
+alternative hypothesis: two.sided</code></pre>
+</div>
+</div>
+<img data-src="lec-02_lm_glm_files/figure-revealjs/unnamed-chunk-28-1.png" class="quarto-figure quarto-figure-center r-stretch" width="3600"></section>
+<section class="slide level2">
+
+<div class="cell" data-layout-align="center">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb37"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a></a><span class="fu">c</span>(<span class="fu">mean</span>(gala<span class="sc">$</span>Species), <span class="fu">var</span>(gala<span class="sc">$</span>Species))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1]    85.23333 13140.73678</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb39"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a></a><span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>))</span>
+<span id="cb39-2"><a></a><span class="fu">hist</span>(gala<span class="sc">$</span>Species)</span>
+<span id="cb39-3"><a></a><span class="fu">hist</span>(<span class="fu">rpois</span>(<span class="fu">nrow</span>(gala), <span class="fu">mean</span>(gala<span class="sc">$</span>Species)))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+
+</div>
+<img data-src="lec-02_lm_glm_files/figure-revealjs/unnamed-chunk-29-1.png" class="quarto-figure quarto-figure-center r-stretch" width="3600"></section>
+<section class="slide level2">
+
+<div class="cell" data-layout-align="center">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb40"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a></a><span class="fu">testZeroInflation</span>(res)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    DHARMa zero-inflation test via comparison to expected zeros with
+    simulation under H0 = fitted model
+
+data:  simulationOutput
+ratioObsSim = NaN, p-value = 1
+alternative hypothesis: two.sided</code></pre>
+</div>
+</div>
+<img data-src="lec-02_lm_glm_files/figure-revealjs/unnamed-chunk-30-1.png" class="quarto-figure quarto-figure-center r-stretch" width="3600"></section>
+<section class="slide level2">
+
+<div class="cell" data-layout-align="center">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb42"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a></a><span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">2</span>))</span>
+<span id="cb42-2"><a></a><span class="fu">plot</span>(modpl)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+
+</div>
+<img data-src="lec-02_lm_glm_files/figure-revealjs/unnamed-chunk-31-1.png" class="quarto-figure quarto-figure-center r-stretch" width="3600"></section></section>
+<section id="happy-coding" class="title-slide slide level1 center">
+<h1>Happy coding</h1>
+
+
+
+<img data-src="assets/img_l4/unicorn.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<div class="footer footer-default">
+<p>BIO 8940</p>
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="../site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="../site_libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"8\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'chalkboard': {"buttons":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: false,
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1600,
+
+        height: 950,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>

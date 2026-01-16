@@ -9,11 +9,11 @@
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.8.25">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-a67ac2868200dddf7a4f0e3ae403775c.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.9.16">
 
   <meta name="author" content="Julien Martin">
-  <meta name="dcterms.date" content="2026-01-14">
+  <meta name="dcterms.date" content="2026-01-16">
   <title>Bio8940 – Introduction to linear mixed models?</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -99,7 +99,7 @@
     code span.vs { color: #20794d; } /* VerbatimString */
     code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-534cd8e3a96973385dffff3f4709048d.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-2740581606dc327e82f18f789b69d8a0.css">
   <link rel="stylesheet" href="assets/theme_chalk/whiteboard-blue.css">
   <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-6LLMGL3T2Q"></script>
 
@@ -115,10 +115,10 @@
   document.addEventListener('DOMContentLoaded', function () {
   cookieconsent.run({
     "notice_banner_type":"simple",
-    "consent_type":"implied",
+    "consent_type":"express",
     "palette":"light",
     "language":"en",
-    "page_load_consent_levels":["strictly-necessary","functionality","tracking","targeting"],
+    "page_load_consent_levels":["strictly-necessary"],
     "notice_banner_reject_button_hide":false,
     "preferences_center_close_button_hide":false,
     "website_name":""
@@ -241,7 +241,7 @@ Julien Martin
     </div>
 </div>
 
-  <p class="date">2026-01-14</p>
+  <p class="date">2026-01-16</p>
 </section>
 <section>
 <section id="when-you-are-lacking-independence" class="title-slide slide level1 center">
@@ -532,12 +532,12 @@ a_j \sim N(0, {\sigma^2_{a_j}})
 <section id="fixed-part" class="slide level2">
 <h2>Fixed part</h2>
 
-<img data-src="lec-04_intro_lmm_files/figure-revealjs/unnamed-chunk-3-1.png" class="quarto-figure quarto-figure-center r-stretch" width="3600"><p><span class="math display">\[y_{ij} = \underbrace{\color{red}{a + b_1{NAP_{ij}}} + b_2{Exposure_j}}_\text{fixed} + \underbrace{a_j + \epsilon_{ij}}_\text{random}\]</span></p>
+<img data-src="lec-04_intro_lmm_files/figure-html/unnamed-chunk-3-1.png" class="quarto-figure quarto-figure-center r-stretch" width="3600"><p><span class="math display">\[y_{ij} = \underbrace{\color{red}{a + b_1{NAP_{ij}}} + b_2{Exposure_j}}_\text{fixed} + \underbrace{a_j + \epsilon_{ij}}_\text{random}\]</span></p>
 </section>
 <section id="random-part" class="slide level2">
 <h2>Random part</h2>
 
-<img data-src="lec-04_intro_lmm_files/figure-revealjs/unnamed-chunk-4-1.png" class="quarto-figure quarto-figure-center r-stretch" width="3600"><p><span class="math display">\[
+<img data-src="lec-04_intro_lmm_files/figure-html/unnamed-chunk-4-1.png" class="quarto-figure quarto-figure-center r-stretch" width="3600"><p><span class="math display">\[
 Richness_{ij} = \underbrace{\color{red}{a + b_1{NAP_{ij}}} + b_2{Exposure_j}}_\text{fixed} + \color{purple}{\underbrace{a_j + \epsilon_{ij}}_\text{random}}
 \]</span></p>
 </section>
@@ -592,7 +592,7 @@ a_j \sim N(0, 0.34)
 <li>Estimates for each groups are constrained (shrunk) too avoid extreme values.</li>
 </ul>
 
-<img data-src="lec-04_intro_lmm_files/figure-revealjs/unnamed-chunk-6-1.png" class="quarto-figure quarto-figure-center r-stretch" width="3600"></section></section>
+<img data-src="lec-04_intro_lmm_files/figure-html/unnamed-chunk-6-1.png" class="quarto-figure quarto-figure-center r-stretch" width="3600"></section></section>
 <section>
 <section id="variance-components" class="title-slide slide level1 center">
 <h1>Variance components</h1>
@@ -769,7 +769,7 @@ a_j \\
 <section id="random-regression-1" class="slide level2">
 <h2>Random regression</h2>
 
-<img data-src="lec-04_intro_lmm_files/figure-revealjs/unnamed-chunk-10-1.png" class="quarto-figure quarto-figure-center r-stretch" width="3600"><p><span class="math display">\[
+<img data-src="lec-04_intro_lmm_files/figure-html/unnamed-chunk-10-1.png" class="quarto-figure quarto-figure-center r-stretch" width="3600"><p><span class="math display">\[
 Richness_{ij} = \underbrace{a + b_1{NAP_{ij}} + b_2{Exposure_j}}_\text{fixed} + \underbrace{\color{#DD3333}{a_j + b_{1j}NAP_{ij}} + \epsilon_{ij}}_\text{random}
 \]</span></p>
 </section></section>
@@ -1027,44 +1027,6 @@ Richness_{ij} = \underbrace{a + b_1{NAP_{ij}} + b_2{Exposure_j}}_\text{fixed} + 
         ]
       });
     </script>
-    
-    <script>
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-      // slide changes (different for each slide format).
-      (function () {
-        // dispatch for htmlwidgets
-        function fireSlideEnter() {
-          const event = window.document.createEvent("Event");
-          event.initEvent("slideenter", true, true);
-          window.document.dispatchEvent(event);
-        }
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-          fireSlideEnter();
-
-          // dispatch for shiny
-          if (window.jQuery) {
-            if (previousSlide) {
-              window.jQuery(previousSlide).trigger("hidden");
-            }
-            if (currentSlide) {
-              window.jQuery(currentSlide).trigger("shown");
-            }
-          }
-        }
-
-        // hookup for slidy
-        if (window.w3c_slidy) {
-          window.w3c_slidy.add_observer(function (slide_num) {
-            // slide_num starts at position 1
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-          });
-        }
-
-      })();
-    </script>
-
     <script id="quarto-html-after-body" type="application/javascript">
       window.document.addEventListener("DOMContentLoaded", function (event) {
         const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
@@ -1135,7 +1097,7 @@ Richness_{ij} = \underbrace{a + b_1{NAP_{ij}} + b_2{Exposure_j}}_\text{fixed} + 
         }
           var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
           var mailtoRegex = new RegExp(/^mailto:/);
-            var filterRegex = new RegExp('/' + window.location.host + '/');
+            var filterRegex = new RegExp("https:\/\/Biostats-uOttawa\.github\.io\/bio8940\/");
           var isInternal = (href) => {
               return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
           }
