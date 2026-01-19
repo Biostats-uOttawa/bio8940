@@ -9,11 +9,11 @@
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-a67ac2868200dddf7a4f0e3ae403775c.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.9.16">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.8.25">
 
   <meta name="author" content="Julien Martin">
-  <meta name="dcterms.date" content="2026-01-16">
+  <meta name="dcterms.date" content="2026-01-19">
   <title>Bio8940 – Linear models and generalized linear models</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -99,7 +99,7 @@
     code span.vs { color: #20794d; } /* VerbatimString */
     code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-2740581606dc327e82f18f789b69d8a0.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-534cd8e3a96973385dffff3f4709048d.css">
   <link rel="stylesheet" href="assets/theme_chalk/whiteboard-blue.css">
   <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-6LLMGL3T2Q"></script>
 
@@ -115,10 +115,10 @@
   document.addEventListener('DOMContentLoaded', function () {
   cookieconsent.run({
     "notice_banner_type":"simple",
-    "consent_type":"express",
+    "consent_type":"implied",
     "palette":"light",
     "language":"en",
-    "page_load_consent_levels":["strictly-necessary"],
+    "page_load_consent_levels":["strictly-necessary","functionality","tracking","targeting"],
     "notice_banner_reject_button_hide":false,
     "preferences_center_close_button_hide":false,
     "website_name":""
@@ -241,7 +241,7 @@ Julien Martin
     </div>
 </div>
 
-  <p class="date">2026-01-16</p>
+  <p class="date">2026-01-19</p>
 </section>
 <section>
 <section id="linear-models" class="title-slide slide level1 center">
@@ -376,7 +376,7 @@ ln(L(parameters | data)) = \sum_{i=1}^{n} ln(f(data_i | parameters))
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="lec-02_lm_glm_files/figure-html/plot1-1.png" class="quarto-figure quarto-figure-center" width="3600"></p>
+<p><img data-src="lec-02_lm_glm_files/figure-revealjs/plot1-1.png" class="quarto-figure quarto-figure-center" width="3600"></p>
 </figure>
 </div>
 </div>
@@ -418,7 +418,7 @@ ln(L(parameters | data)) = \sum_{i=1}^{n} ln(f(data_i | parameters))
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="lec-02_lm_glm_files/figure-html/l10-1.png" class="quarto-figure quarto-figure-center" width="3600"></p>
+<p><img data-src="lec-02_lm_glm_files/figure-revealjs/l10-1.png" class="quarto-figure quarto-figure-center" width="3600"></p>
 </figure>
 </div>
 </div>
@@ -482,14 +482,14 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 <span id="cb11-2"><a></a><span class="fu">plot</span>(m1)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 
 </div>
-<img data-src="lec-02_lm_glm_files/figure-html/unnamed-chunk-7-1.png" class="quarto-figure quarto-figure-center r-stretch" width="3600"></section>
+<img data-src="lec-02_lm_glm_files/figure-revealjs/unnamed-chunk-7-1.png" class="quarto-figure quarto-figure-center r-stretch" width="3600"></section>
 <section id="assumptions-nicer" class="slide level2">
 <h2>Assumptions (Nicer)</h2>
 <div class="cell" data-layout-align="center">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a></a><span class="fu">check_model</span>(m1)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 
-<img data-src="lec-02_lm_glm_files/figure-html/unnamed-chunk-10-1.png" class="quarto-figure quarto-figure-center r-stretch" width="3600"></section>
+<img data-src="lec-02_lm_glm_files/figure-revealjs/unnamed-chunk-10-1.png" class="quarto-figure quarto-figure-center r-stretch" width="3600"></section>
 <section id="formal-tests" class="slide level2">
 <h2>Formal tests</h2>
 <h3 id="normality-of-residuals">Normality of residuals</h3>
@@ -578,7 +578,7 @@ g(\eta) = log(\mu)
 \]</span></p>
 <p>Logit link (used when is bounded between 0 and 1, <em>e.g.</em> binary data)</p>
 <p><span class="math display">\[
-g(\eta) = log\left(\frac{\mu}{1-\mu}\right)
+g(\eta) = log\left(\frac{p}{1-p}\right)
 \]</span></p>
 </section>
 <section id="linear-regression" class="slide level2">
@@ -599,8 +599,8 @@ Y \sim \mathcal{N}(\mu, \sigma^2_e)
 <li>Link function: identity</li>
 </ul>
 <p><span class="math display">\[
-g(\eta) = \mu \\
-\mu = \beta_0 + \beta_1 X_1 + ... + \beta_k X_k
+g(\eta) = \mu \text{ and }
+\mu = \eta\\
 \]</span></p>
 </section>
 <section id="logistic-regression" class="slide level2">
@@ -618,12 +618,11 @@ Y \sim Bernoulli(\pi)
 \eta = \beta_0 + \beta_1 X_1 + ... + \beta_k X_k\\
 \]</span></p>
 <ul>
-<li>Link function: logit</li>
+<li>Link function: logit <span class="math display">\[
+g(\eta) = ln\left(\frac{\pi}{1-\pi}\right) \text{ and }
+\pi = \frac{1}{1 + e^{-\eta}}\\
+\]</span></li>
 </ul>
-<p><span class="math display">\[
-g(\eta) = ln\left(\frac{\pi}{1-\pi}\right) \\
-\pi = \frac{1}{1 + e^{-(\beta_0 + \beta_1 X_1 + ... + \beta_k X_k)}}
-\]</span></p>
 </section>
 <section id="poisson-regression" class="slide level2">
 <h2>Poisson regression</h2>
@@ -643,8 +642,8 @@ Y \sim \mathcal{P}(\lambda)
 <li>Link function: natural logarithm</li>
 </ul>
 <p><span class="math display">\[
-g(\eta) = ln(\lambda) \\
-\lambda = e^{\beta_0 + \beta_1 X_1 + ... + \beta_k X_k}
+g(\eta) = ln(\lambda) \text{ and }
+\lambda = e^{\eta}\\
 \]</span></p>
 </section>
 <section id="model-assumptions" class="slide level2">
@@ -727,7 +726,7 @@ g(\eta) = ln(\lambda) \\
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="lec-02_lm_glm_files/figure-html/f_plot-1.png" class="quarto-figure quarto-figure-center" width="3600"></p>
+<p><img data-src="lec-02_lm_glm_files/figure-revealjs/f_plot-1.png" class="quarto-figure quarto-figure-center" width="3600"></p>
 </figure>
 </div>
 </div>
@@ -739,7 +738,7 @@ g(\eta) = ln(\lambda) \\
 <section id="fitting-the-logistic-regression" class="slide level2">
 <h2>Fitting the logistic regression</h2>
 <div class="cell" data-layout-align="center">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a></a>m1 <span class="ot">&lt;-</span> <span class="fu">glm</span>(reproduction <span class="sc">~</span> age, <span class="at">data =</span> mouflon,   <span class="at">family =</span> binomial)</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a></a>m1 <span class="ot">&lt;-</span> <span class="fu">glm</span>(reproduction <span class="sc">~</span> age, <span class="at">data =</span> mouflon, <span class="at">family =</span> binomial)</span>
 <span id="cb21-2"><a></a><span class="fu">summary</span>(m1)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
@@ -771,7 +770,7 @@ Number of Fisher Scoring iterations: 4</code></pre>
 <span id="cb23-2"><a></a><span class="fu">plot</span>(simulationOutput)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 
 </div>
-<img data-src="lec-02_lm_glm_files/figure-html/unnamed-chunk-16-1.png" class="quarto-figure quarto-figure-center r-stretch" width="3600"></section>
+<img data-src="lec-02_lm_glm_files/figure-revealjs/unnamed-chunk-16-1.png" class="quarto-figure quarto-figure-center r-stretch" width="3600"></section>
 <section id="plotting-predictions-latent-scale" class="slide level2">
 <h2>Plotting predictions (latent scale)</h2>
 <p>plotting the model prediction on the link (latent) scale</p>
@@ -786,7 +785,7 @@ Number of Fisher Scoring iterations: 4</code></pre>
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="lec-02_lm_glm_files/figure-html/unnamed-chunk-17-1.png" class="quarto-figure quarto-figure-center" width="3600"></p>
+<p><img data-src="lec-02_lm_glm_files/figure-revealjs/unnamed-chunk-17-1.png" class="quarto-figure quarto-figure-center" width="3600"></p>
 </figure>
 </div>
 </div>
@@ -797,7 +796,7 @@ Number of Fisher Scoring iterations: 4</code></pre>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a></a>mouflon<span class="sc">$</span>ypred <span class="ot">&lt;-</span> <span class="fu">exp</span>(mouflon<span class="sc">$</span>logit_ypred) <span class="sc">/</span> (<span class="dv">1</span> <span class="sc">+</span> <span class="fu">exp</span>(mouflon<span class="sc">$</span>logit_ypred))</span>
 <span id="cb25-2"><a></a><span class="fu">ggplot</span>(mouflon, <span class="fu">aes</span>(<span class="at">x =</span> age, <span class="at">y =</span> reproduction)) <span class="sc">+</span></span>
 <span id="cb25-3"><a></a>  <span class="fu">geom_jitter</span>(<span class="at">height =</span> <span class="fl">0.01</span>) <span class="sc">+</span></span>
-<span id="cb25-4"><a></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">y=</span>ypred), <span class="at">color =</span> <span class="st">"red"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb25-4"><a></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">y =</span> ypred), <span class="at">color =</span> <span class="st">"red"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 
 </section>
@@ -805,7 +804,7 @@ Number of Fisher Scoring iterations: 4</code></pre>
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="lec-02_lm_glm_files/figure-html/unnamed-chunk-18-1.png" class="quarto-figure quarto-figure-center" width="3600"></p>
+<p><img data-src="lec-02_lm_glm_files/figure-revealjs/unnamed-chunk-18-1.png" class="quarto-figure quarto-figure-center" width="3600"></p>
 </figure>
 </div>
 </div>
@@ -834,7 +833,7 @@ Number of Fisher Scoring iterations: 4</code></pre>
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="lec-02_lm_glm_files/figure-html/pred_glm-1.png" class="quarto-figure quarto-figure-center" width="3600"></p>
+<p><img data-src="lec-02_lm_glm_files/figure-revealjs/pred_glm-1.png" class="quarto-figure quarto-figure-center" width="3600"></p>
 </figure>
 </div>
 </div>
@@ -848,11 +847,15 @@ Number of Fisher Scoring iterations: 4</code></pre>
 <p>we can do the same things with more complex models</p>
 <div class="cell" data-layout-align="center">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a></a>m2 <span class="ot">&lt;-</span> <span class="fu">glm</span>(</span>
-<span id="cb27-2"><a></a>  reproduction <span class="sc">~</span> age <span class="sc">+</span> mass_sept <span class="sc">+</span> <span class="fu">as.factor</span>(sex_lamb) <span class="sc">+</span></span>
-<span id="cb27-3"><a></a>    mass_gain <span class="sc">+</span> density <span class="sc">+</span> temp,</span>
-<span id="cb27-4"><a></a>  <span class="at">data =</span> mouflon,</span>
-<span id="cb27-5"><a></a>  <span class="at">family =</span> binomial</span>
-<span id="cb27-6"><a></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb27-2"><a></a>  reproduction <span class="sc">~</span> age <span class="sc">+</span></span>
+<span id="cb27-3"><a></a>    mass_sept <span class="sc">+</span></span>
+<span id="cb27-4"><a></a>    <span class="fu">as.factor</span>(sex_lamb) <span class="sc">+</span></span>
+<span id="cb27-5"><a></a>    mass_gain <span class="sc">+</span></span>
+<span id="cb27-6"><a></a>    density <span class="sc">+</span></span>
+<span id="cb27-7"><a></a>    temp,</span>
+<span id="cb27-8"><a></a>  <span class="at">data =</span> mouflon,</span>
+<span id="cb27-9"><a></a>  <span class="at">family =</span> binomial</span>
+<span id="cb27-10"><a></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="check-model" class="slide level2">
@@ -861,7 +864,7 @@ Number of Fisher Scoring iterations: 4</code></pre>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a></a><span class="fu">check_model</span>(m2)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 
-<img data-src="lec-02_lm_glm_files/figure-html/unnamed-chunk-22-1.png" class="quarto-figure quarto-figure-center r-stretch" width="3600"></section>
+<img data-src="lec-02_lm_glm_files/figure-revealjs/unnamed-chunk-22-1.png" class="quarto-figure quarto-figure-center r-stretch" width="3600"></section>
 <section id="with-dharma" class="slide level2">
 <h2>with DHaRMA</h2>
 <div class="cell" data-layout-align="center">
@@ -869,7 +872,7 @@ Number of Fisher Scoring iterations: 4</code></pre>
 <span id="cb29-2"><a></a><span class="fu">plot</span>(simulationOutput)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 
 </div>
-<img data-src="lec-02_lm_glm_files/figure-html/unnamed-chunk-23-1.png" class="quarto-figure quarto-figure-center r-stretch" width="3600"></section></section>
+<img data-src="lec-02_lm_glm_files/figure-revealjs/unnamed-chunk-23-1.png" class="quarto-figure quarto-figure-center r-stretch" width="3600"></section></section>
 <section>
 <section id="poisson-regression-1" class="title-slide slide level1 center">
 <h1>Poisson regression</h1>
@@ -892,21 +895,21 @@ Number of Fisher Scoring iterations: 4</code></pre>
 <span id="cb30-2"><a></a><span class="fu">plot</span>(Species <span class="sc">~</span> Area, gala)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 
 </div>
-<img data-src="lec-02_lm_glm_files/figure-html/unnamed-chunk-24-1.png" class="quarto-figure quarto-figure-center r-stretch" width="3600"></section>
+<img data-src="lec-02_lm_glm_files/figure-revealjs/unnamed-chunk-24-1.png" class="quarto-figure quarto-figure-center r-stretch" width="3600"></section>
 <section class="slide level2">
 
 <div class="cell" data-layout-align="center">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb31"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a></a><span class="fu">plot</span>(Species <span class="sc">~</span> <span class="fu">log</span>(Area), gala)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 
 </div>
-<img data-src="lec-02_lm_glm_files/figure-html/unnamed-chunk-25-1.png" class="quarto-figure quarto-figure-center r-stretch" width="3600"></section>
+<img data-src="lec-02_lm_glm_files/figure-revealjs/unnamed-chunk-25-1.png" class="quarto-figure quarto-figure-center r-stretch" width="3600"></section>
 <section class="slide level2">
 
 <div class="cell" data-layout-align="center">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb32"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a></a><span class="fu">hist</span>(gala<span class="sc">$</span>Species)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 
 </div>
-<img data-src="lec-02_lm_glm_files/figure-html/unnamed-chunk-26-1.png" class="quarto-figure quarto-figure-center r-stretch" width="3600"></section>
+<img data-src="lec-02_lm_glm_files/figure-revealjs/unnamed-chunk-26-1.png" class="quarto-figure quarto-figure-center r-stretch" width="3600"></section>
 <section class="slide level2">
 
 <div class="cell" data-layout-align="center">
@@ -953,7 +956,7 @@ dispersion = 110.32, p-value &lt; 2.2e-16
 alternative hypothesis: two.sided</code></pre>
 </div>
 </div>
-<img data-src="lec-02_lm_glm_files/figure-html/unnamed-chunk-28-1.png" class="quarto-figure quarto-figure-center r-stretch" width="3600"></section>
+<img data-src="lec-02_lm_glm_files/figure-revealjs/unnamed-chunk-28-1.png" class="quarto-figure quarto-figure-center r-stretch" width="3600"></section>
 <section class="slide level2">
 
 <div class="cell" data-layout-align="center">
@@ -966,7 +969,7 @@ alternative hypothesis: two.sided</code></pre>
 <span id="cb39-3"><a></a><span class="fu">hist</span>(<span class="fu">rpois</span>(<span class="fu">nrow</span>(gala), <span class="fu">mean</span>(gala<span class="sc">$</span>Species)))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 
 </div>
-<img data-src="lec-02_lm_glm_files/figure-html/unnamed-chunk-29-1.png" class="quarto-figure quarto-figure-center r-stretch" width="3600"></section>
+<img data-src="lec-02_lm_glm_files/figure-revealjs/unnamed-chunk-29-1.png" class="quarto-figure quarto-figure-center r-stretch" width="3600"></section>
 <section class="slide level2">
 
 <div class="cell" data-layout-align="center">
@@ -982,7 +985,7 @@ ratioObsSim = NaN, p-value = 1
 alternative hypothesis: two.sided</code></pre>
 </div>
 </div>
-<img data-src="lec-02_lm_glm_files/figure-html/unnamed-chunk-30-1.png" class="quarto-figure quarto-figure-center r-stretch" width="3600"></section>
+<img data-src="lec-02_lm_glm_files/figure-revealjs/unnamed-chunk-30-1.png" class="quarto-figure quarto-figure-center r-stretch" width="3600"></section>
 <section class="slide level2">
 
 <div class="cell" data-layout-align="center">
@@ -990,7 +993,7 @@ alternative hypothesis: two.sided</code></pre>
 <span id="cb42-2"><a></a><span class="fu">plot</span>(modpl)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 
 </div>
-<img data-src="lec-02_lm_glm_files/figure-html/unnamed-chunk-31-1.png" class="quarto-figure quarto-figure-center r-stretch" width="3600"></section></section>
+<img data-src="lec-02_lm_glm_files/figure-revealjs/unnamed-chunk-31-1.png" class="quarto-figure quarto-figure-center r-stretch" width="3600"></section></section>
 <section id="happy-coding" class="title-slide slide level1 center">
 <h1>Happy coding</h1>
 
@@ -1214,6 +1217,44 @@ alternative hypothesis: two.sided</code></pre>
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
       window.document.addEventListener("DOMContentLoaded", function (event) {
         const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
