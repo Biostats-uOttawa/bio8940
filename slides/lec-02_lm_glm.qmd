@@ -44,7 +44,7 @@ knitr::opts_chunk$set(
   fig.showtext = TRUE,
   fig.width = 12,
   fig.height = 6,
-#  out.height = "100%",
+  #  out.height = "100%",
   dev.args = list(bg = "transparent"),
   cache = TRUE
 )
@@ -398,18 +398,16 @@ $$
 g(\eta) = \mu
 $$
 
-
 * Log link (used when $\mu$ cannot be negative, *e.g.* Poisson data)
 
 $$
 g(\eta) = log(\mu)
 $$ 
 
-
 Logit link (used when \mu is bounded between 0 and 1, *e.g.* binary data)
 
 $$
-g(\eta) = log\left(\frac{\mu}{1-\mu}\right)
+g(\eta) = log\left(\frac{p}{1-p}\right)
 $$
 
 
@@ -430,8 +428,8 @@ $$
 * Link function: identity
 
 $$
-g(\eta) = \mu \\
-\mu = \beta_0 + \beta_1 X_1 + ... + \beta_k X_k
+g(\eta) = \mu \text{ and }
+\mu = \eta\\
 $$
 
 
@@ -451,10 +449,9 @@ $$
 $$
 
 * Link function: logit
-
 $$
-g(\eta) = ln\left(\frac{\pi}{1-\pi}\right) \\
-\pi = \frac{1}{1 + e^{-(\beta_0 + \beta_1 X_1 + ... + \beta_k X_k)}}
+g(\eta) = ln\left(\frac{\pi}{1-\pi}\right) \text{ and }
+\pi = \frac{1}{1 + e^{-\eta}}\\
 $$
 
 
@@ -477,8 +474,8 @@ $$
 * Link function: natural logarithm
 
 $$
-g(\eta) = ln(\lambda) \\
-\lambda = e^{\beta_0 + \beta_1 X_1 + ... + \beta_k X_k}
+g(\eta) = ln(\lambda) \text{ and }
+\lambda = e^{\eta}\\
 $$
 
 
@@ -582,7 +579,7 @@ ggplot(
 ## Fitting the logistic regression
 
 ```{r}
-m1 <- glm(reproduction ~ age, data = mouflon,   family = binomial)
+m1 <- glm(reproduction ~ age, data = mouflon, family = binomial)
 summary(m1)
 ```
 
@@ -613,7 +610,7 @@ plotting on the observed scale
 mouflon$ypred <- exp(mouflon$logit_ypred) / (1 + exp(mouflon$logit_ypred))
 ggplot(mouflon, aes(x = age, y = reproduction)) +
   geom_jitter(height = 0.01) +
-  geom_line(aes(y=ypred), color = "red")
+  geom_line(aes(y = ypred), color = "red")
 ```
 
 
@@ -656,8 +653,12 @@ we can do the same things with more complex models
 
 ```{r}
 m2 <- glm(
-  reproduction ~ age + mass_sept + as.factor(sex_lamb) +
-    mass_gain + density + temp,
+  reproduction ~ age +
+    mass_sept +
+    as.factor(sex_lamb) +
+    mass_gain +
+    density +
+    temp,
   data = mouflon,
   family = binomial
 )
