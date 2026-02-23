@@ -510,10 +510,12 @@ If you are using `Zotero`, then RStudio can link directly for both Rmd and qmd f
 
 
 ```{r, out.width="75%", echo = FALSE}
-knitr::include_graphics("https://raw.githubusercontent.com/crsh/citr/master/tools/images/addin_demo.gif")
+knitr::include_graphics(
+  "https://raw.githubusercontent.com/crsh/citr/master/tools/images/addin_demo.gif"
+)
 ```
 
-# Notebook vs console in Rstudio
+# Notebook vs console
 
 ## Notebook and console
 
