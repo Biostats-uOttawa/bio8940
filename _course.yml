@@ -38,11 +38,11 @@ schedule:
     topic: Generalised linear mixed models
     topic_fr: Modèles mixtes généralisés
     reading: "@bolker_generalized_2009"
-  - week: 11
-    topic: "Topic chosen by students"
+  - week: 10
+    topic: "GAMMs"
     topic_fr: "Sujet choisi par les étudiants"
     reading: "@wasserstein_asa_2016"
-  - week: 10
+  - week: 11
     topic: Multivariate mixed models
     topic_fr: Modèles mixtes multivariés
     reading: "@vandepol2009"
