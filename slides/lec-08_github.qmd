@@ -1,6 +1,6 @@
 ---
 title: "Introduction to Git and GitHub"
-subtitle: "with RStudio"
+subtitle: "with VS Code and forks"
 author: Julien Martin
 institute: "BIO 8940"
 date: today
