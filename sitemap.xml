@@ -1,83 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://Biostats-uOttawa.github.io/bio8940/slides/lec-09_intro_bayes.slides.html</loc>
-    <lastmod>2026-01-19T21:40:06.816Z</lastmod>
+    <loc>https://Biostats-uOttawa.github.io/bio8940/slides/lec-10_gamms.slides.html</loc>
+    <lastmod>2026-03-23T21:38:45.332Z</lastmod>
   </url>
   <url>
-    <loc>https://Biostats-uOttawa.github.io/bio8940/slides/lec-09_intro_bayes.notes.html</loc>
-    <lastmod>2026-01-19T21:40:06.762Z</lastmod>
+    <loc>https://Biostats-uOttawa.github.io/bio8940/slides/lec-10_gamms.notes.html</loc>
+    <lastmod>2026-03-23T21:38:45.088Z</lastmod>
   </url>
   <url>
-    <loc>https://Biostats-uOttawa.github.io/bio8940/slides/lec-06_quarto.slides.html</loc>
-    <lastmod>2026-01-19T21:39:41.858Z</lastmod>
+    <loc>https://Biostats-uOttawa.github.io/bio8940/slides/lec-08_github.slides.html</loc>
+    <lastmod>2026-03-23T21:38:18.571Z</lastmod>
   </url>
   <url>
-    <loc>https://Biostats-uOttawa.github.io/bio8940/slides/lec-06_quarto.notes.html</loc>
-    <lastmod>2026-01-19T21:39:41.780Z</lastmod>
+    <loc>https://Biostats-uOttawa.github.io/bio8940/slides/lec-08_github.notes.html</loc>
+    <lastmod>2026-03-23T21:38:18.501Z</lastmod>
   </url>
   <url>
-    <loc>https://Biostats-uOttawa.github.io/bio8940/slides/lec-04_intro_lmm.slides.html</loc>
-    <lastmod>2026-01-19T21:39:12.701Z</lastmod>
+    <loc>https://Biostats-uOttawa.github.io/bio8940/slides/lec-05_intro_glmm.slides.html</loc>
+    <lastmod>2026-03-23T21:37:46.479Z</lastmod>
   </url>
   <url>
-    <loc>https://Biostats-uOttawa.github.io/bio8940/slides/lec-04_intro_lmm.notes.html</loc>
-    <lastmod>2026-01-19T21:39:12.659Z</lastmod>
+    <loc>https://Biostats-uOttawa.github.io/bio8940/slides/lec-05_intro_glmm.notes.html</loc>
+    <lastmod>2026-03-23T21:37:46.413Z</lastmod>
   </url>
   <url>
-    <loc>https://Biostats-uOttawa.github.io/bio8940/slides/lec-02_lm_glm.slides.html</loc>
-    <lastmod>2026-01-19T21:38:50.937Z</lastmod>
+    <loc>https://Biostats-uOttawa.github.io/bio8940/slides/lec-03_model_structure.slides.html</loc>
+    <lastmod>2026-03-23T21:37:25.180Z</lastmod>
   </url>
   <url>
-    <loc>https://Biostats-uOttawa.github.io/bio8940/slides/lec-02_lm_glm.notes.html</loc>
-    <lastmod>2026-01-19T21:38:50.831Z</lastmod>
+    <loc>https://Biostats-uOttawa.github.io/bio8940/slides/lec-03_model_structure.notes.html</loc>
+    <lastmod>2026-03-23T21:37:25.125Z</lastmod>
   </url>
   <url>
-    <loc>https://Biostats-uOttawa.github.io/bio8940/index.html</loc>
+    <loc>https://Biostats-uOttawa.github.io/bio8940/slides/lec-01_intro.slides.html</loc>
+    <lastmod>2026-03-23T21:37:00.973Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Biostats-uOttawa.github.io/bio8940/slides/lec-01_intro.notes.html</loc>
+    <lastmod>2026-03-23T21:37:00.936Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Biostats-uOttawa.github.io/bio8940/fr/who_when.html</loc>
+    <lastmod>2026-01-14T15:35:27.605Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Biostats-uOttawa.github.io/bio8940/fr/report.html</loc>
+    <lastmod>2026-01-14T15:35:27.605Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Biostats-uOttawa.github.io/bio8940/fr/people.html</loc>
     <lastmod>2025-01-07T02:06:17.098Z</lastmod>
   </url>
   <url>
-    <loc>https://Biostats-uOttawa.github.io/bio8940/fr/syllabus.html</loc>
-    <lastmod>2026-01-12T14:58:13.116Z</lastmod>
+    <loc>https://Biostats-uOttawa.github.io/bio8940/fr/index.html</loc>
+    <lastmod>2026-01-12T14:43:22.186Z</lastmod>
   </url>
   <url>
-    <loc>https://Biostats-uOttawa.github.io/bio8940/fr/presentation.html</loc>
-    <lastmod>2026-01-14T15:35:27.604Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Biostats-uOttawa.github.io/bio8940/fr/lectures.html</loc>
-    <lastmod>2026-01-12T14:33:48.303Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Biostats-uOttawa.github.io/bio8940/fr/dataset.html</loc>
-    <lastmod>2025-01-07T02:06:17.098Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Biostats-uOttawa.github.io/bio8940/en/who_when.html</loc>
+    <loc>https://Biostats-uOttawa.github.io/bio8940/fr/404.html</loc>
     <lastmod>2025-01-07T02:06:17.097Z</lastmod>
   </url>
   <url>
-    <loc>https://Biostats-uOttawa.github.io/bio8940/en/report.html</loc>
-    <lastmod>2026-01-12T14:57:41.637Z</lastmod>
+    <loc>https://Biostats-uOttawa.github.io/bio8940/en/syllabus.html</loc>
+    <lastmod>2026-01-12T14:49:59.897Z</lastmod>
   </url>
   <url>
-    <loc>https://Biostats-uOttawa.github.io/bio8940/en/practical_extra.html</loc>
-    <lastmod>2025-01-07T02:06:17.097Z</lastmod>
+    <loc>https://Biostats-uOttawa.github.io/bio8940/en/presentation.html</loc>
+    <lastmod>2026-01-08T16:10:04.286Z</lastmod>
   </url>
   <url>
-    <loc>https://Biostats-uOttawa.github.io/bio8940/en/people.html</loc>
-    <lastmod>2026-01-08T20:12:22.640Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Biostats-uOttawa.github.io/bio8940/en/index.html</loc>
-    <lastmod>2026-01-12T14:32:58.640Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Biostats-uOttawa.github.io/bio8940/en/404.html</loc>
-    <lastmod>2026-01-08T19:32:53.181Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Biostats-uOttawa.github.io/bio8940/en/dataset.html</loc>
+    <loc>https://Biostats-uOttawa.github.io/bio8940/en/practical.html</loc>
     <lastmod>2025-01-07T02:06:17.097Z</lastmod>
   </url>
   <url>
@@ -85,67 +77,83 @@
     <lastmod>2026-01-08T20:01:53.404Z</lastmod>
   </url>
   <url>
-    <loc>https://Biostats-uOttawa.github.io/bio8940/en/practical.html</loc>
+    <loc>https://Biostats-uOttawa.github.io/bio8940/en/dataset.html</loc>
     <lastmod>2025-01-07T02:06:17.097Z</lastmod>
   </url>
   <url>
-    <loc>https://Biostats-uOttawa.github.io/bio8940/en/presentation.html</loc>
-    <lastmod>2026-01-08T16:10:04.286Z</lastmod>
+    <loc>https://Biostats-uOttawa.github.io/bio8940/en/404.html</loc>
+    <lastmod>2026-01-08T19:32:53.181Z</lastmod>
   </url>
   <url>
-    <loc>https://Biostats-uOttawa.github.io/bio8940/en/syllabus.html</loc>
-    <lastmod>2026-01-12T14:49:59.897Z</lastmod>
+    <loc>https://Biostats-uOttawa.github.io/bio8940/en/index.html</loc>
+    <lastmod>2026-01-12T14:32:58.640Z</lastmod>
   </url>
   <url>
-    <loc>https://Biostats-uOttawa.github.io/bio8940/fr/404.html</loc>
+    <loc>https://Biostats-uOttawa.github.io/bio8940/en/people.html</loc>
+    <lastmod>2026-01-08T20:12:22.640Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Biostats-uOttawa.github.io/bio8940/en/practical_extra.html</loc>
     <lastmod>2025-01-07T02:06:17.097Z</lastmod>
   </url>
   <url>
-    <loc>https://Biostats-uOttawa.github.io/bio8940/fr/index.html</loc>
-    <lastmod>2026-01-12T14:43:22.186Z</lastmod>
+    <loc>https://Biostats-uOttawa.github.io/bio8940/en/report.html</loc>
+    <lastmod>2026-01-12T14:57:41.637Z</lastmod>
   </url>
   <url>
-    <loc>https://Biostats-uOttawa.github.io/bio8940/fr/people.html</loc>
+    <loc>https://Biostats-uOttawa.github.io/bio8940/en/who_when.html</loc>
+    <lastmod>2025-01-07T02:06:17.097Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Biostats-uOttawa.github.io/bio8940/fr/dataset.html</loc>
     <lastmod>2025-01-07T02:06:17.098Z</lastmod>
   </url>
   <url>
-    <loc>https://Biostats-uOttawa.github.io/bio8940/fr/report.html</loc>
-    <lastmod>2026-01-14T15:35:27.605Z</lastmod>
+    <loc>https://Biostats-uOttawa.github.io/bio8940/fr/lectures.html</loc>
+    <lastmod>2026-01-12T14:33:48.303Z</lastmod>
   </url>
   <url>
-    <loc>https://Biostats-uOttawa.github.io/bio8940/fr/who_when.html</loc>
-    <lastmod>2026-01-14T15:35:27.605Z</lastmod>
+    <loc>https://Biostats-uOttawa.github.io/bio8940/fr/presentation.html</loc>
+    <lastmod>2026-01-14T15:35:27.604Z</lastmod>
   </url>
   <url>
-    <loc>https://Biostats-uOttawa.github.io/bio8940/slides/lec-01_intro.notes.html</loc>
-    <lastmod>2026-01-19T21:38:15.381Z</lastmod>
+    <loc>https://Biostats-uOttawa.github.io/bio8940/fr/syllabus.html</loc>
+    <lastmod>2026-01-12T14:58:13.116Z</lastmod>
   </url>
   <url>
-    <loc>https://Biostats-uOttawa.github.io/bio8940/slides/lec-01_intro.slides.html</loc>
-    <lastmod>2026-01-19T21:38:15.420Z</lastmod>
+    <loc>https://Biostats-uOttawa.github.io/bio8940/index.html</loc>
+    <lastmod>2025-01-07T02:06:17.098Z</lastmod>
   </url>
   <url>
-    <loc>https://Biostats-uOttawa.github.io/bio8940/slides/lec-03_model_structure.notes.html</loc>
-    <lastmod>2026-01-19T21:39:01.779Z</lastmod>
+    <loc>https://Biostats-uOttawa.github.io/bio8940/slides/lec-02_lm_glm.notes.html</loc>
+    <lastmod>2026-03-23T21:37:13.277Z</lastmod>
   </url>
   <url>
-    <loc>https://Biostats-uOttawa.github.io/bio8940/slides/lec-03_model_structure.slides.html</loc>
-    <lastmod>2026-01-19T21:39:01.816Z</lastmod>
+    <loc>https://Biostats-uOttawa.github.io/bio8940/slides/lec-02_lm_glm.slides.html</loc>
+    <lastmod>2026-03-23T21:37:13.376Z</lastmod>
   </url>
   <url>
-    <loc>https://Biostats-uOttawa.github.io/bio8940/slides/lec-05_intro_glmm.notes.html</loc>
-    <lastmod>2026-01-19T21:39:22.291Z</lastmod>
+    <loc>https://Biostats-uOttawa.github.io/bio8940/slides/lec-04_intro_lmm.notes.html</loc>
+    <lastmod>2026-03-23T21:37:36.438Z</lastmod>
   </url>
   <url>
-    <loc>https://Biostats-uOttawa.github.io/bio8940/slides/lec-05_intro_glmm.slides.html</loc>
-    <lastmod>2026-01-19T21:39:22.320Z</lastmod>
+    <loc>https://Biostats-uOttawa.github.io/bio8940/slides/lec-04_intro_lmm.slides.html</loc>
+    <lastmod>2026-03-23T21:37:36.482Z</lastmod>
   </url>
   <url>
-    <loc>https://Biostats-uOttawa.github.io/bio8940/slides/lec-08_github.notes.html</loc>
-    <lastmod>2026-01-19T21:39:55.958Z</lastmod>
+    <loc>https://Biostats-uOttawa.github.io/bio8940/slides/lec-06_quarto.notes.html</loc>
+    <lastmod>2026-03-23T21:38:03.890Z</lastmod>
   </url>
   <url>
-    <loc>https://Biostats-uOttawa.github.io/bio8940/slides/lec-08_github.slides.html</loc>
-    <lastmod>2026-01-19T21:39:56.008Z</lastmod>
+    <loc>https://Biostats-uOttawa.github.io/bio8940/slides/lec-06_quarto.slides.html</loc>
+    <lastmod>2026-03-23T21:38:04.047Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Biostats-uOttawa.github.io/bio8940/slides/lec-09_intro_bayes.notes.html</loc>
+    <lastmod>2026-03-23T21:38:29.377Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Biostats-uOttawa.github.io/bio8940/slides/lec-09_intro_bayes.slides.html</loc>
+    <lastmod>2026-03-23T21:38:29.445Z</lastmod>
   </url>
 </urlset>
