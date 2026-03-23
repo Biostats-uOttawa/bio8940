@@ -39,8 +39,8 @@ schedule:
     topic_fr: Modèles mixtes généralisés
     reading: "@bolker_generalized_2009"
   - week: 10
-    topic: "GAMMs"
-    topic_fr: "Sujet choisi par les étudiants"
+    topic: "Introdcution to GAMs"
+    topic_fr: "Introduction aux GAMs"
     reading: "@wasserstein_asa_2016"
   - week: 11
     topic: Multivariate mixed models

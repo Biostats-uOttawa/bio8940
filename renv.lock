@@ -1,6 +1,6 @@
 {
   "R": {
-    "Version": "4.5.2",
+    "Version": "4.5.3",
     "Repositories": [
       {
         "Name": "CRAN",
@@ -4314,6 +4314,35 @@
       "Maintainer": "Folashade Daniel <fdaniel@microsoft.com>",
       "Repository": "CRAN"
     },
+    "itsadug": {
+      "Package": "itsadug",
+      "Version": "2.5",
+      "Source": "Repository",
+      "Date": "2025-12-22",
+      "Title": "Interpreting Time Series and Autocorrelated Data Using GAMMs",
+      "Authors@R": "c( person(\"Jacolien\", \"van Rij\", email=\"j.c.van.rij@rug.nl\", role = c(\"aut\", \"cre\")), person(\"Martijn\",\"Wieling\", role = \"aut\"),  person(\"R. Harald\",\"Baayen\", role = \"aut\"),  person(\"Hedderik\", \"van Rijn\", role = \"ctb\"))",
+      "Author": "Jacolien van Rij [aut, cre], Martijn Wieling [aut], R. Harald Baayen [aut], Hedderik van Rijn [ctb]",
+      "Maintainer": "Jacolien van Rij <j.c.van.rij@rug.nl>",
+      "Description": "GAMM (Generalized Additive Mixed Modeling; Lin & Zhang, 1999) as implemented in the R package 'mgcv' (Wood, S.N., 2006; 2011) is a nonlinear regression analysis which is particularly useful for time course data such as EEG, pupil dilation, gaze data (eye tracking), and articulography recordings, but also for behavioral data such as reaction times and response data. As time course measures are sensitive to autocorrelation problems, GAMMs implements methods to reduce the autocorrelation problems. This package includes functions for the evaluation of GAMM models (e.g., model comparisons, determining regions of significance, inspection of autocorrelational structure in residuals) and interpreting of GAMMs (e.g., visualization of complex interactions, and contrasts).",
+      "License": "GPL (>= 2)",
+      "LazyData": "true",
+      "Depends": [
+        "R (>= 4.0)",
+        "mgcv (>= 1.8)",
+        "plotfunctions (>= 1.4)"
+      ],
+      "VignetteBuilder": "knitr",
+      "Suggests": [
+        "knitr",
+        "xtable",
+        "sp",
+        "data.table"
+      ],
+      "RoxygenNote": "7.3.3",
+      "Encoding": "UTF-8",
+      "NeedsCompilation": "no",
+      "Repository": "CRAN"
+    },
     "jquerylib": {
       "Package": "jquerylib",
       "Version": "0.1.4",
@@ -5574,6 +5603,32 @@
       "URL": "https://github.com/r-lib/pkgconfig#readme",
       "BugReports": "https://github.com/r-lib/pkgconfig/issues",
       "Encoding": "UTF-8",
+      "NeedsCompilation": "no",
+      "Repository": "CRAN"
+    },
+    "plotfunctions": {
+      "Package": "plotfunctions",
+      "Version": "1.5",
+      "Source": "Repository",
+      "Title": "Various Functions to Facilitate Visualization of Data and Analysis",
+      "Date": "2025-12-10",
+      "Authors@R": "person(\"Jacolien\", \"van Rij\", role=c(\"aut\", \"cre\"), email=\"j.c.van.rij@rug.nl\")",
+      "Author": "Jacolien van Rij [aut, cre]",
+      "Maintainer": "Jacolien van Rij <j.c.van.rij@rug.nl>",
+      "Description": "When analyzing data, plots are a helpful tool for visualizing data and interpreting statistical models. This package provides a set of simple tools for building plots incrementally, starting with an empty plot region, and adding bars, data points, regression lines, error bars, gradient legends, density distributions in the margins, and even pictures. The package builds further on R graphics by simply combining functions and settings in order to reduce the amount of code to produce for the user. As a result, the package does not use formula input or special syntax, but can be used in combination with default R plot functions. Note: Most of the functions were part of the package 'itsadug', which is now split in two packages: 1. the package 'itsadug', which contains the core functions for visualizing and evaluating nonlinear regression models, and 2. the package 'plotfunctions', which contains more general plot functions.",
+      "URL": "https://jacolienvanrij.com/tutorials.html",
+      "License": "GPL (>= 2)",
+      "LazyData": "true",
+      "Depends": [
+        "R (>= 2.10)"
+      ],
+      "VignetteBuilder": "knitr",
+      "Suggests": [
+        "knitr",
+        "sp"
+      ],
+      "Encoding": "UTF-8",
+      "RoxygenNote": "7.3.3",
       "NeedsCompilation": "no",
       "Repository": "CRAN"
     },
